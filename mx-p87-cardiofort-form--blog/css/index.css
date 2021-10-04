@@ -171,12 +171,6 @@ header ul li a {
   margin: 20px 0;
 }
 
-.content .img2 {
-  max-width: 293px;
-  width: 100%;
-  float: left;
-  margin: 0 25px 25px 0;
-}
 
 .content ul {
   margin-left: 25px;
@@ -332,7 +326,8 @@ header ul li a {
 }
 
 .sidebar .banner img{
-  max-width: 365px;
+  max-width: 150px;
+  margin-top: 30px;
 }
 
 .sidebar .banner p {
@@ -421,7 +416,44 @@ header ul li a {
   text-align: left;
   margin-top: 5px;
 }
-
+.box{
+  position: relative;
+  max-width: 293px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.box img{
+  width: 100%;
+  display: block;
+}
+.box-text--main{
+  position: absolute;
+  top: 5px;
+    left: 10px;
+    font-weight: 700;
+}
+.box-text--item-1{
+  position: absolute;
+  top: 30%;
+    left: 10px;
+}
+.box-text--item-2{
+  position: absolute;
+    bottom: 10px;
+    left: 24%;
+    width: 100px;
+    line-height: 15px;
+}
+.box-text--item-3{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+.box-text--item-4{
+  position: absolute;
+  top: 0px;
+  right: 7px;
+}
 div.aw-widget-36hour-inner {
   min-width: 0px!important;
 }
