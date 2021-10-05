@@ -13,7 +13,13 @@
   margin: 25px 0;
   padding: 0 25px 100px;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a span{
+  font-weight: 700;
+}
 header {
   border: 2px solid #b8b8b8;
   border-top: none;
@@ -172,10 +178,9 @@ header ul li a {
 }
 
 .content .img2 {
-  max-width: 293px;
   width: 100%;
-  float: left;
-  margin: 0 25px 25px 0;
+  margin: 30px auto;
+  display: block;
 }
 
 .content ul {
@@ -332,7 +337,8 @@ header ul li a {
 }
 
 .sidebar .banner img{
-  max-width: 365px;
+  max-width: 100px;
+  margin-top: 30px;
 }
 
 .sidebar .banner p {
