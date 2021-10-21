@@ -475,9 +475,7 @@
 			currentlangGeo == 'it' ? currentImg(currentlangGeo, slideImg) : '';
 
 			if (!currentlangGeo == 'es' && !currentlangGeo == 'pt' && !currentlangGeo == 'gr' && !currentlangGeo == 'it') {
-				slideImg.forEach((el, i) => {
-					el.src = `./images/dest/reviews/other/item-${i+1}.jpg`
-				})
+				currentImg('other', slideImg);
 			}
 		});
 
