@@ -283,10 +283,13 @@
 										<img src="./images/dest/stars.png" alt="" class="slide-comment__grade-star">
 									</div>
 									<p class="slide-comment__text">
-										Рекомендую этот товар другим. У меня проблемы с бровями еще с юности. В то время было модно носить тонкие брови. Выщипала так, что
+										Рекомендую этот товар другим. У меня проблемы с бровями еще с юности. В то время было модно носить
+										тонкие брови. Выщипала так, что
 										стали абсолютно невидимые, одни тоненькие ниточки остались. Была рада и очень счастлива, когда
 										приобрела <a href="#form" class="link-form text-accent">Beauty Stamp</a> . Она мне очень помогла.
-										Наконец-то я стала выглядеть как человек, так как без	бровей было очень некомфортно ходить. <a href="#form" class="link-form text-accent">Beauty Stamp</a> удобно использовать и держится весь день! Также
+										Наконец-то я стала выглядеть как человек, так как без бровей было очень некомфортно ходить. <a
+											href="#form" class="link-form text-accent">Beauty Stamp</a> удобно использовать и держится весь
+										день! Также
 										заказала тушь просто великолепную в этом магазине, по очень выгодной цене. Она и удлиняет и
 										увеличивает объем одновременно. Рекомендую!
 
@@ -473,9 +476,10 @@
 			currentlangGeo == 'gr' ? currentImg(currentlangGeo, slideImg) : '';
 			currentlangGeo == 'it' ? currentImg(currentlangGeo, slideImg) : '';
 
-			if (!currentlangGeo == 'es' && !currentlangGeo == 'pt' && !currentlangGeo == 'gr' && !currentlangGeo == 'it') {
+			if (!(currentlangGeo == 'es') && !(currentlangGeo == 'pt') && !(currentlangGeo == 'gr') && !(currentlangGeo == 'it')) {
 				currentImg('other', slideImg);
 			}
+			
 		});
 
 		function currentImg(lang, imgs, ) {
