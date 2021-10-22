@@ -4,16 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:title" content="Beauty stamp" />
+	<meta property="og:title" content="Beauty Stamp" />
 	<meta property="og:description" content="Аккуратные и ухоженные брови за 3 секунды!" />
-	<meta property="og:image" content="https://i.imgur.com/lTYe2KR.png" />
+	<meta property="og:image" content="https://i.imgur.com/gq7JIwJ.jpg" />
 	<meta property="og:type" content="website" />
 	<link rel="shortcut icon" href="./images/dest/favicon.svg?v1" type="image/svg+xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>Beauty stamp</title>
+	<title>Beauty Stamp</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 					Аккуратные и ухоженные брови за 3 секунды!
 				</p>
 				<h1 class="hero__title tac">
-					Beauty stamp
+					Beauty Stamp
 				</h1>
 				<ul class="hero-list">
 					<li class="hero-list__item">
@@ -339,7 +339,7 @@
 					Аккуратные и ухоженные брови за 3 секунды!
 				</p>
 				<h1 class="hero__title tac">
-					Beauty stamp
+					Beauty Stamp
 				</h1>
 				<ul class="hero-list">
 					<li class="hero-list__item">
@@ -392,36 +392,51 @@
 					<img src="./images/dest/product.png" alt="" class="hero-decor__img db pos-rel">
 				</div>
 			</div>
-			<div class="order df ju-a">
-				<div class="order-item df dir-col al-s">
-					<img src="./images/dest/clipboard.png" alt="" class="order-item__img db mr-a">
-					<p class="order-item__text tac">
+			<div class="order df dir-col">
+				<div class="order-item df al-c">
+					<div class="order-item__box">
+						<img src="./images/dest/clipboard.png" alt="" class="order-item__img db">
+					</div>
+					<p class="order-item__text ">
 						Оставьте заявку
 					</p>
 				</div>
-				<div class="order-item df dir-col al-s">
-					<img src="./images/dest/call.png" alt="" class="order-item__img db mr-a">
-					<p class="order-item__text tac">
-						Дождитесь звонка
-					</p>
+				<div class="order-item df al-c">
+					<div class="order-item__box">
+						<img src="./images/dest/call.png" alt="" class="order-item__img db">
+					</div>
+						<p class="order-item__text ">
+							Дождитесь звонка
+						</p>
+					
 				</div>
-				<div class="order-item df dir-col al-s">
-					<img src="./images/dest/traced.png" alt="" class="order-item__img db mr-a">
-					<p class="order-item__text tac">
-						Доставка
-						<span class="db">1-3 дня</span>
-					</p>
+				<div class="order-item df al-c">
+					<div class="order-item__box">
+						<img src="./images/dest/traced.png" alt="" class="order-item__img db">
+					</div>
+						<p class="order-item__text ">
+							Доставка 1-3 дня
+						</p>
+					
 				</div>
-				<div class="order-item df dir-col al-s">
-					<img src="./images/dest/delivery-man.png" alt="" class="order-item__img db mr-a">
-					<p class="order-item__text tac">
-						Оплатите при получении
-					</p>
+				<div class="order-item df al-c">
+					<div class="order-item__box">
+						<img src="./images/dest/delivery-man.png" alt="" class="order-item__img db">
+					</div>
+						<p class="order-item__text ">
+							Оплатите при получении
+						</p>
 				</div>
 			</div>
 			<form id="form" class="form" method="post">
 				<input class="form__input db" type="text" name="name" placeholder="Ваше имя" required="">
 				<input class="form__input db" type="tel" name="phone" id="phone" placeholder="Номер телефона" required="">
+				<input name="offer_id" type="hidden" value="{offer_id}">
+				<input name="geo" type="hidden" value="">
+				<input name="web_id" type="hidden" value="{web_id}">
+				<input name="click_id" type="hidden" value="{click_id}">
+				<input name="time_zone" type="hidden" value="+3">
+				<input name="lang" type="hidden" value="RU">
 				<button class="button btn-reset link db" type="submit">
 					КУПИТЬ
 				</button>
@@ -476,10 +491,11 @@
 			currentlangGeo == 'gr' ? currentImg(currentlangGeo, slideImg) : '';
 			currentlangGeo == 'it' ? currentImg(currentlangGeo, slideImg) : '';
 
-			if (!(currentlangGeo == 'es') && !(currentlangGeo == 'pt') && !(currentlangGeo == 'gr') && !(currentlangGeo == 'it')) {
+			if (!(currentlangGeo == 'es') && !(currentlangGeo == 'pt') && !(currentlangGeo == 'gr') && !(currentlangGeo ==
+					'it')) {
 				currentImg('other', slideImg);
 			}
-			
+
 		});
 
 		function currentImg(lang, imgs, ) {
@@ -488,6 +504,26 @@
 			})
 		}
 	</script>
+
+	<script type="text/javascript" src="/libs/js/common.js"></script>
+	<script>
+		$(document).ready(function () {
+			$.init({
+
+				priceSelector: ".new-cost",
+				oldPriceSelector: ".old-cost",
+				reportFormSelector: ".report-abuse__form",
+				reportCallback: function (data) {
+					console.log('ReportCallback:', data);
+				},
+				callback: function () {
+					console.log("Do something after prices changing");
+
+				}
+			});
+		});
+	</script>
+
 </body>
 
 </html>
