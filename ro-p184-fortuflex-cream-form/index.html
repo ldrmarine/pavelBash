@@ -1,0 +1,1191 @@
+<html lang="ro">
+
+<head>
+  <link rel="prefetch" href="./assets/header-bg.jpg">
+  <link rel="prefetch" href="./assets/topo2.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Fantástico</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-primary: #0d6efd;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+      :root {
+        scroll-behavior: smooth
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      margin: 1rem 0;
+      color: inherit;
+      background-color: currentColor;
+      border: 0;
+      opacity: .25
+    }
+
+    hr:not([size]) {
+      height: 1px
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2
+    }
+
+    h2 {
+      font-size: calc(1.325rem + .9vw)
+    }
+
+    @media (min-width:1200px) {
+      h2 {
+        font-size: 2rem
+      }
+    }
+
+    h3 {
+      font-size: calc(1.3rem + .6vw)
+    }
+
+    @media (min-width:1200px) {
+      h3 {
+        font-size: 1.75rem
+      }
+    }
+
+    h4 {
+      font-size: calc(1.275rem + .3vw)
+    }
+
+    @media (min-width:1200px) {
+      h4 {
+        font-size: 1.5rem
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    ul {
+      padding-left: 2rem
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    blockquote {
+      margin: 0 0 1rem
+    }
+
+    strong {
+      font-weight: bolder
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: underline
+    }
+
+    a:hover {
+      color: #0a58ca
+    }
+
+    img {
+      vertical-align: middle
+    }
+
+    button:focus:not(:focus-visible) {
+      outline: 0
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+      cursor: pointer
+    }
+
+    ::-moz-focus-inner {
+      padding: 0;
+      border-style: none
+    }
+
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-fields-wrapper,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-minute,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-year-field {
+      padding: 0
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-color-swatch-wrapper {
+      padding: 0
+    }
+
+    ::file-selector-button {
+      font: inherit
+    }
+
+    ::-webkit-file-upload-button {
+      font: inherit;
+      -webkit-appearance: button
+    }
+
+    iframe {
+      border: 0
+    }
+
+    .container,
+    .container-fluid {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto
+    }
+
+    @media (min-width:576px) {
+      .container {
+        max-width: 540px
+      }
+    }
+
+    @media (min-width:768px) {
+      .container {
+        max-width: 720px
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        max-width: 960px
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        max-width: 1140px
+      }
+    }
+
+    @media (min-width:1400px) {
+      .container {
+        max-width: 1320px
+      }
+    }
+
+    .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x)/ -2);
+      margin-left: calc(var(--bs-gutter-x)/ -2)
+    }
+
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x)/ 2);
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+      margin-top: var(--bs-gutter-y)
+    }
+
+    .col-4 {
+      flex: 0 0 auto;
+      width: 33.3333333333%
+    }
+
+    .col-8 {
+      flex: 0 0 auto;
+      width: 66.6666666667%
+    }
+
+    @media (min-width:576px) {
+      .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+      }
+
+      .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+
+      .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%
+      }
+    }
+
+    @media (min-width:768px) {
+      .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+      }
+
+      .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+    }
+
+    @media (min-width:992px) {
+      .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+      }
+
+      .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+
+      .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.3333333333%
+      }
+    }
+
+    .form-control[type=file]:not(:disabled):not([readonly]) {
+      cursor: pointer
+    }
+
+    .form-control::file-selector-button {
+      padding: .375rem .75rem;
+      margin: -.375rem -.75rem;
+      -webkit-margin-end: .75rem;
+      margin-inline-end: .75rem;
+      color: #212529;
+      background-color: #e9ecef;
+      pointer-events: none;
+      border-color: inherit;
+      border-style: solid;
+      border-width: 0;
+      border-inline-end-width: 1px;
+      border-radius: 0;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .form-control::file-selector-button {
+        transition: none
+      }
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+      background-color: #dde0e3
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+      background-color: #dde0e3
+    }
+
+    .form-control-sm::file-selector-button {
+      padding: .25rem .5rem;
+      margin: -.25rem -.5rem;
+      -webkit-margin-end: .5rem;
+      margin-inline-end: .5rem
+    }
+
+    .form-control-lg::file-selector-button {
+      padding: .5rem 1rem;
+      margin: -.5rem -1rem;
+      -webkit-margin-end: 1rem;
+      margin-inline-end: 1rem
+    }
+
+    .form-control-color:not(:disabled):not([readonly]) {
+      cursor: pointer
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown) {
+      padding-top: 1.625rem;
+      padding-bottom: .625rem
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+      opacity: .65;
+      transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    }
+
+    .nav-link {
+      display: block;
+      padding: .5rem 1rem;
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .nav-link {
+        transition: none
+      }
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: #0a58ca
+    }
+
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: .5rem;
+      padding-bottom: .5rem
+    }
+
+    .navbar>.container-fluid {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .navbar-brand {
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      white-space: nowrap
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+    }
+
+    .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0
+    }
+
+    .navbar-expand {
+      flex-wrap: nowrap;
+      justify-content: flex-start
+    }
+
+    .navbar-expand .navbar-nav {
+      flex-direction: row
+    }
+
+    .navbar-expand .navbar-nav .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem
+    }
+
+    .navbar-dark .navbar-brand {
+      color: #fff
+    }
+
+    .navbar-dark .navbar-brand:focus,
+    .navbar-dark .navbar-brand:hover {
+      color: #fff
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, .55)
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: rgba(255, 255, 255, .75)
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #fff
+    }
+
+    .visually-hidden-focusable:not(:focus):not(:focus-within) {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important
+    }
+
+    .d-flex {
+      display: flex !important
+    }
+
+    .align-items-center {
+      align-items: center !important
+    }
+
+
+    .logofooter {
+      display: inline;
+      width: 20px;
+      margin-top: -2px
+    }
+
+    blockquote {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 5px solid #eee;
+      padding: 15px
+    }
+
+    h4 {
+      margin-top: 15px;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      color: #929292;
+      font-size: 17px;
+    }
+
+    h2 {
+      font-family: 'Open Sans';
+      line-height: 1.3;
+    }
+
+    .updated {
+      float: right;
+      font-size: 15px;
+    }
+
+    hr {
+      color: white;
+      margin: 0
+    }
+
+    .w100 {
+      width: 100%;
+    }
+
+    .navbar-brand img {
+      height: 20px;
+      border-right: dotted 1px;
+      padding-right: 10px;
+    }
+
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin-top: 25px;
+      margin-bottom: 10px
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    p {
+      font-family: 'PT Serif', serif;
+      font-size: 20px;
+      color: #2b2929;
+      line-height: 26px;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-family: 'PT Serif', serif;
+      color: #575746;
+    }
+
+    header {
+      background-color: #07082a;
+      border-bottom: 2px solid #f9b22a;
+      background-image: url('images/header-bg.jpg');
+      width: 100%;
+      min-height: 175px;
+
+
+    }
+
+    footer {
+
+      background-image: url('images/header-bg.jpg');
+      width: 100%;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-weight: 400;
+      font-family: 'Open Sans';
+      font-size: 16px
+    }
+
+    #logo {
+      max-width: 100%;
+      max-height: 150px;
+      margin: auto;
+      display: block;
+    }
+
+    .materia {
+      background-color: #f9b22a;
+      color: white;
+      margin-top: 30px;
+      line-height: 40px;
+      font-size: 20px;
+      font-family: "Open Sans";
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    .ftr {
+      border-top: 1px solid #eee;
+      margin-top: 40px
+    }
+
+    .avatar {
+      width: 100%;
+      border-radius: 75px;
+      margin-top: 20px;
+      display: block;
+    }
+
+    .p10px {
+      padding: 10px;
+    }
+
+    .fluid {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%
+    }
+
+    .tcenter {
+      text-align: center
+    }
+
+    p a {
+      font-weight: 600;
+    }
+  </style>
+  <link href="css/css2.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="form/form.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="row d-flex align-items-center w100">
+      <div class="container">
+        <picture>
+
+          <img src="images/topo2.png" id="logo">
+        </picture>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <nav class="navbar navbar-expand navbar-dark color-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#form"><img src="images/g1.png"></a>
+          <div class id>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#form">Sănătate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#form">Politică</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div>
+      <div class="materia">
+        <span>MATERIALE</span><span class="updated"><span id="dadata">
+            <script language="javascript" type="text/javascript">
+              var d = new Date();
+              var month = new Array("01", "02", "03", "04", "05", "06",
+                "07", "08", "09", "10", "11", "12");
+              document.write(d.getDate() + "." + month[d.getMonth()] +
+                "." + d.getFullYear());
+            </script>
+          </span> - <strong>acum 2 ore</strong></span>
+      </div>
+      <h2><strong>Exclusiv pe Fantastic:  <h2><span style="font-weight: bolder;">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">o cremă anti-durere descoperită în China care poate vindeca artrita, osteoartrita, osteoporoza și durerile articulare în 15 zile, pur și simplu distrugând și restabilind articulațiile și oasele în procesul "TRTT"</font>
+              </font>
+            </span></h2></strong></h2>
+      <h4>Vezi următorul articol: Cum a descoperit un cercetător chinez formula acestui proces? Cum poate o cremă analgezică să restabilească articulațiile și oasele în doar 15 zile fără intervenții chirurgicale, proceduri dureroase sau utilizarea de medicamente scumpe și periculoase? Potrivit cercetătorului: "elimină oasele și articulațiile afectate și creează altele noi din cartilajul vechi".</h4>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+
+        <p><strong>Cercetătorul Jin Quon susține că acum mai bine de 10 ani a vindecat complet de artrită neglijată o femeie în vârstă.</strong></p>
+        <p>În interviul de astăzi, el vă va spune cum este posibil acest lucru, cum puteți scăpa de durere și puteți vindeca toate bolile articulare fără intervenții chirurgicale, proceduri dureroase sau medicamente scumpe și periculoase. Urmați instrucțiunile de mai jos și cunoașteți noua cremă anti-durere.</p>
+        <p><strong>Elena: Bună, Dr. Jin Quon. Mulți experți spun că boala articulară și durerea sunt tovarăși obligatorii atunci când împliniți 40 de ani. Sunteți de acord cu asta?</strong></p>
+       
+        <blockquote>
+          <p><i><strong>- Jin Quon </strong>: "Bună! Desigur, acest lucru nu este adevărat. Va depinde de medic dacă știe tratamentul potrivit și dacă dorește să vindece pacientul sau doar să-l înșele.</i></p>
+          <p><i>De fapt,  <strong>articulațiile pot fi restaurate la orice vârstă.</strong></i></p>
+          <p><i>Adică, dacă știm secretul și aducem puțină știință, problemele pot fi rezolvate chiar și acasă și foarte repede.</i></p>
+          <p><i>Mii de oameni au făcut-o deja în Asia, SUA și chiar în Europa și sper că o fac deja în Romania. "</strong>"</i></p>
+        </blockquote>
+        
+        <p><strong>Elena: care este secretul?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "secretul este să înțelegi de ce te doare.</i></p>
+          <p><i>Enciclopediile enumeră 147 de cauze ale <strong>artritei și osteoartritei</strong>, dar, de fapt, motivul este întotdeauna același - articulațiile, vertebrele și cartilajul pierd elasticitatea, de aici durerea.</i></p>
+          <p><i>Se uzează din cauza manipulării necorespunzătoare a corpului, a excesului de greutate și, desigur, a vârstei.</i></p>
+          <p><i>Secretul principal este <strong> <i style="font-weight: 400;"><span style="font-weight: bolder;">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">că articulațiile trebuie restaurate corect, așa cum am aflat, </font>
+                    </font>
+                  </span></i></strong>, și funcționează pentru toată lumea! "</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/3.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: Da, dar după 40 de ani este aproape imposibil să restabilești articulațiile și oasele, nu-i așa?</strong>
+        </p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "<strong>asta e o mare minciună!</strong> În <strong>Europa și SUA, mai mult de 144.000 de oameni nu se îmbolnăvesc</strong>, urmând doar metoda mea și toți au peste 45 de ani."</i></p>
+        </blockquote>
+        <p><strong>Elena: și conform metodei dvs., ați reușit să vindecați oamenii în etapele ulterioare, de exemplu, persoanele aflate într-un scaun cu rotile din cauza bolilor articulare?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Da, am avut 3 cazuri și  <strong>am reușit în toate 3</strong>.</i>
+          </p>
+          <p><i>La început nu au crezut cu adevărat în metoda mea, dar după ce au început să meargă din nou, au fost foarte fericiți și mi-au mulțumit foarte mult, dar  <strong>îmi făceam doar meseria de doctor</strong>.</i></p>
+          <p><i>Dar majoritatea oamenilor care vin la mine sunt oameni obișnuiți de peste 40 de ani care  <strong>se plâng de boli legate de vârstă</strong>.</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/4.jpg" class="fluid">
+          </picture>
+        </a>
+        <blockquote>
+          <p><i>Toată lumea are o problemă foarte asemănătoare: articulațiile și oasele dor. <strong> Ei suferă, suferă durere, chiar este greu să meargă</strong>. Toată lumea se plânge: "de ce eu? De ce doare atât de mult?».</i></p>
+          <p><i>Și spun: <i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">"plânsul și oftatul nu vă vor vindeca</font>
+                </font>
+              </i> <strong>durerea și boala,</strong> urmați exact <strong> ceea ce spun și vă veți face bine!"»</strong></i></p>
+        </blockquote>
+        <p><strong>Elena: ce metode sunt de obicei recomandate de medici care rareori ajută? Și de ce o recomandă tot timpul?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "de obicei, solicită pacienților să efectueze mișcări complexe din <strong>96 de exerciții de gimnastică</strong>.</i></p>
+          <p><i><strong>Aceasta este o metodă extrem de ineficientă, dar în același timp foarte complexă și consumatoare de timp.  </strong>Doare, edte greu, nu ajunge timp pentru a merge la sala de sport.</i></p>
+          <p><i><strong>Acest tip de tratament nu va ajuta cu siguranță</strong>. În curând recurg la operații chirurgicale, care sunt aproape întotdeauna efectuate în grabă,  <strong>ceea ce, de asemenea, nu rezolvă problema</strong>.</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/5.jpg" class="fluid">
+          </picture>
+        </a>
+        <blockquote>
+          <p><i>Apoi merg la proceduri costisitoare, la clinici personale și iau medicamente 
+              <strong>scumpe care dăunează sănătății</strong>.</i></p>
+          <p><i><i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Am avut recent o conversație cu mai mult de 2.000 de medici din Europa și SUA,  </font>
+                </font>
+              </i> <strong>ntroducând o nouă cremă</strong>, iar în prezent majoritatea medicilor nu mai recomandă metode ineficiente.</i></p>
+          <p><i>Dar în România continuă  <strong>să insiste </strong>, și de aceea dau acest interviu pentru că toată lumea să poată vedea că există ceva care funcționează cu adevărat și ajută la durere și boli articulare.</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/6.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: am auzit multe despre masajul sub presiune. Este posibilă ameliorarea durerii prin apăsarea unei anumite părți a corpului?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "poate ameliora sau reduce durerea doar pentru o perioadă scurtă de timp <strong>Dar aceasta nu este o terapie completă. </strong>. Mai devreme sau mai târziu, problema va reveni.</i></p>
+          <p><i>Și, după cum știți, există întotdeauna puțini specialiști buni. Adevărații maeștri pot fi numărați pe degetele de la singură mână.<strong> Și aproape toți trăiesc în țările asiatice  </strong>iar pacienții sunt în întreaga lume.</i></p>
+          <p><i>Dar nu vă disperați. Întotdeauna am știut că <strong>trebuie să existe o metodă mai modernă și mai simplă și am găsit-o</strong>."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/7.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: cât de interesant! Ne puteți spune mai multe despre această metodă? Care este ideea principală? Invenția dvs. permite într-adevăr oamenilor să trăiască fără durere și boli articulare?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "chirurgia, exercițiile, medicamentele periculoase și metodele costisitoare de tratare a bolilor articulare și a durerii sunt tortură și o risipă de bani! Aceste cuvinte ale mele au fost deja confirmate de  <strong>
+            milioane de oameni din întreaga lume</strong>.</i></p>
+          <p><i>După metode riscante care nu lucrează, <strong>mai mult de 144.000 de persoane din Europa și SUA au fost satisfăcute, </strong> deoarece au făcut deja tratament terapeutic cu <a href="#form">Fortuflex</a> și se bucură de corpul lor fără durere.</i></p>
+          <p><i>Clinica noastră a fost prima care a folosit crema  <a href="#form">Fortuflex</a>. Trebuie să recunosc, când am auzit despre asta, eram cam sceptic, pentru că nu am crezut în eficacitatea ei.</i></p>
+          <p><i><strong>Dar am fost șocat când am făcut testele</strong>. Am efectuat un sondaj printre cei care au folosit crema analgezică <a href="#form">Fortuflex</a>.</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/8.jpg" class="fluid">
+          </picture>
+        </a>
+        <blockquote>
+          <p><i>El a arătat că <strong> <i style="font-weight: 400;"><span style="font-weight: bolder;">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">4567 de persoane au scăpat complet</font>
+                    </font>
+                  </span></i></strong> de tot felul de manifestări ale problemelor comune în 15 zile.  <strong>Aceasta este de 94% dintre participanți</strong>.</i></p>
+          <p><i>5,6% dintre participanți au simțit o îmbunătățire semnificativă și doar 0,4% nu au prezentat nicio îmbunătățire timp de 15 zile, dar în a 20-a zi  <strong>au început să apară îmbunătățiri</strong>.</i></p>
+          <p><i>Toți pacienții testați au fost de acord în unanimitate că această metodă este de  <strong>10 ori mai ușoară decât terapia tradițională </strong> recomandată de experți și mult mai bună decât intervenția chirurgicală sau luarea de analgezice pe tot parcursul vieții."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/9.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: deci crema analgezică se numește <a href="#form">Fortuflex</a>?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Exact,  <a href="#form">Fortuflex</a>. L-am numit așa imediat după ce a oprit <strong>suferința</strong> pacienților noștri."</i></p>
+        </blockquote>
+        <p><strong>lena: cum acționeză  <a href="#form">Fortuflex</a> asupra corpului uman?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "nu există niciun miracol aici, este știință pură.  <a href="#form">Fortuflex</a> funcționează atât de bine, deoarece de îndată ce este aplicată, începe imediat să acționeze asupra articulațiilor și inflamației lor, ameliorând durerea timp de 1 oră și ameliorează atacurile dureroase severe.</i></p>
+          <p><i><a href="#form">După aceea, Fortuflex</a> distruge cartilajul deteriorat vechi și creează unul nou fără deteriorare, declanșând procesul TRTT.</i></p>
+          <p><i>TRTT este un proces care elimină cartilajul mort și distruge cartilajul deja afectat de boala articulară, împiedicând răspândirea acestuia.</i></p>
+          <p><i>După îndepărtare, începe procesul de restaurare, ca urmare a introducerii unui <strong>nou cartilaj </strong>în locul celor vechi deteriorate.</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/10.gif" class="fluid">
+          </picture>
+        </a>
+        <blockquote>
+          <p><i><strong> Jin continuă: </strong> de îndată ce organismul detectează efectul TTT, începe 
+              <strong> să ajute și să ofere </strong>oaselor și articulațiilor și mai mult calciu și cartilaj.</i></p>
+          <p><i><strong>După prima utilizare,  <a href="#form">Fortuflex</a> ajută la reducerea durerii, inflamației și leziunilor osoase cauzate de vârstă  </strong>sau alte cauze.</i></p>
+          <p><i><a href="#form">În plus, Fortuflex</a> înșeală creierul, creând impresia că oasele au nevoie de mai multe vitamine, minerale și cartilaje, făcând oasele mai puternice și articulațiile mai mobile și mai puternice.</i></p>
+          <p><i><a href="#form">Fortuflex</a> <i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;"> este singura cremă cu tehnologie TRTT, deci </font>
+                </font>
+              </i> <strong>este diferită de toate celelalte proceduri.</strong>"</i></p>
+        </blockquote>
+
+        <p><strong>Elena: Poate cineva să o folosească?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "astăzi 80% dintre profesioniștii care lucrează în domeniul reumatologiei din SUA și Europa recomandă  <a href="#form">Fortuflex</a> <i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">ca mijloc de ameliorare a durerii,  </font>
+                </font>
+              </i><strong>precum și restaurarea ușoară și rapidă a articulațiilor și oaselor</strong>.</i></p>
+          <p><i><i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Acesta este exact ceea ce recomandă pacienților lor, </font>
+                </font>
+              </i> <strong>deoarece crema nu are efecte secundare, eficacitatea sa a fost dovedită științific și mai mult de 144.000 de mii de pacienți </strong>, și, cel mai important: se potrivește în buzunarul tuturor.</i></p>
+          <p><i>Astfel,<strong> literalmente toată lumea poate aplica  <a href="#form">Fortuflex</a></strong>."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/12.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: conform instrucțiunilor, este suficient să o aplicați de 2 ori pe zi?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Da! Veți simți imediat o eliberare de durere, la scurt timp după ce TRTT începe procesul, ceea ce am explicat mai sus, și după  <strong>TREI ZILE durerea va dispărea complet, 
+              </strong>iar articulațiile și oasele sunt deja în proces de recuperare.</i></p>
+          <p><i>Toată lumea care folosește această cremă se simte foarte bine,  <strong>senzația de durere dispare și viața devine mai ușoară și mai nedureroasă</strong>.</i></p>
+          <p><i>De obicei, atunci când merg sau fac o activitate în care obișnuiau să simtă durere, observă că  <strong> durerea a dispărut fără efort, </strong>doar aplicând  <a
+                href="#form">Fortuflex</a>! Toată lumea este încântată și, în același timp, uimită de rezultate!"</i></p>
+        </blockquote>
+        <p><strong>Elena: deci rezultatele vor fi în trei zile?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "aceasta nu este o știință exactă, unii oameni scapă de durere în prima zi,
+              <strong>alții se simt vindecați de durere în primele 3 zile</strong>... Dar 80% dintre persoanele care au folosit  <a href="#form">Fortuflex</a> au început să obțină 
+              <strong>rezultate reale după trei zile."</strong></i></p>
+        </blockquote>
+
+        <p><strong>Elena: <span style="font-weight: bolder;">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;"> puteți împărtăși cu noi rezultatele acestor oameni?</font>
+              </font>
+            </span></strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Da, desigur. Am cerut permisiunea pentru toate rezultatele, pe care le vom arăta aici. Vrem ca  <a href="#form">Fortuflex</a>
+              <strong> să fie luat în serios ca o cremă anti-durere</strong>.</i></p>
+          <p><i>Pentru a face acest lucru, trebuie să arătăm rezultate și teste reale. Primul test a implicat <strong> 5.000 de voluntari cu dureri articulare severe</strong>, <i>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">artrită, osteoartrită și osteoporoză.</font>
+                </font>
+              </i></i></p>
+          <p><i>Acest medicament a fost utilizat de 2 ori pe zi în cursul terapiei  <strong>și niciunul dintre pacienți nu și-a schimbat ritmul obișnuit de viață</strong>.</i></p>
+          <p><i>Rezultatele testelor (<strong>într-o lună</strong>):</i></p>
+          <p><i><strong>18% dintre pacienți</strong> au scăpat complet de durere și au restaurat articulațiile în 8 zile. </i></p>
+          <p><i><strong>77% dintre pacienți </strong> au scăpat complet de durere și au restaurat articulațiile în 15 zile.  </i>
+          </p>
+          <p><i><strong>4% dintre pacienți </strong>au scăpat de durere în 8 zile, dar au restaurat articulațiile numai în 35 de zile.</i></p>
+          <p><i><strong>Doar 1% dintre pacienți  </strong>au scăpat doar de durere.</i></p>
+          <p><i> <strong>98% dintre pacienți </strong>au depășit artrita, osteoartrita și osteoporoza..</i></p>
+          <p><i>Procesele biologice din organism au fost normalizate - <strong> la 100% dintre pacienți</strong>.</i></p>
+          <p><i>Nu există efecte secundare și nici o dependență -  <strong> la 100% dintre pacienți</strong>."</i></p>
+        </blockquote>
+        <p class="tcenter"><strong>Iată rezultatele celor care au folosit <a href="#form">Fortuflex</a>:</strong></p>
+        <a href="#form">
+          <picture>
+
+            <img src="images/14.jpg" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter"><strong>Rezultat după 21 de zile de utilizare a <a href="#form">Fortuflex</a></strong></p>
+        <a href="#form">
+          <picture>
+
+            <img src="images/15.jpg" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter"><strong>Rezultat după 20 de zile de utilizare a <a href="#form">Fortuflex</a></strong></p>
+        <a href="#form">
+          <picture>
+
+            <img src="images/16.jpg" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter"><strong>Rezultat după 22 de zile de utilizare a <a href="#form">Fortuflex</a></strong></p>
+        <a href="#form">
+          <picture>
+
+            <img src="images/17.jpg" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter"><strong>Rezultat după 26 de zile de utilizare a <a href="#form">Fortuflex</a></strong></p>
+        <p> </p>
+        <p><strong>Elena: <a href="#form">Fortuflex</a> este întotdeauna eficient?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "după cum se poate observa din testele și rezultatele de mai sus, toți pacienții și cei care au folosit  <a href="#form">Fortuflex</a> <strong>au reușit să scape de durere și să vindece bolile articulare</strong>.</i></p>
+          <p><i>Deci, puteți încerca diferite soluții pentru tratamentul articulațiilor și eliminarea durerii. Unele dintre ele implică operații cu efecte secundare periculoase, ceea ce nu se poate  <a href="#form"> spune despre  Fortuflex </a>.</i></p>
+          <p><i>În alte cazuri, trebuie să petreceți ore întregi pe un tratament scump și nefuncțional și chiar să luați medicamente timp de mulți ani, ceea ce dăunează sănătății. Cu un număr atât de mare de opțiuni,
+              <strong>este normal să fii sceptic cu privire la rezultate. </strong>.</i></p>
+          <p><i>Deci, în loc să promiteți ceva, vă încurajez să utilizați 
+              <a href="#form">Fortuflex </a> <strong>timp de 30 de zile!</strong> Vă garantez că veți avea același rezultat bun ca toți cei care l-au folosit!"</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/18.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Elena: doriți să lăsați un mesaj pentru cititorii noștri?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "pentru început, vă voi da doar câteva sfaturi. Acesta este un produs cu care vă puteți vindeca de dureri articulare și boli cum ar fi artrita și osteoartrita. 
+              <strong>Este unul dintre cele mai valoroase produse din lume</strong>.</i></p>
+          <p><i><a href="#form">Formula Fortuflex</a> nclude TRTT, un număr mare de compuși și nutrienți naturali... este mai  <strong>bogat în calciu, magneziu și colagen de tip 2 decât orice alt produs din lume</strong>.</i></p>
+          <p><i>Este important să cumpărați pe site-ul oficial. Numai pe acest site veți fi 100% sigur că veți primi  <a
+                href="#form">originalul Fortuflex</a>.  De asemenea, puteți să o comandați aici. Vreau ca cititorii să fie fericiți și să scape de dureri și boli articulare!</i></p>
+          <p><i>Veți reuși cu siguranță, doar credeți! Cel mai bun lucru este <strong> чsentimentul de bucurie și satisfacție </strong> din faptul că trăiești fără durere și poți face totul fără restricții!</i></p>
+          <p><i>Sper sincer că pot ajuta mulți oameni și că rezultatele prezentate aici vor servi drept motivație pentru atingerea acestui mare obiectiv! Crede în tine și vei putea vindeca acest mare rău!"</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/19.jpg" class="fluid">
+          </picture>
+        </a>
+        <a href="#form">
+          <picture>
+
+            <img src="images/20.png" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter">(Și îl livrăm acasă în termen de 1-3 zile!)</p>
+        <p class="tcenter">Doriți să scăpați de durere?</p>
+
+        <!--Form-->
+        <div id="form">
+
+          <div id="form_image">
+            <div class="form_image_wrap_image">
+              <img src="form/prod.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="form_wrap" id="objectScrollAttention">
+            <form method="POST" geo="ro" action="api.php"
+              onsubmit="return validate_form(this, 'Va rugam sa introduceti un numar de telefon valid');">
+              <label class="descount">Reducere -50%</label>
+
+              <div id="price">
+                <div class="price_new">
+                  190 lei
+                </div>
+                <div class="price_old">
+                  380 lei
+                </div>
+              </div>
+
+              <label class="inp_name">Nume</label>
+              <input name="name" placeholder="" required="" type="text">
+
+              <label class="inp_phone">Telefon</label>
+              <input name="phone" placeholder="" required="" type="tel">
+
+              <input name="subid" type="hidden" value="{subid}">
+              <input name="px" type="hidden" value="{px}">
+              <input name="bayer" type="hidden" value="{bayer}">
+              <br>
+              <button type="submit" class="btnn">COMANDĂ</button>
+
+            </form>
+          </div>
+
+        </div><br>
+        <!--Form END-->
+
+
+        <div class="row ftr">
+          <div class="col-4 col-lg-2 col-md-4 col-sm-4">
+            <a href="#form">
+              <picture>
+
+                <img src="images/dr.jpg" class="avatar">
+              </picture>
+            </a>
+          </div>
+          <div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
+            <h3>Despre interlocutor: Jin Quon</h3>
+            <p>Născut pe 9 mai 1969 în districtul Panyu, Canton, China. La vârsta de 15 ani, sa mutat la Hong Kong, unde a absolvit Facultatea de Medicină a Universității Chineze din Hong Kong. Specializat în reumatologie la Spitalul Gleneagles.</p>
+          </div>
+        </div>
+
+        <a href="#form">
+          <picture>
+
+            <img src="images/21.png" class="fluid">
+          </picture>
+        </a>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <img src="images/g1.png" class="logofooter">   Fantastic site oficial
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+  <link rel="stylesheet" href="/libs/js/gdpr.css">
+  <script>
+    var phonePattern = {
+      'ru': '+7 (___) ___-__-__',
+      'ua': '+38-___-___-__-__',
+      'by': '+375 ___ ___ ___',
+      'kz': '+7 ___ ___ ____',
+      'kg': '+___ ___ __ __ __',
+      'md': '0 ___ _____',
+      'az': '+___-__-___-__-__',
+      'ge': '+995 ___ __ __ __',
+      'es': '+34 ___ __ __ __',
+      'pe': '+51 ___ ___ _?_',
+      'cl': '+56 _ ____ ____',
+      'ar': '+54 __ ____ ____',
+      'co': '+57 _______??_',
+      'mx': '+52 __ ____ ____',
+      'it': '+39-___-___-____',
+      'esp': '+34 ___ __ __ __',
+      'pt': '+351 ___ ___ ___',
+      'prt': '+351 ___ ___ ___',
+      'id': '+62 ___ ___ ___',
+      'gr': '+30 ___ _______',
+      'cy': '+357 __ ______',
+      'ro': '+40 ___ ___ __? _',
+      'bg': '+359 ___ __ __? _',
+      'cz': '+420 ___ ___ ___',
+      'sk': '+421 ___ ___ ___',
+      'si': '+386 _ ___ __ __',
+      'pl': '+48 ___ ___ ___',
+      'al': '+355 __ ___ ____',
+      'rs': '+381 __ _____?_',
+      'ph': '+63 _ ____ __?_',
+      'hu': '+36 _ ___ ____',
+      'hr': '+385 _ ____ __?_',
+      'ba': '+387 __ ______',
+      /* --- */
+    }
+
+    const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+    //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+    function validate_form(form, alert_text = "Please enter valid phone number") {
+      var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+        pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+      if (input_ln >= pattern_ln) return true;
+      else {
+        alert(alert_text);
+        return false;
+      }
+    }
+
+    //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+    document.addEventListener("DOMContentLoaded", function () {
+
+      var isTimeoutSeted = false;
+      var inputInterval;
+
+      function createInterval(input) {
+        if (!isTimeoutSeted) {
+          isTimeoutSeted = true;
+
+          inputInterval = setInterval(() => {
+            input.selectionStart = input.value.length
+            input.setSelectionRange(input.value.length, input.value.length);
+          }, 15)
+        }
+      }
+
+      function deleteInterval() {
+        clearInterval(inputInterval)
+        isTimeoutSeted = false;
+      }
+
+      function setSelectionStart(input) {
+        input.selectionStart = input.value.length
+      }
+
+      function mask(event) {
+        var input = event.currentTarget;
+        var geo = input.form.getAttribute('geo');
+        var matrix = phonePattern[geo];
+        var i = 0;
+        var def = matrix.replace(/\D/g, "");
+        var val = input.value.replace(/\D/g, "");
+
+        if (!event.type == "blur") {
+          setSelectionStart(input)
+        }
+
+        // Ставим интервал для инпута
+        createInterval(input)
+
+        if (event.type == "blur") {
+          // Сбрасываем интервал для инпута
+          deleteInterval()
+          if (input.value.length == 2) {
+            input.value = ""
+          }
+        }
+
+        if (def.length >= val.length) {
+          val = def
+        };
+
+        input.value = matrix.replace(/./g, function (a) {
+          return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+        });
+
+
+      };
+
+      inputs.forEach(input => {
+        input.addEventListener("input", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("focus", mask, false);
+      })
+    });
+
+    $(document).ready(function () {
+      // Load GDPR
+      $(document).gdprCookieLaw({
+        moreLinkHref: '/privacypolicy',
+        theme: 'theme-1',
+        position: 'bottom-right',
+        width: '760px',
+        margin: '15px',
+        animation: 'fade-slide',
+        btnAcceptText: 'Ok'
+      });
+    });
+  </script>
+
+</body>
+
+</html>
