@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="4"></script><title>Fortuflex</title>
+    <style>
+        .countdown-container {
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .countdown-title {
+            margin: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-direction: row;
+            padding: 0 30px;
+            margin-bottom: 48px;
+            width: 377px;
+        }
+        
+        .countdown-number {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .countdown-time {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 83px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #000;
+        }
+        
+        .countdown-text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 23px;
+            text-align: center;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const writeDate = () => {
+            const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+            const week = ['', '', '', '', '', '', ''];
+
+            const date = new Date();
+            const weekDay = week[date.getDay() - 1];
+            const day = date.getDate();
+            const month = months[date.getMonth()];
+            const year = date.getFullYear();
+            document.write(`${day}.${month}.${year}`)
+        }
+    </script>
+    <script>
+        function dtime_nums(d, like_eu) {
+            const now = new Date;
+            now.setDate(now.getDate() + d);
+            let dayNum = "";
+            if (now.getDate() < 10) {
+                dayNum = "0"
+            }
+            dayNum += now.getDate();
+            let monthNum = "";
+            if (now.getMonth() + 1 < 10) {
+                monthNum = "0"
+            }
+            monthNum += now.getMonth() + 1;
+            if (like_eu === true) {
+                document.write(dayNum + "." + monthNum + "." + now.getFullYear())
+            } else {
+                document.write(monthNum + "." + dayNum + "." + now.getFullYear())
+            }
+        }
+    </script>
+    <header class="header">
+        <div class="top-header">
+            <div class="top-header-left">
+                <p style="text-transform: uppercase;" class="top-header__text main-text">
+                    <script>
+                        writeDate()
+                    </script>
+                </p>
+                <ul class="top-header-left__list list-reset">
+                    <li class="top-header-left__item">
+                        <a href="#bay"><img src="fonts/twitter.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href="#bay"><img src="fonts/instagramm.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href="#bay"><img src="fonts/youtub.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href="#bay"><img src="fonts/facebook.svg" alt="social"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-header-right">
+                <a style="padding-right: 10px;" href="#bay"><img src="fonts/search.svg" alt="search"></a>
+                <a style="padding: 11px 37px; background-color: #27AE60;" class="top-header-right__link" href="#bay">SUBSCREVER-SE</a>
+                <a style="padding: 11px 29px;" class="top-header-right__link" href="#bay">ENTRAR</a>
+                <a style="padding: 11px 19px; background: linear-gradient(265.65deg, #1796B4 0%, #21D6CE 100%);;" class="top-header-right__link link__star" href="#bay"><img style="padding-right: 9px;" src="fonts/star.svg">AS MINHAS NOTÍCIAS</a>
+            </div>
+        </div>
+        <div class="main-header">
+
+            <div class="main-header__logo">
+                <a href="#bay"><img src="images/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="bottom-header">
+
+            <ul class="bottom-header__list list-reset">
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">OPINIÃO</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">PORTUGAL</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">LISBOA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">MUNDO</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">POLÍTICA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">JUSTIÇA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">ECONÓMICOS</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">DESPORTO</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">CULTURA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">TECNOLOGIA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">VIDA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">SAÚDE</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="#bay" class="bottom-header__link">UNIDADE DE INVESTIGAÇÃO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-one">
+            <div class="section-one-header-soc">
+                <p class="section-one-soc__title"> Compartir</p>
+                <ul class="section-one-header__list list-reset">
+                    <li class="section-one-header__item">
+                        <a href="#bay"><img src="images/tw.png" alt></a>
+                    </li>
+                    <li class="section-one-header__item">
+                        <a href="#bay"><img src="images/msg.png" alt></a>
+                    </li>
+                    <li class="section-one-header__item">
+                        <a href="#bay"><img src="images/in.png" alt></a>
+                    </li>
+                    <li class="section-one-header__item">
+                        <a href="#bay"><img src="images/fc.png" alt></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container section-one-container">
+                <div class="section-one-img">
+                    <a href="#bay"><img src="images/hero.jpg" alt="hero"></a>
+                </div>
+                <h2 class="section-one__title"><mark>Foi feita justiça: os traficantes que anunciaram medicação para articulações prejudicial e ineficaz foram punidos</mark>
+                </h2>
+            </div>
+        </section>
+        <section class="section-two">
+            <article class="section-two-block">
+                <div class="section-two-air">
+                    <div class="section-two-air__panel">
+                        <a href="#bay"><img src="images/panel_2_vos.png" alt></a>
+                        <a href="#bay"><img style="padding-left: 10px;" src="images/panel_2_X.png" alt></a>
+                    </div>
+                    <div class="section-two-air__content-2">
+                        <p style="margin-bottom:10px;"> Algo indispensable<br> cuando se viaja</p>
+                        <a href="#bay"><img style="margin-bottom:10px;" src="images/rekl1.jpg" alt></a>
+                        <a href="#bay"><img src="images/rekl2.jpg" alt></a>
+                    </div>
+                </div>
+            </article>
+            <div class="container section-two-container">
+                <div class="section-two-content">
+                    <div class="section-two-content-panel">
+                        <div class="section-two-content-panel__left">
+                            <div style="margin: 0;" class="section-two-coments-box">
+                                <div style="padding-right: 7px;" class="section-two-coments__face">
+                                    <div class="section-two-coments__blur">
+                                        <p><a class="med" href="#bay">М</a></p>
+                                    </div>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p style="font-size: 11px; text-transform: uppercase; margin: 0; color: #1796B4;" class="section-two-coments__name">MEDICINA</p>
+                                    <p class="section-two-coments__date_2">
+                                        <script>
+                                            writeDate()
+                                        </script>, 08:50   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two-content-panel__right">
+                            <ul class="list-reset">
+                                <li>
+                                    <a href="#bay"><img width="33px" src="images/panel_star.png" alt></a>
+                                    <p style="text-align: center; color: #1796B4; max-width: 70px;"><a href="#bay">Para os favoritos<br></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_com.png" alt></a>
+                                    <p style="color: #1796B4;"><a href="#bay">Comentar</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_guard.png" alt></a>
+                                    <p style="color: #1796B4;"><a href="#bay">Guardar</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_vos.png" alt></a>
+                                    <p><a href="#bay">Reportar um erro</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_port.png" alt></a>
+                                    <p><a href="#bay">Principal</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="section-two__title">Um escândalo de grande visibilidade eclodiu em Portugal: um grupo de comerciantes de empresas farmacêuticas bem conhecidas está a ser investigado (finalmente!!!). Conspiraram para ter lucro e promover no mercado nacional medicamentos inúteis, ineficazes e caros para tratar a artrite e outras doenças das articulações. O nosso correspondente descobriu como lucraram estes homens de negócios desonestos.</h2>
+                    <p class="section-two__text"><span id="docs-internal-guid-494a6c82-7fff-f574-aaf1-9b2f6fe4f81a"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Em 2020, a polícia do país recebeu numerosas queixas de pessoas enganadas, todas elas comprando medicamentos comuns de marca bem conhecida. Mas não só os medicamentos caros não os ajudaram a lidar com a artrite, osteoartrite e gota ou a reduzir a dor ou inflamação de qualquer forma, mas em alguns casos causaram graves efeitos secundários, até à atrofia completa das articulações! Antônia Costa teve um azar excecional: ela literalmente perdeu a capacidade de andar.</span></span></p>
+                    <p style="text-align: center;">
+                        <a href="#bay"><img style="padding-bottom: 20px;" class="section-two__img" src="images/before_after.jpg" alt="result"></a>
+                    </p>
+                    <p style="text-align: center; width: 100%; margin: 0 auto; margin-bottom: 20px;" class="section-two__text">Antes de utilizar um medicamento para articulações vendido em farmácias.</p>
+                    <div class="section-two__flex">
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img style="padding-bottom: 20px;" class="section-two__img" src="images/hero_1.jpg" alt="result"></a>
+                            <p style="text-align: center; width: 100%; margin: 0 auto; margin-bottom: 20px;" class="section-two__text">9 dias após a utilização da droga de baixa qualidade.</p>
+                        </div>
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img style="padding-bottom: 20px;" class="section-two__img" src="images/yero_2.jpg" alt="result"></a>
+                            <p style="text-align: center; width: 100%; margin: 0 auto; margin-bottom: 20px;" class="section-two__text">15 dias após a utilização da droga de baixa qualidade.</p>
+                        </div>
+                    </div>
+                    <p class="section-two__text">Os preparativos que foram entregues à polícia foram enviados para exame laboratorial. Os peritos ficaram horrorizados ao encontrar neles muitos componentes nocivos, como o formaldeído (utilizado para embalsamar cadáveres), que entre todas essas substâncias eram as menos nocivas! Também continham metais pesados, silicone e muitas outras substâncias. Todos estes componentes contidos em produtos de marcas conhecidas podem causar reações alérgicas, inchaço, inflamação e mesmo necrose de tecidos. Como é que este veneno foi parar ao mercado farmacêutico português?</p>
+                    <h3 class="section-two__main-title">O dinheiro vence a consciência.</h3>
+                    <p class="section-two__text">Como é frequentemente o caso, a culpa é da avarícia humana. Comerciantes de empresas bem conhecidas competiam de forma desleal no mercado. Promoviam marcas que lhes pagaram muito dinheiro por publicidade, subornaram peritos e organizações certificadoras! As pessoas do nosso país foram literalmente enganadas nos bastidores. E tudo teria ficado bem se o produto simplesmente não estivesse à altura do efeito declarado. Mas as autoridades não podiam ignorar os danos diretos para a saúde (sem dúvida, os funcionários têm familiares, que também podem cair nas armadilhas dos comerciantes sem escrúpulos).</p>
+                    <p style="text-align: center;">
+                        <a href="#bay"><img style="padding-bottom: 30px;" src="images/hero_3.jpg" class="section-two__img" alt></a>
+                    </p>
+                    <p class="section-two__text">Agora que a investigação está em curso, 49 pessoas já foram processadas, e a web ainda está a desvendar: todos os envolvidos, incluindo representantes de agências reguladoras que certificam drogas nocivas no nosso país, serão levados à justiça.</p>
+                    <h3 class="section-two__main-title">Um perito do Colégio de Médicos de Portugal</h3>
+
+                    <p style="text-align: center;">
+                        <a href="#bay"><img style="padding-bottom: 20px;" src="images/garcia.jpg" alt class="section-two__img"></a>
+                    </p>
+                    <p style="text-align: center; padding: 0 47px;  margin: 0 auto; margin-bottom: 20px;" class="section-two__text"><span id="docs-internal-guid-12088fe5-7fff-51ab-b690-b39e46678237"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">O Dr. Rogélio Oliveira é um flebologista de primeira classe</span></span> <b>com 32 anos de experiência.</b>
+                    </p>
+
+
+                    <div class="section-two-quots-box">
+                        <span class="section-two__quot-1"><img src="images/quots.png" alt></span>
+                        <p class="section-two-qout__text">É uma situação terrível. As pessoas são o maior bem da nossa nação. Como uma pessoa e como médico, estou indignado. Eles estão a destruir a saúde dos nossos cidadãos apenas por dinheiro. Quando vi a composição destas drogas, magoei literalmente todas as articulações do meu corpo! Isto é um verdadeiro veneno!</p>
+                        <span class="section-two__quot-2"><img src="images/quots.png" alt></span>
+                    </div>
+
+                    <h2 class="section-two__title">Perguntamos ao Dr. Oliveira quais as alternativas disponíveis no país para tratar as articulações. Não há muitos pacientes que estejam dispostos a submeter-se a cirurgia. Não é possível tratar as doenças das articulações de forma não invasiva?</h2>
+
+                    <p class="section-two__text">Antes de mais, só devem ser utilizados produtos naturais: sem conservantes, produtos químicos não orgânicos ou outras impurezas nocivas. A opção ideal é sair para a natureza, recolher várias ervas, mergulhá-las, fervê-las, misturar os extratos, chicoteá-las num creme ou emulsão e aplicá-las na articulação. A natureza tem tudo para manter uma pessoa saudável. E, ao contrário das preparações químicas, os ingredientes naturais são perfeitamente absorvidos pelo nosso corpo.</p>
+                    <p class="section-two__text">Naturalmente, a maioria das pessoas não tem essa opção. Vivemos num ambiente urbano moderno, no século XXI, é pouco provável que os jovens de hoje (e a geração mais velha) saibam sequer um pouco sobre ervas. Mas existem excelentes remédios naturais, incluindo os criados pelos nossos médicos. Por exemplo, o Fortuflex é um produto maravilhoso desenvolvido pelos nossos flebólogos. É um produto absolutamente não-comercial. Não o encontrará em grandes centros comerciais ou farmácias, não o verá publicitado na televisão. Mas ajuda e nunca fere as articulações.</p>
+                    <h2 class="section-two__title">Pedimos aos nossos leitores que nos dissessem mais sobre o assunto.</h2>
+
+                    <div class="section-two-box-title">
+                        <p class="section-two-box__text">"<a href="#bay">Fortuflex</a> é baseado em óleos e ervas orgânicas. É uma fonte 100% natural de condrócitos, o material básico para a construção de juntas (cartilagem, tecido conjuntivo, etc.)."</p>
+                    </div>
+                    <p class="section-two__text">Como é que ocorre a degradação das articulações? Simplificando, a articulação desgasta-se, o tecido conjuntivo afrouxa, as enzimas lubrificantes desaparecem e as diferentes partes da articulação começam a esfregar umas nas outras. Tudo isto acontece por causa da falta de condrócitos. No início, só se ouve um ligeiro estalido, o que é até divertido.</p>
+
+
+                    <p style="text-align: center;">
+                        <a href="#bay"><img style="margin-bottom: 20px;" src="images/stage_co.jpg" alt="stage"></a>
+                    </p>
+
+
+
+                    <p class="section-two__text">A articulação começa então a "contrair-se", e após uma longa caminhada, torna-se inchada, vermelha e dolorosa. O mais insidioso sobre esta doença é que um período agudo pode ser seguido por uma longa remissão, mas uma vez que recaia, pode colocá-lo numa cadeira de rodas para sempre.</p>
+
+                    <a href="#bay"><img style="margin-bottom:30px" src="images/uzi.jpg" alt class="section-two__img"></a>
+
+                    <div class="section-two-box-title">
+                        <p class="section-two-box__text">Se começar a nutrir a articulação com condrócitos, esta começará a sarar a partir de dentro. Com terapia ativa e subsequente profilaxia com<a href="#bay"> Fortuflex</a>, a articulação recuperará<b> 94-96%, o que significa que poderá voltar a viver uma vida plena!</b>
+                        </p>
+                    </div>
+                    <p class="section-two__text">É uma pena que com produtos de tão alta qualidade, eficazes e seguros disponíveis, os nossos cidadãos sejam forçados a comprar produtos nocivos e caros apenas porque os seus fabricantes têm dinheiro para publicidade e subornos de especialistas. Basta olhar para os resultados que os meus pacientes obtiveram após um mês de utilização do Fortuflex. </p>
+
+                    <h2 class="section-two__title">O Dr. Oliveira orgulha-se de mostrar fotografias dos seus pacientes no seu computador de trabalho e, com a sua permissão, publicamo-las aqui.</h2>
+                    <div class="section-two__flex">
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img style="margin-right: 10px;" src="images/before_1.jpg" alt="result"></a>
+                            <p style="text-align: center; max-width: 295px; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2; " class="section-two__text">Antes do tratamento</p>
+                        </div>
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img src="images/after_1.jpg" alt="result"></a>
+                            <p style="text-align: center; width: 100%; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2" class="section-two__text">Após tratamento</p>
+                        </div>
+                    </div>
+                    <div class="section-two__flex">
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img style="margin-right: 10px;" src="images/before_2.jpg" alt="result"></a>
+                            <p style="text-align: center; max-width: 295px; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2; " class="section-two__text">Antes do tratamento</p>
+                        </div>
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img src="images/after_2.jpg" alt="result"></a>
+                            <p style="text-align: center; max-width: 100%; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2" class="section-two__text">Após tratamento</p>
+                        </div>
+                    </div>
+                    <div class="section-two__flex">
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img style="margin-right: 10px;" src="images/before_3.jpg" alt="result"></a>
+                            <p style="text-align: center; max-width: 295px; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2; " class="section-two__text">Antes do tratamento</p>
+                        </div>
+                        <div class="section-two__flex-1">
+                            <a href="#bay"><img src="images/after_3.jpg" alt="result"></a>
+                            <p style="text-align: center; width: 100%; padding:10px 0; margin: 0 auto; margin-bottom: 20px; background-color: #E2E2E2" class="section-two__text">Após tratamento</p>
+                        </div>
+                    </div>
+                    <p class="section-two__text">"Dediquei toda a minha vida ao estudo da flebologia, com mais de 30 anos de trabalho honesto e árduo sob o meu cinto. Lamento, lamento verdadeiramente, que as pessoas sejam capazes de vender deliberadamente produtos de má qualidade na procura de dinheiro. Vou acompanhar de perto a situação e espero que todos os perpetradores sejam punidos e recebam sentenças reais."</p>
+                    <p class="section-two__text">Perguntamos ao médico onde pode comprar <a href="#bay"> Fortuflex</a>, um produto sobre o qual ele, como perito, deu muito boas críticas.  <b>Verificou-se que o produto só pode ser comprado em instituições médicas, <a href="#bay" style="color: #1796B4;"> através do formulário de encomenda oficial ou no website oficial do fabricante</a> - os gigantes da indústria da saúde não deixam este produto entrar no mercado de massas.</b> Não admira, porque os seus produtos, que são 3-5 vezes mais caros, não conseguiam fazer face à concorrência.</p>
+
+                    <div class="section-two-box-title">
+                        <p class="section-two-box__text">Não ponha a sua saúde em risco, cuide de si! E utilizar apenas produtos naturais recomendados por peritos incorruptíveis.</p>
+                    </div>
+
+                    <div id="bay" class="section-two-product">
+                        <a href="#bay"><img class="section-two-product__img" src="images/prod.png" alt></a>
+                        <div style="margin-top: 10px;" class="section-two-product__sert">
+                            <div class="img__product">
+                                <a href="#bay"><img src="images/sert.png" alt></a>
+                            </div>
+
+                            <div class="img__product">
+                                <a href="#bay"><img style="margin-left: 5px;" src="images/sert2.png" alt></a>
+                            </div>
+
+                        </div>
+
+                        <div class="section-two-product-box">
+                            <p class="section-two-product__price">Preço</p>
+                            <p class="section-two-product__old-price">78 €</p>
+                            <p style="font-size: 35px;" class="section-two-product__new-price"> 39 €</p>
+                            <img src="images/sale.png" alt class="section-two-product__sale">
+                            <p class="section-two-product__proc"> DESCONTO</p>
+                            <p class="section-two-product__number"> 50%</p>
+
+                        </div>
+                        <p class="setificat">Certificação de Qualidade</p>
+                    </div>
+                    <div class="container countdown-container">
+                        <h1 class="countdown-title">Hora de fecho promocional</h1>
+                        <div id="countdown" class="countdown">
+
+                            <div class="countdown-number">
+                                <span class="hours countdown-time"> 00</span>
+                                <span class="countdown-text">horas</span>
+                            </div>
+                            <span class="countdown-time">:</span>
+                            <div class="countdown-number">
+                                <span class="minutes countdown-time"> 00</span>
+                                <span class="countdown-text">minutos</span>
+                            </div>
+                            <span class="countdown-time">:</span>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time"> 00</span>
+                                <span class="countdown-text">segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="POST" class="section-two-form">
+                        <label for="name">Nome</label>
+                        <input name="name" required type="text" placeholder="O seu nome">
+                        <label for="phone">Telefone<br>(introduzir o número de telemóvel atual)</label>
+                        <input name="phone" required style="margin-bottom: 40px;" type="tel" 
+						placeholder="O seu número de telefone">
+<input name="subid" type="hidden" value="{subid}">
+<input name="px" type="hidden" value="{px}">
+<input name="bayer" type="hidden" value="{bayer}">
+                        <button type="submit" class="btn-form btn-reset"> ENCOMENDAR</button>
+                    </form>
+                    <div style="padding-left: 20px;" class="section-two-social">
+                        <a class="section-two-social__btn" href="#bay"><img src="images/facebook.png" alt></a>
+                        <a style="margin-left: 10px;" class="section-two-social__btn" href="#bay"><img src="images/twitter.png" alt></a>
+                    </div>
+                    <div style="margin-bottom: 5px; padding-bottom: 30px; border-bottom: 1px solid #1796B4;" class="section-two-content-panel">
+                        <div class="section-two-content-panel__left">
+                            <div style="margin: 0;" class="section-two-coments-box">
+                                <div style="padding-right: 7px;" class="section-two-coments__face">
+                                    <div class="section-two-coments__blur">
+                                        <p><a class="med" href="#bay">М</a></p>
+                                    </div>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p style="font-size: 11px; text-transform: uppercase; margin: 0; color: #1796B4;" class="section-two-coments__name">MEDICINA</p>
+                                    <p class="section-two-coments__date_2">
+                                        <script>
+                                            writeDate()
+                                        </script>, 08:50   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two-content-panel__right">
+                            <ul class="list-reset">
+                                <li>
+                                    <a href="#bay"><img width="33px" src="images/panel_star.png" alt></a>
+                                    <p style="text-align: center; color: #1796B4; max-width: 70px;"><a href="#bay">Para os favoritos<br></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_com.png" alt></a>
+                                    <p style="color: #1796B4;"><a href="#bay">Comentar</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_guard.png" alt></a>
+                                    <p style="color: #1796B4;"><a href="#bay">Guardar</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_vos.png" alt></a>
+                                    <p><a href="#bay">Reportar um erro</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#bay"><img src="images/panel_port.png" alt></a>
+                                    <p><a href="#bay">Principal</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul style="padding-top: 30px; border-top: 1px solid #1796B4;" class="section-two-coments list-reset">
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_1.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Elena</p>
+                                    <p class="section-two-coments__text">Que horror, espero que estas pessoas vão para a prisão!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-20, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_2.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Nati</p>
+                                    <p class="section-two-coments__text">Espero que sim! E gastei muito dinheiro com estes soros e sprays, a publicidade é boa mas não ajuda em nada!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-20, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_3.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Fernanda</p>
+                                    <p class="section-two-coments__text">Eu também uso Fortuflex, <span id="docs-internal-guid-5f96ba71-7fff-7719-9db9-7984eb3bf2c6"><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">é ótimo! E muito mais barato do que as marcas comerciais.</span></span></p>
+
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-26, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_4.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Cristina</p>
+                                    <p class="section-two-coments__text"> Fortuflex é um ótimo produto, sem dúvida. Foi recomendado pelo meu médico e tem sido muito bom no alívio de dores e inchaços e até voltei a correr. Só é problemático comprá-lo porque nunca está em stock porque o fazem em pequenos lotes.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_5.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Luísa</p>
+                                    <p class="section-two-coments__text">Há muito tempo que não confio em empresas farmacêuticas. Eles tentam vender drogas inúteis por muito dinheiro. Devem ir para a prisão.</p>
+
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_6.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Thais</p>
+                                    <p class="section-two-coments__text">Porque está a apagar os meus comentários, escrevi três comentários sobre vários tipos de medicamentos conhecidos que só pioraram as minhas dores nas articulações!!!!!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_7.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Moderador</p>
+                                    <p class="section-two-coments__text">Lamentamos, somos obrigados por lei a retirar as menções de marcas.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_8.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Alexandra</p>
+                                    <p class="section-two-coments__text">Fortuflex foi-me recomendado há algum tempo por uma amiga que trabalha num hospital, ela própria o experimentou. Ela ficou encantada com os resultados, mas eu nunca o comprei. Encomendei-o agora.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_9.jpeg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Isabel</p>
+                                    <p class="section-two-coments__text">Não se arrependerá. Recomendo-o vivamente a todos, já sofro de artrite há mais de 2 anos e já me conformei com ele. Tive dores terríveis, é só dizer, e os meus joelhos estavam sempre a inchar. Foi terrível. Após um curso deste medicamento, sinto que estou a ter a minha vida de volta!</p>
+                                    <img src="images/com_cream_9.png">
+
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_10.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Joana</p>
+                                    <p class="section-two-coments__text">Tenho gota e quando usei o laser não ajudou, mas Fortuflex <span style="background-color: transparent; color: rgb(0, 0, 0); font-family: Arial; font-size: 11pt; white-space: pre-wrap; font-style: inherit;">aliviou a dor e inflamação quase instantaneamente. Agora ando cerca de 2 milhas por dia, enquanto antes não conseguia sequer andar 500 metros..</span><br><span id="docs-internal-guid-802d3dcb-7fff-2ee2-d593-a3e3066329ba"><div><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></div></span></p>
+                                    <img src="images/com_cream_10.png">
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href="#bay"><img src="images/com_face_11.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name">Victor</p>
+                                    <p class="section-two-coments__text">A gota não pode ser tratada com laser!!!!. Não se trata de artrite.</p>
+
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-28, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div style="border-bottom: 1px solid #1796B4; padding-bottom: 30px;" class="section-two-button">
+                        <a style="text-align: center;" href="#bay" class="btn-form"> ENCOMENDAR</a>
+                    </div>
+                    <div class="decoration__box">
+
+                    </div>
+                    <p class="news__title">Subscreva no nosso boletim</p>
+                    <ul class="news-box list-reset">
+                        <li class="news-box__item">
+                            <a href="#bay"><img src="images/news.jpg" alt></a>
+                            <p class="news-box__title">
+                                <a href="#bay"> ECONÓMICOS</a>
+                            </p>
+                            <p class="news-box__date">
+                                <a href="#bay"> </a>
+                            </p>
+                            <p class="news-box__text">
+                                <a href="#bay">A França rejeitou ameaças à indústria pesqueira britânica</a>
+                            </p>
+                        </li>
+                        <li class="news-box__item">
+                            <a href><img src="images/news2.jpg" style="width:195px;height: 195px;" alt></a>
+                            <p class="news-box__title">
+                                <a href="#bay">MUNDO</a>
+                            </p>
+                            <p class="news-box__date">
+                                <a href="#bay"> </a>
+                            </p>
+                            <p class="news-box__text">
+                                <a href="#bay">Isabel II decidiu fazer uma pausa nos eventos públicos</a>
+                            </p>
+                        </li>
+                        <li class="news-box__item">
+                            <a href="#bay"><img src="images/news3.jpg" style="height:195px;" alt></a>
+                            <p class="news-box__title">
+                                <a href="#bay"> ECONÓMICOS</a>
+                            </p>
+                            <p class="news-box__date">
+                                <a href="#bay"> </a>
+                            </p>
+                            <p class="news-box__text">
+                                <a href="#bay">A Austrália começa a lutar contra a influência da China<br> </a>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <article class="section-two-right">
+                    <div class="section-two-air">
+                        <div class="section-two-air__panel">
+                            <a href="#bay"><img src="images/panel_2_vos.png" alt></a>
+                            <a href="#bay"><img style="padding-left: 10px;" src="images/panel_2_X.png" alt></a>
+                        </div>
+                        <div class="section-two-air__content">
+                            <p style="padding-top: 201px; padding-left: 10px;">Até 50% de desconto em voos</p>
+                            <small style="padding-left: 10px;"><a href="#bay" class="link__bay"> leia mais...</a></small>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="tabs">
+                            <div class="tabs__nav tabs-nav">
+                                <div class="tabs-nav__item is-activer" data-tab-name="tab-1"> <a href="#bay" class="link__tab">Mantenha-se atualizado</a></div>
+                                <div class="tabs-nav__item" data-tab-name="tab-2"> <a href="#bay" class="link__tab"> Mais popular</a></div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tab is-activer tab-1">
+                                    <ul class="tabs__list list-reset">
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 02:49   </a></span><a href="#bay">ALEC BALDWIN</a> </p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Alec Baldwin contou pessoalmente aos repórteres sobre Halyna Hutchins pela primeira vez: 'Ela era minha amiga'.</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_1.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 12:27  </a></span><a href="#bay">ONTEM. V NDALOS</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay">Policial na unidade de cuidados intensivos após ataque com bomba de incêndio</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_2.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 01:46  </a></span><a href="#bay"> CLIMA </a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Kate Middleton e o Príncipe William participam na conferência da ONU sobre alterações climáticas</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_3.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 02:25  </a></span> <a href="#bay"> LIONEL MESSI</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Messi responde à pergunta sobre o fim da carreira após o Campeonato do Mundo de 2022</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_4.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 04:55  </a></span>
+                                                <a href="#bay"> ARQUEOLOGIA</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay">Restos de "Ilha Dourada" há muito perdidos descobertos na Indonésia</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_5.png" alt></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab-2">
+                                    <ul class="tabs__list list-reset">
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 02:49   </a></span><a href="#bay"> PABLO ARDILA</a> </p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Mansión y carros de alta gama hicieron caer a Pablo Ardila</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_1.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 12:27  </a></span><a href="#bay"> VÁNDALOS</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Policía está en UCI tras ataque con bomba incendiaria en su rostro</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_2.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 01:46  </a></span><a href="#bay"> GOBIERNO NACIONAL </a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> ¿Cómo reaccionó el mundo político a la renuncia de Ceballos?</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_3.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 02:25  </a></span> <a href="#bay"> CERREJÓN</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Por bloqueos, Cerrejón suspende operaciones desde este domingo</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_4.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href="#bay"> 04:55  </a></span>
+                                                <a href="#bay"> LUIS ANDRÉS COLMENARES</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href="#bay"> Los pecados en la investigación del caso Colmenares</a></p>
+                                                <a href="#bay"><img style="min-width: 50px;" src="images/tab_img_5.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p></p>
+        <p>
+            <a href="privacy.html" target="_blank">Privacy Policy</a>
+        </p>
+    </footer>
+
+
+    <script src="js/tab.js"></script>
+    <script>
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date());
+            var seconds = Math.floor((t / 1000) % 60);
+            var minutes = Math.floor((t / 1000 / 60) % 60);
+            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+
+            return {
+                total: t,
+                hours: hours,
+                minutes: minutes,
+                seconds: seconds
+            };
+        }
+
+        function initializeClock(id, endtime) {
+            var clock = document.getElementById(id);
+            var hoursSpan = clock.querySelector(".hours");
+            var minutesSpan = clock.querySelector(".minutes");
+            var secondsSpan = clock.querySelector(".seconds");
+
+            function updateClock() {
+                var t = getTimeRemaining(endtime);
+
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                    var deadline = new Date(Date.parse(new Date()) + 6 * 1000);
+                    initializeClock('countdown', deadline);
+                }
+
+                hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+                minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+            }
+
+            updateClock();
+            var timeinterval = setInterval(updateClock, 1000);
+        }
+        // initial timer
+        var deadline = new Date(Date.parse(new Date()) + 300000 * 1000);
+        initializeClock("countdown", deadline);
+    </script>
+
+    <script>
+        $("a").click(function() {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html, body').animate({
+                scrollTop: destination
+            }, 2000);
+            return false;
+        });
+    </script>
+
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'br': '+55 __ ___?_ ____',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ___?_',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+
+</body>
+
+</html>
