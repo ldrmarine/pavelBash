@@ -1,4 +1,4 @@
-#form_image {
+﻿#form_image {
     margin: 0 0 -88px 0;
 }
 
@@ -96,6 +96,9 @@ button.btnn {
     color: white;
     font-weight: bold;
     letter-spacing: 5px;
+text-transform: uppercase;
+    font-size: 20px;
+
 }
 
 .sus {
