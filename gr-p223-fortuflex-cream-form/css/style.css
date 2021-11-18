@@ -180,6 +180,8 @@ input{padding-left:5px;height:42px;margin-bottom:10px}
 }
 .super-rotation{-webkit-animation-name:super-rotation;animation-name:super-rotation;-webkit-animation-duration:7s;animation-duration:7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-transition-timing-function:ease-in-out;-o-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}
 .wheel-cursor{user-select:none}
+.header_line_1{text-align:center;background-color: #1b354a;  padding: 15px 0 5px;
+
 @media screen and (max-width:1019px) {
 img{max-width:100%}
 .social_media{display:none}
