@@ -13,7 +13,7 @@
     content: "";
     position: absolute;
     top: 30px;
-    left: 160px;
+    left: 127px;
     background: url(../images/bg-sale2.png);
     width: 124px;
     height: 72px;
@@ -22,6 +22,7 @@
     box-shadow: 15px 12px 14px 0 #00000054;
     background-position: -8px -8px;
     display: block;
+    transform: rotate(7deg);
 }
 
 #form {}
@@ -125,15 +126,4 @@ button.btnn {
 
 .comments_repost_img img {
     transform: scale(1.1);
-}
-@media (max-width: 390px) {
-    .form_image_wrap_image{
-        margin-right: auto;
-        margin-left: 50px;
-    }
-}
-@media (max-width:358px) {
-    .form_image_wrap_image{
-        margin-left: 10px;
-    }
 }
