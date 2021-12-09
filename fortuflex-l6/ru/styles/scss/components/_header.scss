@@ -1,0 +1,32 @@
+.header {
+  @include flex(column, center);
+  position: relative;
+  top: 0;
+  background: #FFD704;
+  box-sizing: border-box;
+  p {
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    @include media-large {
+      font-size: 15px
+    }
+    @include media-lg-tablet {
+      font-size: 13px
+    }
+    @include media-phone {
+      font-size: 10px
+    }
+  }
+  &__content {
+    max-width: $content__width;
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    @include media-large {
+      padding: 1rem 10px;
+    }
+  }
+}

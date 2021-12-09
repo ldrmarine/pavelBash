@@ -1,0 +1,36 @@
+.sect6 {
+    background-image: url(./../../img/sect6_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include media-lg-tablet {
+        background: linear-gradient(95.75deg, #3d5989 1.62%, #011a45 99.6%);
+    }
+    &__main {
+        padding: 62px 0;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 35px;
+        margin-top: 0;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    &__grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 205px;
+        margin: 80px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+    }
+}
