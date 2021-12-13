@@ -2411,6 +2411,10 @@ strong {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+.testimonial-block img{
+  width: 100px;
+  height:auto;
+}
 .testimonial-text_block {
   padding-top: 10px;
   padding-left: 25px;
