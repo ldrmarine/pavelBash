@@ -796,7 +796,7 @@
 }
 .section-7__header {
 	background-color: #81badf;
-	width: 100px;
+	width: fit-content;
 	padding: 0.5rem;
 }
 @media (min-width: 768px) {
