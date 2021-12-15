@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../fonts/Gilroy-SemiBold-dcb.arb.eot');
+    src: url('../fonts/Gilroy-SemiBold-dcb.arb.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-SemiBold-7b7.arb.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiBold-1ed.arb.woff') format('woff'),
+        url('../fonts/Gilroy-SemiBold-474.arb.ttf') format('truetype'),
+        url('../fonts/Gilroy-SemiBold-0b3.arb.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular-584.arb.eot');
+    src: url('../fonts/Gilroy-Regular-584.arb.eot') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular-51f.arb.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular-556.arb.woff') format('woff'),
+        url('../fonts/Gilroy-Regular-0e1.arb.ttf') format('truetype'),
+        url('../fonts/Gilroy-Regular-571.arb.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
