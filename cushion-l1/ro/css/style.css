@@ -110,7 +110,7 @@ section {
 .txt {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 5px;
     text-align: right;
     text-transform: uppercase;
 }
