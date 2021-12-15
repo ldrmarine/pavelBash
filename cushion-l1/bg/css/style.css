@@ -110,7 +110,7 @@ section {
 .txt {
     position: absolute;
     top: 20px;
-    right: 45px;
+    right: 5px;
     text-align: right;
     text-transform: uppercase;
 }
@@ -181,6 +181,7 @@ section {
     font-size: 25px;
     line-height: 29px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .sect2 {
@@ -337,10 +338,13 @@ section {
     font-size: 18px;
     line-height: 21px;
     color: #636363;
-    margin-top: 30px;
+    margin-bottom: 30px;
     outline: none;
 }
-
+.form-text{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
 .footer {
     background-color: #D1D1D1;
     font-size: 12px;
