@@ -797,12 +797,7 @@
 .section-7__header {
 	background-color: #81badf;
 	width: fit-content;
-	padding: 0.5rem;
-}
-@media (min-width: 768px) {
-	.section-7__header {
-		width: 140px;
-	}
+	padding: 5px;
 }
 .section-7__header--title {
 	text-transform: uppercase;
