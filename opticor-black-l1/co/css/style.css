@@ -212,7 +212,7 @@ header {
 
 .productBox {
     position: relative;
-    max-width: 245px;
+    max-width: 220px;
     margin: 0 auto;
 }
 
@@ -604,7 +604,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 .customForm .productBox {
-    margin: -50px auto 0;
+    margin: -20px auto 0;
 }
 
 .objArrow {
@@ -840,7 +840,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     right: 20px;
 }
 
-
+.img_box .img-product{
+    width: 170px;
+    height: auto;
+}
 @media screen and (min-width: 992px) and (max-width: 1360px) {
 
     .container {
@@ -1003,7 +1006,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     .objArrow {
         right: inherit;
         left: 10%;
-        bottom: 0;
+        bottom: -16px;
         -moz-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         -o-transform: rotate(90deg);
