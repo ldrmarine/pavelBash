@@ -5,23 +5,23 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <title> E-Energy </title>
-  <!-- <script type="text/javascript" src="cdn/js/geo/de.js"></script> -->
-  <script src="cdn/js/countries.js"></script>
-  <script src="cdn/js/jquery.js"></script>
-  <script src="cdn/js/ld.js"></script>
-  <script src="main.js"></script>
+  <title>E-Energy</title>
+<meta property="og:title" content="E-Energy"/>
+<meta property="og:description" content="Самый простой способ экономии электроэнергии!"/>
+<meta property="og:image" content="https://i.imgur.com/YgqVW0U.png"/>
+<meta property="og:type" content="website"/>
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
   <link href="fonts.googleapis.com/css-family%3dRoboto-400%2c500%2c700%26subset%3dlatin%2ccyrillic-ext.css"
     rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="index_files/style.min.css">
   <link rel="stylesheet" href="index_files/timer.css">
   <link rel="stylesheet" href="index_files/slider.css">
   <link href="index_files/css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="index_files/timer.js"></script>
   <script src="index_files/slider.js"></script>
   <script src="index_files/script.js"></script>
-  <script src="t.js"></script>
+
 </head>
 
 <body>
@@ -32,8 +32,8 @@
         <div class="teaser lt1">Используйте свои электроприборы как раньше <br class="for990">И ТРАТЬТЕ НА ЭЛЕКТРИЧЕСТВО
           В 2 РАЗА МЕНЬШЕ!</div>
         <div class="prices">
-          <span class="old price_old"><span>78</span><span class="lt2">EUR</span></span><span
-            class="new price_main"><span>39</span><span class="lt3">EUR</span></span>
+          <span class="old price_old"><span>78</span><span class="lt2"> EUR</span></span><span
+            class="new price_main"><span>39</span><span class="lt3"> EUR</span></span>
         </div>
         <div class="timer clearfix">
           <div class="block">
@@ -63,13 +63,19 @@
           <div class="clear"></div>
         </div>
         <div class="label lt9">Заказывайте по цене специального предложения:</div>
-        <form class="order_form hui123" id="form" method="post">
+        <form class="order_form hui123" id="order-form" method="post">
           <label class="inp_name">Имя</label>
           <input class="form-element" name="name" placeholder="" type="text">
           <label class="inp_phone">Номер телефона<br>
             (указывайте свой активный мобильный номер телефона)
           </label>
           <input class="form-element" name="phone" placeholder="" type="text">
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
           <input class="form-element" type="submit" value="ЗАКАЗАТЬ">
         </form>
         <div class="product">
@@ -89,35 +95,35 @@
           снижаются ежемесячные расходы на электроэнергию! С <br class="for990">ЭЛЕКТРОСБЕРЕГАЮЩИМ УСТРОЙСТВОМ ECOENERGY ELECTRICITY SAVER вы будете платить <br class="for990">за электричество на 30-50% меньше, в зависимости от того, какими электроприборами вы пользуетесь.</div>
         <div class="features">
           <div class="feature">
-            <div class="image"><img alt="Стиральная машинка" src="index_files/block2-pic1.jpg"></div>
+            <div class="image"><img alt="" src="index_files/block2-pic1.jpg"></div>
             <div class="proc lt13">
               50%
             </div>
             <div class="text lt14">Кондиционер, стиральная машина, компьютер, фен</div>
           </div>
           <div class="feature">
-            <div class="image"><img alt="Утюг" src="index_files/block2-pic2.jpg"></div>
+            <div class="image"><img alt="" src="index_files/block2-pic2.jpg"></div>
             <div class="proc lt15">
               45%
             </div>
             <div class="text lt16">Электрическая плита, утюг, микроволновая печь, телевизор, отопление</div>
           </div>
           <div class="feature">
-            <div class="image"><img alt="Холодильник" src="index_files/block2-pic3.jpg"></div>
+            <div class="image"><img alt="" src="index_files/block2-pic3.jpg"></div>
             <div class="proc lt17">
               40%
             </div>
             <div class="text lt18">Холодильник, газовый котел с электродвигателем</div>
           </div>
           <div class="feature">
-            <div class="image"><img alt="Электрический чайник" src="index_files/block2-pic4.jpg"></div>
+            <div class="image"><img alt="" src="index_files/block2-pic4.jpg"></div>
             <div class="proc lt19">
               35%
             </div>
             <div class="text lt20">Чайник, кофеварка, лампочки, тостер</div>
           </div>
           <div class="feature">
-            <div class="image"><img alt="Электрическая плита" src="index_files/block2-pic5.jpg"></div>
+            <div class="image"><img alt="" src="index_files/block2-pic5.jpg"></div>
             <div class="proc lt21">
               30%
             </div>
@@ -149,27 +155,27 @@
         <div class="info lt31">экономайзер ECOENERGY ELECTRICITY SAVER пользуется большой популярностью в Европе. Согласно<br class="for990">статистическим исследованиям, энергосберегатель  ECOENERGY ELECTRICITY SAVER приобрела каждая <br class="for990">вторая европейская семья. Теперь это уникальное устройство можно приобрести и у нас!</div>
         <div class="features">
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic1.png">
+            <img alt="" src="index_files/block4-pic1.png">
             <div class="text lt32">Квартиры и частные дома</div>
           </div>
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic2.png">
+            <img alt="" src="index_files/block4-pic2.png">
             <div class="text lt33">Офисы</div>
           </div>
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic3.png">
+            <img alt="" src="index_files/block4-pic3.png">
             <div class="text lt34">Фитнес-центры и салоны красоты</div>
           </div>
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic4.png">
+            <img alt="" src="index_files/block4-pic4.png">
             <div class="text lt35">Магазины</div>
           </div>
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic5.png">
+            <img alt="" src="index_files/block4-pic5.png">
             <div class="text lt36">Кафе и рестораны</div>
           </div>
           <div class="feature">
-            <img alt="Иконка" src="index_files/block4-pic6.png">
+            <img alt="" src="index_files/block4-pic6.png">
             <div class="text lt37">Автосервисы</div>
           </div>
         </div>
@@ -181,8 +187,8 @@
       <div class="content">
         <h2 class="lt38">Закажите EcoEnergy Electricity Saver сейчас по специальной цене!</h2>
         <div class="prices">
-          <span class="old price_old"><span>78</span><span class="lt2">EUR</span></span><span
-          class="new price_main"><span>39</span><span class="lt3">EUR</span></span>
+          <span class="old price_old"><span>78</span><span class="lt2"> EUR</span></span><span
+          class="new price_main"><span>39</span><span class="lt3"> EUR</span></span>
         </div>
         <div class="timer clearfix">
           <div class="block">
@@ -225,22 +231,22 @@
         <h2 class="lt48">Отзывы покупателей о EcoEnergy Electricity Saver</h2>
         <div class="reviews">
           <div class="review">
-            <div class="image"><img alt="Аватар" src="index_files/avatar1.jpg"></div>
+            <div class="image"><img alt="" src="index_files/avatar1.jpg"></div>
             <div class="text lt49">"Это безумие! Устройство меня очень удивило. Честно говоря, я не верил тому, что нашел в Интернете, но после месяца использования у меня уже не осталось никаких сомнений. энергосберегатель ECOENERGY ELECTRICITY SAVER действительно позволяет значительно экономить электроэнергию. Спасибо! Порекомендовал сайт всем своим знакомым".</div>
             <div class="name lt50">Гюнтер</div>
           </div>
           <div class="review">
-            <div class="image"><img alt="Аватар" src="index_files/avatar2.jpg"></div>
+            <div class="image"><img alt="" src="index_files/avatar2.jpg"></div>
             <div class="text lt51">"Спасибо за высокое качество. Покупала подобное энергосберегающее устройство раньше, но оказалось совершенно бесполезным и перестало работать через 2 недели. Повелась на дешевую цену. Затем приобрела это устройство у вас. В прошлом месяце заплатила 80 евро, а не 110-130 евро, как раньше. Сэкономила 30-40 евро. Но я использовала то же оборудование, что и раньше. Очень довольна".</div>
             <div class="name lt52">Леони</div>
           </div>
           <div class="review">
-            <div class="image"><img alt="Аватар" src="index_files/avatar3.jpg"></div>
+            <div class="image"><img alt="" src="index_files/avatar3.jpg"></div>
             <div class="text lt53">Отличное решение для квартиры и офиса. Теперь мы платим за электричество в месяц на 40 евро меньше. Если так пойдет и дальше, то это будет 480 евро в год. Хотя я не так зациклен на экономии, я все же считаю, что не стоит тратить больше, чем необходимо. Зачем выбрасывать деньги в окно?</div>
             <div class="name lt54">Ганс</div>
           </div>
           <div class="review">
-            <div class="image"><img alt="Аватар" src="index_files/avatar4.jpg"></div>
+            <div class="image"><img alt="" src="index_files/avatar4.jpg"></div>
             <div class="text lt55">"Хороший и полезный прибор. С ним цена на электричество не кажется такой дорогой. Окупился всего за 2 месяца".</div>
             <div class="name lt56">Эмма</div>
           </div>
@@ -274,18 +280,18 @@
         </div>
         <div class="steps-content clearfix">
           <div class="step-content step1-content clearfix" style="display: none;">
-            <div class="image right"><img alt="Розетка" src="index_files/block8-pic1.jpg"></div>
+            <div class="image right"><img alt="" src="index_files/block8-pic1.jpg"></div>
             <div class="title lt68">Подключите прибор к любой розетке.</div>
             <div class="text lt69">Начните экономить деньги уже сегодня с помощью уникального ЭЛЕКТРОЭНЕРГОСБЕРЕГАТЕЛЯ  ECOENERGY ELECTRICITY SAVER.</div>
           </div>
           <div class="step-content step2-content clearfix" style="display: none;">
-            <div class="image right"><img alt="Экономия" src="index_files/block8-pic3.jpg"></div>
+            <div class="image right"><img alt="" src="index_files/block8-pic3.jpg"></div>
             <div class="title lt70">Экономьте на счетах за электричество</div>
             <div class="text lt71">Ежемесячные расходы на электроэнергию будут на 30-50% меньше, чем до использования экономайзера ECOENERGY ELECTRICITY SAVER.</div>
             <div class="text lt72">Экономайзер ECOENERGY ELECTRICITY SAVER удаляет реактивную энергию из электросети, снижая нагрузку и, следовательно, потребляемую мощность. Электроприборы потребляют меньше энергии, ваши расходы на электроэнергию снижаются.</div>
           </div>
           <div class="step-content step3-content clearfix" style="display: block;">
-            <div class="image right"><img alt="Зеленый домик" src="index_files/block8-pic2.jpg"></div>
+            <div class="image right"><img alt="" src="index_files/block8-pic2.jpg"></div>
             <div class="title lt73">Ваша сеть будет защищена от неэффективно используемой энергии</div>
             <div class="text lt74">Ваша электросеть будет защищена от неэффективно используемой энергии, электроприборы будут потреблять меньше энергии. Согласно физике, энергия делится на активную и реактивную. Активная энергия полезна и используется электрическими приборами. Реактивная энергия "бесполезна". Она проходит через линии электропередач и создает дополнительную нагрузку на электросеть. Таким образом, увеличивается потребление электроэнергии и создается множество вредных электромагнитных полей.</div>
           </div>
@@ -298,8 +304,8 @@
       <div class="content clearfix">
         <h2 class="lt75">Самый простой способ  <br class="for320">экономии электроэнергии!</h2>
         <div class="prices">
-          <span class="old price_old"><span>78</span><span class="lt2">EUR</span></span><span
-          class="new price_main"><span>39</span><span class="lt3">EUR</span></span>
+          <span class="old price_old"><span>78</span><span class="lt2"> EUR</span></span><span
+          class="new price_main"><span>39</span><span class="lt3"> EUR</span></span>
         </div>
         <div class="timer clearfix">
           <div class="block">
@@ -329,13 +335,19 @@
           <div class="clear"></div>
         </div>
         <div class="label lt83" id="abc">Заказывайте по льготной цене:</div>
-        <form class="order_form hui123" id="form" method="post">
+        <form class="order_form hui123" id="order-form" method="post">
           <label class="inp_name">Имя</label>
           <input class="form-element" name="name" placeholder="" type="text">
           <label class="inp_phone">Номер телефона<br>
             (указывайте свой активный мобильный номер телефона)
           </label>
           <input class="form-element" name="phone" placeholder="" type="text">
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="RU">
           <input class="form-element" type="submit" value="ЗАКАЗАТЬ">
         </form>
         <div class="product">
@@ -349,10 +361,19 @@
   <div id="footer">
     <div class="center-wrapper">
       <div class="content">
-        <p class="footer_leadbit" style="text-align: center; padding: 10px 0 10px 0;">BERNADATTE LTD, Av Ricardo J.
-          Alfaro, Panama International<br><a href="cdn/files/Privacy%20Policy.html" target="_blank"
-            style="color: inherit; text-decoration: none;">Privacy Policy</a> | <a href="http://feedback-team.com/"
-            target="_blank" style="color: inherit; text-decoration: none;">Report</a></p>
+        <p class="footer_leadbit" style="text-align: center; padding: 10px 0 10px 0;">
+			COMPANY
+			<br>
+			ADDRESS
+			<br>
+			© 2013-<script>document.write(new Date().getFullYear())</script> All rights reserved.
+			<br>
+			<img src="icons.png" style="width: auto; max-width:100%; height:auto; margin: auto">
+			<br>
+			<a href="/privacypolicy" target="_blank">Privacy policy</a>
+			<a href="/general-conditions-of-sale" target="_blank">General conditions of sale</a>
+			<a href="/legal-warning" target="_blank">Legal warning</a>
+			</p>
       </div>
     </div>
   </div>
@@ -368,6 +389,24 @@
     });
   </script>
 
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
 
 </body>
 

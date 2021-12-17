@@ -749,7 +749,7 @@ a.to-form:hover {
     }
     #block1 .timer,
     #block9 .timer {
-        padding-bottom: 225px;
+        padding-bottom: 175px;
     }
     .timer {
         margin-left: auto;
@@ -851,10 +851,10 @@ a.to-form:hover {
         margin-left: 125px;
     }
     #block5 .product .rest {
-        left: 57%;
+        left: 66%;
     }
     #block5 .product .line {
-        left: 41%;
+        left: 52%;
     }
     #block6 .reviews .review:first-child {
         border-right: 0;
@@ -960,6 +960,7 @@ a.to-form:hover {
     }
     #block1 .content {
         padding-bottom: 335px;
+        padding-top: 20px;
     }
     #block1 h1, #block5 h2, #block9 h2 {
         font-size: 30px;
@@ -969,7 +970,7 @@ a.to-form:hover {
         font-size: 16px;
     }
     #block1 .product {
-        top: 515px;
+        top: 425px;
     }
     #block2 h2 {
         font-size: 20px;
@@ -1032,7 +1033,7 @@ a.to-form:hover {
         line-height: 23px;
     }
     #block5 .product .rest {
-        left: 55%;
+        left: 66%;
     }
     #block5 .product img {
         margin-left: 30px;
@@ -1084,6 +1085,7 @@ a.to-form:hover {
     }
     #block8 .step-content {
         height: 645px;
+        padding-bottom: 100px;
     }
     #block8 .step-content .title {
         text-align: center;
@@ -1115,7 +1117,7 @@ a.to-form:hover {
         line-height: 23px;
     }
     #block9 .product {
-        top: 360px;
+        top: 320px;
     }
 
 	
