@@ -313,16 +313,10 @@
 					<p class="order-info__price--old" style="text-align:center">256000 pesos</p>
 					<p class="order-info__price--current" style="text-align:center">128000 pesos</p>
 				</div>
-				<p class="certificate__text">Para solicitar <a href="{offer}" target="_blank"> "Opticor"</a> ingrese su nombre, número de teléfono a continuación y haga <br>clic en el botón "Solicitar"</p>
-				<form method="post" class="form" id="form" geo="co" action="api.php" 
-	onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
-					<input type="text" name="name" class="form__input" placeholder="Nombre" required="">
-					<input type="tel" name="phone" class="form__input" placeholder="Teléfono" required="">
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-					<button class="btn-reset form__btn button" type="submit">ORDENAR</button>
-				</form>
+				<p class="certificate__text">Para solicitar <a href="{offer}" target="_blank"> "Opticor"</a> haga <br>clic en el botón "Solicitar"</p>
+				<div class="form" id="form" >
+					<a href="{offer}" target="_blank" class="btn-reset form__btn button" >ORDENAR</a>
+				</div>
 				<p class="certificate__offer">
 					*Oferta especial vence el <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span> </span>
 				</p>
