@@ -457,7 +457,7 @@ a.to-form:hover {
 #block5 .product .rest {
     position: absolute;
     top: 17%;
-    left: 50%;
+    left: 40%;
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
@@ -468,7 +468,7 @@ a.to-form:hover {
     height: 1px;
     position: absolute;
     top: 29%;
-    left: 35%;
+    left: 25%;
     background-color: rgba(255, 255, 255, 0.55);
 }
 #block6 .content {
@@ -851,10 +851,10 @@ a.to-form:hover {
         margin-left: 125px;
     }
     #block5 .product .rest {
-        left: 66%;
+        left: 55%;
     }
     #block5 .product .line {
-        left: 52%;
+        left: 40%;
     }
     #block6 .reviews .review:first-child {
         border-right: 0;
@@ -1033,7 +1033,7 @@ a.to-form:hover {
         line-height: 23px;
     }
     #block5 .product .rest {
-        left: 66%;
+        left: 55%;
     }
     #block5 .product img {
         margin-left: 30px;
