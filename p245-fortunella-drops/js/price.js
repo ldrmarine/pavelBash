@@ -41,12 +41,12 @@ $(function() {
             }
 
             if (sel == 'CY') {
-                $('.old_price_val').html('78');
-                $('.old_price_cur').html('EURO');
-                $('.old_price_sig').html('EURO');
-                $('.new_price_val').html('39');
-                $('.new_price_cur').html('EURO');
-                $('.new_price_sig').html('EURO');
+                $('.old_price_val').html('98');
+                $('.old_price_cur').html('ευρώ');
+                $('.old_price_sig').html('ευρώ');
+                $('.new_price_val').html('49');
+                $('.new_price_cur').html('ευρώ');
+                $('.new_price_sig').html('ευρώ');
                 $('select').val('CY').trigger('change');
                 initializeMask({ mask: "(+357)99999999", removeMaskOnSubmit: false })
             }
