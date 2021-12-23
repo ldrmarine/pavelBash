@@ -2062,13 +2062,6 @@
   font-weight: 400
 }
 
-.x-header-medical .header_mobile .header_mobile-publication span:nth-child(2) {
-  padding-left: 25px;
-  margin-left: 10px;
-  background-image: url(../images/people.png);
-  background-position: left center;
-  background-repeat: no-repeat
-}
 
 .x-header-medical.potency .header_content .header_content_text-holder .header_content-title {
   color: #015b6b;
