@@ -17,13 +17,13 @@ function postDate(sa, countryName, isAbbreviated) {
     msInDay = 86400000,
     counterLength = 90, // Максимальна кількість вімотаних днів. Змінюємо за необхідності.
     months,
-    countryName = countryName || 'pl', // Мова для місяців. 
+    countryName = countryName || 'ro', // Мова для місяців. 
     isAbbreviated = isAbbreviated || false, // Якщо потрібно скорочений варіант місяців з трьох букв, наприклад "янв", "июн", тоді ставим TRUE.
     localDate = new Date();
 
   switch (countryName) {
-    case 'pl': // Poland
-      months = ['Stycznia', 'Lutego', 'Marca', 'Kwietnia', 'Maja', 'Czerwca', 'Lipca', 'Sierpnia', 'Września', 'Października', 'Listopada', 'Grudnia'];
+    case 'ro': // Poland
+      months = ['Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'];
       break;
   }
 
