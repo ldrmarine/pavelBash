@@ -1,0 +1,1053 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="insta-favicon.png">
+
+<script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W846F63');
+    </script>
+
+<title>Error | instasmile</title>
+<meta name="description">
+<meta name="keywords">
+<script src="../js/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../css/mnl6bzk.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="../css/carousel.min.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.default.css">
+<link rel="stylesheet" type="text/css" href="../css/owl-trustpilot.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/modals.css">
+<link rel="stylesheet" href="../css/account.css">
+<link rel="alternate" hreflang="en-gb" href="https://uk.instasmile.com/Error">
+<link rel="alternate" hreflang="en-us" href="https://us.instasmile.com/Error">
+<link rel="alternate" hreflang="en-ca" href="https://ca.instasmile.com/Error">
+<link rel="alternate" hreflang="en-au" href="https://au.instasmile.com/Error">
+<link rel="alternate" hreflang="en-ie" href="https://ie.instasmile.com/Error">
+</head>
+<body>
+ 
+<noscript>
+        <iframe src="../ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+
+<section class="show-desktop p-2 text-white bg-instasmile">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="top_header_rate text-center">
+<text>Use code <b>GIFT20</b> to get a <b>20% discount</b> when you pay in full today!</text>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="top-header">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<div class="top_header_rate">
+<ul>
+<div class="show-desktop">
+<li><img src="../fonts/Footer_Star.svg"></li>
+<li>3,727 customers rate us GREAT</li>
+</div>
+<div class="show-mobile">
+<ul style="padding-left: 0px;">
+<li style="font-size: smaller;"><img src="../fonts/cta-buy-now.svg" style="padding-right: 10px;">12 Month Warranty Included</li>
+</ul>
+</div>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+<div class="top_header_buy text-center">
+<ul>
+<li><img src="../fonts/cta-buy-now.svg"></li>
+<li>Free Shipping</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+<div class="top_header_buy text-center">
+<ul>
+<li><img src="../fonts/cta-buy-now.svg"></li>
+<li>12 Month Warranty Included</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+<div class="top_bar_menu">
+<ul>
+<li><a href="/who-we-are">Who We Are</a></li>
+<li><a href="/faqs">FAQs</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<header class="main-nav-desk">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a class="navbar-brand" href="/"><img src="../fonts/logo-instasmile-strapline-black.svg" class="img-fluid" alt="instasmile"></a>
+<div class="collapse navbar-collapse main_menu_1" id="navbarSupportedContent">
+<ul class="navbar-nav mega-menu">
+<li class="nav-item dropdown menu_depth_0 vertical-center">
+<a class="nav-link dropdown-toggle label-pointer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">How We Can Help</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+<div class="container mega-menu-container">
+<div class="mega-menu-row-empty"></div>
+<div class="row mega-menu-row">
+<div class="col-md-3 mega-menu-clmn text-center">
+ <ul class="nav flex-column">
+<li onclick="location.href='/how-we-can-help/missing-chipped-teeth'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-1">
+<img class="mega-menu-image" src="../fonts/h_icon_1.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-we-can-help/missing-chipped-teeth">
+Missing / Chipped Teeth
+</a>
+</p>
+<p>A cheaper alternative to cosmetic dental treatments</p>
+</li>
+</ul>
+</div>
+<div class="col-md-3 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/how-we-can-help/white-teeth'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-2">
+<img class="mega-menu-image" src="../fonts/h_icon_2.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-we-can-help/white-teeth">
+White Smile
+</a>
+</p>
+<p>Choose the shade you want and get a whiter smile fast</p>
+</li>
+</ul>
+</div>
+<div class="col-md-3 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/how-we-can-help/straighter-smile'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-3">
+<img class="mega-menu-image" src="../fonts/h_icon_3.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-we-can-help/straighter-smile">
+Straighter Smile
+</a>
+</p>
+<p>Instantly straighten your smile without dental procedures</p>
+</li>
+</ul>
+</div>
+<div class="col-md-3 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/how-we-can-help/cosmetic-enhancement'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-4">
+<img class="mega-menu-image" src="../fonts/h_icon_4.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-we-can-help/cosmetic-enhancement">
+Cosmetic Enhancement
+</a>
+</p>
+<p>Clip-on veneers give you a perfect smile in an instant</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</li>
+<li class="nav-item dropdown menu_depth_0 vertical-center">
+<a onclick="location.href='/knowledge-base'" class="nav-link dropdown-toggle label-pointer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Knowledge Base</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+<div class="container mega-menu-container">
+<div class="mega-menu-row-empty"></div>
+<div class="row mega-menu-row">
+<div class="col-md-6 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li class="nav-item">
+<p class="mega_menu_title" style="cursor: default;padding-top: 0px;">
+<b>instasmile can help with</b>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/amelogenesis-imperfecta" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Amelogenesis Imperfecta
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/broken-tooth-teeth" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Broken Teeth
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/chipped-tooth-teeth" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Chipped Teeth
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/cost-of-dentures" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Cost of Dentures
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/missing-teeth-tooth" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Missing Teeth
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/perfect-smile" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Perfect Smile
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/teeth-straightening" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Teeth Straightening
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/teeth-whitening" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Teeth Whitening
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li class="nav-item">
+<p class="mega_menu_title" style="cursor: default;padding-top: 0px;">
+<b>Alternative to</b>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/affordable-dentures" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+ Affordable Dentures
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/clear-invisible-braces" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Clear Invisible Braces
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/cosmetic-dentistry" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Cosmetic Dentistry
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-bonding" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Bonding
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-bridge" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Bridge
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-crown" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Crown
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-implants" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Implants
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-implants-costs" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Implants Costs
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/dental-tooth-cap" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Tooth Cap
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/fake-false-teeth-tooth" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Fake False Teeth
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/false-teeth" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+False Teeth
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/invisalign" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Invisalign
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/tooth-implant" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Tooth Implant
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/tooth-replacement" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Tooth Replacement
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/types-of-braces" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Clear Retainers
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/types-of-dentures" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Partial Dentures
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/types-of-veneers" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Cosmetic Veneers
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/what-are-veneers" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Dental Veneers
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/what-are-porcelain-veneers" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Porcelain Veneers
+</a>
+</p>
+<p style="width: 33%;float: left;">
+<a href="/veneers-price-cost" style="color: black;" onmouseover="this.style='color:#007bff;text-decoration:none;';" onmouseout="this.style='color:black';">
+Expensive Teeth Veneers
+</a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</li>
+<li class="nav-item dropdown menu_depth_0 vertical-center">
+<a class="nav-link dropdown-toggle label-pointer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">How It Works</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+<div class="container mega-menu-container">
+<div class="mega-menu-row-empty"></div>
+<div class="row mega-menu-row">
+<div class="col-md-6 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/how-it-works/process'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-5">
+<img class="mega-menu-image" src="../fonts/h_icon_5.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-it-works/process">
+The Process
+</a>
+</p>
+<p>Custom-fit veneers from the comfort of your home</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/how-it-works/impression-kit-guide'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-6">
+<img class="mega-menu-image" src="../fonts/h_icon_6.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/how-it-works/impression-kit-guide">
+Impression Kit Guide
+</a>
+</p>
+<p>Guiding you through the self-impression process</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</li>
+<li class="nav-item dropdown menu_depth_0 vertical-center">
+<a class="nav-link dropdown-toggle label-pointer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Product Range
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+<div class="container mega-menu-container">
+<div class="mega-menu-row-empty"></div>
+<div class="row mega-menu-row">
+<div class="col-md-4 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/product-range/instasmile-classic'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-7">
+<img class="mega-menu-image" src="../fonts/h_icon_7.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/product-range/instasmile-classic">
+Instasmile Classic
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-md-4 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/product-range/instasmile-dynamic'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-8">
+<img class="mega-menu-image" src="../fonts/icon-instasmile-dynamic-new.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/product-range/instasmile-dynamic">
+Instasmile Dynamic
+</a>
+</p>
+</li>
+</ul>
+</div>
+<div class="col-md-4 mega-menu-clmn text-center">
+<ul class="nav flex-column">
+<li onclick="location.href='/product-range/shade-guide'" class="nav-item">
+<div class="mega-menu-img mega-menu-img-9">
+<img class="mega-menu-image" src="../fonts/h_icon_9.svg">
+</div>
+<p class="mega_menu_title">
+<a class="nav-link" href="/product-range/shade-guide">
+Shades
+</a>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</li>
+<li class="nav-item menu_depth_0 vertical-center">
+<a class="nav-link" href="/results">Results</a>
+</li>
+<li class="nav-item menu_depth_0 vertical-center">
+<a class="nav-link" href="/pricing">Pricing</a>
+</li>
+<li class="nav-item menu-btn">
+<a class="nav-link" href="/smile-assessment-step-1">
+<button class="btn btn-01 header-btn">Get Started</button>
+</a>
+</li>
+</ul>
+</div>
+<div class="menu-right-content vertical-center">
+<ul>
+<li><div class data-toggle="modal" data-target="#globe-modal"><i class="fas fa-globe"></i></div></li>
+<li class="user_login_icon">
+<i class="fas fa-bars"></i><i class="fas fa-user-circle"></i>
+<div class="container account-dropdown-container">
+<div class="user-login-details account-dropdown">
+<ul class="account-dropdown-menu menu-item-alignment">
+<li><a href="/auth/login">Sign In</a></li>
+<li><a href="/auth/registeruser">Register</a></li>
+</ul>
+</div>
+</div>
+</li>
+
+<div class="modal fade globe-modal" id="globe-modal" tabindex="-1" aria-labelledby="lang-modal-label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<div class="language-lightbox">
+<div class="container">
+<div class="lang-lightbox-div">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 light-box-clmn">
+<div><h2>Select your region</h2></div>
+<button type="button" class="close lang-modal-close-btn" data-dismiss="modal" aria-hidden="true">&times; </button>
+</div>
+</div>
+<div class="row lightbox-lang-row">
+<div class="col-1-5">
+<a href="https://uk.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual" style="pointer-events: none">
+<div class="contry-flag"><img src="../fonts/united-kingdom-flag.svg"></div>
+<div class="contry-name"><p>UK</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5">
+<a class="active" href="https://us.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual" style="pointer-events: none">
+<div class="contry-flag"><img src="../fonts/united-states-of-america-flag.svg"></div>
+<div class="contry-name"><p>USA</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5">
+<a href="https://au.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual" style="pointer-events: none">
+<div class="contry-flag"><img src="../fonts/australia-flag.svg"></div>
+<div class="contry-name"><p>Australia</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5">
+<a href="https://ie.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual" style="pointer-events: none">
+<div class="contry-flag"><img src="../fonts/ireland-flag.svg"></div>
+<div class="contry-name"><p>Ireland</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5">
+<a href="https://ca.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual" style="pointer-events: none">
+<div class="contry-flag"><img src="../fonts/canada-flag.svg"></div>
+<div class="contry-name"><p>Canada</p></div>
+</label>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</ul>
+</div>
+</nav>
+</div>
+</header>
+
+
+
+<section id="mobile-menu-nav" class="mobile-menu">
+<div class="row mobile-inner-row-1">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="show-desktop">
+<li><img src="../fonts/Footer_Star.svg"></li>
+<li>3,727 customers rate us GREAT</li>
+</div>
+<div class="show-mobile">
+<ul style="padding-left: 0px;">
+<li style="font-size: smaller;"><img src="../fonts/cta-buy-now.svg" style="padding-right: 10px;">12 Month Warranty Included</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row mobile-inner-row-2">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-inner-clmn-1">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-inner-clmn-2 vertical-center">
+<a class="navbar-brand" href="/"><img src="../fonts/logo-instasmile-mobile.svg" class="img-fluid" alt="instasmile"></a>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-inner-clmn-3 vertical-center">
+<div class="mobile-right-content vertical-center">
+<ul>
+<li><a href="/" style="color: #14181e;"><i class="fas fa-globe"></i></a></li>
+<li class="user_login_icon-mobile"><i class="fas fa-user-circle"></i></li>
+</ul>
+ </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-clmn-menu-1">
+<p class="mobile-menu-btn mobile-menu-btn-1"><a class="btn btn-primary btn-01" role="button" href="/smile-assessment-step-1">Get Started</a></p>
+<p class="mobile-menu-btn mobile-menu-btn-2"><a class="btn btn-primary" href="/auth/login">Sign In</a></p>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-clmn-menu mobile-menu-icon">
+<ul class="menu-item-mobile menu-item-mobile-1">
+<li><a>How We Can Help</a></li>
+<li>
+<a href="/how-we-can-help/missing-chipped-teeth">
+<div class="mega-menu-mob-img mega-menu-mob-img-1">
+<img class="mega-menu-image" src="../fonts/h_icon_1.svg">
+</div>
+Missing / Chipped Teeth
+</a>
+</li>
+<li>
+<a href="/how-we-can-help/white-teeth">
+<div class="mega-menu-mob-img mega-menu-mob-img-2">
+<img class="mega-menu-image" src="../fonts/h_icon_2.svg">
+</div>Whiter Smile
+</a>
+</li>
+<li>
+<a href="/how-we-can-help/straighter-smile">
+<div class="mega-menu-mob-img mega-menu-mob-img-3">
+<img class="mega-menu-image" src="../fonts/h_icon_3.svg">
+</div>
+Straighter Smile
+</a>
+</li>
+<li>
+<a href="/how-we-can-help/cosmetic-enhancement">
+<div class="mega-menu-mob-img mega-menu-mob-img-4">
+<img class="mega-menu-image" src="../fonts/h_icon_4.svg">
+</div>
+Cosmetic Enhancement
+</a>
+</li>
+</ul>
+<ul class="menu-item-mobile menu-item-mobile-1">
+<li>
+<a href="/knowledge-base">
+Knowledge Base
+</a>
+</li>
+</ul>
+<ul class="menu-item-mobile menu-item-mobile-1">
+<li><a>How It Works</a></li>
+<li>
+<a href="/how-it-works/process">
+<div class="mega-menu-mob-img mega-menu-mob-img-5">
+<img class="mega-menu-image" src="../fonts/h_icon_5.svg">
+</div>
+The Process
+</a>
+</li>
+<li>
+<a href="/how-it-works/impression-kit-guide">
+<div class="mega-menu-mob-img mega-menu-mob-img-6">
+<img class="mega-menu-image" src="../fonts/h_icon_6.svg">
+</div>
+Impression Kit Guide
+</a>
+</li>
+</ul>
+<ul class="menu-item-mobile menu-item-mobile-2 mobile-menu-icon">
+<li>Product Range</li>
+<li>
+<a href="/product-range/instasmile-classic">
+<div class="mega-menu-mob-img mega-menu-mob-img-7">
+<img class="mega-menu-image" src="../fonts/h_icon_7.svg">
+</div>
+Instasmile Classic
+</a>
+</li>
+<li>
+<a href="/product-range/instasmile-dynamic">
+<div class="mega-menu-mob-img mega-menu-mob-img-8">
+<img class="mega-menu-image" src="../fonts/icon-instasmile-dynamic-new.svg">
+</div>
+Instasmile Dynamic
+</a>
+</li>
+<li>
+<a href="/product-range/shade-guide">
+<div class="mega-menu-mob-img mega-menu-mob-img-9">
+<img class="mega-menu-image" src="../fonts/h_icon_9.svg">
+</div>
+Shades
+</a>
+</li>
+</ul>
+<div class="mobile-menu-without-child">
+<div>
+<ul class="menu-item-mobile">
+<li><a href="/results">Results</a></li>
+<li><a href="/who-we-are">Who We Are</a></li>
+</ul>
+</div>
+<div>
+<ul class="menu-item-mobile">
+<li><a href="/pricing">Pricing</a></li>
+<li><a href="/faqs">FAQs</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="mobile-menu-nav" class="mobile-header-sec">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-clm-1 vertical-center">
+<span class="mobile_bar_i" style="font-size:20px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-clm-2">
+<a class="navbar-brand" href="/"><img src="../fonts/logo-instasmile-mobile.svg" class="img-fluid" alt="instasmile"></a>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-clm-3 vertical-center">
+<div class="mobile-right-content vertical-center">
+<ul>
+<li><div class data-toggle="modal" data-target="#globe-modal-mob"><i class="fas fa-globe"></i></div></li>
+<li class="user_login_icon-mobile user-login-icon-click">
+<i class="fas fa-user-circle"></i>
+<div class="account-dropdown-container-mob">
+<div class="user-login-details-mob account-dropdown-menu-mob">
+<ul class="account-dropdown-menu-mob">
+<li><a href="/auth/login">Sign In</a></li>
+<li><a href="/auth/registeruser">Register</a></li>
+</ul>
+</div>
+</div>
+</li>
+<div class="modal fade globe-modal" id="globe-modal-mob" tabindex="-1" aria-labelledby="lang-modal-label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<div class="language-lightbox">
+<div class="container">
+<div class="lang-lightbox-div">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 light-box-clmn">
+<div><h2>Select your region</h2></div>
+<button type="button" class="close lang-modal-close-btn" data-dismiss="modal" aria-hidden="true">&times; </button>
+</div>
+</div>
+<div class="row lightbox-lang-row">
+<div class="col-1-5 tenant-selector">
+<a href="https://uk.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual">
+<div class="contry-flag"><img src="../fonts/united-kingdom-flag.svg"></div>
+<div class="contry-name"><p>UK</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5 tenant-selector">
+<a class="active" href="https://us.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual">
+<div class="contry-flag"><img src="../fonts/united-states-of-america-flag.svg"></div>
+<div class="contry-name"><p>USA</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5 tenant-selector">
+<a href="https://au.instasmile.com">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual">
+<div class="contry-flag"><img src="../fonts/australia-flag.svg"></div>
+<div class="contry-name"><p>Australia</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5 tenant-selector">
+<a href="https://ie.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual">
+<div class="contry-flag"><img src="../fonts/ireland-flag.svg"></div>
+<div class="contry-name"><p>Ireland</p></div>
+</label>
+</div>
+</a>
+</div>
+<div class="col-1-5 tenant-selector">
+<a href="https://ca.instasmile.com/error">
+<input type="radio" name="archKey" class="d-none" id="archKey-dual" value="dual">
+<div class="lang-div">
+<label for="archKey-dual">
+<div class="contry-flag"><img src="../fonts/canada-flag.svg"></div>
+<div class="contry-name"><p>Canada</p></div>
+</label>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</ul>
+</div>
+</div>
+<script>
+    $(".tenant-selector").click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    });
+</script>
+</div>
+</div>
+</section>
+<section class="show-mobile p-2 text-white bg-instasmile">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="top_header_rate text-center">
+<text>Use code <b>GIFT20</b> to get a <b>20% discount</b> when you pay in full today!</text>
+</div>
+</div>
+</div>
+</div>
+</section>
+<form style="display:none;" id="logoutFormHeader" method="post" action="/auth/logout"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8Bhkg-7CQSdIqEh2R-uLkBMkWQ8CuxqUb-nX2E176oKAEmECAK0j4EPXfMy6cSkUWRzwPqpskWrR7nKWKXYka858ZDRvHrHAYXYhPlrlEfP2-NToUS0SP50IbpJZ-ONLkZ1WewNLVF9hcAJ2DhJtCGU"></form>
+
+
+<script>
+    /* Start  Show User Login Details On Click */
+    $(document).ready(function () {
+        $('.user-login-icon-click').on('click', function () {
+            $('.account-dropdown-container-mob').toggle();
+        });
+    });
+    /* End Show User Login Details On Click */
+    function openNav() {
+        document.body.style.overflowY = "hidden";
+        $("#mobile-menu-nav").animate({
+            left: "+=380"
+        }, 200, "linear", function () {
+            // Animation complete.
+        });
+        setTimeout(function () {
+            $("body").addClass("overlay-bg");
+        }, 100);
+    }
+    function closeNav() {
+        $("#mobile-menu-nav").animate({
+            left: "-=380"
+        }, 200, "linear", function () {
+            // Animation complete.
+        });
+        document.body.style.overflowY = "inherit";
+        setTimeout(function () {
+            $("body").removeClass("overlay-bg");
+        }, 350);
+    }
+    /* Start Image Preloader Js */
+    $(document).ready(function () {
+        $.preloadImages = function () {
+            for (var i = 0; i < arguments.length; i++) {
+                $("<img />").attr("src", arguments[i]);
+            }
+        }
+        $.preloadImages("https://cdn.instasmile.com/new-website/images/h_icon_1_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_2_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_3_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_4_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_5_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_6_hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_7_hover.svg", "https://cdn.instasmile.com/new-website/images/icon-instasmile-dynamic-hover.svg", "https://cdn.instasmile.com/new-website/images/h_icon_9_hover.svg");
+    });
+</script>
+<main role="main">
+<section class="general-error-page page-template" style="padding: 30px;">
+
+<section class="general-error-section">
+<div class="container">
+<div class="row general-error-row">
+<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 vertical-center general-error-clmn-1 general-error-clmn">
+<div class="general-error-content">
+<h1>Oops!</h1>
+<h2>We can’t find the page you’re looking for.</h2>
+<p class="general-error-code">Error code: 404</p>
+<p>Here are some helpful links instead:</p>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/how-it-works/process">The Process</a></li>
+<li><a href="/how-it-works/impression-kit-guide">Impression Kit Guide</a></li>
+<li><a href="/product-range/instasmile-classic">Instasmile Classic</a></li>
+<li><a href="/product-range/instasmile-dynamic">Instasmile Dynamic</a></li>
+<li><a href="/product-range/shade-guide">Shades</a></li>
+<li><a href="/results">Results</a></li>
+<li><a href="/pricing">Pricing</a></li>
+<li><a href="/faqs">FAQ’s</a></li>
+<li><a href="/smile-assessment-step-1">Get Started</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 general-error-clmn-2 general-error-clmn">
+<img src="general-error-img.png">
+</div>
+</div>
+</div>
+</section>
+
+</section>
+</main>
+
+<footer class="footer-1">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 vertical-center">
+<div class="footer_star"><img src="../fonts/Footer_Star.svg">&emsp;3,727 customers rate us GREAT</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 vertical-center show-desktop">
+<div class="footer_buy"><img src="../fonts/cta-buy-now.svg">&emsp;Free Shipping</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 vertical-center show-desktop">
+<div class="footer_buy"><img src="../fonts/cta-buy-now.svg">&emsp;12 Month Warranty Included</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vertical-center show-mobile" style="text-align: center;">
+<div class="checkout-header-center">
+<p><img class="top-star-img" src="../fonts/Footer_Star.svg">3,727 customers rate us GREAT</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 vertical-center">
+<div class="footer_pay" style="display: contents;"><img alt="Merchants Banner" src="Payment_Type_3-2.png" style="max-height:100%"></div>
+
+</div>
+</div>
+</div>
+</footer>
+
+
+<footer class="footer-2">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-2-clmn-1">
+<div class="footer_logo"><a href="/"><img src="../fonts/logo-instasmile-white.svg"></a></div>
+<p class="footer_intro">We believe everyone deserves a perfect smile. That’s why we create affordable alternatives to dental veneers. Discover your confidence.</p>
+<a class="btn btn-primary footer-btn-1" role="button" href="/smile-assessment-step-1">Get Started</a>
+<a class="btn btn-primary footer-btn-2" role="button" href="/auth/login">Sign in <i class="fa fa-user" aria-hidden="true"></i></a>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-2-clmn-2">
+<div class="footer_menu_1">
+<ul>
+<li><a>How We Can Help</a></li>
+<li><a href="/how-we-can-help/missing-chipped-teeth">Missing / Chipped Teeth</a></li>
+<li><a href="/how-we-can-help/white-teeth">Instant White Smile</a></li>
+<li><a href="/how-we-can-help/straighter-smile">Straighter Smile</a></li>
+<li><a href="/how-we-can-help/cosmetic-enhancement">Cosmetic Enhancement</a></li>
+</ul>
+<ul>
+<li><a>How It Works</a></li>
+<li><a href="/how-it-works/process">The Process</a></li>
+<li><a href="/how-it-works/impression-kit-guide">Impression Kit Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-2-clmn-3">
+<div class="footer_menu_2">
+<ul>
+<li><a>Product Range</a></li>
+<li><a href="/product-range/instasmile-classic">Instasmile Classic</a></li>
+<li><a href="/product-range/instasmile-dynamic">Instasmile Dynamic</a></li>
+<li><a href="/product-range/shade-guide">Shades</a></li>
+<li><a></a></li>
+</ul>
+<ul>
+<li><a href="/results">Results</a></li>
+</ul>
+<ul>
+<li><a href="/pricing">Pricing</a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-6 footer-Mobile-menu">
+<ul>
+<li><a>How It Works</a></li>
+<li><a href="/how-it-works/process">The Process</a></li>
+<li><a href="/how-it-works/impression-kit-guide">Impression Kit Guide</a></li>
+</ul>
+</div>
+<div class="col-sm-6 col-md-6 footer-Mobile-menu">
+<ul>
+<li><a href="/results">Results</a></li>
+<li><a href="/pricing">Pricing</a></li>
+<li><a href="/faqs">FAQs</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 footer-2-clmn-4">
+<div class="footer_menu_3">
+<ul>
+<li><a href="/who-we-are">Who We Are</a></li>
+<li><a href="/faqs">FAQs</a></li>
+<li><a href="/knowledge-base">Knowledge Base</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer_social_media">
+<ul>
+<li><a href="https://www.instagram.com/instasmile_usa" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.facebook.com/instasmileUS/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/instasmile" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.youtube.com/c/INSTAsmilecliponveneers" target="_blank"><i class="fab fa-youtube"></i></a></li>
+<li><a href="https://uk.trustpilot.com/review/instasmile.com" target="_blank"><img src="footer_Trsutpilot_icon.png"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<footer class="footer-3">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 footer-3-clmn-1">
+<p>instasmile® - all rights reserved</p>
+</div>
+<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 footer-3-clmn-2">
+<div class="policy-link"><a href="/terms-and-conditions">Terms & Conditions</a>&emsp;&emsp;<a href="/privacy-policy">Privacy Policy</a></div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<script>
+    function initFreshChat() {
+        window.fcWidget.init({
+            token: "de4af32d-9cc2-4796-aa52-a1ec7ba3be66",
+            host: "https://wchat.eu.freshchat.com"
+    });
+  }
+    function initialize(i, t) { var e; i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0, e.src = "https://wchat.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e)) } function initiateCall() { initialize(document, "freshchat-js-sdk") } window.addEventListener ? window.addEventListener("load", initiateCall, !1) : window.attachEvent("load", initiateCall, !1);
+</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/carousel.min.js"></script>
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/site.js"></script>
+
+</body>
+</html>
