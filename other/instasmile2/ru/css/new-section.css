@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   background-color: #dff7f3;
 }
+.new-section__title{
+  text-align: center;
+}
 .new-section__item{
   background-color: #f4f5f9;
   padding: 20px 10px;
@@ -83,6 +86,15 @@
   transform: translate(-50%);
   margin: 0;
 }
+
+.order{
+  padding: 50px 0;
+}
+.order__title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 991px) {
   .new-section__item{
     flex: 0 0 45%;
