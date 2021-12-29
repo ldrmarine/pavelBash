@@ -3198,7 +3198,7 @@ div.lightplayer div.playlist a.next {
 
 @media (max-width: 767px) {
     #glb-corpo {
-        width: 95%; 
+        width: 100%; 
     }
     .foto strong {
         font-size: 120%;
