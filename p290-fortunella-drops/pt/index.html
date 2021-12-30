@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en-US"
+<html lang="en"
   class="theme--responsive device--type-desktop device--platform-web device--size- content--type-article context--slug-sanjay-gupta-prescription-for-fighting-off-dementia-keep-sharp page--type-news-item show--name-sunday-morning has__article-hero-video-player smart-banner-breaking-news--visible soft-login-gate--hidden smart-banner-download--hidden has__top-ad-container--display push-notifications--can-subscribe push-notifications-primer--hidden">
 
 <head prefix="og: http://ogp.me/ns#">
@@ -184,92 +184,111 @@
 
   <style type="text/css">
     /*HEADERS*/
-    .headers {
-      display: block;
-      margin-bottom: 30px;
-      cursor: pointer;
+    .header {
+      background-color: #1E6DA3;
     }
 
-    .headers img {
-      width: 100%;
+    .header_desktop {
+      max-width: 1360px;
+      margin: 0 auto;
     }
 
-    .header-sm,
-    .header-m {
-      display: none;
+    .header_content {
+      display: flex;
+      justify-content: space-between;
+      background-color: #1E6DA3;
+      align-items: center;
+      padding: 15px;
     }
 
-    @media screen and (max-width: 992px) {
-      .header-pc {
-        display: none;
-      }
-
-      .header-sm {
-        display: block;
-      }
+    .header-btns {
+      display: flex;
+      align-items: center;
     }
 
-    @media screen and (max-width: 660px) {
-
-      .header-pc,
-      .header-sm {
-        display: none;
-      }
-
-      .header-m {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      .headers {
-        margin-bottom: 0 !important;
-      }
+    .header-btns__social {
+      display: flex;
+      align-items: center;
     }
 
-    /*FOOTER*/
-    .footers {
-      display: block;
-      /*margin-bottom: 30px;*/
+    .header-btns__flag {
+      margin-right: 20px;
     }
 
-    .footers img {
-      width: 100%;
+    .header-btns__item:not(:last-child) {
+      margin-right: 20px;
     }
+    .header-menu{
 
-    .footer-sm,
-    .footer-m {
-      display: none;
+      padding: 0 15px;
     }
-
-    @media screen and (max-width: 992px) {
-      .footer-pc {
-        display: none;
-      }
-
-      .footer-sm {
-        display: block;
-      }
+    .header_menu ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
     }
-
-    @media screen and (max-width: 660px) {
-
-      .footer-pc,
-      .footer-sm {
-        display: none;
-      }
-
-      .footer-m {
-        display: block;
-      }
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-
-    .content__body {
-      margin-top: 0;
-    }
+    .logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+}
+.logo-dil {
+    font-weight: 400;
+    opacity: .7;
+}
+.header_menu ul li a p {
+    padding: 10px 20px;
+    color: #fff;
+    margin:0;
+} .header_menu ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+ .header_mobile-publication {
+    color: #767676;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    display: none;
+}
+.header-burger{
+  width: 38px;
+  height: 100%;
+  display: none;
+}
+.header-burger__line{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+}
+.header-burger__line:not(:last-child){
+  margin-bottom: 10px;
+}
+@media (max-width:768px) {
+  .header_mobile-publication{
+    display: block;
+  }
+  .header_menu{
+    display: none;
+  }
+  .header-burger{
+    display: block;
+  }
+  .header-btns__social{
+    display: none;
+  }
+}
   </style>
 
   <link href="css/aos.css" rel="stylesheet">
@@ -279,11 +298,75 @@
 
 <body>
 
-  <a href="{offer}" target="_blank" class="headers">
-    <img class="header-pc" src="images/h-pc.png">
-    <img class="header-sm" src="images/h-sm.png">
-    <img class="header-m" src="images/h-m.png">
-  </a>
+  <header class="header">
+    <div class="header_desktop">
+      <div class="header_content">
+        <div class="header_content_text-holder">
+          <div class="logo">
+            notícias<span class="logo-dil">ao</span>minuto
+          </div>
+        </div>
+        <div class="header-btns">
+          <a href="#form" class="header-btns__flag">
+            <img src="./images/flag.png" alt="" class="header-btns__icon">
+          </a>
+          <div class="header-btns__social">
+            <a href="#form" class="header-btns__item">
+              <img src="./images/fb.svg" alt="" class="header-btns__icon">
+            </a>
+            <a href="#form" class="header-btns__item">
+              <img src="./images/tw.svg" alt="" class="header-btns__icon">
+            </a>
+            <a href="#form" class="header-btns__item">
+              <img src="./images/s-1.svg" alt="" class="header-btns__icon">
+            </a>
+          </div>
+          <a href="#form" class="header-burger">
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+            <span class="header-burger__line"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header_menu">
+        <ul>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>SOBRE NÓS</p>
+            </a>
+          </li>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>AO HOJE</p>
+            </a>
+          </li>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>ARTIGOS</p>
+            </a>
+          </li>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>CENTRO DE DIAGNÓSTICO</p>
+            </a>
+          </li>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>NOSSOS EXPERTADORES</p>
+            </a>
+          </li>
+          <li>
+            <a href="#form" rel="noopener noreferrer">
+              <p>JUNTE-SE A NÓS</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="header_mobile-publication">Publicado <span class="date-day"></span>.<span
+          class="date-mont"></span>.<span class="date-year"></span></p>
+    </div>
+  </header>
 
   <div class="container slug--sanjay-gupta-prescription-for-fighting-off-dementia-keep-sharp type--content-article">
     <div class="row">
@@ -293,12 +376,10 @@
 
             <section class="content__body">
 
-              <h1>Эксклюзив на TVA: 1 капля этого средства может растопить до 3.2 кг жира в неделю.
+              <h1>Exclusivo no TVA: 1 gota deste produto pode derreter até 3,2 kg de gordura numa semana.
               </h1>
 
-              <p style="padding-right: 20px; padding-left: 20px">Посмотрите, как Дженнифер Лопес (52) похудела на 14 кг,
-                а Ким Кардашьян (41) - на 17 кг за короткое время. (<span style="color: red;">ВНИМАНИЕ:</span> Это не о
-                бариатрии, диетах или физических упражнениях)</p>
+              <p style="padding-right: 20px; padding-left: 20px">Ver como Jennifer Lopez (52) perdeu 14kg e Kim Kardashian (41) perdeu 17 kg num curto espaço de tempo. (<span style="color: red;">AVISO:</span> Não se trata de bariátricos, dietas ou exercício)</p>
               <!-- <img src="img/portais.png" style="width: 100%" class="img-responsive"> -->
               <img src="images/simone2.png" class="img-responsive" style="width: 100%">
               <!-- <p class="m-t-25">
@@ -348,154 +429,122 @@
                      </strong>
                   </p> -->
 
-              <p class="m-t-25"><strong>Как и 3 миллиона португальцев, Дженнифер Лопес страдает от проблем с весом.
-                  Сегодня Дженнифер говорит, что ее жизнь так же хороша, а тело так же стройно, как и в 18 лет.</strong>
+              <p class="m-t-25"><strong>Tal como 3 milhões de portugueses, Jennifer Lopez sofre de problemas de peso. Hoje, Jennifer diz que a sua vida é tão boa e que o seu corpo é tão magro como quando tinha 18 anos.</strong>
               </p>
 
               <p class="m-t-25">
                 <span
-                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">Д</span>женнифер
-                Лопес пробовала бариатрию, физические упражнения и диеты, но безрезультатно. На самом деле, она получила
-                противоположные результаты, в долгосрочной перспективе с помощью бариатрии, неправильных диет и
-                физических упражнений она набрала вес, и это повредило ее здоровью.
+                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">J</span>ennifer Lopez tentou a bariátrica, o exercício e as dietas, mas em vão. De facto, obteve os resultados contrários, a longo prazo com a bariatrica, dietas inadequadas e exercício físico, ganhou peso e isso prejudicou a sua saúde.
 
               </p>
-              <p class="m-t-25">Дженнифер рассказывает, что в результате побочных эффектов ожирения она страдала потерей
-                памяти, пищеводным рефлюксом и анемией.</p>
+              <p class="m-t-25">Jennifer diz ter sofrido perda de memória, refluxo esofágico e anemia como resultado dos efeitos secundários da obesidade.</p>
               <p class="m-t-25">
-                Тысячи португальцев разделяют те же опасения. Недавнее исследование, проведенное в США среди мужчин и
-                женщин старше 40 лет, перенесших бариатрическую операцию, показало, что 70% из них страдали от анемии, и
-                у них развилась анорексия.
+                Milhares de portugueses partilham os mesmos receios. Um estudo recente dos EUA sobre homens e mulheres com mais de 40 anos que foram submetidos a cirurgia bariátrica revelou que 70% sofriam de anemia e desenvolveram anorexia.
               </p>
               <img src="images/121.jpg" style="width: 100%">
               <p class="m-t-25">
-                Полная решимости найти выход из ситуации, Дженнифер искала различные методы лечения...
+                Determinada a encontrar uma saída, a Jennifer procurou diferentes tratamentos.
               </p>
               <p class="m-t-25">
-                Но большинство из них имели те же ограничения, что и бариатрия: <strong>если она хотела сделать что-то,
-                  ей приходилось сталкиваться с ужасными побочными эффектами.</strong>
+                Mas a maioria tinha as mesmas limitações que a bariátrica: <strong>se ela queria fazer algo, tinha de lidar com terríveis efeitos secundários.
+                </strong>
               </p>
               <p class="m-t-25">
-                Оставшись без идей, Дженнифер обратилась за помощью к своему врачу и диетологу, доктору Полу Уилсону.
+                Sem ideias, Jennifer procurou a ajuda do seu médico e nutricionista, Dr. Paul Wilson.
               </p>
               <img src="images/dvn.png" style="width: 100%">
               <p class="m-t-25"> Врач спросил ее, есть ли у нее какие-либо из следующих симптомов:
               </p>
               <b>
-                <li style="font-size:18px">Постоянная усталость?</li>
-                <li style="font-size:18px">Низкая самооценка?</li>
-                <li style="font-size:18px">Переедание?</li>
-                <li style="font-size:18px">Слабость?</li>
+                <li style="font-size:18px">Fadiga constante?</li>
+                <li style="font-size:18px">Baixa autoestima?</li>
+                <li style="font-size:18px">A comer em excesso?</li>
+                <li style="font-size:18px">Fraqueza?</li>
               </b>
               <p class="m-t-25">
-                Дженнифер Лопес склонила голову и пробормотала грустное "Да" после каждого вопроса.
+                Jennifer Lopez abaixou a cabeça e murmurou um triste "Sim" após cada pergunta.
+
               </p>
               <blockquote>
                 <p class="m-t-25">
                   <i>
-                    <em>"У меня есть хорошие и плохие новости. Хорошая новость заключается в том, что если вы выйдете
-                      отсюда и будете следовать моим инструкциям, <strong>вы потеряете более 15 килограммов веса в
-                        кратчайшие сроки и никогда не наберете их обратно.</strong></em></i>
+                    <em>"Tenho boas e más notícias. A boa notícia é que se sair daqui e seguir as minhas instruções, <strong>perderá mais de 15 quilos de peso num instante e nunca mais o ganhará de volta.</strong></em></i>
                 </p>
                 <p class="m-t-25" style="    font-style: italic;
-                        ">Плохая новость заключается в том, что я никогда больше не увижу вас у себя в кабинете.
-                  Наслаждайтесь своей жизнью. " - шутит доктор Пол Уилсон.
+                        ">A má notícia é que nunca mais o verei no meu gabinete. Desfrute da sua vida. " brincou o Dr. Paul Wilson.
                 </p>
               </blockquote>
               <p class="m-t-25">
-                Доктор Пол Уилсон показал результаты клинического исследования, проведенного на 22 900 женщинах, в ходе
-                которого <strong>97% испытуемых теряли более 3 кг в неделю</strong>.
+                O Dr. Paul Wilson revelou os resultados de um estudo clínico realizado em 22.900 mulheres, no qual  <strong>97% dos sujeitos perderam mais de 3kg por semana</strong>.
               </p>
               <img src="images/isso.gif" style="width: 100%">
-              <p class="m-t-25">Благодаря продукту под названием <a target="_blank"
-                  href="{offer}"><strong>Fortunella</strong></a> испытуемая группа смогла ходить и заниматься спортом в
-                течение 4 часов с высокой самооценкой и улучшенным настроением.
+              <p class="m-t-25">Graças a um produto chamado  <a target="_blank"
+                  href="{offer}"><strong>Fortunella</strong></a> o grupo de teste foi capaz de andar e fazer exercício durante 4 horas com elevada autoestima e melhor humor.
               </p>
               <p class="m-t-25">
-                Поскольку <a target="_blank" href="{offer}"><strong>Fortunella</strong></a> (препарат, использовавшийся
-                в клинических испытаниях) еще не был доступен в магазинах, Дженнифер в момент отчаяния позвонила на
-                фабрику, чтобы ей срочно предоставили этот препарат, так как она якобы находилась в критическом
-                состоянии.
+                Como <a target="_blank" href="{offer}"><strong>Fortunella</strong></a> (o produto utilizado no ensaio clínico) ainda não estava disponível nas lojas, Jennifer, num momento de desespero, chamou a fábrica para obter o produto com urgência, uma vez que se encontrava alegadamente em estado crítico.
               </p>
-              <h3>Почему Дженнифер Лопес говорит об этом?</h3>
+              <h3>Porque está Jennifer Lopez a falar sobre isto?</h3>
               <img src="images/casal.png" style="width: 100%">
-              <p class="m-t-25">Она утверждает, что хочет помочь другим. См. ниже:</p>
+              <p class="m-t-25">Ela afirma que quer ajudar os outros. Ver abaixo:</p>
               <blockquote>
-                <p class="m-t-25"><em>"Мои результаты были впечатляющими, через 1 день после первого приема капель я уже
-                    чувствовала себя намного лучше, <strong>в тот же день я потеряла 0,8 кг.</strong></em></p>
-                <p class="m-t-25"><em>Бен был потрясен: спустя годы мне наконец-то удалось сбросить несколько
-                    килограммов, и я стала выглядеть лучше.</em></p>
-                <p class="m-t-25"><em>И мне было трудно найти что-то, что не вредило бы моему здоровью и могло бы
-                    действительно решить эту большую проблему.</em></p>
-                <p class="m-t-25"><em><strong>Ожирение и избыточный вес - это не простые проблемы.</strong> Они вызывают
-                    смерть, они вызывают депрессию, они наносят большой ущерб здоровью.</em></p>
-                <p class="m-t-25"><em>Столкнувшись со всем этим, я почувствовал себя обязанным помогать другим. Я не мог
-                    быть эгоистом.</em></p>
+                <p class="m-t-25"><em>"Os meus resultados foram impressionantes, 1 dia depois de tomar as gotas pela primeira vez já me senti muito melhor, <strong>no mesmo dia em que perdi 0,8kg.</strong></em></p>
+                <p class="m-t-25"><em>Ben ficou chocado: após anos tinha finalmente conseguido perder alguns quilos e tinha melhor aspecto.</em></p>
+                <p class="m-t-25"><em>E eu estava a lutar para encontrar algo que não fosse prejudicial à minha saúde e que pudesse realmente resolver este grande problema.</em></p>
+                <p class="m-t-25"><em><strong>A obesidade e o excesso de peso não são problemas simples.</strong> Causam a morte, causam depressão, causam grandes danos à saúde.</em></p>
+                <p class="m-t-25"><em>Face a tudo isto, senti a obrigação de ajudar os outros. Eu não podia ser egoísta.</em></p>
                 <p class="m-t-25"><em> <a target="_blank" href="{offer}"><strong>Fortunella
-                      </strong></a> изменит жизнь каждого, кто использует его каждый день. Это стоит каждого цента.
-                    <strong> Если бы я знал результаты заранее, я бы заплатила в 10 раз больше.</strong></em>" -
-                  Дженнифер Лопес эксклюзивно для TVA"."</p>
+                      </strong></a> irá mudar a vida de qualquer pessoa que a utilize todos os dias. Vale cada centavo.
+                    <strong> Se eu tivesse conhecido os resultados de antemão, teria pago 10 vezes mais</strong></em>." -
+                    Jennifer Lopez exclusivamente para a TVA.</p>
               </blockquote>
               <br>
               <img src="images/potinho.jpg" style="width: 100%">
-              <h3>Так что же входит в состав Fortunella?</h3>
+              <h3>Então o que há em Fortunella?</h3>
               <p class="m-t-25">
-                Капли содержат экстракт фортунеллы, экстракт артишока и экстракт шпината.
-                <br> Эти натуральные ингредиенты были ключевыми для многих китайских и индийских травников на протяжении
-                5 000 лет, и именно это делает Fortunella уникальным. <br>
-                Содержащийся в препарате эксклюзивный TRTT <strong>позволяет этим ингредиентам усваиваться в 185 раз
-                  лучше, чем традиционные составляющие.</strong>
+                As gotas contêm extracto de Fortunella, extracto de alcachofra e extracto de espinafre.
+                <br> Estes ingredientes naturais têm sido fundamentais para muitos ervanários chineses e indianos durante 5.000 anos, e é isto que torna a Fortunella única. <br>
+                O TRTT <strong>exclusivo contido no produto permite que estes ingredientes sejam absorvidos 185 vezes melhor do que os ingredientes tradicionais.</strong>
               </p>
 
               <img src="images/capais.jpg" style="width: 100%">
-              <h3><strong>Мы протестировали Fortunella!</strong></h3>
-              <p class="m-t-25">Прежде чем рекламировать <strong>Fortunella</strong> как лекарство и решение проблемы
-                ожирения, необходимо было выяснить, действительно ли эти натуральные ингредиенты работают. <br>
-                Для наших тестов вызвалась еще одна известная медийная личность.</p>
+              <h3><strong>Testamos a Fortunella!</strong></h3>
+              <p class="m-t-25">Antes de promover a  <strong>Fortunella</strong>como cura e solução para a obesidade, era necessário descobrir se estes ingredientes naturais funcionavam realmente. <br>
+                Outra personalidade famosa dos meios de comunicação social voluntariou-se para os nossos testes.</p>
 
-              <h4>Ким Кардашьян</h4>
+              <h4>Kim Kardashian</h4>
               <img src="images/capais1.jpg" style="width: 100%">
-              <p class="m-t-25">Ким Кардашьян 41 год и она страдает избыточным весом. Она сказала, что у нее пропало
-                желание выступать и показываться на публике, <strong>потому что она страдает ожирением и ей стыдно
-                  демонстрировать себя.</strong> </p>
-              <p class="m-t-25">Ким будет использовать <a target="_blank"
-                  href="{offer}"><strong>Fortunella</strong></a>, тот же продукт, который использует Дженнифер Лопес.
+              <p class="m-t-25">Kim Kardashian tem 41 anos de idade e excesso de peso. Ela disse que perdeu o desejo de actuar e mostrar o seu rosto em público, <strong>porque é obesa e tem vergonha de se exibir.</strong> </p>
+              <p class="m-t-25">Kim irá utilizar  <a target="_blank"
+                  href="{offer}"><strong>Fortunella</strong></a>, o mesmo produto que Jennifer Lopez utiliza.
               </p>
-              <h3>Результаты Ким при использовании <a target="_blank" href="{offer}"><strong>Fortunella</strong></a>
+              <h3>Os resultados de Kim ao usar <a target="_blank" href="{offer}"><strong>Fortunella</strong></a>
               </h3>
               <blockquote>
                 <p class="m-t-25">
-                  <em>"Капли доставили гораздо быстрее, чем я ожидала.</em>
+                  <em>"As gotas foram entregues muito mais rapidamente do que eu esperava.</em>
                 </p>
                 <p class="m-t-25">
-                  <em>Мне не терпелось узнать, является ли <a target="_blank"
-                      href="{offer}"><strong>Fortunella</strong></a> тем, о чем говорила моя лучшая подруга Дженнифер
-                    Лопес.</em>
+                  <em>Estava ansioso por descobrir se  <a target="_blank"
+                      href="{offer}"><strong>Fortunella</strong></a> era aquilo de que a minha melhor amiga Jennifer Lopez estava a falar.</em>
                 </p>
-                <p class="m-t-25"><em>Я приняла капли вечером перед сном.</em></p>
-                <p class="m-t-25"><em>На следующий день я заметила <strong>что мой жир исчезает вместе с моим весом,
-                      который снизился на 1,2 кг.</strong></em></p>
+                <p class="m-t-25"><em>Tomei as gotas à noite antes de ir para a cama.</em></p>
+                <p class="m-t-25"><em>No dia seguinte, reparei que a minha gordura estava a desaparecer juntamente com o meu peso, que tinha caído 1,2kg.</strong></em></p>
 
-                <p class="m-t-25"><em>После многих лет жизни с избыточным весом и переживания многих физических и
-                    психологических трудностей я наконец-то смогла снова надеяться.</em></p>
+                <p class="m-t-25"><em>Depois de anos a viver com excesso de peso e a experimentar muitas dificuldades físicas e psicológicas, pude finalmente ter novamente esperança.</em></p>
 
-                <p class="m-t-25"><em>В тот день <strong>я сбросила еще 0,5 кг и смогла ходить, бегать и заниматься
-                      спортом более 2 часов.</strong></em></p>
+                <p class="m-t-25"><em>Perdi mais 0,5kg nesse dia e fui capaz de andar, correr e fazer exercício durante mais de 2 horas.</em></p>
                 <p class="m-t-25">
-                  <em>Честно говоря, я была настроена довольно скептически и думала, что невозможно, чтобы натуральное
-                    средство было настолько эффективным (гораздо лучше, чем любая операция или диета с огромными
-                    побочными эффектами). </em>
+                  <em>Para ser honesto, estava bastante céptico e pensava ser impossível que um remédio natural fosse tão eficaz (muito melhor do que qualquer cirurgia ou dieta com enormes efeitos secundários). </em>
                 </p>
-                <p class="m-t-25" style="  font-style: italic;">Я думала, что моя жизнь наконец-то вернется в нормальное
-                  русло.
+                <p class="m-t-25" style="  font-style: italic;">Pensei que a minha vida iria finalmente voltar ao normal.
                 </p>
                 <p class="m-t-25"><em>
-                    Я не ожидала, что <a target="_blank" href="{offer}"><strong>Fortunella</strong></a>
-                    работает так хорошо и стоит так дешево...</em>
+                  Não esperava que  <a target="_blank" href="{offer}"><strong>Fortunella</strong></a>
+                  trabalhasse tão bem e custasse tão pouco...</em>
                 </p>
-                <p class="m-t-25"><em>Моя жизнь была спасена, это стоит каждого цента, <strong>я бы заплатила намного
-                      больше, если бы эффект был таким же.</strong> (Она заказала еще три бутылочки)
-                  </em>- рассказала Ким Кардашьян в специальном интервью".
+                <p class="m-t-25"><em>A minha vida foi salva, valeu cada cêntimo, <strong>teria pago muito mais se o efeito fosse o mesmo.</strong> (Ela encomendou mais três garrafas)"
+                  </em> , revelou Kim Kardashian numa entrevista especial.
                 </p>
               </blockquote>
 
@@ -504,22 +553,18 @@
               </center>
 
               <p class="m-t-25"></p>
-              <h3><b>Подойдет ли вам <a target="_blank" href="{offer}"><strong>Fortunella</strong></a>?</b></h3>
+              <h3><b>Será que <a target="_blank" href="{offer}"><strong>Fortunella</strong></a> trabalhará para si?</b></h3>
               <p></p>
-              <p class="m-t-25">Вы можете попробовать несколько решений для снижения веса Некоторые из них, включая
-                бариатрию, имеют опасные побочные эффекты, чего нельзя сказать о Fortunella.</p>
+              <p class="m-t-25">Pode experimentar várias soluções de perda de peso Algumas delas, incluindo a bariátrica, têm efeitos secundários perigosos, o que não é o caso da Fortunella.</p>
 
-              <p class="m-t-25">Другие требуют длительного отказа от еды и выполнения опасных упражнений.
+              <p class="m-t-25">Outros exigem que desista de comer durante muito tempo e que faça exercícios perigosos.
               </p>
-              <p class="m-t-25">При таком количестве вариантов вполне естественно скептически относиться к результатам.
+              <p class="m-t-25">Com tantas opções disponíveis, é natural que haja cepticismo em relação aos resultados.
               </p>
-              <p class="m-t-25">Поэтому, вместо того чтобы обещать нашим читателям что-либо, <strong> мы бросаем вам
-                  вызов: пойдите по стопам Ким Кардашьян и Дженнифер Лопес и проявите себя!</strong></p>
+              <p class="m-t-25">Assim, em vez de prometer nada aos nossos leitores, desafiamo-lo a seguir os passos de Kim Kardashian e Jennifer Lopez e a provar o seu valor!</p>
               <p></p>
-              <p class="m-t-25">Когда <strong>представители программы <a target="_blank"
-                    href="{offer}">Fortunella</a></strong> узнали, что их препарат включен в этот выпуск, они настояли
-                на том, чтобы предложить нашим читателям специальную акционную цену. <strong>Вы можете получить скидку,
-                  заказав Fortunella через официальную форму заказа ниже</strong>.
+              <p class="m-t-25">Quando <strong>os representantes da <a target="_blank"
+                    href="{offer}">Fortunella</a></strong> souberam que o seu produto estava incluído nesta edição, insistiram em oferecer aos nossos leitores um preço promocional especial <strong>Pode obter o desconto encomendando Fortunella através do formulário de encomenda oficial abaixo</strong>.
               </p>
               <center>
                 <div class="row">
@@ -527,19 +572,19 @@
                     <img src="images/of.jpg" class="img-responsive">
                     <p class="text-center pink-text m-b-5">
                       <strong>
-                        (Предложение ограничено по времени, заказывайте, пока они не закончились на складе **)
+                        (A oferta é limitada no tempo, encomendar antes de esgotar o stock **)
                       </strong>
                     </p>
                     <p class="m-b-5"></p>
                     <p>
                       <strong style="color: red;">
-                        ВАЖНО: В ходе клинических испытаний было установлено, что для достижения подобных результатов
-                        необходимо использовать этот продукт ежедневно.
+                        IMPORTANTE: Os ensaios clínicos constataram que este produto deve ser utilizado diariamente para alcançar resultados semelhantes.
                       </strong>
                     </p>
                     <p class="update m-b-30">
-                      <img src="images/checkmark-green-sm.png"> <strong> Обновление:</strong>
-                      <span class="red-text">Доступны последние упаковки. </span> Окончание акции: <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                      <img src="images/checkmark-green-sm.png"> <strong> Actualização:</strong>
+                      <span class="red-text">Os últimos pacotes estão disponíveis.  </span>  Fim da promoção: <span
+                        class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
                     </p>
 
                     <style type="text/css">
@@ -553,7 +598,7 @@
                         src="images/pote.png">
 
                       <div class="form">
-                        <a target="_blank" href="{offer}" class="bts">ЗАКАЗАТЬ СО СКИДКОЙ</a>
+                        <a target="_blank" href="{offer}" class="bts">ENCOMENDAR COM DESCONTO</a>
                       </div>
 
                       <style type="text/css">
@@ -587,7 +632,7 @@
 
                       <div class="container comments">
                         <div class="row border-top">
-                          <a target="_blank" href="{offer}" class="pull-left">Последние комментарии</a>
+                          <a target="_blank" href="{offer}" class="pull-left">Comentários mais recentes</a>
                           <div class="media no-border-top">
                             <div class="media-left">
                               <a target="_blank" href="{offer}">
@@ -596,15 +641,15 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Сильви Петерсон</a>
+                                <a target="_blank" href="{offer}">Sílvia Nunes</a>
                               </h4>
                               <p>
-                                Я не знала, что можно так легко похудеть, я на второй неделе и уже потеряла 5,5 кг, это просто волшебство!
+                                Não sabia que era possível perder peso tão facilmente, estou na semana 2 e já perdi 5,5 kg, é apenas magia!
                               </p>
 
                               <p class="bottom">
-                                Ответить <span class="Idem">13 . Нравится .</span>
-                                <span class="time">12 мин</span>
+                                Responder <span class="Idem">13 . Como .</span>
+                                <span class="time">12 min</span>
                               </p>
                             </div>
                           </div>
@@ -616,14 +661,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Мария Пилон</a>
+                                <a target="_blank" href="{offer}">Maria Elena Ferreira</a>
                               </h4>
                               <p>
-                                Некоторое время назад я видела, как Дженнифер Лопес показывала Fortunella в Instagram, и я решила попробовать. Я использую Fortunella уже около 4 недель, это потрясающе, я так похудела!
+                                Vi Jennifer Lopez a mostrar Fortunella na Instagram há algum tempo atrás e decidi tentar. Estou a usar Fortunella há cerca de 4 semanas, é espantoso, perdi tanto peso!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">6 . Нравится .</span>
-                                <span class="time">13 мин</span>
+                                Responder <span class="Idem">6 . Como .</span>
+                                <span class="time">13 min</span>
                               </p>
                             </div>
                           </div>
@@ -635,16 +680,16 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Энни О'Брайен</a>
+                                <a target="_blank" href="{offer}">Ana Abreu</a>
                               </h4>
                               <p>
-                                Друг порекомендовал мне средство 3 недели назад. Я купила капли и получила их через 3 дня. Результаты потрясающие. Я люблю тебя, Дженнифер!
+                                Um amigo recomendou-me o produto há 3 semanas. Comprei as gotas e consegui-as em 3 dias. Os resultados são espantosos. Eu amo-te Jennifer!
                               </p>
 
 
                               <p class="bottom">
-                                Ответить <span class="Idem">19 . Нравится .</span>
-                                <span class="time">25 мин</span>
+                                Responder <span class="Idem">19 . Como .</span>
+                                <span class="time">25 min</span>
                               </p>
                             </div>
                           </div>
@@ -656,14 +701,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Ванель Брукс</a>
+                                <a target="_blank" href="{offer}">Vanessa Noronha</a>
                               </h4>
                               <p>
-                                Я бы хотела попробовать Fortunella вместо липосакцией! Это сэкономит мне кучу денег!
+                                Adoraria experimentar a Fortunella em vez da lipoaspiração! Isso poupar-me-ia muito dinheiro!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem"> . Нравится .</span>
-                                <span class="time">46 мин</span>
+                                Responder <span class="Idem"> . Como .</span>
+                                <span class="time">46 min</span>
                               </p>
                             </div>
                           </div>
@@ -675,14 +720,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Клементина Бернар</a>
+                                <a target="_blank" href="{offer}">Inês Cunha</a>
                               </h4>
                               <p>
-                                Я бесконечно благодарна Дженнифер! Я уже сбросила 9 кг за 3 недели!
+                                Estou eternamente grata à Jennifer! Já perdi 9kg em 3 semanas!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">43 . Нравится .</span>
-                                <span class="time">Около часа назад</span>
+                                Responder <span class="Idem">43 . Como .</span>
+                                <span class="time">Há cerca de uma hora</span>
                               </p>
                             </div>
                           </div>
@@ -694,14 +739,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Изабель Лам</a>
+                                <a target="_blank" href="{offer}">Isabel Castro</a>
                               </h4>
                               <p>
-                                Я увидела Fortunella по телевизору. Только что заказала себе, капли  доставят послезавтра!
+                                Eu vi Fortunella na televisão. Acabei de encomendar algumas para mim, as gotas serão entregues depois de amanhã!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">3 . Нравится .</span>
-                                <span class="time">Около часа назад</span>
+                                Responder <span class="Idem">3 . Como .</span>
+                                <span class="time">Há cerca de uma hora</span>
                               </p>
                             </div>
                           </div>
@@ -713,15 +758,15 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Поул Эллиот </a>
+                                <a target="_blank" href="{offer}">Rogério Sousa </a>
                               </h4>
                               <p>
-                                Возможно, у меня немного больше лишнего веса, чем у большинства из вас. Но Fortunella помогли и мне! Спасибо Дженнифер Лопес за вдохновение!
+                                Posso estar um pouco mais acima do peso do que a maioria de vós. Mas a Fortunella também me ajudou! Obrigado Jennifer Lopez pela inspiração!
                               </p>
 
                               <p class="bottom">
-                                Ответить <span class="Idem"> . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem"> . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -733,14 +778,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Даниэль Бле</a>
+                                <a target="_blank" href="{offer}">Daniela Pereira</a>
                               </h4>
                               <p>
-                                Моя сестра пользуется Fortunella уже несколько месяцев, она уже сильно похудела, я только что купила себе, тоже хочу похудеть!!!
+                                A minha irmã usa Fortunella há alguns meses, ela já perdeu muito peso, acabei de me comprar, também quero perder peso!!!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">12 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">12 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -754,14 +799,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Лучана Робало</a>
+                                <a target="_blank" href="{offer}">Luciana Marques</a>
                               </h4>
                               <p>
-                                Это сработало! Это было легко, я не могу поверить, что я стала худышкой.
+                                Funcionou! Foi fácil, não posso acreditar que fiquei magro.
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">53 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">53 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -773,12 +818,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Мари Эванс</a>
+                                <a target="_blank" href="{offer}">Maribel Alves</a>
                               </h4>
-                              <p>Спасибо за информацию, я спросила только для себя.</p>
+                              <p>Obrigada pela informação, só perguntei por mim mesma.</p>
                               <p class="bottom">
-                                Ответить <span class="Idem">16 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">16 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -790,14 +835,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Сандра Адамс</a>
+                                <a target="_blank" href="{offer}">Sandra Santos da Silva</a>
                               </h4>
                               <p>
-                                Мой Fortunella прибыла сегодня, я собираюсь начать использовать капли и затем расскажу вам о своем результате здесь!
+                                A minha Fortunella chegou hoje, vou começar a usar as gotas e depois contar-vos o meu resultado aqui!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">2 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">2 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -809,13 +854,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Патрик Лефевр</a>
+                                <a target="_blank" href="{offer}">Rodrigo Almeida</a>
                               </h4>
-                              <p>Моя мама использует этот продукт и сбросила много лишних килограммов, он действительно хорош!!!
+                              <p>A minha mãe usa este produto e perdeu muitos quilos extra, é muito bom!!!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">11 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">11 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -827,13 +872,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Андреа Грин</a>
+                                <a target="_blank" href="{offer}">Andrea Lima</a>
                               </h4>
-                              <p>Я потеряла 11 кг за 4 недели, это действительно замечательно, я уже рассказала своим друзьям! Дженнифер Лопес, я очень благодарна вам!
+                              <p>Perdi 11kg em 4 semanas, é realmente fantástico, já disse aos meus amigos! Jennifer Lopez, eu realmente aprecio isso!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">33 . Нравится .</span>
-                                <span class="time">2 часа</span>
+                                Responder <span class="Idem">33 . Como .</span>
+                                <span class="time">2 h</span>
                               </p>
                             </div>
                           </div>
@@ -845,13 +890,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Ева Бейкер</a>
+                                <a target="_blank" href="{offer}">Camila Melo</a>
                               </h4>
-                              <p>Я только что сделала заказ. Не могу дождаться, когда получу свой Fortunella! !! Спасибо Ким Кардашьян!
+                              <p>Acabei de fazer uma encomenda. Mal posso esperar para ter a minha Fortunella! !! Obrigado Kim Kardashian!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">23 . Нравится .</span>
-                                <span class="time">3 часа</span>
+                                Responder <span class="Idem">23 . Como .</span>
+                                <span class="time">3 h</span>
                               </p>
                             </div>
                           </div>
@@ -863,17 +908,17 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Келли Фрейзер</a>
+                                <a target="_blank" href="{offer}">Benedita Vasconcelos</a>
                               </h4>
-                              <p>Я люблю Fortunella, он полностью изменил мою жизнь, и я использовала его только в течение 1,5 месяцев, он действительно изменил ход моей жизни и мое здоровье!
+                              <p>Amo Fortunella, mudou completamente a minha vida e só a usei durante 1,5 meses, mudou realmente o curso da minha vida e da minha saúde!
                               </p>
                               <img src="images/1c.jpg" style="width: 265px;">
 
 
 
                               <p class="bottom">
-                                Ответить <span class="Idem">6 . Нравится .</span>
-                                <span class="time">3 часа</span>
+                                Responder <span class="Idem">6 . Como .</span>
+                                <span class="time">3 h</span>
                               </p>
                             </div>
                           </div>
@@ -885,12 +930,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Фернан Леблан</a>
+                                <a target="_blank" href="{offer}">Fernando João Sá</a>
                               </h4>
-                              <p>Мой друг прислал мне это сообщение через WhatsApp, я заказал себе!</p>
+                              <p>O meu amigo enviou-me esta mensagem através da WhatsApp, encomendei uma para mim!</p>
                               <p class="bottom">
-                                Ответить <span class="Idem">2 . Нравится .</span>
-                                <span class="time">3 часа</span>
+                                Responder <span class="Idem">2 . Como .</span>
+                                <span class="time">3 h</span>
                               </p>
                             </div>
                           </div>
@@ -902,14 +947,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Айша Мур</a>
+                                <a target="_blank" href="{offer}">Matilde Coutinho</a>
                               </h4>
-                              <p>Я не доверяю покупкам через интернет, но Дженнифер Лопес убедила меня, я тоже хочу похудеть!
+                              <p>Não confio nas compras online, mas Jennifer Lopez convenceu-me, também quero perder peso!
                               </p>
                               <img src="images/2c.jpg" style="width: 265px;">
                               <p class="bottom">
-                                Ответить <span class="Idem">17 . Нравится .</span>
-                                <span class="time">4 часа</span>
+                                Responder <span class="Idem">17 . Como .</span>
+                                <span class="time">4 h</span>
                               </p>
                             </div>
                           </div>
@@ -921,13 +966,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Дэйв Пеллетье</a>
+                                <a target="_blank" href="{offer}">David Gil</a>
                               </h4>
-                              <p>Я заказ со скидкой. Не могу дождаться, когда начну принимать их и увижу свои результаты.
+                              <p>Encomendo a um preço com desconto. Mal posso esperar para começar a tomá-los e ver os meus resultados.
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">8 . Нравится .</span>
-                                <span class="time">6 часа</span>
+                                Responder <span class="Idem">8 . Como .</span>
+                                <span class="time">6 h</span>
                               </p>
                             </div>
                           </div>
@@ -939,13 +984,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Энн Скотт</a>
+                                <a target="_blank" href="{offer}">Ana Maria Pinto</a>
                               </h4>
-                              <p>До того, как я узнала о Fortunella, я пробовала другие продукты, но это действительно лучшее средство для снижения веса. Спасибо Ким
+                              <p>Tinha experimentado outros produtos antes de descobrir Fortunella, mas este é realmente o melhor produto para perder peso. Obrigado Kim
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">20 . Нравится .</span>
-                                <span class="time">8 часа</span>
+                                Responder <span class="Idem">20 . Como .</span>
+                                <span class="time">8 h</span>
                               </p>
                             </div>
                           </div>
@@ -957,12 +1002,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Селин Морен</a>
+                                <a target="_blank" href="{offer}">Beatriz Ribeiro</a>
                               </h4>
-                              <p>Я только что купила себе!</p>
+                              <p>Acabei de o comprar para mim!</p>
                               <p class="bottom">
-                                Ответить <span class="Idem">10 . Нравится .</span>
-                                <span class="time">8 часа</span>
+                                Responder <span class="Idem">10 . Como .</span>
+                                <span class="time">8 h</span>
                               </p>
                             </div>
                           </div>
@@ -974,14 +1019,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Орфели Янг</a>
+                                <a target="_blank" href="{offer}">Afonso Vieira</a>
                               </h4>
-                              <p>Я недавно использовала эти капли, и они очень хорошо сработали, я сбросила 14 кг!
-
+                              <p>Usei recentemente estas gotas e elas funcionaram muito bem, perdi 14kg!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">13 . Нравится .</span>
-                                <span class="time">8 часа</span>
+                                Responder <span class="Idem">13 . Como .</span>
+                                <span class="time">8 h</span>
                               </p>
                             </div>
                           </div>
@@ -993,13 +1037,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Хелен Томпсон</a>
+                                <a target="_blank" href="{offer}">Elena Gonçalves</a>
                               </h4>
-                              <p>Впервые я была положительно удивлена продуктом для похудения, я избавилась от лишнего веса, причем здоровым способом!
+                              <p>Pela primeira vez fiquei positivamente surpreendido com um produto de emagrecimento, livrei-me do peso extra, e de uma forma saudável!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">3 . Нравится .</span>
-                                <span class="time">8 часа</span>
+                                Responder <span class="Idem">3 . Como .</span>
+                                <span class="time">8 h</span>
                               </p>
                             </div>
                           </div>
@@ -1011,13 +1055,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a target="_blank" href="{offer}">Денис1987</a>
+                                <a target="_blank" href="{offer}">João José Borges</a>
                               </h4>
-                              <p>Я не знал, что можно похудеть без диеты, не говоря уже о посещении спортзала. Спасибо Джей Ло!!!
+                              <p>Eu não sabia que era possível perder peso sem fazer dieta, quanto mais ir ao ginásio. Obrigado JLo!!!
                               </p>
                               <p class="bottom">
-                                Ответить <span class="Idem">5 . Нравится .</span>
-                                <span class="time">10 мин</span>
+                                Responder <span class="Idem">5 . Como .</span>
+                                <span class="time">10 min</span>
                               </p>
                             </div>
                           </div>
@@ -1034,15 +1078,15 @@
                                 <img class="img__noname" src="images/user.png" alt>
                               </div>
                               <div class="form__fields" style="width: 80%;">
-                                <input type="text" placeholder="Имя" id="inputCommentName" required
+                                <input type="text" placeholder="Nome" id="inputCommentName" required
                                   style="margin-bottom: 10px;">
-                                <input type="text" placeholder="Добавить комментарий" required id="inputCommentText">
-                                <textarea style="display: none;" name id="inputCommentText" placeholder="ОТПРАВИТЬ"
+                                <input type="text" placeholder="Adicione um comentário" required id="inputCommentText">
+                                <textarea style="display: none;" name id="inputCommentText" placeholder="MANDAR"
                                   cols="20" rows="5"></textarea>
                               </div>
 
                             </div>
-                            <button type="submit" id="commentPush">ОТПРАВИТЬ</button>
+                            <button type="submit" id="commentPush">MANDAR</button>
                           </form>
 
 
@@ -1069,8 +1113,8 @@
                             </h4>
                             <p>${valueText}</p>
                             <p class="bottom">
-                                Ответить <span class="Idem">5 . Нравится .</span>
-                                <span class="time">1 мин</span>
+                                Responder <span class="Idem">5 . Como .</span>
+                                <span class="time">1 min</span>
                             </p>
                         </div>
                     </div>`;
@@ -1302,7 +1346,7 @@
                               color: #3b5998;
                             }
 
-                            @media (мин-width: 768px) {
+                            @media (min-width: 768px) {
                               .content__title {
                                 font-family: "Publico Headline", serif;
                                 font-size: 60px;
@@ -1310,7 +1354,7 @@
                             }
                           </style>
 
-                          <p class="small"># социальный плагин</p>
+                          <p class="small"># plugin social</p>
                         </div>
                       </div>
                     </div>
@@ -1324,12 +1368,6 @@
       </div>
 
     </div>
-  </div>
-
-  <div class="footers">
-    <img class="footer-pc" src="images/f-pc.png">
-    <img class="footer-sm" src="images/f-sm.png">
-    <img class="footer-m" src="images/f-m.png">
   </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
