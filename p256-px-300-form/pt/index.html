@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Centro Internacional de Andrologia</title>
+  <link rel="icon" href="images/min_logo.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <style>
+    .hide,
+    .flag-dropdown {
+      display: none;
+    }
+
+    .error-box {
+      color: #fff;
+      background-color: #DE5042;
+      border-radius: 5px;
+      text-align: center;
+      width: 240px;
+      font-size: 13px;
+      line-height: 20px;
+      margin: 5px auto !important;
+      z-index: 100;
+    }
+  </style>
+  <style>
+    .inline-block,
+    audio,
+    canvas,
+    video,
+    .menu__item,
+    .nav__item,
+    .nav__link,
+    .comments__quantity,
+    .comments__quantity::before,
+    .comments__seen,
+    .comments__seen::before,
+    .foot-menu__item {
+      display: inline-block;
+    }
+
+    .clearfix::before,
+    .header__inner::before,
+    .nav__inner::before,
+    .pagination__inner::before,
+    .wrapper__inner::before,
+    .comments__inner::before,
+    .review__inner::before,
+    .foot-menu__inner::before,
+    .footer__inner::before,
+    .pagination__list::before,
+    .about::before,
+    .review__item::before,
+    .clearfix::after,
+    .header__inner::after,
+    .nav__inner::after,
+    .pagination__inner::after,
+    .wrapper__inner::after,
+    .comments__inner::after,
+    .review__inner::after,
+    .foot-menu__inner::after,
+    .footer__inner::after,
+    .pagination__list::after,
+    .about::after,
+    .review__item::after {
+      display: table;
+      content: "";
+    }
+
+    .clearfix::after,
+    .header__inner::after,
+    .nav__inner::after,
+    .pagination__inner::after,
+    .wrapper__inner::after,
+    .comments__inner::after,
+    .review__inner::after,
+    .foot-menu__inner::after,
+    .footer__inner::after,
+    .pagination__list::after,
+    .about::after,
+    .review__item::after {
+      clear: both;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    a img {
+      border: 0px none;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    a,
+    button {
+      outline: medium none;
+      border-color: transparent;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .header {
+      padding: 10px 0px;
+      background: rgb(241, 247, 255) none repeat scroll 0% 0%;
+    }
+
+    .header__inner,
+    .nav__inner,
+    .pagination__inner,
+    .wrapper__inner,
+    .comments__inner,
+    .review__inner,
+    .foot-menu__inner,
+    .footer__inner {
+      max-width: 980px;
+      margin: 0px auto;
+    }
+
+    .header__logo {
+      width: 322px;
+      height: 110px;
+      float: left;
+    }
+
+    .header__logo img {
+      width: 95px;
+      height: auto;
+      float: left;
+      padding-top: 10px;
+    }
+
+    .header__logo h1 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 19px;
+      margin-top: 20px;
+      margin-left: 15px;
+      width: 165px;
+      float: left;
+      text-transform: uppercase;
+      line-height: 1.3;
+      color: rgb(51, 53, 65);
+    }
+
+    .header .menu {
+      margin-top: 18px;
+      text-align: right;
+      float: right;
+      margin-right: 30px;
+    }
+
+    .header .search {
+      margin-top: 0px;
+      margin-right: 30px;
+    }
+
+    .menu__item {
+      margin: 0px 13px;
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .menu__item::before {
+      content: "";
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      right: -20px;
+      background-color: rgb(119, 119, 119);
+    }
+
+    .menu__item:first-child {
+      margin-left: 0px;
+    }
+
+    .menu__item:last-child {
+      margin-right: 0px;
+    }
+
+    .menu__item:last-child::before {
+      content: none;
+    }
+
+    .menu__link {
+      color: rgb(119, 119, 119);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .menu__link:hover {
+      text-decoration: underline;
+    }
+
+    .search {
+      position: relative;
+      width: 452px;
+      float: right;
+    }
+
+    .search__field {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid rgb(225, 225, 225);
+      outline: medium none;
+      color: rgb(130, 130, 130);
+      font-size: 15px;
+    }
+
+    .search__btn {
+      background: transparent url("images/find.png") no-repeat scroll center center;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    .nav {
+      background: rgb(57, 84, 117) none repeat scroll 0% 0%;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .nav__list {
+      font-size: 0px;
+    }
+
+    .nav__item {
+      vertical-align: top;
+      position: relative;
+    }
+
+    .nav__item:first-child .nav__link::before {
+      content: none;
+    }
+
+    .nav__item::before {
+      width: 1px;
+      height: 50px;
+      background-color: rgb(86, 115, 152);
+      opacity: 0.2;
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .nav__item:last-child::after {
+      width: 1px;
+      height: 50px;
+      background-color: rgb(86, 115, 152);
+      opacity: 0.2;
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    .nav__link {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      padding: 17px 15px;
+      vertical-align: middle;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease 0s;
+    }
+
+    .nav__link:hover {
+      background: rgb(86, 115, 152) none repeat scroll 0% 0%;
+      transition: all 0.2s ease 0s;
+    }
+
+    .nav__btn {
+      display: none;
+    }
+
+    .pagination {
+      background: rgb(238, 238, 238) none repeat scroll 0% 0%;
+      padding: 12px 0px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .pagination__list {
+      font-size: 0px;
+    }
+
+    .pagination__item {
+      float: left;
+      margin-right: 15px;
+      position: relative;
+      font-size: 0px;
+    }
+
+    .pagination__item::before {
+      content: "/";
+      position: absolute;
+      top: 1px;
+      right: -11px;
+      font-size: 14px;
+    }
+
+    .pagination__item:last-child {
+      margin-right: 0px;
+    }
+
+    .pagination__item:last-child::before {
+      content: none;
+    }
+
+    .pagination__item:last-child .pagination__link {
+      color: rgb(153, 153, 153);
+      text-decoration: none;
+    }
+
+    .pagination__link {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 13px;
+      color: rgb(34, 34, 34);
+    }
+
+    .pagination__link:hover {
+      text-decoration: none;
+    }
+
+    .comments {
+      background: rgb(226, 234, 243) none repeat scroll 0% 0%;
+      margin-top: 25px;
+      padding: 15px 0px;
+    }
+
+    .comments__quantity {
+      margin-right: 35px;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 35px;
+    }
+
+    .comments__quantity::before {
+      vertical-align: middle;
+      background: transparent url("images/comment-icon.png") no-repeat scroll 0px 0px;
+      width: 32px;
+      height: 31px;
+      content: "";
+      margin-right: 10px;
+    }
+
+    .comments__seen {
+      color: rgb(153, 153, 153);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .comments__seen::before {
+      content: "";
+      background: transparent url("images/views.png") no-repeat scroll 0px 0px;
+      width: 22px;
+      height: 12px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .review {
+      margin-top: 30px;
+    }
+
+    .review__item {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      min-height: 100px;
+      border-bottom: 1px solid rgb(225, 225, 225);
+    }
+
+    .review__item:last-child {
+      margin-bottom: 0px;
+    }
+
+    .review__photo {
+      float: left;
+      width: 66px;
+      height: 66px;
+      border-radius: 33px;
+      margin-right: 10px;
+      border: 3px solid rgb(41, 98, 164);
+    }
+
+    .review__author {
+      margin-left: 0px;
+      color: rgb(41, 98, 164);
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 0px;
+      line-height: 33px;
+    }
+
+    .review__time {
+      color: rgb(176, 176, 176);
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 0px;
+      line-height: 33px;
+    }
+
+    .review__info {
+      margin-left: 90px;
+      max-width: 824px;
+      font-size: 15px;
+      line-height: 26px;
+      margin-top: 7px;
+    }
+
+    .review__item p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: rgb(229, 242, 255);
+      padding: 20px 0px 15px;
+    }
+
+    .footer .menu {
+      float: left;
+      width: 543px;
+      margin-top: 9px;
+    }
+
+    .footer .search {
+      width: 386px;
+      float: right;
+    }
+
+    .footer .search__field {
+      background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      .header__inner,
+      .nav__inner,
+      .pagination__inner,
+      .wrapper__inner,
+      .comments__inner,
+      .review__inner,
+      .foot-menu__inner,
+      .footer__inner {
+        padding: 0px 10px;
+      }
+
+      .header .search {
+        margin-right: 0px;
+        display: none ! important;
+      }
+    }
+
+    @media screen and (max-width: 1006px) {
+
+      .header .search,
+      .header .menu,
+      .footer .menu {
+        float: none;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+      }
+
+      .header .menu,
+      .header .search {
+        margin-top: 15px;
+      }
+
+      .search,
+      .footer .search {
+        width: 100%;
+      }
+
+      .footer .search {
+        margin-top: 10px;
+      }
+
+      .footer .menu {
+        width: auto;
+      }
+
+      .footer,
+      .foot-menu {
+        padding: 15px 0px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      p {
+        text-align: left;
+      }
+
+      .header .menu {
+        display: none;
+      }
+
+      .nav__item {
+        text-align: center;
+        float: none;
+        border-bottom: 1px solid rgb(55, 117, 187);
+        margin-right: 15px;
+      }
+
+      .nav__item::before {
+        content: none;
+      }
+
+      .nav__item:last-child {
+        border-bottom: medium none;
+      }
+
+      .nav__item::after {
+        display: none;
+      }
+
+      .nav__link {
+        display: block;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .nav__item:nth-child(4) .nav__link::after,
+      .nav__item:nth-child(5) .nav__link::after {
+        margin-right: 0px;
+      }
+
+      .nav__item:nth-child(5),
+      .nav__item:nth-child(6),
+      .nav__item:nth-child(7) {
+        display: none ! important;
+      }
+    }
+
+    .left-img-box {
+      float: left;
+      padding: 2%;
+      width: 100%;
+      background: rgb(218, 218, 218) none repeat scroll 0% 0%;
+      color: rgb(0, 0, 0);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .left-img-box img {
+      float: left;
+      margin-right: 20px;
+      width: 100%;
+      height: auto;
+      max-width: 350px ! important;
+    }
+
+    @media screen and (max-width: 479px) {
+      .review__item {
+        min-height: auto;
+      }
+
+      .left-img-box span {
+        display: block;
+      }
+
+      .header__logo {
+        width: 322px;
+        height: 80px;
+        float: left;
+      }
+
+      .header__logo img {
+        width: 75px;
+        height: auto;
+        float: left;
+        padding-top: 5px;
+      }
+
+      .header__logo h1 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 165px;
+        float: left;
+        text-transform: uppercase;
+        line-height: 1.3;
+        color: rgb(51, 53, 65);
+      }
+
+      .footer .search {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav__item {
+        width: 48%;
+        margin: 0px;
+        border: medium none;
+      }
+
+      .nav__link {
+        padding: 10px 15px;
+      }
+
+      .left-img-box img {
+        float: none;
+      }
+    }
+
+    body {
+      font-family: "PT Sans", sans-serif;
+    }
+
+    .contentBox {
+      line-height: 1.5;
+    }
+
+    .contentBox p {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .contentBox h1 {
+      line-height: 1.2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 27px;
+    }
+
+    .contentBox h2 {
+      line-height: 1.4;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .blue-horizontal-box {
+      width: 96%;
+      padding: 2%;
+      color: rgb(22, 83, 145);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: rgb(229, 242, 255) none repeat scroll 0% 0%;
+    }
+
+    .red-horizontal-box {
+      width: 96%;
+      padding: 2%;
+      color: rgb(159, 13, 13);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: rgb(255, 238, 238) none repeat scroll 0% 0%;
+    }
+
+    .red-border-horizontal-box {
+      width: 96%;
+      padding: 2%;
+      color: rgb(0, 0, 0);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+      border: 3px solid red;
+    }
+
+
+
+    .censor-box {
+      margin: auto;
+      width: auto;
+      max-width: 400px;
+      background-image: url("images/censor.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: auto 80%;
+      border: 5px solid red;
+      cursor: pointer;
+    }
+
+    .censor-box img {
+      width: 100%;
+      max-width: 400px;
+      opacity: 0;
+      transition: all 0.3s ease 0s;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+  <style>
+    /* Code tidied up by ScrapBook */
+    .tiz-section {
+      min-height: 183px;
+      display: block;
+    }
+
+    .tiz-column-wide {
+      margin-right: 0px;
+      margin-left: 22px;
+      width: 600px;
+      float: left;
+      display: block;
+    }
+
+    .tiz-link {
+      position: relative;
+      display: block;
+      height: 163px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      background-color: rgb(45, 46, 54);
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.26);
+      transition-duration: 150ms;
+    }
+
+    .tiz-image-div {
+      width: 290px;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .tiz-image {
+      width: 100%;
+    }
+
+    .tiz-text2 {
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 163px;
+      padding: 20px 20px 20px 330px;
+      color: rgb(36, 79, 143);
+      background: transparent linear-gradient(to right, transparent 17%, rgb(236, 236, 236) 48%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    .tiz-title2 {
+      cursor: pointer;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      color: rgb(36, 79, 143);
+      font-weight: 700;
+      transition-duration: 150ms;
+    }
+
+    #form__block {
+      text-align: center;
+    }
+
+    #form__block img {
+      width: 335px;
+    }
+
+    discount__block {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 9px;
+      margin-top: 8px;
+      line-height: 48px;
+    }
+
+    input {
+      margin-bottom: 10px;
+      font-size: 16.67px;
+      font-weight: bold;
+      color: grey;
+      padding: 12px;
+      width: 274px;
+      box-sizing: border-box;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .text9 {
+      font-size: 16.67px;
+      font-weight: bold;
+      color: #02aeee;
+      padding: 0 12px 16px;
+    }
+
+    button {
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      background-color: #de0606;
+      text-align: center;
+      color: #fff !important;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button,
+    .btn1 {
+      position: relative;
+      z-index: 2;
+      display: inline-table;
+      padding: 15px;
+      font-size: 26px;
+      font-family: "PT Serif", serif;
+      vertical-align: middle;
+      color: #ffffff;
+      background: #d31812;
+      /* border: 3px solid #ffffff; */
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+      box-shadow: 0 15px 25px -15px #000000;
+      cursor: pointer;
+      -webkit-transition: all 0.4s ease-out;
+      -moz-transition: all 0.4s ease-out;
+      -o-transition: all 0.4s ease-out;
+      transition: all 0.4s ease-out;
+    }
+
+    button:hover,
+    .btn1:hover {
+      color: #fff;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    .timer {
+      /* color: #00e4ff;; */
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 30px;
+      line-height: 48px;
+    }
+  </style>
+
+
+
+
+
+
+
+
+  <div class="header">
+    <div class="header__inner">
+      <a href="#form__block" class="header__logo">
+        <img alt src="images/min_logo.png">
+        <h1>Centro Internacional de Andrologia</h1>
+      </a>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Notícias</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Canais</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Artigos</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Contacto</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Mapa do sítio</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input class="search__field" placeholder="Pesquisa" type="text">
+        <a href="#form__block">
+          <div class="search__btn"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="nav__inner">
+      <div class="nav__btn"><span></span></div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Início</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Saúde</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Actividades</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Documentos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Centro de imprensa</a>
+        </li>
+        <li class="nav__item">
+          <a href="#form__block" class="nav__link">Galeria</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="pagination">
+    <div class="pagination__inner">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a href="#form__block" class="pagination__link">Início</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#form__block" class="pagination__link">Centro de imprensa</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#form__block" class="pagination__link">Notícias</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#form__block" class="pagination__link">Relatório Especial</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="wrapper__inner">
+      <!-- content -->
+      <div class="contentBox">
+        <h1><span>Restaurar a potência mesmo após 70 anos: o Centro Internacional de Andrologia começou a fornecer um
+            novo remédio eficaz* para restaurar a potência.
+          </span></h1>
+
+        <p style="text-align: right;"><em><strong><span>*Estudos demonstraram que este produto é 3-4 vezes mais eficaz
+                do que os estimulantes sintéticos.</span></strong></em></p>
+
+        <p><span>Leia como pode obter a entrega do produto na Europa neste artigo.</span>
+        </p>
+
+        <p><em><span>Na Primavera de 2013, uma coisa incrível aconteceu no congresso anual do Centro Internacional de
+              Andrologia. <strong>Toda a audiência aplaudiu de pé, durante 10 minutos, o cientista no pódio. </strong> O
+              cientista foi o Professor português Eduardo Moura, um dos melhores urologistas do seu tempo. Depois de se
+              formar na universidade, Eduardo mudou-se para os EUA e tornou-se lá professor. Foi ele e um grupo de
+              cientistas que criaram uma preparação única capaz de curar completamente homens com problemas de potência,
+              produzindo hormonas luteinizantes e estimulantes do folículo, que actuam na glândula
+              pituitária.</span></em></p>
+
+        <div class="left-img-box">
+          <h3><img alt src="images/786-a1ca18cfe10ea93885ab347bd99ce38f.jpg" style="height: 250px; width: 190px;"><span
+              style="font-family: Courier New,Courier,monospace;"><strong>Eduardo Moura (1936-2013)</strong></span></h3>
+
+          <h3> </h3>
+
+          <h3><span style="font-family: Courier New,Courier,monospace;">O principal cirurgião urologista, doutor de medicina, professor, inventor de uma droga única para restaurar a potência, morreu logo após o seu triunfo, em 2013.</span></h3>
+        </div>
+
+        <p><span>A morte inesperada do cientista impediu-o de lançar o produto na produção. Isto só foi feito pelos seus apoiantes nos EUA oito anos mais tarde. Em 2021, o novo medicamento foi submetido aos ensaios clínicos necessários, cujos resultados confirmaram mais uma vez a sua elevada eficácia: ajuda 96 em cada 100 homens a restaurar totalmente a potência, mesmo na velhice.</span></p>
+
+        <p><span>Como o evento despertou o interesse do público, o Congresso criou a Fundação Beneficente Eduardo Moura. O principal objectivo da fundação é ajudar os homens que têm problemas de erecção; como parte do programa, qualquer homem que viva na Europa pode obter um produto desenvolvido por Moura a um preço especial<span>!</span></strong>
+          </span></p>
+
+        <div class="red-horizontal-box">
+          <p style="text-align: center;"><strong><span>73% dos homens tornam-se impotentes aos 40 anos de idade, um perigo de saúde precária!</span></strong></p>
+        </div>
+
+        <p><span>Há pelo menos dez anos que os médicos têm vindo a dizer que os homens têm sofrido de problemas de potência numa idade mais precoce do que antes. As razões para o desaparecimento precoce da capacidade sexual são bem conhecidas: estilo de vida sedentário, maus hábitos, má alimentação, má ecologia, etc.</span></p>
+
+        <p><span>No entanto, poucas pessoas pensam nos problemas da vida que os homens podem levar a problemas na esfera sexual.
+          </span></p>
+
+        <p style="text-align: center;"><span><img alt src="images/es3.png" style="width: 60%;"></span></p>
+
+        <p style="text-align: center;"><em><span>Com a prolongada falta de vasos de potência do pénis são preenchidos com placas ateroscleróticas, o que acaba por levar ao desenvolvimento da impotência total.</span></em></p>
+
+        <div class="red-border-horizontal-box">
+          <h2 style="text-align: center;"><span style="color: rgb(52, 152, 219);"><span>Etapas da impotência e suas consequências:</span></span></h2>
+
+          <p><span><strong>Fase 1:</strong> A potência desaparece intermitentemente, por exemplo, depois de beber álcool ou por si só. Por vezes, o humor para o sexo está ausente. A maioria das pessoas atribui isto a trabalho árduo, stress, etc. No entanto, este é já o primeiro sinal de que só irá piorar com o tempo.</span></p>
+
+          <p><span><strong>Etapa 2:</strong> A potência desaparece cada vez mais frequentemente. Mesmo quando a potência está lá, não é tão forte como antes. O pénis pode cair durante a relação sexual ou quando se coloca um preservativo. Como regra, durante este período o homem começa a pensar no problema, mas limita-se a tomar ocasionalmente estimulantes sintéticos.</span></p>
+
+          <p><span><strong>Etapa 3:</strong> A potência aparece pouco frequentemente. A libido diminui acentuadamente. A pessoa torna-se irritável, a energia e o desejo de fazer algo desaparece. Os problemas familiares começam: disputas no seio da família, infidelidade entre as mulheres, divórcio podem ocorrer.</span></p>
+
+          <p><span><strong>Etapa 4:</strong> impotência total. Mesmo os estimulantes não ajudam. Até 91% dos homens nesta fase sentem-se sozinhos; as mulheres raramente vivem com impotência, e se o fazem, sofrem. A depressão desenvolve-se, assim como várias enfermidades físicas. Os nossos corpos são concebidos para que a sua função principal seja a reprodução. Assim que o corpo o perde, começa a deteriorar-se muito rapidamente.</span>
+          </p>
+        </div>
+
+        <p><span>Na ausência de potência durante muito tempo, o fornecimento de sangue aos órgãos pélvicos desaparece, levando ao desenvolvimento de numerosas doenças perigosas.</span></p>
+
+        <p><span>As fotos estão no fundo do Centro Internacional de Andrologia. Por detrás de cada fotografia está uma tragédia pessoal.
+          </span></p>
+
+        <p><span><strong>O cancro da próstata num homem de 48 anos.  </strong> O cancro da próstata  <strong>é a causa mais comum de morte </strong> (até 88%) em homens que sofrem de impotência. Ocorre devido à falta de circulação sanguínea normal nos órgãos pélvicos e à estase purulenta na própria próstata.</span></p>
+
+        <center>
+          <img alt src="images/55665875885865.jpg">
+
+          <p><span><strong>Gangrena (necrose) do pénis de um homem</strong> de 44 anos devido a uma prolongada falta de potência. Teve de ser realizada uma operação de emergência, mas houve um grave envenenamento do sangue e o homem não pôde ser salvo.</span></p>
+          <center>
+            <img alt src="images/317-263ef26b405ad0ab2a2045d7fa5c69c5.jpg">
+          </center>
+
+          <p><span><strong>Pedras nos rins.</strong>
+            A doença da pedra nos rins também ocorre devido à diminuição do fornecimento de sangue aos pequenos órgãos pélvicos. É uma condição muito dolorosa que requer frequentemente uma cirurgia urgente para remover pedras ou o próprio rim.</span>
+          </p>
+
+          <center><img alt src="images/257-b1f232802caa58c030625ca5e4d6726f111.jpg">
+
+            <p><span>Devido ao facto de que a potência pode desaparecer completamente, muitos homens tentam livrar-se de problemas de potência assim que começam a aparecer. Contudo, até há pouco tempo <strong>era impossível restaurar completamente a potência</strong>: os medicamentos disponíveis (por exemplo, estimulantes) melhoram a potência apenas durante um certo tempo.</span></p>
+
+            <p><span>Este medicamento único, criado por cientistas americanos sob a orientação de Eduardo Moura, ajuda a recuperar a potência EXATAMENTE naturalmente, ou seja, é restaurado (como nos homens saudáveis) sem tomar estimulantes.</span></p>
+
+            <p><span>Pedimos ao Doutor em Medicina, Professor e Chefe do Departamento de Urologia do Instituto de Investigação que nos falasse sobre o novo medicamento, chamado PX-300.</span>
+            </p>
+
+            <div class="blue-horizontal-box">
+              <p style="text-align: center;"><strong><span>"Tem sido o desenvolvimento mais desafiante mas mais necessário no campo da urologia".</span></strong></p>
+            </div>
+
+            <p style="text-align: center;"><img alt src="images/841-86281c755ef7afc7ad81bac63d214799.jpg"
+                style="width: 60%;"></p>
+
+            <p style="text-align: center;"><em><span>Antônio Maciel diz-nos porque se perdeu a potência e como restaurá-la.</span></em></p>
+
+            <p><span><strong>Correspondente:</strong> Antônio, diga-nos por favor porque é que a potência está a diminuir e como parar este processo? </span></p>
+
+            <p><span><strong>Maciel:</strong> Olha, a tarefa principal de cada homem é reproduzir-se. É construído no ser humano para que este processo possa ter lugar sem interrupção. Cada ser humano tem três períodos. Quando está a crescer, quando pode reproduzir-se e quando está a desvanecer-se. Pelo nível de testosterona no sangue, o corpo sabe em que período se encontra. É máximo durante o período reprodutivo: mais de 11 nmol/l. Com a idade (após 45 anos) decresce: o homem entra na terceira fase. Isto deve acontecer em condições normais; na realidade, é um processo natural.</span></p>
+
+            <p><span>Contudo, os estilos de vida modernos e, mais importante ainda, o facto de os homens de hoje não se moverem muito, fazem com que os níveis de testosterona comecem a descer anormalmente cedo. Após a idade de 30 anos o seu nível em 93% dos homens testados é em média de 5 nmol/l, o que é duas vezes inferior à norma! Naturalmente, isto leva a problemas de potência, e claro que as úlceras que ocorrem quando não há fornecimento normal de sangue aos órgãos pélvicos aparecem muito mais cedo.</span></p>
+
+            <p><span><strong>Correspondente: </strong>Como pode o PX-300 ajudar os homens?
+              </span></p>
+
+            <p><span><strong>Maciel:</strong> É importante compreender que o PX-300 não é um fármaco estimulante. O seu objectivo é algo mais, nomeadamente, a activação da produção de testosterona pelo corpo, em vez de uma dilatação anormal e geralmente perigosa dos vasos sanguíneos na virilha, como fazem as drogas químicas, por exemplo.</span></p>
+
+            <p><span>Os ingredientes activos contidos em PX-300 estimulam a produção activa de hormonas luteinizantes e estimulantes do folículo, que por sua vez estimulam a hipófise. A própria glândula pituitária contribui para a produção da hormona testosterona.
+              </span></p>
+
+            <p><span> PX-300 tem um efeito complexo sobre o corpo. Não quero entrar em detalhes das reacções químicas que ocorrem no seu corpo, porque poucas pessoas as compreenderiam. Gostaria de salientar que o PX-300 melhora simultaneamente a erecção logo após a sua ingestão e ajuda a restaurar a função da glândula pituitária, ou seja, restabelece a potência natural, que aparece por si só sem qualquer medicação. Isto inclui pessoas com mais de 50-60 anos de idade. Usando PX-300, pode ter uma potência estável mesmo na velhice.</span>
+            </p>
+
+            <p><span>A própria testosterona é extremamente útil para um homem; afinal de contas, a sua falta leva ao envelhecimento do corpo e ao desenvolvimento de uma série de doenças. A maioria dos andrologistas experientes prescrevem testosterona para homens com mais de 50 anos de idade.</span></p>
+
+            <p style="text-align: center;"><span><img alt src="images/es4.png" style="width: 80%;"></span>
+            </p>
+
+            <p style="text-align: center;"><em><span>O processo de produção de testosterona pelas células de Leydig, o "sinal" para a produção pela hipófise, que afecta o PX-300.</span></em></p>
+
+            <p><span><strong>Correspondente: </strong>A normalização da produção de testosterona é uma solução muito simples, não é? Isto já não foi pensado antes?</span>
+            </p>
+
+            <p><span><strong>Maciel: </strong> A solução é simples. No entanto, influenciar este processo não é fácil. Eduardo Moura descobriu uma substância que pode influenciar indirectamente a glândula pituitária. Durante todo este tempo, temos vindo a desenvolver uma droga baseada nela. Até hoje, o PX-300 é a única droga tão eficaz contra a impotência sexual masculina. Os estimulantes ainda nem sequer chegaram perto. É também importante que o PX-300 não tenha efeitos secundários. Absolutamente. Isto também o destaca entre os produtos que contêm sildenafil.
+              </span></p>
+
+            <p><span><strong>Correspondente: </strong>Por favor, diga-me, o PX-300 passou nos ensaios clínicos, o que é que eles mostraram?</span></p>
+
+            <p><span><strong>Maciel:</strong>
+              Os ensaios clínicos têm sido realizados muitas vezes. E cada vez que mostraram resultados espantosos.
+              </span></p>
+            <p><span>Mostrar-vos-ei os resultados do ensaio clínico mais recente realizado no Outono de 2020 no Centro Científico de Urologia. Um total de cerca de 200 homens com problemas de potência de gravidade variável tomaram parte neles.
+              </span></p>
+
+            <h2 style="text-align: center;"><span style="color: rgb(41, 128, 185);">Resultados de um ensaio clínico de PX-300:</span></h2>
+
+            <p style="text-align: center;"><span><img alt src="images/es1.png" style="width: 75%;"></span>
+            </p>
+
+            <p><span>Além disso, o website do Instituto de Investigação Urológica realizou um inquérito de 7 meses entre aqueles que utilizaram o PX-300 para combater a impotência. A única questão é: "O PX-300 ajudou-o a combater a impotência? 5.478 pessoas já votaram. Pode ver os resultados do inquérito por si próprio.</span></p>
+
+            <h2 style="text-align: center;"><span style="color: rgb(41, 128, 185);"><span>Inquérito do Instituto de Investigação Urológica </span> </span>
+            </h2>
+
+            <h2 style="text-align: center;"><span style="color: rgb(41, 128, 185);">sobre os resultados da utilização do PX-300:</span></h2>
+
+            <p style="text-align: center;"><span><img alt src="images/es2.png" style="width: 75%;"></span>
+            </p>
+
+            <p><span><strong>Correspondente: </strong>Correspondente: É verdade que, ao abrigo do programa actual, qualquer homem pode obter o PX-300 com um desconto significativo</span><span>?</span></p>
+
+            <p><span><strong>Maciel:</strong> Maciel: Sim, é verdade. O Instituto de Investigação Urológica está agora a distribuir o PX-300 a um preço especial com desconto na Europa como parte do programa Saúde do Homem. </span>
+            </p>
+
+            <p><span>A minha opinião pessoal é que esta é uma iniciativa muito importante e correcta, uma vez que os problemas de potência estão a aparecer cada vez mais frequentemente nos homens, e muitas vezes levam à destruição de famílias, bem como à perda da saúde dos homens. Acredito que este produto irá salvar muitas famílias, bem como reduzir o número de drogas estimulantes que os homens tomam, tais como estimulantes sintéticos, que fazem mais mal do que bem.</span></p>
+
+            <p><span><strong>Correspondente: </strong>Como se torna membro do programa e obtém o PX-300, o que precisa de fazer?</span></p>
+
+            <p><span><strong>Maciel:</strong> É bastante simples, aqui estão as 3 condições necessárias para participar no programa: </span></p>
+
+            <ul style="text-align: left;">
+              <li><strong><em><span>1. Estar na Europa.</span>
+                  </em></strong></li>
+              <li><strong><em><span>2. Preencher um
+                      <a href="#form__block">formulário de encomenda oficial</a></span></em></strong></li>
+              <li><strong><em><span>3. Pagar a mercadoria no momento da entrega.</span></em></strong></li>
+            </ul>
+
+            <div class="red-horizontal-box">
+              <p><strong><span>Atenção! O ÚLTIMO DIA APLICAR A PX-300 é  <script>
+                      function addZero(i) {
+                        if (i < 10) {
+                          i = "0" + i
+                        }
+                        return i
+                      }
+                      var days = 0;
+                      var date = new Date();
+                      var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                      var day = addZero(last.getDate());
+                      var month = addZero(last.getMonth() + 1);
+                      var year = last.getFullYear();
+                      var sNow = day + "." + month + "." + year;
+                      document.write(sNow);
+                    </script>
+                    nclusive. Depois disso, só pode comprá-lo ao preço de mercado!</span></strong></p>
+            </div>
+
+
+            <p></p>
+            <!-- <center>
+                            <img src="images/product.png"
+                                style="margin: 50px 0px 0px; display: inline-block; max-width: 300px;"><br>
+                            <a href="#form__block"
+                                style="text-decoration: underline; color: rgb(0, 149, 218); font: bold 30px/100% sans-serif;">PEDIR
+                                CON 50% DE DESCUENTO</a>
+
+                        </center> -->
+            <div id="form__block">
+              <img src="images/888.png" style="margin: 50px 0px 0px; display: inline-block; max-width: 300px;">
+              <p class="discount__block"
+                style="text-align: center; font-size: 40px; margin-bottom: 9px; margin-top: 8px; line-height: 48px;">
+                <s class="oldPriceAndLabelForLandingInfoApi" style="color: #00e4ff; display: block;">78 euro</s> <b
+                  class="priceAndLabelForLandingInfoApi" style="color: red;">39 euro</b>
+              </p>
+              <div class="timer">
+                <p style="font-size: 26px; text-align: center; color: red;;">Ainda faltam alguns dias para o fim da promoção:</p>
+                <span class="hour">
+                  <span class="num hour0">-</span>
+                  <span class="num hour1">-</span>
+                </span>
+                :
+                <span class="minute">
+                  <span class="num min0">-</span>
+                  <span class="num min1">-</span>
+                </span>
+                :
+                <span class="second">
+                  <span class="num sec0">-</span>
+                  <span class="num sec1">-</span>
+                </span>
+              </div>
+              <form method="post" geo="es" action="api.php"
+                onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+                <input name="subid" type="hidden" value="{subid}">
+                <input name="px" type="hidden" value="{px}">
+                <input name="bayer" type="hidden" value="{bayer}">
+                <div class="text9">Introduza o seu nome</div>
+                <input type="text" name="name" placeholder="Nome" required="">
+                <div class="text9">Por favor introduza o seu número de telemóvel válido</div>
+                <input type="tel" name="phone" placeholder="Telefone" required=""><br>
+                <button type="submit">ENCOMENDAR</button>
+              </form>
+              <span style="display: block; margin: 25px 0 0 0;"> *Pagamento ao correio no acto da entrega</span>
+            </div>
+            <p></p>
+
+            <p> </p>
+          </center>
+        </center>
+      </div>
+      <!-- content end -->
+    </div>
+  </div>
+  <div class="comments">
+    <div class="comments__inner">
+      <div class="comments__quantity">Comentários ao artigo</div>
+      <div class="comments__seen">7 394</div>
+    </div>
+  </div>
+  <div class="review">
+    <div class="review__inner">
+
+      <div class="review__item">
+        <p class="review__author"><img src="images/w2.jpg" alt class="review__photo">Anita Rodrigues
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>Tenho agora 24 anos, e com o meu segundo marido americano, que tem agora 52, fazia sexo regularmente, três ou quatro vezes por semana ou mais vezes. Mas de alguma forma vi que o meu marido estava a tomar estimulantes sintéticos! Consegue imaginar? Ele não me falou dos seus problemas e eu pensei que ele não percebia a sua idade como um homem velho... De qualquer forma, repreendi-o muito, especialmente porque os estimulantes sintéticos lhe deram uma dor de cabeça e a sua tensão arterial saltou! Qual foi a necessidade de alegria na cama a um custo tão elevado? Começámos a procurar remédios naturais com ele e encontrámos o PX-300, graças a um amigo que me falou sobre ele! Houve também uma promoção no website, por isso tivemos duplamente sorte! Enviámos um inquérito e recebemos um pacote de PX-300 a um preço de pechincha! O meu marido recuperou completamente as suas forças, penso até que ele era pior quando era mais novo!</p>
+
+
+        <p></p>
+      </div>
+      <div class="review__item" style="padding-left: 50px;">
+        <p class="review__author"><img src="images/m0.jpg" alt class="review__photo">Maciel<br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Não faz ideia de como estou feliz por si, aproveite a vida e divirta-se. Como muito justamente salientou, não precisa de engolir comprimidos e destruir o seu coração com estimulantes para o fazer. Estou muito satisfeito por esta importante questão ter sido levantada a um nível tão elevado, a julgar pela quantidade de feedback, o problema é actual. Quero apelar mais uma vez a todos os homens e mulheres: não se apressem a matar o corpo com produtos químicos e não deixem que os vossos entes queridos o façam! <br>
+          <br>
+          Atenciosamente, Antônio.</p>
+        <p></p>
+      </div>
+
+
+      <div class="review__item">
+        <p class="review__author"><img src="images/w1.jpg" alt class="review__photo">Ana Ribeiro <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Eu tinha mastopatia e, além do tratamento, o meu médico aconselhou-me a ter uma vida sexual regular, mas isso é fácil de dizer. Não que eu não quisesse, mas a potência do meu marido começou a falhar há muito tempo. Tivemos uma vida sexual de 1-2 vezes por mês, no máximo. Falei com ele, decidi tentar mais vezes, mas depois de alguns fracassos ele tornou-se totalmente letárgico. Ainda bem que um amigo recomendou o PX-300, fiz uma aplicação neste website e recebemos um pacote PX-300 a um preço especial. O meu marido começou a tomá-lo imediatamente. Agora não só dormimos à noite, como já esqueci essa sensação de apenas voar no dia seguinte! Em suma, recomendo-o a todos e não se envenene com produtos químicos, é o caminho para lado nenhum!</p>
+        <p></p>
+      </div>
+
+
+      <div class="review__item">
+        <p class="review__author"><img src="images/w3.jpg" alt class="review__photo">Maria de Fátima Borges
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>O meu marido e eu fomos apresentados a este produto há muito tempo, ele teve pela primeira vez problemas depois dos 40 anos e comprou um pacote de PX-300 quando estávamos numa viagem de negócios em Nova Iorque. Lamentamos ter tomado apenas um porque os resultados excederam todas as expectativas!</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m1.jpg" alt class="review__photo">Cristiano <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Acho que todos conhecem a minha história, tem havido muitos artigos sobre mim na Internet. Estou apenas a escrever para agradecer ao meu médico por contar ao mundo sobre este poderoso remédio natural. Claro que também escrevi sobre isso no meu blogue, mas não há muita gente que me leia. Resumindo, aos 60 anos de idade consegui casar com uma beleza de 26 anos de idade! A minha alegria não conhecia limites, mas muito cedo percebi que na cama "não o consegui". É difícil para uma jovem sem ela, começa-se a discutir, a infidelidade... Em suma, se não fosse o PX-300, acho que não teria sobrevivido ao casamento, mas agora sinto-me como um HOMEM! E sim, sou novamente um homem!</p>
+        <p>
+          <!-- <img alt="" src="images/real2.jpg" style="width: 75%; max-width: 300px;"> -->
+        </p>
+        <p></p>
+      </div>
+      <div class="review__item" style="padding: 0 0 0 50px;">
+        <p class="review__author"><img src="images/7.jpg" alt class="review__photo">Fernando <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 0;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Cristiano, olá! Graças a ti, encontrei este remédio! Obrigado por me teres falado sobre isso. Agora o meu marido pode fazê-lo a qualquer hora do dia, estou muito feliz com isso!</p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m2.jpg" alt class="review__photo">Alex <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p> PX-300 é realmente um excelente produto, um amigo aconselhou-me a encomendá-lo quando me embebedei e confessou que não conseguiria viver sem estimulantes químicos. O meu amigo, graças a ele, continuou a perguntar-se porque precisava de comprimidos, a menos que eu fosse um avô de 70 anos. Na verdade, a potência voltou muito rapidamente e é ainda mais forte do que antes, esperemos para sempre =) rapazes, encomendem enquanto a promoção está a decorrer e podem obter o produto a um preço com desconto, eu respondo-vos, estou a passar um mau bocado mesmo agora!</p>
+
+
+        <p> </p>
+        <p></p>
+      </div>
+      <div class="review__item" style="padding: 0 0 0 50px;">
+        <p class="review__author"><img src="images/otz-10-10-011.jpg" alt class="review__photo">Eugênia
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>Alex, haha, eu li o seu comentário e agora estou a rir! Quem me dera que o meu marido também tivesse sido sempre duro, cansado de viver sem sexo... Preciso de um amante!</p>
+        <p></p>
+      </div>
+      <!-- <div class="review__item" style="padding: 0 0 0 50px;">
+                <p class="review__author"><img src="images/m2.jpg" alt class="review__photo">Джон
+                    <br><span class="review__time">Publicado em  <span class="comment_date">
+                            <script>
+                                function addZero(i) {
+                                    if (i < 10) {
+                                        i = "0" + i
+                                    }
+                                    return i
+                                }
+                                var days = 1;
+                                var date = new Date();
+                                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                                var day = addZero(last.getDate());
+                                var month = addZero(last.getMonth() + 1);
+                                var year = last.getFullYear();
+                                var sNow = day + "." + month + "." + year;
+                                document.write(sNow);
+                            </script>
+                        </span></span>
+                </p>
+                <p class="review__info"></p>
+                <p>Я получил упаковку PX-300 со скидкой, эффект сильный и пока держится, надеюсь, что он не иссякнет! Я просто хочу сказать тем, кто собирается купить, это не похоже на стимуляторы, все натуральное, эффект мгновенный и длительный. Длительный эффект, по их словам, длится не менее нескольких часов.</p>
+                <p></p>
+            </div> -->
+      <div class="review__item">
+        <p class="review__author"><img src="images/m3.jpg" alt class="review__photo">João
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>Recebi um pacote de PX-300 com desconto, os efeitos são fortes e estão a aguentar-se até agora, esperemos que não se desgaste! Só quero dizer àqueles que vão comprar, não é como os estimulantes, é tudo natural, os efeitos são instantâneos e duradouros. O efeito duradouro, dizem eles, dura pelo menos algumas horas.</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m4.jpg" alt class="review__photo">Lucas Santos
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Comecei a usar o PX-300 em segredo da minha mulher, não queria dizer-lhe que tinha problemas. E eu fiquei surpreendido com o efeito! Sim, a montagem vem rápida e muito poderosa! Mas também, o pénis fica maior! Especialmente no perímetro, quando a excitação chega. Imaginem o choque da minha mulher, que me conhece há anos! Ela até estava assustada, comecei a pensar se tinha sido operada ao aumento do pénis! Mal consegui acalmá-la :) A vida sexual melhorou tanto, que a minha mulher nunca gozou dessa maneira!</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/w10.jpg" alt class="review__photo">Verónica
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Também notei este efeito no meu marido! E apreciou imediatamente a diferença. E antes disso toda a sua vida pensou que todos os homens se tornavam mais fracos com o tempo em termos de sexo... Mas não! Agora tenho mesmo orgasmos fantásticos e antes disso não me vinha sempre... Agora, como uma rapariga esfomeada, ataco o meu marido, já tenho vergonha de mim às vezes...</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m6.jpg" alt class="review__photo">João José
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Partilharei também a minha alegria. A minha potência foi restaurada, estou de novo a desfrutar da vida e deixei de suar o início da velhice. Um homem deve continuar a ser um homem, isso é um facto. Se não gosta da vida e dá alegria ao seu companheiro, porquê viver?</p>
+
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m7.jpg" alt class="review__photo">Guilherme <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Estou espantado, é realmente irónico agora! Fiz recentemente uma maratona sexual, tombando com uma rapariga durante quase 3 horas. Bem, com pequenas pausas =) Eu ejaculo três vezes! E outra coisa que reparei, depois de terminar, comecei a recuperar muito rapidamente, literalmente 5-10 minutos e depois de novo para cima! A menos, claro, que haja uma rapariga bonita por perto. Ei, lembrei-me e até fiquei entusiasmado por sair mais cedo do trabalho hoje...</p>
+
+        <p> </p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m8.jpg" alt class="review__photo">Benício
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>Tive muito medo de todos estes remédios depois de ter contraído doenças cardíacas através de estimulantes. Mas depois ainda assim decidiu experimentar um produto natural. Na realidade, sem dor de cabeça, o coração não bate tanto como os estimulantes. Portanto, recomende-o a todos, mas em termos de força e duração de uma erecção, PX-300 é 100 vezes melhor do que a química!</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/w4.jpg" alt class="review__photo">Maria Elena <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 1;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Ajudou muito o meu marido! Eu nem sequer sentia pena de mim próprio, embora também me faltasse sexo regular, mas por ele. Pude ver que ele estava constantemente deprimido, especialmente quando tentámos e não funcionou. Agora a sua potência é normal e ele é uma pessoa completamente diferente, alegre, alegre !!!! Mantemos o PX-300 no armário dos medicamentos, por isso está sempre à mão, nunca se sabe...</p>
+
+
+
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/w5.jpg" alt class="review__photo">Beatriz <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Obrigada, o PX-300 salvou literalmente a nossa família! O meu marido pode agora ter sexo durante 2 horas! O seu pénis ficou mais duro e aumentou de tamanho, adoro-o! Aconselho qualquer pessoa que esteja a enfrentar um problema na cama. É um grande poupador de dinheiro. Os comprimidos farmacêuticos são muito caros e muito dinheiro tem sido gasto nos últimos anos.</p>
+
+
+        <p> </p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/w6.jpg" alt class="review__photo">Catarina
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Pessoal, digam-me onde compraram isto? Este remédio não está disponível nas farmácias e eu quero realmente surpreender o meu marido =)</p>
+        <p></p>
+      </div>
+      <div class="review__item" style="padding-left: 50px;">
+        <p class="review__author"><img src="images/m0.jpg" alt class="review__photo">Maciel<br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Mais uma vez, reitero que pode deixar um pedido de PX-300 através do formulário de encomenda acima, por isso não pode correr mal, basta clicar no botão "ENCOMENDAR" logo abaixo! Há uma promoção para os nossos telespectadores e leitores onde podem obter um pacote de PX-300 com 50% de desconto, mas esta promoção será válida por alguns dias, por isso despachem-se e encomendem!<br>
+          <br>
+          Atenciosamente, Antônio</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/m9.jpg" alt class="review__photo">Ernesto <br><span
+            class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Este produto é algo espantoso! Tenho uma jovem esposa e de repente comecei a ter problemas de potência. Pensei que ela me iria deixar. Mas eu encontrei este produto e encomendei-o. Agora todos estão felizes, obrigado!</p>
+        <p></p>
+      </div>
+      <div class="review__item">
+        <p class="review__author"><img src="images/w7.jpg" alt class="review__photo">Elisa
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>O meu marido começou a ter problemas com a potência. Graças a um amigo que me aconselhou sobre o PX-300. Depois do tratamento, tudo voltou ao normal, agora ele tem a potência de uma criança de 18 anos!</p>
+
+        <p></p>
+      </div>
+
+      <div class="review__item">
+        <p class="review__author"><img src="images/m10.jpg" alt class="review__photo">Pedro Guimarães
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 2;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>O meu abastecimento esgotou-se, vou encomendar mais! O produto é óptimo!</p>
+
+
+
+        <p></p>
+      </div>
+
+
+
+      <div class="review__item">
+        <p class="review__author"><img src="images/w8.jpg" alt class="review__photo">Andrea Ferreira
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 3;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span>
+        </p>
+        <p class="review__info"></p>
+        <p>Estou chocado! Depois de tomar este produto o meu marido fode-me durante 3 horas por noite. Sinceramente, eu já estou cansado, quero dormir!</p>
+        <p></p>
+      </div>
+      <div class="review__item" style="padding: 0 0 0 50px;">
+        <p class="review__author"><img src="images/w9.jpg" alt class="review__photo">Ana Rebeca Costa
+          <br><span class="review__time">Publicado em  <span class="comment_date">
+              <script>
+                function addZero(i) {
+                  if (i < 10) {
+                    i = "0" + i
+                  }
+                  return i
+                }
+                var days = 3;
+                var date = new Date();
+                var last = new Date(date.getTime() - (days * 24 * 60 * 60 * 1000));
+                var day = addZero(last.getDate());
+                var month = addZero(last.getMonth() + 1);
+                var year = last.getFullYear();
+                var sNow = day + "." + month + "." + year;
+                document.write(sNow);
+              </script>
+            </span></span></p>
+        <p class="review__info"></p>
+        <p>Andrea, eu tenho a mesma situação, o meu marido acabou de se tornar uma besta com este produto! Fazendo amor todas as noites, os vizinhos devem ficar chocados com os nossos gritos!</p>
+        <p></p>
+      </div>
+
+      <br>
+      <style>
+        /* Code tidied up by ScrapBook */
+        .btnGo {
+          text-decoration: none;
+          display: block;
+          background: #de0606;
+          color: #fff;
+          text-align: center;
+          display: block;
+          width: 300px;
+          border-radius: 25px;
+          padding: 20px 0;
+          margin: 15px auto 10px;
+        }
+
+        .btnGo img {
+          width: 95%;
+          margin: 0px auto;
+          transition: all 0.2s ease 0s;
+        }
+
+        .btnGo:hover img {
+          filter: contrast(1.3);
+          transition: all 0.2s ease 0s;
+        }
+      </style><a class="btnGo" href="#form__block">ENCOMENDAR</a> <br>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__inner">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Notícias</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Artigos</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Contacto</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Recursos</a>
+        </li>
+        <li class="menu__item">
+          <a href="#form__block" class="menu__link">Mapa do sítio</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input class="search__field" placeholder="Pesquisa" type="text">
+        <a href="#form__block">
+          <div class="search__btn"></div>
+        </a>
+        <a style="display: block; text-align: center; text-decoration: none; color: gray;" href="privacy.html"
+          target="_blank">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("a[href*=#]").on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+      });
+    });
+  </script>
+  <!--Счетчики метрик для вебмастеров-->
+
+
+
+
+
+
+  <!-- WIDGETS -->
+
+
+
+  <!-- END WIDGETS -->
+
+
+  <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+  <link rel="stylesheet" href="/libs/js/gdpr.css">
+  <script>
+    var phonePattern = {
+      'ru': '+7 (___) ___-__-__',
+      'ua': '+38-___-___-__-__',
+      'by': '+375 ___ ___ ___',
+      'kz': '+7 ___ ___ ____',
+      'kg': '+___ ___ __ __ __',
+      'md': '0 ___ _____',
+      'az': '+___-__-___-__-__',
+      'ge': '+995 ___ __ __ __',
+      'es': '+34 ___ __ __ __',
+      'pe': '+51 ___ ___ _?_',
+      'cl': '+56 _ ____ ____',
+      'ar': '+54 __ ____ ____',
+      'co': '+57 _______??_',
+      'mx': '+52 __ ____ ____',
+      'it': '+39-___-___-____',
+      'esp': '+34 ___ __ __ __',
+      'pt': '+351 ___ ___ ___',
+      'br': '+55 __ ___?_ ____',
+      'prt': '+351 ___ ___ ___',
+      'id': '+62 ___ ___ ___',
+      'gr': '+30 ___ _______',
+      'cy': '+357 __ ______',
+      'ro': '+40 ___ ___ __? _',
+      'bg': '+359 ___ __ __? _',
+      'cz': '+420 ___ ___ ___',
+      'sk': '+421 ___ ___ ___',
+      'si': '+386 _ ___ __ __',
+      'pl': '+48 ___ ___ ___',
+      'al': '+355 __ ___ ___?_',
+      'rs': '+381 __ _____?_',
+      'ph': '+63 _ ____ __?_',
+      'hu': '+36 _ ___ ____',
+      'hr': '+385 _ ____ __?_',
+      'ba': '+387 __ ______',
+      /* --- */
+    }
+
+    const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+    //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+    function validate_form(form, alert_text = "Please enter valid phone number") {
+      var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+        pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+      if (input_ln >= pattern_ln) return true;
+      else {
+        alert(alert_text);
+        return false;
+      }
+    }
+
+    //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+    document.addEventListener("DOMContentLoaded", function () {
+
+      var isTimeoutSeted = false;
+      var inputInterval;
+
+      function createInterval(input) {
+        if (!isTimeoutSeted) {
+          isTimeoutSeted = true;
+
+          inputInterval = setInterval(() => {
+            input.selectionStart = input.value.length
+            input.setSelectionRange(input.value.length, input.value.length);
+          }, 15)
+        }
+      }
+
+      function deleteInterval() {
+        clearInterval(inputInterval)
+        isTimeoutSeted = false;
+      }
+
+      function setSelectionStart(input) {
+        input.selectionStart = input.value.length
+      }
+
+      function mask(event) {
+        var input = event.currentTarget;
+        var geo = input.form.getAttribute('geo');
+        var matrix = phonePattern[geo];
+        var i = 0;
+        var def = matrix.replace(/\D/g, "");
+        var val = input.value.replace(/\D/g, "");
+
+        if (!event.type == "blur") {
+          setSelectionStart(input)
+        }
+
+        // Ставим интервал для инпута
+        createInterval(input)
+
+        if (event.type == "blur") {
+          // Сбрасываем интервал для инпута
+          deleteInterval()
+          if (input.value.length == 2) {
+            input.value = ""
+          }
+        }
+
+        if (def.length >= val.length) {
+          val = def
+        };
+
+        input.value = matrix.replace(/./g, function (a) {
+          return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+        });
+
+
+      };
+
+      inputs.forEach(input => {
+        input.addEventListener("input", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("focus", mask, false);
+      })
+    });
+
+    $(document).ready(function () {
+      // Load GDPR
+      $(document).gdprCookieLaw({
+        moreLinkHref: '/privacypolicy',
+        theme: 'theme-1',
+        position: 'bottom-right',
+        width: '760px',
+        margin: '15px',
+        animation: 'fade-slide',
+        btnAcceptText: 'Ok'
+      });
+    });
+  </script>
+
+</body>
+
+</html>
