@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+  const day = document.querySelectorAll('.date-day');
+  const mont = document.querySelectorAll('.date-mont');
+  const year = document.querySelectorAll('.date-year');
+
+
+  for ( let i = 0; i < day.length; i++){
+    currentDate(day[i], mont[i], year[i]);
+  }
+
+
+  function currentDate(day,mont, year){
+    let currentDay = new Date().getDate();
+    let currentMonth = new Date().getMonth() + 1;
+    let currentYear = new Date().getFullYear();
+
+    day.textContent = currentDay < 10 ? "0" + currentDay: currentDay;
+    mont.textContent = currentMonth < 10 ? "0" + currentMonth: currentMonth;
+    year.textContent = currentYear < 10 ? "0" + currentYear: currentYear;
+  }
+})
+    </script>
+    <title>Daily Online</title>
+</head>
+
+<body>
+<nav class="navbar navbar-dark mb-1">
+    <a target="_blank" class="navbar-brand" href="{offer}">Daily Online</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a target="_blank" class="nav-link" href="{offer}">Principal</a>
+            </li>
+            <li class="nav-item">
+                <a target="_blank" class="nav-link" href="{offer}">Salud</a>
+            </li>
+            <li class="nav-item">
+                <a target="_blank" class="nav-link" href="{offer}">Noticias</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</nav>
+<nav class="container" aria-label="breadcrumb">
+    <ol class="breadcrumb p-1 border-bottom">
+        <li class="breadcrumb-item">Principal</li>
+        <li class="breadcrumb-item">Salud</li>
+        <li class="breadcrumb-item red">Fitness y alimentación</li>
+    </ol>
+</nav>
+<div class="main">
+    <div class="container">
+
+        <div class="row headline">
+            <div class="col">
+                <h1><span class="red text-underline">El nuevo "esteroide legal" aumenta el crecimiento de músculos un 287% </span> - ¡los mejores entrenadores y deportistas revelan la alternativa más segura a esteroides!</h1>
+            </div>
+        </div>
+
+        <div class="row featured-image mb-3">
+            <div class="col">
+                <img src="images/img4.jpg" width="800" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row content mb-3">
+            <div class="col">
+                <p> (Noticias Daily Online) – Desde los principios del año pasado nuestros lectores se vuelven locos con el nuevo <a target="_blank" href="{offer}">'esteroide legal'</a>, que pasó por el país, y ayudó a los hombres de todas las clases sociales a transformar su cuerpo rápido y de forma segura. Este producto resultó tener tanto éxito que muchos entrenadores y deportistas profesionales ahora desean que lo prohíban.</p>
+                <p>Lo culpan de hacer a la gente ganar la masa muscular demasiado rápido y, aunque ha sido clínicamente comprobado que el mismo es seguro y no tiene ningún efecto secundario peligroso de los verdaderos esteroides.</p>
+            </div>
+        </div>
+
+        <div class="row carousel mb-3">
+            <div class="col">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="images/beforeafter1b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/beforeafter2b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/beforeafter3b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/beforeafter4b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a target="_blank" class="carousel-control-prev" href="{offer}" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Antes</span>
+                    </a>
+                    <a target="_blank" class="carousel-control-next" href="{offer}" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Después</span>
+                    </a>
+                </div>
+                <p style="font-size:12px;text-align:center;">
+                    ¡Los hombres de todo el país usan esta alternativa a esteroides para ganar más de 1 kg de músculos al mes!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>Hace poco informaron por la tele de este producto, y desde aquel entonces recibimos a diario 1000 mensajes de nuestros lectores que nos reclaman más información y preguntan cómo pueden recibir personalmente este nuevo complemento alimentario para ganar los músculos. Parece mentira, pero muchos hombres que a diario afrontan los retos de su cuerpo, aún no han oído hablar de este remedio potente.</p>
+                <p class="quote">Los entrenadores llaman este nuevo complemento "una alternativa natural a esteróides" que permite ganar los músculos y mejorar el deseo sexual.</p>
+                <p>En las entrevistas privadas HR365 los famosos de cine de Hollywood dicen que la ventaja de este fármaco es la siguiente: les ayudó a ganar músculos y la masa muscular para prepararse a actuar en el cine. Decenas de otras personas famosas transformaron su cuerpo con este fármaco que provoca disputas. Hasta los deportistas profesionales participaron en la campaña para ganar los músculos y usaron el mismo producto para la transformación física cardenal.</p>
+                <p>El producto de que hablamos se llama  <a target="_blank" href="{offer}">FortuMax</a>. Es posible que Vd. lo haya visto en las noticias, por la tele o en Internet como “una herramienta secreta e ingeniosa” que usan las modelos, los famosos y la gente ordinaria en toda España. El ingrediente básico es el citrato de cinco, un compuesto poco frecuente usado por el cuerpo para ganar los músculos rápido. El citrato de cinco se convierte en óxido de nitrógeno (NO), que provoca la vasodilatación de los vasos sanguíneos. En otras palabras, aumenta de forma brusca el volumen de sustancias nutritivas que pueden ser dirigidas a sus músculos. El alto contenido de citrato de cinco y otras propiedades de Fortumax que provocan el crecimiento de la masa muscular lo convierten en una herramienta potente para transformar Su cuerpo.</p>
+                <img src="images/vasodilation.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Véase más abajo: Un compuesto poco frecuente de citrato de cinco se convierte en oxido de nitrógeno (NO) que dilata los vasos sanguíneos y aumenta el volumen de las sustancias nutritivas que reciben los músculos.</p>
+                <p><a target="_blank" href="{offer}">FortuMax</a> es tan eficaz que Vd. Entenderá por qué vale la pena mencionar un informe especial. Pero, posiblemente, lo más importante es que se puede adquirir Fortumax SIN prescripción médica.</p>
+                <img src="images/doctors.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Fue clínicamente comprobado que los ingredientes que forman parte de 
+                    <a target="_blank" href="{offer}">FortuMax</a>
+                    provocan el crecimiento de los músculos sin dietas y ejercicios físicos.</p>
+                <p>Según los médicos que realizaron la investigación clínica, este conjunto funciona de más de un modo: "El primero modo – el mismo penetra dentro y hace que los vasos sanguíneos de los músculos se ensanchan y se dilatan...</p>
+                <p>El segundo modo, el más importante – el mismo aumenta el nivel natural de testosterona y mejora la capacidad de generar la masa muscular seca. De esta forma, ahora en el flujo sanguíneo se aumenta el volumen de testosterona, lo cual ayuda a ganar la masa muscular más rápido. Vd. tiene un efecto sinergético, y al mismo tiempo se aumenta la producción de los nuevos músculos. Pero es totalmente natural y seguro"</p>
+                <img src="images/9weeks.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Un Blogger de Ciudad Real transformó su cuerpo solo en 9 semanas, al haber usado  <a target="_blank" href="{offer}">FortuMax</a>.</p>
+                <p>Si de momento Vd. tiene dudas, lo mismo se refiere a otras personas. Durante los últimos 18 años en HR365 hemos visto muchos productos prometedores que aparecían y desaparecían. Cuando por primera vez nos enteramos de “otro” producto para ganar la masa muscular, nuestro radar de información funcionó enseguida. Hasta al haber hojeado grandes volúmenes de investigaciones... tuve opinión comprobada. Pero aún no tuve comprobaciones personales de que  <a target="_blank" href="{offer}">FortuMax</a>  vale el tiempo gastado. Por lo tanto, con permiso de mi redactor, decidí probar este producto. ¿Qué puede ser mejor que una investigación personal para enterarse de la verdad?</p>
+                <p>Sabemos que el pensamiento sobre ser esbelto y ganar los músculos frecuentemente nos parece una tarea difícil de realizar. Hemos analizado múltiples programas para ganar la masa muscular, y parece que todos son muy exigentes o no funcionan igual que deberían. La causa del fracaso de la mayoría de los programas es que los mismas provocan restricciones imposibles para Su vida diaria.</p>
+                <div class="row mt-5 mb-3">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/Aaron_Clark2.jpg" class="img-fluid">
+                        <p style="font-size:12px;">"Es espectacular. No puedo creerlo, vi los resultados tan rápido. ¡Los resultados reales! Literalmente vi los resultados después del primer día. Les estoy muy agradecido."</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p>A pesar de nuestras dudas sobre <a target="_blank" href="{offer}">FortuMax</a>,
+                            las historias infinitas de éxito recibidas en nuestra oficina demostraron que los hombres ordinarios de todo el mundo pudieron alcanzar modificaciones increíbles de su cuerpo sin cambios radicales. Estas personas vieron los resultados sin necesidad de cambiar bastante su modo de vivir o hábitos alimenticios.</p>
+                    </div>
+                </div>
+                <p>En este informe especial cuento cómo hice las pruebas del producto, y le demuestro los resultados asombrosos que logré. Hoy día revelo un secreto de lo que nosotros, el personal de HR365, llamamos "posiblemente el producto más eficaz para transformar el cuerpo de hombres en el mundo ". Le demostrare como Vd. también puede tener cuerpo esbelto y con músculos de forma rápida y segura, sin usar los fármacos prohibidos y sin pagar 1000 EUR por los complementos.</p>
+                <div class="clinically-proven">
+                    <h3> Las ventajas de  <a target="_blank" href="{offer}" class="text-underline">FortuMax</a>
+                        clínicamente comprobadas:</h3>
+                    <ul>
+                        <li>Aumento del nivel natural de testosterona un 140%</li>
+                        <li>Aumento del flujo de sangre al tejido muscular</li>
+                        <li>Aumento se síntesis de proteínas</li>
+                        <li>Posibilidad de deshacerse de la imagen de una persona hinchada, regordeta.</li>
+                    </ul>
+                </div>
+                <p>Decidí ir más lejos, visité el sitio web de Fortumax y pedí un curso mensual de las gotas.</p>
+                <p>Mi paquete fue entregado en 3 días.</p>
+                <p>Tuve que cumplir con el modo de tomar los complementos durante 4 semanas y documentar mi progresa en proceso.</p>
+                <div class="row mx-1 results">
+                    <div class="col">
+                        <p class="text-center my-auto">Los resultados asombraron a todos en HR365 (a mí también)...</p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Primera semana:</h6>
+                        <img src="images/week11.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>Después de 1 semana de tomar el producto del nuevo programa, me asombré por el resultado rápido y significante. Mi nivel de energía aumentó, ya no me sentí tan hambriento como antes. Es un efecto secundario placentero. El curso de gotas de un mes y sus capacidades de quitar el apetito. A decir verdad, me sentí de forma fantástica, y no tuve que cambiar nada en mi rutina diaria.</p>
+                        <p>Al día 7 me pesé (usé la nueva báscula digital que mide el contenido de músculos) y no puede creerlo - gané 1,3 kg de masa muscular. Pero aún no estaba totalmente convencido. Dicen que al principio de algunos programas musculares uno pierde mucha agua y gana mucha masa muscular. Quería ver si gano el mismo volumen de músculos en las próximas semanas. Pero todo fue muy bien.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Segunda semana:</h6>
+                        <img src="images/week2.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>A las dos semanas de tomar el complemento, tuve más energía, dormía mejor que antes. No me despertaba por la noche y no me movía en la cama porque mi cuerpo pudo relajarse (creo que es un resultado de propiedades detox del complemento). También conseguí perder el peso, 6 kg increíbles solo en 2 semanas. También sentí haber ganado 6 abdominales marcados, lo cual le gustó mucho a mi chica. Sí, es así. </p>
+                        <p>En aquel momento empecé a creer más que todos estos productos para los músculos no es solamente un truco.</p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Tercera semana:</h6>
+                        <img src="images/week3.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>A las 3 semanas todas mis preguntas y dudas desaparecieron. Gané casi 2 kg de masa muscular pura y mi cuerpo ya se veía mucho más firme. Toda la grasa a ambos lados de mi vientre desapareció totalmente. Mi abdomen tuvo tanto relieve que finalmente aparecieron 6 abdominales. Este producto es realmente asombroso. El crecimiento de músculos es INCREÍBLE.</p>
+                        <p>Seguía con mucha energía. Normalmente a la tercera semana de otras dietas uno empieza a perder el ritmo. Pero con  <a target="_blank" href="{offer}">FortuMax</a> mi nivel de energía no cayó. Al revés, siguió siendo estable durante todo el día. Noté que mi estómago digería mejor la comida, no hay hinchazón ni gases desagradables después de comer.</p>
+                    </div>
+                </div>
+                <div class="row mx-1 mb-5 py-3 week">
+                    <div class="col">
+                        <h6>Cuarta semana:</h6>
+                        <img src="images/week4.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>Después de la cuarta semana, estaba totalmente asombrado por mis resultados. Desde el principio, al tomar  <a target="_blank" href="{offer}">FortuMax</a> gané 4 kg increíbles de la masa muscular. Ahora todos en HR365 desean probar esta dieta. Estaba seguro de sí mismo y preparado para las competiciones de fitness. Seguramente voy a continuar tomando <a target="_blank" href="{offer}">FortuMax</a> porque el mismo da resultados estables, asombrosos y contiene tantos otros compuestos que ayudan a generar la masa muscular y mantener la masa.</p>
+                        <h2 style="text-align:center;font-weight:bold;clear:both;float:left;margin-top:10px;">
+                            "No puedo estar más contento con los resultados. Gané 4 kg de masa muscular en 4 semanas. ¡Sin dieta especial, sin ejercicios intensivos!"</h2>
+                    </div>
+                </div>
+                <img src="images/ba4.jpg" width="800" class="img-fluid mb-3" alt>
+                <p>Si aún tiene dudas sobre las ventajas asombrosas de 
+                    <a target="_blank" class="text-underline" href="{offer}">FortuMax</a> para ganar los músculos, le recomendamos probarlo. A partir de mi propio test que realicé puede asegurarse de que los resultados son reales. Gané 4 kg de masa muscular seca solo en 4 semanas. Sin dieta especial ni ejercicios físicos. Además, cambió mi cuerpo, y la alimentación, nunca tuve hambre durante el día. El equipo de HR365 al principio tenía dudas, pero luego cambió de opinión rápido. Al haber realizado las investigaciones propias, estamos contentos de ver que los hombres en todo el mundo tienen éxito al aplicar este nuevo producto revolucionario para ganar los músculos.</p>
+                <p class="red bold">IMPORTANTE: *Durante las pruebas clínicas fue comprobado que para tener los resultados similares hay que tomar  Fortumax a diario.</p>
+                <p><a target="_blank" class="text-underline" href="{offer}">FortuMax</a>
+                    desea que todos nuestros lectores tengan la posibilidad de probar este nuevo fármaco para ganar los músculos. ¡Ofrecen una promoción restringida! Pro hay que actuar rápido, la promoción finaliza el  <span class="bold">
+                        <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                        </span>.
+                        ¡Una vez recibido el frasco, infórmenos sobre Sus impresiones en la sección de comentarios en la parte inferior de este artículo.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-4">
+    <div>
+        <style type="text/css">
+    #trial img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 768px) {
+#trial h2 {
+    font-size: 22px;
+}
+}
+#trial h2 {
+    background: #000;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+#trial .grid {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+#trial .grid > a:first-child {
+    display: inline-block;
+    padding-right: 15px;
+    width: 49%;
+    vertical-align: middle;
+    text-align: right;
+}
+}
+#trial .grid > a:first-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+#trial .grid > a:first-child img {
+    width: 100%;
+}
+}
+#trial .grid > a:first-child img {
+    width: 70%;
+    height: inherit;
+}
+#trial h3 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: none;
+}
+
+#trial p {
+    margin: 0 0 20px 0;
+    line-height: 26px;
+    font-size: 17px;
+}
+
+#trial a {
+    color: #ef3829;
+    }
+
+.btn {
+    width: 100%;
+    max-width: 300px;
+    line-height: 40px;
+    background-color: #57af08;
+    border-radius: 8px;
+    color: #fff!important;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: solid;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-name: hover;
+    animation-name: hover;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.btn:hover {
+    background-color: #e16e50;
+}
+#trial img {
+    width: 100%;
+    height: auto;
+}
+.safes {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+</style>
+            
+
+<div id="trial" class="nShow" style="display: block;">
+            <div style="text-align:center">
+                <img alt src="images/bb7e13c722ef1e3e0336b198d6efd794.jpg" width="300" height="111" style="max-width:980px;">
+            </div>
+            <h2>
+                Actualización: ¡Oferta restringida para nuestros lectores! El periodo de validez de la promoción expira el
+                <span class="date"> <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span> </span>
+            </h2>
+            <div class="grid">
+                <a href="{offer}" target="_blank">
+                    <img alt id="img_1" src="images/prod.png" class="step1_image productImg" style="display: block ;max-width:160px; width: auto;margin: 0 auto">
+                </a>
+                <br>
+                <div>
+                    <h3>FortuMax</h3>
+                    <p>Pedir  <a href="{offer}" target="_blank">
+                        <span class="productName">FortuMax</span>  </a>  con un descuento de -50%</p>
+                    <center>
+                        <div class="btn-container">
+                            <a href="{offer}" target="_blank" class="btn">HACER UN PEDIDO</a>
+                        </div>
+                    </center>
+                    <br>
+                    <p><b>Periodo de validez de la promoción expira: </b>
+                        <span class="date">
+                            <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                        </span></p>
+                    
+                    <img alt src="images/trust.png" class="safes">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="SectionTitle" style="font-size:18px;color:red;border-bottom:2px solid #000;font-weight:bold;margin-bottom:15px;">Comentarios
+    </div>
+    <ul class="commentlist mx-3">
+        <li>
+            <img src="images/1.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Fernando</cite>
+                <p>Mis amigos y yo esperábamos que apareciera un fármaco para ganar la masa muscular Fortumax. Por lo menos, 5 de nosotros tomaban este complemento, y todos ganamos la masa muscular seria. Este producto es realmente increíble y cambió nuestras vidas. Suerte a todos los que usarán esta posibilidad milagrosa.</p>
+            </div>
+            <ul>
+                <li><img src="images/2.jpg" data-pin-nopin="true">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>José</cite>
+                        <p>Suena realmente guay. Gracias por haber compartido su experiencia, ahora veo que debo probarlo.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/3.jpg" data-pin-nopin="true">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Miguel</cite>
+                <p>Juan, vi este producto en programas de tele. Pero no sabía cómo pedirlo, y encontré Su sitio web donde Vd. localizó las entregas EXCLUSIVAS DE PROMOCIÓN, lo cual es guay, porque no deseo pagar caro por algo que no sé cómo funciona. Actualmente llevo 2 meses tomando este producto y debo confesar que funciona, y mis resultados son increíbles. Muchas gracias por haber publicado este artículo y haber hecho la prueba. ¡Gracias por la información!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/4.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Natanael</cite>
+                <p>Llevo 2 meses aplazando mis actividades para estar en forma, y hoy día voy a empezar a actuar. Pedí un curso mensual y voy a hacer los ejercicios de 30 minutos ahora mismo. ¡Gracias a HR365 por la motivación que me animó!! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/6.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Ricardo</cite>
+                <p> Mi mujer y yo tenemos que volver a estar en forma, y deseo mucho ganar la masa muscular. Ya lo pedí y ambos vamos a probarlo. Gracias. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/5.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Alfonso</cite>
+                <p>Gracias, Juan, he visto un reportaje por la tele y entendí que Fortumax
+                    FUNCIONA AÚN MEJOR PARA LOS HOMBRES que desean estar esbeltos. Seguramente voy a probar las ofertas especiales antes de que se expire. Gracias por haber compartido los consejos. ¡Estoy encantado!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/7.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Leonardo</cite>
+                <p> Estos días se habla mucho de Fortumax. Veo Fortumax en todas partes... Entregaban las muestras exclusivas del producto en las tiendas locales. Voy a hacer pruebas del complemento Fortumax. ¡Gracias por los descuentos, hermano! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/8.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Alejandro</cite>
+                <p>Mi hermano tenía problemas para ganar los músculos desde niño, y el médico dijo a mis padres que deberían convencerle para que se entrenara. Espero que sea una respuesta correcta. Gracias a HR365</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/9.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Mario</cite>
+                <p>¿Cómo funciona este remedio para los chicos? Me gustaría tener mejor aspecto sin camisa. Ya pedí este producto.</p>
+            </div>
+            <ul>
+                <li>
+                    <img src="images/3.jpg">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>Arturo</cite>
+                        <p>Chaval, te lo digo en serio, ya llevo 2 meses usando este producto y resultados son realmente maravillosos. Hasta no trabajé mucho con mi dieta, pero tuve tono importante. Recomiendo probarlo.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/9.jpg">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>Mario</cite>
+                        <p>¡Muchas gracias! Creo que lo intentaré, con esta oferta no tengo nada que perder.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/10.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Sebastián</cite>
+                <p>Estoy muy contento por la investigación que realizaron, porque la mayoría de los productos solo engañan. Pedí la marca recomendada en este artículo y no veo la hora para probarlo.  </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text"><cite>Esteban</cite>
+                <p> También veo Fortumax por todos lados. Hasta recuerdo a mi amigo contar hacer varios días sobre este complemento para los músculos, porque uno de sus amigos ganó 5 kg de músculos en los primeros 15 días. Definitivamente debo probarlo, gracias, chaval.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/11.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Manuel</cite>
+                <p>¡Estoy asombrado! Por fin, una dieta que inspira. He pedido las gotas y voy a dar comentarios. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/12.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Alberto</cite>
+                <p> ¡Este remedio es milagroso! Mi mejor amigo Juan tomó Fortumax
+                    Y perdió mucho peso… no me lo pude creer y tuve que hacer algunas investigaciones, y así encontré este artículo en las noticias. No puedo creer que ofrecen tantos descuentos. Sé que Juan gastó unos 100 EUR y estaba encantado. Imagine cómo estará contento si eso vale 3 veces menos. No parece real, ¡muchas gracias!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Benjamín</cite>
+                <p>Ya estoy practicando deporte, por lo tanto, creo que esta pequeña ayuda servirá, es una oportunidad perfecta para probar.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/13.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Pablo</cite>
+                <p> Mi amigo tomó  Fortumax
+                    Y me lo recomendó hace 3 semanas. Lo pedí y lo recibí en 3 días. Los resultados eran increíbles, y no veo la hora de enterarme de los resultados de  3 y 4 semanas. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/14.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Luis</cite>
+                <p>Acabo de pedir Fortumax
+                    Con un descuento. Informaré sobre los resultados. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Elías</cite>
+                <p>recomiendo Fortumax. Probé esta dieta hace unos meses y solo puedo informar  de los resultados positivos. Eesta combinación me ayudó a ganar 2 kg de músculos y cambió mi vida totalmente (siempre estaba flaco). Recomiendo esta dieta a CUALQIERA que desee ganar rápido la masa muscular. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/15.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Patricio</cite>
+                <p> Pedí un curso hace varias semanas, y el servicio a clientes en esta empresa es perfecto. Seguiré comprando con ellos...  y sí, Fortumax
+                    Funciona, es un milagro :)
+                </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/16.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Añadido por Alex</cite>
+                <p> Gracias a Juan y HR365 por un reportaje sobre este producto para ganar la masa muscular. Vi la publicidad en todas partes, pero no tuve coraje para probarlo hasta ahora. Gracias.</p>
+            </div>
+        </li>
+    </ul>
+    <h4 style="font-size:18px;color:red;border-bottom:2px solid #000;font-weight:bold;margin-bottom:15px;">Deje su comentario<br></h4>
+    <form>
+        <p>
+            <label class="commentlabel">Nombre:</label>
+            <input class="dataInput" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:30px;" type="text">
+        </p>
+        <p>
+            <label class="commentlabel">Email:</label>
+            <input class="dataInput" type="text" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:30px;">
+        </p>
+        <label class="commentlabel">Comentario:</label>
+        <textarea class="commentBox" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:120px;"></textarea>
+        <div class="btn" style="background:red;color:#ffffff;padding:5px 10px;clear:both;float:left;font-weight:Bold;margin:10px 0px;">
+            Enviar
+        </div>
+        <p>&nbsp;</p>
+    </form>
+    <div class="divisionBar"></div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col py-5">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
