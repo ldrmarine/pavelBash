@@ -216,7 +216,7 @@ section .image {
 }
 
 .offer_section.offer3 .info_block .subtitle {
-	background: rgba(235,235,235,0.8);
+	background: rgba(235,235,235,0.9);
 }
 
 .offer_section .info_block .discount {
@@ -230,6 +230,8 @@ section .image {
 	position: absolute;
 	top: 46px;
 	right: 0;
+	clip-path: polygon(40% 0, 100% 60%, 100% 100%, 0 0);
+	background-color: #f5ca16;
 }
 
 .offer_section.offer1 .info_block .discount { 
