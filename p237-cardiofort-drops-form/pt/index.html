@@ -17,25 +17,112 @@
 	<link type="text/css" rel="stylesheet" href="css/styles_1.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link href="css/componentsStyles.css" rel="stylesheet" type="text/css">
+
 	<link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
 	<div class="template_index ltr" id>
 		<div class="container">
-			<header class="container__header">
-				<div class="x-image-medical-sp lazy position-left  left">
-					<img style class="image-img " src="images/logotypy2.jpg">
-					<div class="text-container"></div>
-				</div>
-				<script>
-					$(document).on('ready', function () {
-						$(".x-image-medical-sp").each(function () {
-							$(this).image();
-						});
-					})
-				</script>
+			<header class="x-header-medical ">
+				<div class="header_desktop">
+					<div class="header_content">
+						<div class="header_content_text-holder">
+							<div class="logo">
+								notícias<span class="logo-dil">ao</span>minuto
+							</div>
+						</div>
+						<div class="header-btns">
+							<a href="#form_anh" class="header-btns__flag">
+								<img src="./images/flag.png" alt="" class="header-btns__icon">
+							</a>
+							<div class="header-btns__social">
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/fb.svg" alt="" class="header-btns__icon">
+								</a>
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/tw.svg" alt="" class="header-btns__icon">
+								</a>
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/s-1.svg" alt="" class="header-btns__icon">
+								</a>
+							</div>
+							<a href="#form_anh" class="header-burger">
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+							</a>
+						</div>
+					</div>
 
+					<div class="header_menu">
+						<ul>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>SOBRE NÓS</p>
+								</a>
+							</li>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>AO HOJE</p>
+								</a>
+							</li>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>ARTIGOS</p>
+								</a>
+							</li>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>CENTRO DE DIAGNÓSTICO</p>
+								</a>
+							</li>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>NOSSOS EXPERTADORES</p>
+								</a>
+							</li>
+							<li>
+								<a href="#form_anh" rel="noopener noreferrer">
+									<p>JUNTE-SE A NÓS</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header_mobile">
+					<div class="header_mobile-headline">
+						<div class="header_content_text-holder">
+							<div class="logo">
+								notícias<span class="logo-dil">ao</span>minuto
+							</div>
+						</div>
+						<div class="header-btns">
+							<a href="#form_anh" class="header-btns__item">
+								<img src="./images/flag.png" alt="" class="header-btns__icon">
+							</a>
+							<div class="header-btns__social">
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/fb.svg" alt="" class="header-btns__icon">
+								</a>
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/tw.svg" alt="" class="header-btns__icon">
+								</a>
+								<a href="#form_anh" class="header-btns__item">
+									<img src="./images/s-1.svg" alt="" class="header-btns__icon">
+								</a>
+							</div>
+							<a href="#form_anh" class="header-burger">
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+								<span class="header-burger__line"></span>
+							</a>
+						</div>
+					</div>
+					<p class="header_mobile-publication">Publicado <span class="date-day"></span>.<span
+							class="date-mont"></span>.<span class="date-year"></span></p>
+				</div>
 
 			</header>
 
@@ -1368,7 +1455,29 @@ left">
 			});
 		});
 	</script>
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', () => {
+		const day = document.querySelectorAll('.date-day');
+		const mont = document.querySelectorAll('.date-mont');
+		const year = document.querySelectorAll('.date-year');
 
+
+		for (let i = 0; i < day.length; i++) {
+			currentDate(day[i], mont[i], year[i]);
+		}
+
+
+		function currentDate(day, mont, year) {
+			let currentDay = new Date().getDate();
+			let currentMonth = new Date().getMonth() + 1;
+			let currentYear = new Date().getFullYear();
+
+			day.textContent = currentDay < 10 ? "0" + currentDay : currentDay;
+			mont.textContent = currentMonth < 10 ? "0" + currentMonth : currentMonth;
+			year.textContent = currentYear < 10 ? "0" + currentYear : currentYear;
+		}
+	})
+</script>
 </body>
 
 </html>
