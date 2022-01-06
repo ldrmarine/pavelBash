@@ -14,25 +14,6 @@
   font-weight: 400;
   padding: 20px;
 }
-.link-to-form{
-  width: 300px;
-  background-color: #0083B2;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #FFFFFF;
-  box-shadow: inset 0px 1px 0px 0px #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 25px;
-  color: #fff;
-  text-shadow: 0px -1px 1px #64799E;
-  text-decoration: underline;
-  padding: 12px 10px;
-  display: block;
-  margin: 0 auto 30px;
-  text-align: center;
-  display: none;
-}
 .core_form .box {
   max-width: 660px;
   width: 100%;
@@ -264,9 +245,6 @@
 @media only screen and (max-width: 768px) {
   .core_form {
     font-size: 14px;
-  }
-  .link-to-form{
-    display: block;
   }
   .core_form .box {
     padding: 20px;

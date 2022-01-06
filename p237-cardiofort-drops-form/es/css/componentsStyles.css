@@ -1340,6 +1340,7 @@
         width: auto;
         margin: 10px;
         border-radius: 2px;
+        border: none;
         background-color: #fff
     }
 
