@@ -1694,8 +1694,8 @@
 }
 
 .x-image-medical-sp .image-img {
-    max-width: 100%;
-    width: auto;
+   width:100%;
+   height:auto;
     margin: 0
 }
 
