@@ -14,7 +14,8 @@
   color: #000;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out
+  transition: all .3s ease-in-out;
+  backdrop-filter: blur(5px);
 }
 
 .preloader.is-open {
@@ -47,6 +48,8 @@
   display: block;
   margin-left: auto;
   border:none;
+  background-position: center;
+  background-repeat: no-repeat;background-size: contain;
 }
 .disable-scroll {
   position: relative;
