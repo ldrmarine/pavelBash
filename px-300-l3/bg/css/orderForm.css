@@ -171,7 +171,7 @@
 
 @media screen and (max-width: 459px) {
   #order_form input {
-    width: 80%;
+    width: 100%;
   }
 
   #order_form {
