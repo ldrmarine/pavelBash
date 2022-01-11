@@ -78,6 +78,9 @@
 }
 
 @media all and (max-width:991px) {
+  .banner-content-mobile{
+    transform: translateY(-35px);
+  }
   .globe-modal .modal-dialog {
     width: 100%;
     max-width: 100%
