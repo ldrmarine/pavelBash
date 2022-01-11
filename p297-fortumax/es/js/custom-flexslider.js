@@ -13,6 +13,7 @@
 			slideshow: true,  
 			smoothHeight:false,
 			itemMargin: 100,
+			smoothHeight: true,
 			start: function(slider){
 				$('#sliderlodar').remove();
 			}
