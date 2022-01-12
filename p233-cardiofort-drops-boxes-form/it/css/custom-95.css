@@ -1,0 +1,271 @@
+/*===============================
+ time:1490609206
+================================================================================*/
+ #jux_memamenu95 #js-mainnav.megamenu .js-megamenu.dropdown-menucssjs-meganav{ display: block!important; }  @media screen and (max-width: 1200px) { #jux_memamenu95 #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-right a.haschild.megacss span.menu-title,#jux_memamenu95 #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-right a.haschild-over.megacss span.menu-title {margin-left: 0px;} #jux_memamenu95  #js-mainnav .jux-fa.jux-icon-title{ float: none; color:#c9a87b; font-size:27px; margin-top: -3px; margin-left:4px;} #jux_memamenu95  #js-mainnav.megamenu.vertical.right .js-megamenu ul.level0 li.megacss .childcontent {margin-left: 0% !important;} #jux_memamenu95  #js-mainnav .js-megamenu  .childcontent-inner-wrap.dropdown-menu{display: none;} #jux_memamenu95  #js-mainnav .js-megamenu .open>.childcontent-inner-wrap.dropdown-menu{display: block;   background: #f9f9f9;} #jux_memamenu95  #js-mainnav.megamenu .js-megamenu{display: none;} #jux_memamenu95  #js-mainnav.megamenu div.megaMenuToggle{display: block; cursor: pointer;  box-sizing: content-box; color:#c9a87b; font-size:18px; border-bottom: 0px solid #222222;text-transform: uppercase; text-align: center;  padding: 10px 5px 10px 5px;         margin: 0px 0px 0px 0px;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li.haschild > div.childcontent{ display: block!important;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li{box-shadow: none !important;} #jux_memamenu95  #js-mainnav.horizontal ul.level0 li.megacss.submenu-align-center > .childcontent{left: 0%!important;} #jux_memamenu95  #js-mainnav.noJS.up ul.megamenu li.haschild > div.childcontent{position: static;} #jux_memamenu95  #js-mainnav.horizontal ul.level0 li.megacss.submenu-align-left > .childcontent, #jux_memamenu95 #js-mainnav.megamenu.vertical.left .js-megamenu ul.level0 li.megacss .childcontent, #jux_memamenu95 #megamenucss   #js-mainnav.noJS ul.megamenu li.haschild > div.childcontent {top: 0px !important; left: 0px !important;bottom: 0px !important; right: 0px !important; } #jux_memamenu95  #js-mainnav.megamenu.vertical.left .js-megamenu ul.level0 li.megacss .childcontent{margin-left: 0% !important; margin-top: -32px; } #jux_memamenu95  #js-mainnav.megamenu.horizontal{border-radius: 0px !important;} #jux_memamenu95  #js-mainnav.horizontal ul.level1 li.megacss.submenu-align-right > .childcontent{right: 0% !important;} #jux_memamenu95  #js-mainnav.horizontal ul.level0 li.megacss.submenu-align-center > .childcontent{left: 0%;} #jux_memamenu95  #js-mainnav ul.level0{border: none !important;} #jux_memamenu95  .group-title{margin-left: -25px;} #jux_memamenu95  #js-mainnav.megamenu #arrow-icon{display: block;} #jux_memamenu95  .dropdown-menu{position: inherit;  top: -6px; left: 0;z-index: 1000;display: none; float: left;min-width: 100%;  padding: 0; margin: 0;background-color: #fff; border: none;  -webkit-border-radius: 0px;-moz-border-radius: 0px;  border-radius: 0px; -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none; -webkit-background-clip: padding-box;-moz-background-clip: padding; background-clip: padding-box;} #jux_memamenu95  #js-mainnav ul.megamenu li.haschild.megacss > div.childcontent{ opacity: 1; visibility: visible; display: block;} #jux_memamenu95  #arrow-icon {position: absolute;  text-decoration: none; right: -2px; color: #fff; z-index: 9999999; cursor: pointer; } #jux_memamenu95  #js-mainnav.megamenu .open > .dropdown-menu{display: block !important;} #jux_memamenu95  ul li ul li div.dropdown-menucss {display: block;} #jux_memamenu95  #js-mainnav.megamenu ul li ul li #arrow-icon {display: none;} #jux_memamenu95  #js-mainnav.megamenu {} #jux_memamenu95  .group-title {  padding-left:10px!important;} } @media screen and (max-width: 480px) { #jux_memamenu95 #js-mainnav.megamenu .childcontent-inner-wrap{ margin: -2px 0px 6px 0px !important;} #jux_memamenu95  #js-mainnav.megamenu #arrow-icon{padding: 5px 10px!important;} #jux_memamenu95 a{text-decoration: none;} } #jux_memamenu95   #js-mainnav .js-megamenu{display: block;} @media screen and (max-width: 1200px) { #jux_memamenu95  .megamenu-sticky{text-align: left;} #jux_memamenu95  #js-mainnav.megamenu.noJS #css3-megaMenuToggle,#jux_memamenu95  #js-mainnav.megamenu #js-megaMenuToggle{display: block;padding: 12px 15px;cursor: pointer;font-size: 10px;text-transform: uppercase; text-align: left;} #jux_memamenu95  #js-mainnav.megamenu #js-megaMenuToggle{display: block !important;} #jux_memamenu95  #js-mainnav.megamenu.noJS #css3-megaMenuToggle .megaMenuToggle-icon, #jux_memamenu95 #js-mainnav.megamenu #js-megaMenuToggle .megaMenuToggle-icon {display: inline-block;background: rgba(230, 230, 230, 0.7);height: 2px; width: 16px; position: relative; float: right; margin-top: 10px;text-align: left; } #jux_memamenu95  #js-mainnav.megamenu{width: 100% !important; overflow: hidden;} #jux_memamenu95  #js-mainnav.megamenu ul.level0{float:none !important; } #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.megacss{float:none !important;position:relative; background-image:none !important;} #jux_memamenu95  #js-mainnav.megamenu ul.megamenu li.megacss a.megacss span.menu-desc{display: none;} #jux_memamenu95  #js-mainnav.megamenu.megamenu.vertical.right ul.level0 li.megacss a.megacss{text-align:left !important;} #jux_memamenu95  #js-mainnav.megamenu.megamenu.vertical.right .js-megamenu ul.level0 li.megacss .childcontent{right:0px !important;} #jux_memamenu95  #js-mainnav.megamenu .js-megamenu li.megacss .childcontent{height: 100% !important; margin: 0 !important;position: relative;width: 100% !important; overflow:visible !important; le } #jux_memamenu95  #js-mainnav.megamenu ul.level0 li a.haschild.megacss span.menu-title,#jux_memamenu95 #js-mainnav.megamenu ul.level0 li a.haschild-over.megacss span.menu-title{background:none !important; padding-left:0px !important;} #jux_memamenu95  #js-mainnav.megamenu ul.level1 li.haschild, #jux_memamenu95 #js-mainnav.megamenu ul.level1 li.haschild-over {background: none !important;} #jux_memamenu95  #js-mainnav.megamenu .childcontent-inner-wrap,#jux_memamenu95 #js-mainnav.megamenu .childcontent-inner, #jux_memamenu95 #js-mainnav.megamenu .megacol{width:100% !important;} #jux_memamenu95  #js-mainnav.megamenu ul.megamenu {margin: 0px !important;} #jux_memamenu95  #js-mainnav.megamenu .megacol,.childcontent-inner{border:none !important; float: none !important;} #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.haschild span.arrow-icon,#jux_memamenu95 #js-mainnav.megamenu ul.level0 li.haschild-over span.arrow-icon{ display: block; float: right;position: absolute; right: 2px; top:2px; z-index: 99; } #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.haschild span.arrow-icon,#jux_memamenu95 #js-mainnav.megamenu ul.level0 li.haschild-over span.arrow-icon {display:block; cursor: pointer;} #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.haschild span.arrow-icon{background: url("../images/arrow_down.png") no-repeat scroll 100% 0px transparent !important;	display: block !important; text-indent: 9999px;width: 40px;height: 31px; border: 0 none !important; padding: 0 !important;margin: 0 !important; -webkit-box-shadow: none !important;-moz-box-shadow: none !important; box-shadow: none !important; } #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.haschild-over span.arrow-icon{background: url("../images/close.png") no-repeat scroll 100% 0 transparent;display: block !important; height: 31px;text-indent: 9999px; width: 40px; padding: 0 !important;margin: 0 !important;border: 0 none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;box-shadow: none !important; } #jux_memamenu95  #js-mainnav.megamenu ul.level1 li.megacss span.arrow-icon{display:none;} #jux_memamenu95  #js-mainnav.megamenu ul.level1 li.haschild span.arrow-icon,#jux_memamenu95 #js-mainnav.megamenu ul.level1 li.haschild-over span.arrow-icon{display: block; float: right; position: absolute;right: 2px; top:2px; z-index: 99; } #jux_memamenu95  #js-mainnav.megamenu ul.level0 li.megacss.submenu-align-fullwidth{position: relative !important;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li{padding: 0 !important; border-bottom: 1px solid rgba(255, 255, 255, 0.3); border-radius: 0 !important;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li a{position: relative;} #jux_memamenu95  #js-mainnav.megamenu.noJS #css3-megaMenuToggle{display: block; border-radius: 5px;padding: 15px; } #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li.haschild > div.childcontent {display: none;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.megamenu li.haschild:hover > div.childcontent{display: block;} #jux_memamenu95  #js-mainnav.megamenu.noJS ul.level0 li.megacss.haschild:hover > a.haschild:after{border-top-color: #fff;} }#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss a.megacss{background: rgba(51,51,51,0);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 20px 10px 20px 10px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 0px solid #666666;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss a.megacss:hover{background: rgba(51,51,51,0);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 20px 10px 20px 10px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 0px solid #666666;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss.active{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level0 li.megacss a.megacss.active{background: rgba(51,51,51,0);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 20px 10px 20px 10px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 0px solid #666666;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss a.megacss{background: rgba(0,0,0,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 20px 17px 20px 17px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.haschild.megacss #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss a.megacss:hover{background: rgba(20,20,20,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 20px 17px 20px 17px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.haschild.megacss:hover #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss.active{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.megacss a.megacss.active{background: rgba(36,36,36,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 20px 17px 20px 17px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level0 li.haschild.megacss.active #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss a.megacss{background: rgba(8,8,8,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss a.megacss:hover{background: rgba(23,23,23,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss.active{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level1 li.megacss a.megacss.active{background: rgba(26,26,26,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss a.megacss{background: rgba(31,31,31,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 10px 15px 10px 25px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.haschild.megacss #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss a.megacss:hover{background: rgba(26,26,26,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 10px 15px 10px 25px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.haschild.megacss:hover #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss.active{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.megacss a.megacss.active{background: rgba(23,23,23,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 10px 15px 10px 25px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level1 li.haschild.megacss.active #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss a.megacss{background: rgba(8,8,8,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss a.megacss:hover{background: rgba(23,23,23,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss.active{list-style-type: none;list-style-position: inside;color: #336699;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.customized ul.level2 li.megacss a.megacss.active{background: rgba(23,23,23,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 12px 15px 12px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #666666;
+                border-right: 0px solid #666666;
+                border-bottom: 1px solid #616161;
+                border-left: 0px solid #666666;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss span.megacss,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss a.megacss{background: rgba(31,31,31,1);
+                
+                font-size: 15px;
+                color: #ffffff;
+                padding: 10px 15px 10px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.haschild.megacss #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss:hover{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss span.megacss:hover,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss a.megacss:hover{background: rgba(26,26,26,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 10px 15px 10px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.haschild.megacss:hover #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss.active{list-style-type: none;list-style-position: inside;color: #1a7ced;font-size: 13px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss span.megacss.active,#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.megacss a.megacss.active{background: rgba(26,26,26,1);
+                
+                font-size: 15px;
+                color: #c8a77b;
+                padding: 10px 15px 10px 15px;
+                margin: 0px 0px 0px 0px;
+                border-top: 0px solid #edb51a;
+                border-right: 0px solid #edb51a;
+                border-bottom: 0px solid #edb51a;
+                border-left: 0px solid #edb51a;
+                border-radius: 0px 0px 0px 0px;}
+#jux_memamenu95 #js-mainnav.megamenu.responsive ul.level2 li.haschild.megacss.active #arrow-icon { display: block; padding: 7px 30px ; font-size: 15px;margin-top: -33px }
+#jux_memamenu95 #megamenucss #js-mainnav.customized .js-megamenu{background:rgba(82,82,82,0);}
+#megamenucss #js-mainnav.megamenu.horizontal.customized ul.level0 li a.haschild.megacss span.menu-title:after,
+
+
+
+#megamenucss #js-mainnav.megamenu.horizontal.customized ul.level0 li a.haschild-over.megacss span.menu-title:after 
+{
+    left:10px;
+}
+@media screen and (max-width: '.('responsive_maxwidth').'px) {
+#megamenucss #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-left a.haschild.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-auto a.haschild.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-left a.haschild-over.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level1 li.submenu-align-auto a.haschild-over.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level2 li.submenu-align-auto a.haschild.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level2 li.submenu-align-left a.haschild.megacss span.menu-title,
+#megamenucss #js-mainnav.megamenu.horizontal ul.level2 li.submenu-align-auto a.haschild-over.megacss span.menu-title, 
+#megamenucss #js-mainnav.megamenu.horizontal ul.level2 li.submenu-align-left a.haschild-over.megacss span.menu-title
+{ 
+  background: none!important; padding: 0;
+}
+   #js-mainnav.megamenu.noJS #css3-megaMenuToggle .megaMenuToggle-icon:before,
+   #js-mainnav.megamenu #js-megaMenuToggle .megaMenuToggle-icon:before {
+    content: '';
+    position: absolute;
+    background: rgba(230, 230, 230, 0.8);
+    height: 2px;
+    width: 16px;
+    top: -4px;
+  }
+  
+   #js-mainnav.megamenu.noJS #css3-megaMenuToggle .megaMenuToggle-icon:after,
+   #js-mainnav.megamenu #js-megaMenuToggle .megaMenuToggle-icon:after {
+    content: '';
+    position: absolute;
+    background: rgba(230, 230, 230, 0.9);
+    height: 2px;
+    width: 16px;
+    top: -8px;
+  }
+  #megamenucss .megamenu.level0 .childcontent  .dropdown-menu{
+      border: none!important;
+  }
