@@ -1,0 +1,1083 @@
+<html lang="en">
+
+<head>
+  <link rel="prefetch" href="./assets/header-bg.jpg">
+  <link rel="prefetch" href="./assets/topo2.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>FANTASTIC</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-primary: #0d6efd;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+      :root {
+        scroll-behavior: smooth
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--bs-font-sans-serif);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      margin: 1rem 0;
+      color: inherit;
+      background-color: currentColor;
+      border: 0;
+      opacity: .25
+    }
+
+    hr:not([size]) {
+      height: 1px
+    }
+
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2
+    }
+
+    h2 {
+      font-size: calc(1.325rem + .9vw)
+    }
+
+    @media (min-width:1200px) {
+      h2 {
+        font-size: 2rem
+      }
+    }
+
+    h3 {
+      font-size: calc(1.3rem + .6vw)
+    }
+
+    @media (min-width:1200px) {
+      h3 {
+        font-size: 1.75rem
+      }
+    }
+
+    h4 {
+      font-size: calc(1.275rem + .3vw)
+    }
+
+    @media (min-width:1200px) {
+      h4 {
+        font-size: 1.5rem
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    ul {
+      padding-left: 2rem
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    blockquote {
+      margin: 0 0 1rem
+    }
+
+    strong {
+      font-weight: bolder
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: underline
+    }
+
+    a:hover {
+      color: #0a58ca
+    }
+
+    img {
+      vertical-align: middle
+    }
+
+    button:focus:not(:focus-visible) {
+      outline: 0
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+      cursor: pointer
+    }
+
+    ::-moz-focus-inner {
+      padding: 0;
+      border-style: none
+    }
+
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-fields-wrapper,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-minute,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-year-field {
+      padding: 0
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-color-swatch-wrapper {
+      padding: 0
+    }
+
+    ::file-selector-button {
+      font: inherit
+    }
+
+    ::-webkit-file-upload-button {
+      font: inherit;
+      -webkit-appearance: button
+    }
+
+    iframe {
+      border: 0
+    }
+
+    .container,
+    .container-fluid {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto
+    }
+
+    @media (min-width:576px) {
+      .container {
+        max-width: 540px
+      }
+    }
+
+    @media (min-width:768px) {
+      .container {
+        max-width: 720px
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        max-width: 960px
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        max-width: 1140px
+      }
+    }
+
+    @media (min-width:1400px) {
+      .container {
+        max-width: 1320px
+      }
+    }
+
+    .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x)/ -2);
+      margin-left: calc(var(--bs-gutter-x)/ -2)
+    }
+
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x)/ 2);
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+      margin-top: var(--bs-gutter-y)
+    }
+
+    .col-4 {
+      flex: 0 0 auto;
+      width: 33.3333333333%
+    }
+
+    .col-8 {
+      flex: 0 0 auto;
+      width: 66.6666666667%
+    }
+
+    @media (min-width:576px) {
+      .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+      }
+
+      .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+
+      .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%
+      }
+    }
+
+    @media (min-width:768px) {
+      .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+      }
+
+      .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+    }
+
+    @media (min-width:992px) {
+      .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+      }
+
+      .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+      }
+
+      .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.3333333333%
+      }
+    }
+
+    .form-control[type=file]:not(:disabled):not([readonly]) {
+      cursor: pointer
+    }
+
+    .form-control::file-selector-button {
+      padding: .375rem .75rem;
+      margin: -.375rem -.75rem;
+      -webkit-margin-end: .75rem;
+      margin-inline-end: .75rem;
+      color: #212529;
+      background-color: #e9ecef;
+      pointer-events: none;
+      border-color: inherit;
+      border-style: solid;
+      border-width: 0;
+      border-inline-end-width: 1px;
+      border-radius: 0;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .form-control::file-selector-button {
+        transition: none
+      }
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+      background-color: #dde0e3
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+      background-color: #dde0e3
+    }
+
+    .form-control-sm::file-selector-button {
+      padding: .25rem .5rem;
+      margin: -.25rem -.5rem;
+      -webkit-margin-end: .5rem;
+      margin-inline-end: .5rem
+    }
+
+    .form-control-lg::file-selector-button {
+      padding: .5rem 1rem;
+      margin: -.5rem -1rem;
+      -webkit-margin-end: 1rem;
+      margin-inline-end: 1rem
+    }
+
+    .form-control-color:not(:disabled):not([readonly]) {
+      cursor: pointer
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown) {
+      padding-top: 1.625rem;
+      padding-bottom: .625rem
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+      opacity: .65;
+      transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    }
+
+    .nav-link {
+      display: block;
+      padding: .5rem 1rem;
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .nav-link {
+        transition: none
+      }
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      color: #0a58ca
+    }
+
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: .5rem;
+      padding-bottom: .5rem
+    }
+
+    .navbar>.container-fluid {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .navbar-brand {
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      white-space: nowrap
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+    }
+
+    .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0
+    }
+
+    .navbar-expand {
+      flex-wrap: nowrap;
+      justify-content: flex-start
+    }
+
+    .navbar-expand .navbar-nav {
+      flex-direction: row
+    }
+
+    .navbar-expand .navbar-nav .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem
+    }
+
+    .navbar-dark .navbar-brand {
+      color: #fff
+    }
+
+    .navbar-dark .navbar-brand:focus,
+    .navbar-dark .navbar-brand:hover {
+      color: #fff
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, .55)
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: rgba(255, 255, 255, .75)
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #fff
+    }
+
+    .visually-hidden-focusable:not(:focus):not(:focus-within) {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important
+    }
+
+    .d-flex {
+      display: flex !important
+    }
+
+    .align-items-center {
+      align-items: center !important
+    }
+
+
+    .logofooter {
+      display: inline;
+      width: 20px;
+      margin-top: -2px
+    }
+
+    blockquote {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 5px solid #eee;
+      padding: 15px
+    }
+
+    h4 {
+      margin-top: 15px;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      color: #929292;
+      font-size: 17px;
+    }
+
+    h2 {
+      font-family: 'Open Sans';
+      line-height: 1.3;
+    }
+
+    .updated {
+      float: right;
+      font-size: 15px;
+    }
+
+    hr {
+      color: white;
+      margin: 0
+    }
+
+    .w100 {
+      width: 100%;
+    }
+
+    .navbar-brand img {
+      height: 20px;
+      border-right: dotted 1px;
+      padding-right: 10px;
+    }
+
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin-top: 25px;
+      margin-bottom: 10px
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    p {
+      font-family: 'PT Serif', serif;
+      font-size: 20px;
+      color: #2b2929;
+      line-height: 26px;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-family: 'PT Serif', serif;
+      color: #575746;
+    }
+
+    header {
+      background-color: #07082a;
+      border-bottom: 2px solid #f9b22a;
+      background-image: url('images/header-bg.jpg');
+      width: 100%;
+      min-height: 175px;
+
+
+    }
+
+    footer {
+
+      background-image: url('images/header-bg.jpg');
+      width: 100%;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-weight: 400;
+      font-family: 'Open Sans';
+      font-size: 16px
+    }
+
+    #logo {
+      max-width: 100%;
+      max-height: 150px;
+      margin: auto;
+      display: block;
+    }
+
+    .materia {
+      background-color: #f9b22a;
+      color: white;
+      margin-top: 30px;
+      line-height: 40px;
+      font-size: 20px;
+      font-family: "Open Sans";
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    .ftr {
+      border-top: 1px solid #eee;
+      margin-top: 40px
+    }
+
+    .avatar {
+      width: 100%;
+      border-radius: 75px;
+      margin-top: 20px;
+      display: block;
+    }
+
+    .p10px {
+      padding: 10px;
+    }
+
+    .fluid {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%
+    }
+
+    .tcenter {
+      text-align: center
+    }
+
+    p a {
+      font-weight: 600;
+    }
+  </style>
+  <link href="css/css2.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="form/form.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="row d-flex align-items-center w100">
+      <div class="container">
+        <picture>
+
+          <img src="images/topo2.png" id="logo">
+        </picture>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <nav class="navbar navbar-expand navbar-dark color-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#form"><img src="images/g1.png"></a>
+          <div class id>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#form">Saúde</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#form">Política</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div>
+      <div class="materia">
+        <span>MATÉRIA</span><span class="updated"><span id="dadata">
+            <script language="javascript" type="text/javascript">
+              var d = new Date();
+              var month = new Array("01", "02", "03", "04", "05", "06",
+                "07", "08", "09", "10", "11", "12");
+              document.write(d.getDate() + "." + month[d.getMonth()] +
+                "." + d.getFullYear());
+            </script>
+          </span> - <strong>há 2 horas</strong></span>
+      </div>
+      <h2><strong>Exclusivo no Fantastic:
+        Foi criado na China um creme especial que é mais eficaz no tratamento da artrite, osteoartrite, osteoporose e dores articulares sem cirurgia, procedimentos dolorosos ou a utilização de medicamentos caros e perigosos.</strong></h2>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <picture>
+          <img src="v.jpg" class="fluid">
+        </picture>
+
+        <p>Na entrevista de hoje, o Dr. Jin Quon explicará como é possível livrar-se da dor sem cirurgia, procedimentos dolorosos ou medicação cara.</p>
+        <p><strong>Ana Maria Guimarães: Olá, Dr. Jin Quon. Muitos peritos dizem que o desconforto e a dor nas articulações são companheiros obrigatórios de 40 anos de idade. Concorda com isso?</strong></p>
+        <a href="#form">
+          <picture>
+
+            <img src="images/1.jpg" class="fluid">
+          </picture>
+        </a>
+        <blockquote>
+          <p><i><strong>- Jin Quon </strong>: "Claro que não concordo. É um equívoco comum. As doenças das articulações podem ocorrer na casa dos 20 anos e já vi articulações saudáveis em pessoas com mais de 50 anos."</i></p>
+        </blockquote>
+
+        <p><strong>Ana Maria Guimarães: Qual é o segredo?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "O segredo é compreender porque é que isto acontece. As enciclopédias listam 147 causas de artrite e osteoartrite, mas a verdadeira causa é sempre uma: articulações, vértebras e cartilagem não obtêm "lubrificante" suficiente, as articulações desgastam-se como um mecanismo enferrujado, daí o desconforto e a dor. Isto é influenciado por características corporais, predisposição hereditária, excesso de peso, stress nas articulações, infeções bacterianas, fúngicas e virais.</i></p>
+          <p><i>Portanto, a nossa tarefa principal é levar as substâncias certas para o lugar certo!"</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/3.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Ana Maria Guimarães: Sim, mas como se faz isso, porque um creme tem de ter uma penetração profunda, não é verdade?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Exatamente! <strong>Como vê</strong>, a medicina chinesa tem uma história de milhares de anos. Quando a Grande Muralha da China foi escavada, os cientistas encontraram compostos e substâncias desconhecidas, partindo do princípio de que era utilizada para a construção. Contudo, quando utilizámos o equipamento mais recente para estudar a composição, apercebemo-nos que as pessoas estavam a utilizar misturas de diferentes ervas e plantas para se curarem a si próprias! Afinal, eles estavam sob uma tremenda tensão! É surpreendente como os segredos históricos são revelados pela tecnologia moderna!"</i></p>
+        </blockquote>
+        <p><strong>Ana Maria Guimarães: Então usa a mesma composição para o seu creme secreto?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Não exatamente. Mas estudámos cada ingrediente, como ele afecta o corpo, como pode ser melhorado e derivámos uma fórmula moderna e muito mais eficaz."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/4.jpg" class="fluid">
+          </picture>
+        </a>
+
+        <p><strong>Ana Maria Guimarães: E como é que estes agentes de cura entram nas articulações?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "O tratamento tem duas direções: remoção da inflamação e restauração da cartilagem e tecido ligamentar. Assim, utilizámos a mais recente nanotecnologia para garantir que <a
+                href="#form">Fortuflex</a> tem um efeito complexo: fornece o lubrificante necessário às articulações e promove a regeneração da cartilagem da articulação, bem como a redução da necessidade de medicação para a dor, aumentando a segurança do tratamento."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/5.jpg" class="fluid">
+          </picture>
+        </a>
+
+        <p><strong>Ana Maria Guimarães: Então o seu creme chama-se <a href="#form">Fortuflex</a>?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Exatamente. Reflecte os últimos avanços da ciência e da tecnologia."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/7.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Ana Maria Guimarães: Como é que o <a href="#form">Fortuflex</a> funciona nas pessoas?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Não há milagre, é ciência pura. <a href="#form">Fortuflex</a>
+            é muito eficaz porque conseguimos um efeito duplo para estimular o processo de regeneração das cartilagens. O creme tem um efeito anti-inflamatório a nível celular e estimula a produção de ácido hialurónico, reduz a actividade dos condrócitos danificadores da cartilagem e para a formação de outras substâncias que podem danificar a cartilagem. Chamamos a este processo TRTT."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/8.jpg" class="fluid">
+          </picture>
+        </a>
+
+        <a href="#form">
+          <picture>
+
+            <img src="images/9.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Ana Maria Guimarães: O TRTT é o efeito do <a href="#form">Fortuflex</a>?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Não gostaria de entrar em termos médicos, não parecem divertidos e confusos, mas estes são os processos que ocorrem no corpo quando se utiliza <a
+                href="#form">Fortuflex</a>, porque para além dos efeitos do próprio creme, activam-se processos naturais no corpo que diminuem ao longo dos anos. Após a primeira utilização, <a
+                href="#form">Fortuflex</a> az com que o cérebro determine o que falta ao corpo, pelo que começa a produzir as substâncias necessárias, tornando as articulações mais móveis."</i></p>
+        </blockquote>
+        <p><strong>Ana Maria Guimarães: <a href="#form">Fortuflex</a> é o único creme com tecnologia TRTT, por isso é diferente de todos os outros produtos?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Neste momento, tanto quanto sei,  <a href="#form">Fortuflex</a> é o único até agora. Levámos 18 anos a desenvolver, testar e montar a produção do creme. Levaria muito tempo a criar algo do género. Mas a tecnologia não fica parada. Além da eficiência, um dos nossos principais objetivos era disponibilizar  <a href="#form">Fortuflex</a> a muita gente comum, não a um bando de homens de negócios ou políticos ricos."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/10.gif" class="fluid">
+          </picture>
+        </a>
+
+
+        <p><strong>Ana Maria Guimarães: Então, literalmente qualquer pessoa pode usar <a href="#form">Fortuflex</a>?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Infelizmente, a produção de <a href="#form">Fortuflex</a> é limitada pelos ingredientes que utilizamos para a fabricar. As plantas que utilizamos para fazer o creme devem ser mantidas em certas condições, caso contrário, perderão as suas propriedades. No entanto, apesar de ser um processo longo e dispendioso, temos feito grandes esforços para tornar o <a href="#form">Fortuflex</a> acessível."</i></p>
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/12.jpg" class="fluid">
+          </picture>
+        </a>
+        <p><strong>Ana Maria Guimarães: O <a href="#form">Fortuflex</a> só está disponível na China?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Graças a Deus não! Nos últimos 2 anos temos sido capazes de abastecer a Europa e a América. Estamos muito felizes por  <a href="#form">Fortuflex</a> estar agora disponível em muitos países."</i></p>
+        </blockquote>
+        <p><strong>Ana Maria Guimarães: Com que frequência se pode usar <a href="#form">Fortuflex</a>?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Duas vezes por dia é suficiente. De manhã e à noite. Isto foi comprovado no processo de teste. <a href="#form">Fortuflex</a> não tem contraindicações, mas o creme não funcionará melhor se o utilizar com demasiada frequência. Como disse anteriormente, o creme não só promove a reparação de cartilagens e ligamentos, como também activa processos internos no corpo, pelo que duas vezes por dia é ótimo.</i></p>
+          <p>
+            <i>
+              Se quiser acelerar o processo de cura e a eficácia do <a href="#form">Fortuflex</a>, mantenha uma dieta saudável e tenha mais emoções positivas!
+            </i>
+          </p>
+        </blockquote>
+
+        <p><strong>Ana Maria Guimarães: Tem alguns dados e pode partilhar os resultados connosco?
+          </strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "Sim, é claro. Pedimos permissão para todos os resultados que vos mostraremos aqui.</i></p>
+          <p><i>Para tal, temos de mostrar os resultados e testes reais de um dos estudos que envolveram 25 voluntários com dores articulares graves, artrite, osteoporose e osteoporose.
+            </i></p>
+          <p><i>Durante a terapia, o medicamento era administrado duas vezes por dia e nenhum dos pacientes mudava o seu ritmo normal de vida</strong>.</i></p>
+          <p><i>Resultados dos testes  (<strong>após um mês</strong>):</i></p>
+          <p><i>Alívio completo da dor e recuperação articular em 8 dias em  <strong>18% dos pacientes</strong>.</i></p>
+
+          <p><i>Eliminação completa da dor e recuperação articular em 15 dias em <strong>77% dos pacientes</strong>.</i></p>
+
+          <p><i>Eliminação da dor após 8 dias, mas recuperação das articulações após 35 dias apenas em <strong>4%
+                dos pacientes</strong>.</i></p>
+
+          <p><i><strong>Apenas 1% dos doentes não tinha dores.</strong></i></p>
+          <p><i>Artrite, osteoartrite e osteoporose curadas em <strong>94% dos pacientes</strong>.</i></p>
+          <p><i>Processos biológicos normalizados no corpo em  <strong> 96% dos pacientes</strong>.</i></p>
+          <p><i>Sem efeitos secundários ou dependência em  <strong> 100% dos pacientes</strong>."</i></p>
+        </blockquote>
+
+        <p><strong>Ana Maria Guimarães: Sim, os resultados são impressionantes. Obrigado, Dr. Jin Quon. Gostaria de dizer mais algumas palavras para os nossos leitores?</strong></p>
+        <blockquote>
+          <p><i><strong>- Jin Quon</strong>: "A melhor parte é o sentimento de alegria e satisfação por viver sem dor e poder fazer qualquer coisa sem restrições para desfrutar da vida!</i></p>
+          <p><i>Espero sinceramente ter sido capaz de ajudar muitas pessoas e que os resultados aqui mostrados sirvam de motivação para alcançar este grande objetivo. Acredite em si próprio e terá sucesso no tratamento de doenças."</i></p>
+
+        </blockquote>
+        <a href="#form">
+          <picture>
+
+            <img src="images/18.jpg" class="fluid">
+          </picture>
+        </a>
+
+        <a href="#form">
+          <picture>
+
+            <img src="images/19.jpg" class="fluid">
+          </picture>
+        </a>
+        <a href="#form">
+          <picture>
+
+            <img src="images/20.png" class="fluid">
+          </picture>
+        </a>
+        <p class="tcenter">(E receba em casa de forma segura em menos de 7 dias com garantia de satisfação!)</p>
+        <p class="tcenter">Quer Eliminar as Dores?</p>
+
+        <!--Form-->
+        <div id="form">
+
+          <div id="form_image">
+            <div class="form_image_wrap_image">
+              <img src="form/prod.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="form_wrap" id="objectScrollAttention">
+            <form method="POST">
+              <label class="descount">Desconto -50%</label>
+
+              <div id="price">
+                <div class="price_new">
+                  59 €
+                </div>
+                <div class="price_old">
+                  118 €
+                </div>
+              </div>
+
+              <label class="inp_name">Nome</label>
+              <input name="name" placeholder="" required="" type="text">
+
+              <label class="inp_phone">Telefone<br>
+                (indique su número de móvil activo)</label>
+              <input name="phone" placeholder="" required="" type="tel">
+
+              <input name="subid" type="hidden" value="{subid}">
+              <input name="px" type="hidden" value="{px}">
+              <input name="bayer" type="hidden" value="{bayer}">
+              <br>
+              <button type="submit" class="btnn">ENCOMENDAR</button>
+
+            </form>
+          </div>
+
+        </div><br>
+        <!--Form END-->
+
+
+        <div class="row ftr">
+          <div class="col-4 col-lg-2 col-md-4 col-sm-4">
+            <a href="#form">
+              <picture>
+
+                <img src="images/dr.jpg" class="avatar">
+              </picture>
+            </a>
+          </div>
+          <div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
+            <h3>Sobre o Entrevistado: Jin Quon</h3>
+            <p>Nascido em 9 de maio de 1969 (idade 51) no distrito Panyu, Cantão, China. Aos 15 anos foi morar em Hong
+              Kong, onde formou-se em medicina pela Chinese University of Hong Kong. Especializou-se em reumatologista
+              no Hospital Gleneagles.
+            </p>
+          </div>
+        </div>
+
+        <a href="#form">
+          <picture>
+
+            <img src="images/21.png" class="fluid">
+          </picture>
+        </a>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <img src="images/g1.png" class="logofooter">   Site Oficial Fantastic
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+  <link rel="stylesheet" href="/libs/js/gdpr.css">
+  <script>
+    var phonePattern = {
+      'ru': '+7 (___) ___-__-__',
+      'ua': '+38-___-___-__-__',
+      'by': '+375 ___ ___ ___',
+      'kz': '+7 ___ ___ ____',
+      'kg': '+___ ___ __ __ __',
+      'md': '0 ___ _____',
+      'az': '+___-__-___-__-__',
+      'ge': '+995 ___ __ __ __',
+      'es': '+34 ___ __ __ __',
+      'pe': '+51 ___ ___ _?_',
+      'cl': '+56 _ ____ ____',
+      'ar': '+54 __ ____ ____',
+      'co': '+57 _______??_',
+      'mx': '+52 __ ____ ____',
+      'it': '+39-___-___-____',
+      'esp': '+34 ___ __ __ __',
+      'pt': '+351 ___ ___ ___',
+      'br': '+55 __ ___?_ ____',
+      'prt': '+351 ___ ___ ___',
+      'id': '+62 ___ ___ ___',
+      'gr': '+30 ___ _______',
+      'cy': '+357 __ ______',
+      'ro': '+40 ___ ___ __? _',
+      'bg': '+359 ___ __ __? _',
+      'cz': '+420 ___ ___ ___',
+      'sk': '+421 ___ ___ ___',
+      'si': '+386 _ ___ __ __',
+      'pl': '+48 ___ ___ ___',
+      'al': '+355 __ ___ ___?_',
+      'rs': '+381 __ _____?_',
+      'ph': '+63 _ ____ __?_',
+      'hu': '+36 _ ___ ____',
+      'hr': '+385 _ ____ __?_',
+      'ba': '+387 __ ______',
+      /* --- */
+    }
+
+    const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+    //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+    function validate_form(form, alert_text = "Please enter valid phone number") {
+      var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+        pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+      if (input_ln >= pattern_ln) return true;
+      else {
+        alert(alert_text);
+        return false;
+      }
+    }
+
+    //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+    document.addEventListener("DOMContentLoaded", function () {
+
+      var isTimeoutSeted = false;
+      var inputInterval;
+
+      function createInterval(input) {
+        if (!isTimeoutSeted) {
+          isTimeoutSeted = true;
+
+          inputInterval = setInterval(() => {
+            input.selectionStart = input.value.length
+            input.setSelectionRange(input.value.length, input.value.length);
+          }, 15)
+        }
+      }
+
+      function deleteInterval() {
+        clearInterval(inputInterval)
+        isTimeoutSeted = false;
+      }
+
+      function setSelectionStart(input) {
+        input.selectionStart = input.value.length
+      }
+
+      function mask(event) {
+        var input = event.currentTarget;
+        var geo = input.form.getAttribute('geo');
+        var matrix = phonePattern[geo];
+        var i = 0;
+        var def = matrix.replace(/\D/g, "");
+        var val = input.value.replace(/\D/g, "");
+
+        if (!event.type == "blur") {
+          setSelectionStart(input)
+        }
+
+        // Ставим интервал для инпута
+        createInterval(input)
+
+        if (event.type == "blur") {
+          // Сбрасываем интервал для инпута
+          deleteInterval()
+          if (input.value.length == 2) {
+            input.value = ""
+          }
+        }
+
+        if (def.length >= val.length) {
+          val = def
+        };
+
+        input.value = matrix.replace(/./g, function (a) {
+          return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+        });
+
+
+      };
+
+      inputs.forEach(input => {
+        input.addEventListener("input", mask, false);
+        input.addEventListener("blur", mask, false);
+        input.addEventListener("focus", mask, false);
+      })
+    });
+
+    $(document).ready(function () {
+      // Load GDPR
+      $(document).gdprCookieLaw({
+        moreLinkHref: '/privacypolicy',
+        theme: 'theme-1',
+        position: 'bottom-right',
+        width: '760px',
+        margin: '15px',
+        animation: 'fade-slide',
+        btnAcceptText: 'Ok'
+      });
+    });
+  </script>
+
+</body>
+
+</html>

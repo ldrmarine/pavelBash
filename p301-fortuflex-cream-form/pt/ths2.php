@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Obrigada! Seu pedido foi aceito!</title>
+    <title>¡Gracias! Su pedido ha sido aceptado.</title>
     <link rel="stylesheet" href="ths.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -16,43 +16,43 @@
       <div class="header">
         <div class="title">
           <span class="main-title">
-		  Obrigada!
+		  ¡Gracias!
 		  </span><br />
-          Seu pedido foi <br>aceito!
+          Su pedido ha <br>sido aceptado.
         </div>
         <span>
-		Em breve, o operador entrará em contato para confirmar o pedido.
+		Pronto el operador se pondrá en contacto con usted para confirmar la orden.
         </span>
       </div>
 
       <div class="form">
-        <p>Por favor, verifique se os dados inseridos estão corretos.</p>
+        <p>Por favor, compruebe la exactitud de los datos introducidos.</p>
         <div class="form-wrap">
           <div class="wrap-input">
             <div class="input">
-              <label for="name">Nome</label>
+              <label for="name">Nombre</label>
               <div><?php echo ($data["name"])?></div>
             </div>
             <div class="input">
-              <label for="name">Telefone</label>
+              <label for="name">Teléfono</label>
               <div><?php echo ($data["phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
-            Alterar dados
+            Editar datos
           </button>
 
           <form
             class="hidden-form" id="form" method="post"
-             geo="pt" action="api.php"
-	onsubmit="return validate_form(this, 'Digite o número de telefone correto');"
+             geo="es" action="api.php" 
+	onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');"
 			>
 			
-            <input type="text" name="name" required="" placeholder="Nome" />
+            <input type="text" name="name" required="" placeholder="Nombre" />
 
-            <input type="tel" name="phone" required="" placeholder="Telefone" />
+            <input type="tel" name="phone" required="" placeholder="Teléfono" />
 
-            <button type="submit">Alterar dados</button>
+            <button type="submit">Editar datos</button>
 
             <input name="subid" type="hidden" value="{subid}" />
             <input name="px" type="hidden" value="{px}" />
