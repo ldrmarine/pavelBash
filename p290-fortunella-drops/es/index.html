@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#101010">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Exclusivo no TVA: 1 gota deste produto pode derreter até 3,2 kg de gordura numa semana.
+    Exclusivo en TVA: 1 gota de este remedio puede disolver hasta 3.2 kg de grasa a la semana.
   </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/d63bd5e2-2cd2-4350-b4a7-50722e2fd1c7.css">
@@ -183,188 +183,126 @@
 
   <style type="text/css">
     /*HEADERS*/
-    .header {
-      background-color: #1E6DA3;
-    }
-
-    .header_desktop {
-      max-width: 1360px;
-      margin: 0 auto;
-    }
-
-    .header_content {
-      display: flex;
-      justify-content: space-between;
-      background-color: #1E6DA3;
-      align-items: center;
-      padding: 15px;
-    }
-
-    .header-btns {
-      display: flex;
-      align-items: center;
-    }
-
-    .header-btns__social {
-      display: flex;
-      align-items: center;
-    }
-
-    .header-btns__flag {
-      margin-right: 20px;
-    }
-
-    .header-btns__item:not(:last-child) {
-      margin-right: 20px;
-    }
-    .header-menu{
-
-      padding: 0 15px;
-    }
-    .header_menu ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0;
-    }
-    .logo {
+    .x-header-medical .header_content {
+    background: #0B419B;
+    padding: 10px 25px;
+    color: #ffffff;
+}
+.header_content_text-holder {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.header-left__text {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    font-family: inherit;
+    font-weight: 400;
+}
+.header-left__date{
+  margin:0;
+}
+.header-left__text span {
     font-weight: 700;
+}
+.header-center {
+    padding: 0 20px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.header-center__img{
+  margin:auto;
+  display: block;
+}
+.header-center__text{
+  margin:0;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 2px solid #fff;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
     font-family: inherit;
 }
-.logo-dil {
-    font-weight: 400;
-    opacity: .7;
+.header-left__text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -16px;
+    width: 9px;
+    height: 8px;
+    background: center/cover no-repeat url(../images/arrow-down.svg);
 }
-.header_menu ul li a p {
-    padding: 10px 20px;
-    color: #fff;
-    margin:0;
-} .header_menu ul li a {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    text-decoration: none;
-}
- .header_mobile-publication {
-    color: #767676;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 25px;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    background-color: #fff;
-    margin: 0;
-    display: none;
-}
-.header-burger{
-  width: 38px;
-  height: 100%;
-  display: none;
-}
-.header-burger__line{
-  width: 100%;
-  height: 2px;
-  display: block;
-  background-color: #fff;
-}
-.header-burger__line:not(:last-child){
-  margin-bottom: 10px;
-}
-@media (max-width:768px) {
-  .header_mobile-publication{
-    display: block;
-  }
-  .header_menu{
-    display: none;
-  }
-  .header-burger{
-    display: block;
-  }
-  .header-btns__social{
+
+
+@media (max-width:570px){
+  .header-center{
     display: none;
   }
 }
+@media (max-width: 420px) {
+  .header-left{
+    font-size:15px;
+  }
+  .x-header-medical .header_content{
+    padding: 10px 5px;
+  }
+  .header-right__text {
+    font-size: 14px;
+  }
+}
+    /*FOOTER*/
+    
   </style>
 
   <link href="css/aos.css" rel="stylesheet">
-
+  <script src="js/aos.js"></script>
 
 </head>
 
 <body>
 
-  <header class="header">
+  <header class="x-header-medical ">
     <div class="header_desktop">
       <div class="header_content">
         <div class="header_content_text-holder">
-          <div class="logo">
-            notícias<span class="logo-dil">ao</span>minuto
+          <div class="header-left">
+            <a href="#form" class="header-left__text">
+              EDICIÓN <span>ESPAÑA</span>
+            </a>
+            <p class="header-left__date">
+              <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+            </p>
+          </div>
+          <div class="header-center">
+            <img src="./images/logo.png" alt="" class="header-center__img">
+            <p class="header-center__text">
+              minutos
+            </p>
+          </div>
+          <div class="header-right">
+            <a href="#form" class="header-right__text">
+              NEWSLETTERS
+            </a>
+            <a href="#form" class="header-right__link">
+              <img src="./images/search.svg" alt="" class="header-right__icon">
+            </a>
           </div>
         </div>
-        <div class="header-btns">
-          <a href="#form" class="header-btns__flag">
-            <img src="./images/flag.png" alt="" class="header-btns__icon">
-          </a>
-          <div class="header-btns__social">
-            <a href="#form" class="header-btns__item">
-              <img src="./images/fb.svg" alt="" class="header-btns__icon">
-            </a>
-            <a href="#form" class="header-btns__item">
-              <img src="./images/tw.svg" alt="" class="header-btns__icon">
-            </a>
-            <a href="#form" class="header-btns__item">
-              <img src="./images/s-1.svg" alt="" class="header-btns__icon">
-            </a>
-          </div>
-          <a href="#form" class="header-burger">
-            <span class="header-burger__line"></span>
-            <span class="header-burger__line"></span>
-            <span class="header-burger__line"></span>
-          </a>
-        </div>
       </div>
-
-      <div class="header_menu">
-        <ul>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>SOBRE NÓS</p>
-            </a>
-          </li>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>AO HOJE</p>
-            </a>
-          </li>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>ARTIGOS</p>
-            </a>
-          </li>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>CENTRO DE DIAGNÓSTICO</p>
-            </a>
-          </li>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>NOSSOS EXPERTADORES</p>
-            </a>
-          </li>
-          <li>
-            <a href="#form" rel="noopener noreferrer">
-              <p>JUNTE-SE A NÓS</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="header_mobile-publication">Publicado <span class="date-day"></span>.<span
-          class="date-mont"></span>.<span class="date-year"></span></p>
     </div>
+
   </header>
 
   <div class="container slug--sanjay-gupta-prescription-for-fighting-off-dementia-keep-sharp type--content-article">
@@ -375,175 +313,129 @@
 
             <section class="content__body">
 
-              <h1>Exclusivo no TVA: 1 gota deste produto pode derreter até 3,2 kg de gordura numa semana.
+              <h1>Exclusivo en TVA: 1 gota de este remedio puede disolver hasta 3.2 kg de grasa a la semana.
               </h1>
 
-              <p style="padding-right: 20px; padding-left: 20px">Ver como Jennifer Lopez (52) perdeu 14kg e Kim Kardashian (41) perdeu 17 kg num curto espaço de tempo. (<span style="color: red;">AVISO:</span> Não se trata de bariátricos, dietas ou exercício)</p>
-              <!-- <img src="img/portais.png" style="width: 100%" class="img-responsive"> -->
+              <p style="padding-right: 20px; padding-left: 20px">Mire como Jennifer López (52) perdió 14 kg, y Kim Kardashian (41) - 7 kg en poco tiempo.  (<span style="color: red;">ATENCIÓN:</span> No se trata de bariatria, dietas ni ejercicios físicos)</p>
+              
               <img src="images/simone2.png" class="img-responsive" style="width: 100%">
-              <!-- <p class="m-t-25">
-                     <strong>
-                        (<script language="javascript">
-                           var dayNames = new Array(
-                                "Sunday",
-                                "Monday",
-                                "Tuesday",
-                                "Wednesday",
-                                "Thursday",
-                                "Friday",
-                                "Saturday"
-                           );
-                           
-                           // Array of month Names
-                           var monthNames = new Array(
-                                "January",
-                                "Favereiro",
-                                "March",
-                                "April",
-                                "May",
-                                "June",
-                                "July",
-                                "August",
-                                "September",
-                                "October",
-                                "November",
-                                "December"
-                           );
-                           
-                           var now = new Date();
-                           var dayOfTheWeek = now.getDay();
-                           now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
-                           
-                           document.write(
-                               dayNames[now.getDay()] +
-                               ", " +
-                               now.getDate() +
-                               " de " +
-                               monthNames[now.getMonth()] +
-                               " de " +
-                           
-                               now.getFullYear()
-                           );
-                        </script>)
-                     </strong>
-                  </p> -->
+               
 
-              <p class="m-t-25"><strong>Tal como 3 milhões de portugueses, Jennifer Lopez sofre de problemas de peso. Hoje, Jennifer diz que a sua vida é tão boa e que o seu corpo é tão magro como quando tinha 18 anos.</strong>
+              <p class="m-t-25"><strong>Al igual que 3 millones de españoles, Jennifer López sufre de problemas de peso. Hoy día Jennifer dice que su vida es tan buena y el cuerpo es tan esbelto como a los 18 años de edad.
+              </strong>
               </p>
 
               <p class="m-t-25">
                 <span
-                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">J</span>ennifer Lopez tentou a bariátrica, o exercício e as dietas, mas em vão. De facto, obteve os resultados contrários, a longo prazo com a bariatrica, dietas inadequadas e exercício físico, ganhou peso e isso prejudicou a sua saúde.
+                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">J</span>ennifer López probó bariatria, ejercicios físicos y dietas, pero sin resultado. En realidad, tuvo resultados contrarios, y posteriormente, a causa de bariatria, dietas incorrectas y ejercicios físicos engordó, y esto dañó su salud.
 
               </p>
-              <p class="m-t-25">Jennifer diz ter sofrido perda de memória, refluxo esofágico e anemia como resultado dos efeitos secundários da obesidade.</p>
+              <p class="m-t-25">Jennifer cuenta que a causa de efectos secundarios sufría de pérdida de memoria, reflujo gástrico y anemia. </p>
               <p class="m-t-25">
-                Milhares de portugueses partilham os mesmos receios. Um estudo recente dos EUA sobre homens e mulheres com mais de 40 anos que foram submetidos a cirurgia bariátrica revelou que 70% sofriam de anemia e desenvolveram anorexia.
+                Miles de españoles comparten los mismos temores. Una investigación reciente realizada en los EE.UU. entre los hombres y mujeres mayores de 40 años sometidos a la operación bariátrica confirmó que 70% de ellos sufrieron de anemia y tuvieron anorexia.
               </p>
               <img src="images/121.jpg" style="width: 100%">
               <p class="m-t-25">
-                Determinada a encontrar uma saída, a Jennifer procurou diferentes tratamentos.
+                Al decidir encontrar una solución, Jennifer buscaba varios métodos de tratamiento...
               </p>
               <p class="m-t-25">
-                Mas a maioria tinha as mesmas limitações que a bariátrica: <strong>se ela queria fazer algo, tinha de lidar com terríveis efeitos secundários.
-                </strong>
+                Pero la mayoría de los mismos tenían las mismas restricciones que la bariatria: <strong>si quería hacer algo, afrontaba a los efectos secundarios horribles.</strong>
               </p>
               <p class="m-t-25">
-                Sem ideias, Jennifer procurou a ajuda do seu médico e nutricionista, Dr. Paul Wilson.
+                Ya desesperada, Jennifer consultó con su médico y dietólogo, el doctor Paul Wilson.
               </p>
               <img src="images/dvn.png" style="width: 100%">
-              <p class="m-t-25"> O médico perguntou-lhe se ela tinha algum dos seguintes sintomas:
+              <p class="m-t-25"> El médico la preguntó si tenía alguno de los síntomas siguientes:
               </p>
               <b>
-                <li style="font-size:18px">Fadiga constante?</li>
-                <li style="font-size:18px">Baixa autoestima?</li>
-                <li style="font-size:18px">A comer em excesso?</li>
-                <li style="font-size:18px">Fraqueza?</li>
+                <li style="font-size:18px">¿Cansancio continuo?</li>
+                <li style="font-size:18px">¿Autoestima bajo?</li>
+                <li style="font-size:18px">¿Comer demasiado?</li>
+                <li style="font-size:18px">¿Debilidad?</li>
               </b>
               <p class="m-t-25">
-                Jennifer Lopez abaixou a cabeça e murmurou um triste "Sim" após cada pergunta.
-
+                Jennifer López bajo la cabeza y balbuceó tristemente “Sí” después de cada pregunta.
               </p>
               <blockquote>
                 <p class="m-t-25">
                   <i>
-                    <em>"Tenho boas e más notícias. A boa notícia é que se sair daqui e seguir as minhas instruções, <strong>perderá mais de 15 quilos de peso num instante e nunca mais o ganhará de volta.</strong></em></i>
+                    <em>"Tengo noticias buenas y malas. La buena noticia es que si Vd. sale de aquí y sigue mis instrucciones,  <strong>perderá 15 kg de peso en breve y nunca volverá a recuperarlo.</strong></em></i>
                 </p>
                 <p class="m-t-25" style="    font-style: italic;
-                        ">A má notícia é que nunca mais o verei no meu gabinete. Desfrute da sua vida. " brincou o Dr. Paul Wilson.
+                        ">La mala noticia es que nunca volveré a verle en mi despacho. Disfrute de Su vida. " - bromea el doctor Paul Wilson.
                 </p>
               </blockquote>
               <p class="m-t-25">
-                O Dr. Paul Wilson revelou os resultados de um estudo clínico realizado em 22.900 mulheres, no qual  <strong>97% dos sujeitos perderam mais de 3kg por semana</strong>.
+                El doctor Paul Wilson presentó los resultados de una investigación clínica realizada con 22 900 mujeres, durante la cual un <strong>97% de los participantes perdían más de 3 kg a la semana</strong>.
               </p>
               <img src="images/isso.gif" style="width: 100%">
-              <p class="m-t-25">Graças a um produto chamado  <a 
-                  href="#form"><strong>Fortunella</strong></a> o grupo de teste foi capaz de andar e fazer exercício durante 4 horas com elevada autoestima e melhor humor.
+              <p class="m-t-25">Gracias al producto llamado  <a 
+                  href="#form"><strong>Fortunella</strong></a> el grupo objetivo pudo caminar y practicar deporte durante 4 horas con autoestima alto y buen humor.
               </p>
               <p class="m-t-25">
-                Como <a  href="#form"><strong>Fortunella</strong></a> (o produto utilizado no ensaio clínico) ainda não estava disponível nas lojas, Jennifer, num momento de desespero, chamou a fábrica para obter o produto com urgência, uma vez que se encontrava alegadamente em estado crítico.
+                Como <a  href="#form"><strong>Fortunella</strong></a> (el fármaco usado para las investigaciones clínicas) aún no estaba disponible en las tiendas, Jennifer, desesperada, llamó a la clínica para recibir urgentemente este fármaco porque supuestamente su estado era crítico.
               </p>
-              <h3>Porque está Jennifer Lopez a falar sobre isto?</h3>
+              <h3>¿Por qué Jennifer López habla de eso?</h3>
               <img src="images/casal.png" style="width: 100%">
-              <p class="m-t-25">Ela afirma que quer ajudar os outros. Ver abaixo:</p>
+              <p class="m-t-25">Confirma desear ayudar a los demás. Véase más abajo:</p>
               <blockquote>
-                <p class="m-t-25"><em>"Os meus resultados foram impressionantes, 1 dia depois de tomar as gotas pela primeira vez já me senti muito melhor, <strong>no mesmo dia em que perdi 0,8kg.</strong></em></p>
-                <p class="m-t-25"><em>Ben ficou chocado: após anos tinha finalmente conseguido perder alguns quilos e tinha melhor aspecto.</em></p>
-                <p class="m-t-25"><em>E eu estava a lutar para encontrar algo que não fosse prejudicial à minha saúde e que pudesse realmente resolver este grande problema.</em></p>
-                <p class="m-t-25"><em><strong>A obesidade e o excesso de peso não são problemas simples.</strong> Causam a morte, causam depressão, causam grandes danos à saúde.</em></p>
-                <p class="m-t-25"><em>Face a tudo isto, senti a obrigação de ajudar os outros. Eu não podia ser egoísta.</em></p>
+                <p class="m-t-25"><em>"Mis resultados eran impresionantes, a 1 día de tomar las gotas por primera vez ya me sentí mucho mejor,  <strong>el mismo día perdí 0,8 kg.</strong></em></p>
+                <p class="m-t-25"><em>Ben estaba emocionado: unos años más tarde, finalmente conseguí perder varios kilos, y empecé a tener mejor aspecto.</em></p>
+                <p class="m-t-25"><em>Y era complicado encontrar algo que no dañara mi salud y pudiera realmente resolver este problema.</em></p>
+                <p class="m-t-25"><em><strong>La obesidad y el sobrepeso no son problemas sencillos. </strong> Provocan la muerte, depresión, y dañan bastante la salud.</em></p>
+                <p class="m-t-25"><em>Al afrontar todo esto, me sentí obligado a ayudar a los demás. No pude ser egoísta.</em></p>
                 <p class="m-t-25"><em> <a  href="#form"><strong>Fortunella
-                      </strong></a> irá mudar a vida de qualquer pessoa que a utilize todos os dias. Vale cada centavo.
-                    <strong> Se eu tivesse conhecido os resultados de antemão, teria pago 10 vezes mais</strong></em>." -
-                    Jennifer Lopez exclusivamente para a TVA.</p>
+                      </strong></a> cambiará la vida de cualquiera que la use todos los días. Esto vale cada céntimo. 
+                    <strong>  Si me hubiera enterado de los resultados, habría pagado 10 veces más.</strong></em>" -
+                    Jennifer López en exclusivo para TVA."</p>
               </blockquote>
               <br>
               <img src="images/potinho.jpg" style="width: 100%">
-              <h3>Então o que há em Fortunella?</h3>
+              <h3>¿Qué contiene Fortunella?</h3>
               <p class="m-t-25">
-                As gotas contêm extracto de Fortunella, extracto de alcachofra e extracto de espinafre.
-                <br> Estes ingredientes naturais têm sido fundamentais para muitos ervanários chineses e indianos durante 5.000 anos, e é isto que torna a Fortunella única. <br>
-                O TRTT <strong>exclusivo contido no produto permite que estes ingredientes sejam absorvidos 185 vezes melhor do que os ingredientes tradicionais.</strong>
+                Las gotas contienen un extracto de fortunella, de alcachofa y de espinacas.
+                <br> Estos ingredientes naturales eran claves para muchos herboristas chinos e indios durante 5 000 , y es por eso que Fortunella es única. <br>
+                TRTT exclusivo del fármaco  <strong>permite que estos ingredientes se digieran 185 veces mejor que el contenido tradicional.</strong>
               </p>
 
               <img src="images/capais.jpg" style="width: 100%">
-              <h3><strong>Testamos a Fortunella!</strong></h3>
-              <p class="m-t-25">Antes de promover a  <strong>Fortunella</strong>como cura e solução para a obesidade, era necessário descobrir se estes ingredientes naturais funcionavam realmente. <br>
-                Outra personalidade famosa dos meios de comunicação social voluntariou-se para os nossos testes.</p>
+              <h3><strong>¡Hemos hecho las pruebas de  Fortunella!</strong></h3>
+              <p class="m-t-25">Antes de publicitar  <strong>Fortunella</strong> como fármaco y solución del problema de obesidad, era necesario entender si estos ingredientes naturales realmente funcionan. <br>
+                Otra persona famosa decidió participar en nuestras pruebas.</p>
 
               <h4>Kim Kardashian</h4>
               <img src="images/capais1.jpg" style="width: 100%">
-              <p class="m-t-25">Kim Kardashian tem 41 anos de idade e excesso de peso. Ela disse que perdeu o desejo de actuar e mostrar o seu rosto em público, <strong>porque é obesa e tem vergonha de se exibir.</strong> </p>
-              <p class="m-t-25">Kim irá utilizar  <a 
-                  href="#form"><strong>Fortunella</strong></a>, o mesmo produto que Jennifer Lopez utiliza.
+              <p class="m-t-25">Kim Kardashian tiene 41 años y sufre de obesidad. Dijo haber perdido el deseo de actuar y salir para el público porque tiene obesidad y todo esto le da vergüenza. </p>
+              <p class="m-t-25">Kim usará <a 
+                  href="#form"><strong>Fortunella</strong></a>, el mismo producto usado por Jennifer López.
               </p>
-              <h3>Os resultados de Kim ao usar <a  href="#form"><strong>Fortunella</strong></a>
+              <h3>Los resultados de Kim al usar  <a  href="#form"><strong>Fortunella</strong></a>
               </h3>
               <blockquote>
                 <p class="m-t-25">
-                  <em>"As gotas foram entregues muito mais rapidamente do que eu esperava.</em>
+                  <em>"Las gotas fueron entregadas mucho más rápido que esperaba.</em>
                 </p>
                 <p class="m-t-25">
-                  <em>Estava ansioso por descobrir se  <a 
-                      href="#form"><strong>Fortunella</strong></a> era aquilo de que a minha melhor amiga Jennifer Lopez estava a falar.</em>
+                  <em>Tenía muchas ganas de saber si  <a 
+                      href="#form"><strong>Fortunella</strong></a> es lo mencionado por mi mejor amiga Jennifer López.</em>
                 </p>
-                <p class="m-t-25"><em>Tomei as gotas à noite antes de ir para a cama.</em></p>
-                <p class="m-t-25"><em>No dia seguinte, reparei que a minha gordura estava a desaparecer juntamente com o meu peso, que tinha caído 1,2kg.</strong></em></p>
+                <p class="m-t-25"><em>Tomé las gotas por la noche antes de dormir.</em></p>
+                <p class="m-t-25"><em>Al día siguiente noté que mi grasa desaparecía, <strong>al igual que mi peso que bajó  1,2 kg.</strong></em></p>
 
-                <p class="m-t-25"><em>Depois de anos a viver com excesso de peso e a experimentar muitas dificuldades físicas e psicológicas, pude finalmente ter novamente esperança.</em></p>
+                <p class="m-t-25"><em>Después de haber vivido muchos años con sobrepeso y muchas dificultades psicológicas y fisiológicas por fin tuve una esperanza.</em></p>
 
-                <p class="m-t-25"><em>Perdi mais 0,5kg nesse dia e fui capaz de andar, correr e fazer exercício durante mais de 2 horas.</em></p>
+                <p class="m-t-25"><em>Aquel día <strong>perdí 0,5 kg más y pude caminar, correr y practicar deporte más de 2 horas.</strong></em></p>
                 <p class="m-t-25">
-                  <em>Para ser honesto, estava bastante céptico e pensava ser impossível que um remédio natural fosse tão eficaz (muito melhor do que qualquer cirurgia ou dieta com enormes efeitos secundários). </em>
+                  <em>A decir verdad, tenía bastantes dudas y pensaba que tanta eficacia de un remedio natural era imposible (mucho mejor que cualquier operación o dieta con muchos efectos secundarios).</em>
                 </p>
-                <p class="m-t-25" style="  font-style: italic;">Pensei que a minha vida iria finalmente voltar ao normal.
+                <p class="m-t-25" style="  font-style: italic;">Pensé que me vida por fin volvería a ser normal. 
                 </p>
                 <p class="m-t-25"><em>
-                  Não esperava que  <a  href="#form"><strong>Fortunella</strong></a>
-                  trabalhasse tão bem e custasse tão pouco...</em>
+                  No esperaba que  <a  href="#form"><strong>Fortunella</strong></a>
+                  funcionara tan bien y fuera tan barata...</em>
                 </p>
-                <p class="m-t-25"><em>A minha vida foi salva, valeu cada cêntimo, <strong>teria pago muito mais se o efeito fosse o mesmo.</strong> (Ela encomendou mais três garrafas)"
-                  </em> , revelou Kim Kardashian numa entrevista especial.
+                <p class="m-t-25"><em>Mi vida estaba salvada, esto vale cada céntimo pagado, <strong>habría pagado mucho más si el efecto hubiera sido el mismo. </strong> (Pidió tres frascos más)"
+                  </em> - informó Kim Kardashian en una entrevista especial .
                 </p>
               </blockquote>
 
@@ -552,37 +444,38 @@
               </center>
 
               <p class="m-t-25"></p>
-              <h3><b>Será que <a  href="#form"><strong>Fortunella</strong></a> trabalhará para si?</b></h3>
+              <h3><b>¿Le servirá bien  <a  href="#form"><strong>Fortunella</strong></a>?</b></h3>
               <p></p>
-              <p class="m-t-25">Pode experimentar várias soluções de perda de peso Algumas delas, incluindo a bariátrica, têm efeitos secundários perigosos, o que não é o caso da Fortunella.</p>
+              <p class="m-t-25">Puede probar varias soluciones para bajar de peso. Algunas de ellas, incluida la bariatria, tienen efectos secundarios peligrosos, lo cual no se refiere a Fortunella.</p>
 
-              <p class="m-t-25">Outros exigem que desista de comer durante muito tempo e que faça exercícios perigosos.
+              <p class="m-t-25">Otros requieren rechazar la comida durante mucho tiempo y realizar los ejercicios peligrosos.
               </p>
-              <p class="m-t-25">Com tantas opções disponíveis, é natural que haja cepticismo em relação aos resultados.
+              <p class="m-t-25">Con tantas opciones es muy normal que surjan dudas sobre los resultados.
               </p>
-              <p class="m-t-25">Assim, em vez de prometer nada aos nossos leitores, desafiamo-lo a seguir os passos de Kim Kardashian e Jennifer Lopez e a provar o seu valor!</p>
+              <p class="m-t-25">Por lo tanto, en vez de prometer algo a nuestros lectores,  <strong> les ofrecemos un reto: ¡seguir el ejemplo de Kim Kardashian y Jennifer López y actuar!</strong></p>
               <p></p>
-              <p class="m-t-25">Quando <strong>os representantes da <a 
-                    href="#form">Fortunella</a></strong> souberam que o seu produto estava incluído nesta edição, insistiram em oferecer aos nossos leitores um preço promocional especial <strong>Pode obter o desconto encomendando Fortunella através do formulário de encomenda oficial abaixo</strong>.
+              <p class="m-t-25">Cuando <strong> los representantes del programa de <a 
+                    href="#form">Fortunella</a></strong> se enteraron de que su fármaco estaba incluido en esta edición, insistieron en ofrecer un precio especial de promoción a nuestros lectores. <strong> Puede obtener un descuento al pedir Fortunella a través del formulario de pedido oficial más abajo</strong>.
               </p>
               <center>
                 <div class="row">
                   <div class="col-xs-12">
+                    <img src="images/of.jpg" class="img-responsive">
                     <p class="text-center pink-text m-b-5">
                       <strong>
-                        (A oferta é limitada no tempo, encomendar antes de esgotar o stock **)
+                        (Oferta restringida, pida mientras haya existencias en el almacén **)
                       </strong>
                     </p>
                     <p class="m-b-5"></p>
                     <p>
                       <strong style="color: red;">
-                        IMPORTANTE: Os ensaios clínicos constataram que este produto deve ser utilizado diariamente para alcançar resultados semelhantes.
+                        IMPORTANTE: Durante las investigaciones clínicas fue comprobado que para conseguir los resultados similares hay que usar este producto a diario. 
                       </strong>
                     </p>
                     <p class="update m-b-30">
-                      <img src="images/checkmark-green-sm.png"> <strong> Actualização:</strong>
-                      <span class="red-text">Os últimos pacotes estão disponíveis.  </span>  Fim da promoção: <span
-                        class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                      <img src="images/checkmark-green-sm.png"> <strong> Actualización:</strong><br>
+                      <span class="red-text">Últimas embalajes disponibles.  </span> 
+					  <br>La promoción finaliza:  <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
                     </p>
 
                     <style type="text/css">
@@ -591,7 +484,6 @@
                       }
                     </style>
 
-                    <div class="order-form-block">
 
 
     <link rel="stylesheet" href="form/form.css">
@@ -606,24 +498,23 @@
 
 
             <div class="form_wrap" id="objectScrollAttention">
-                <form method="POST" geo="pt" action="api.php"
-	onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
-                        <label class="descount">Desconto -50%</label>
+                <form method="POST">
+                        <label class="descount">descuento -50%</label>
 
                         <div id="price">
                             <div class="price_new">
-                                39 € 
+                                49 €
                             </div>
                             <div class="price_old">
-                                78 €
+                                98 €
 							</div>
                         </div>
 
-                        <label class="inp_name">Nome</label>
+                        <label class="inp_name">Su nombre</label>
                         <input name="name" placeholder="" required="" type="text">
 
-                        <label class="inp_phone">Telefone<br>
-						(introduza o seu número de telemóvel activo)
+                        <label class="inp_phone">Número de teléfono<br>
+                          (indique su número de móvil activo)
 						</label>
                         <input name="phone" placeholder="" required="" type="tel">
 
@@ -631,7 +522,7 @@
 <input name="px" type="hidden" value="{px}">
 <input name="bayer" type="hidden" value="{bayer}">
 <br>
-                        <button type="submit" class="btnn">ENCOMENDAR</button>
+                        <button type="submit" class="btnn">COMPRAR CON UN DESCUENTO</button>
 
                 </form>
             </div>
@@ -640,11 +531,9 @@
 		<br>
         <!--Form END-->
 
-
                       <div class="container comments">
                         <div class="row border-top">
-                          <a  href="#form" class="pull-left">Comentários mais recentes</a>
-						 <br>
+                          <a  href="#form" class="pull-left">Últimos comentarios</a>
                           <div class="media no-border-top">
                             <div class="media-left">
                               <a  href="#form">
@@ -653,14 +542,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Sílvia Nunes</a>
+                                <a  href="#form">Silvia Catasús</a>
                               </h4>
                               <p>
-                                Não sabia que era possível perder peso tão facilmente, estou na semana 2 e já perdi 5,5 kg, é apenas magia!
+                                No sabía que se puede adelgazar tan fácilmente, durante la segunda semana ya perdí  5,5 kg, ¡es una magia!
                               </p>
 
                               <p class="bottom">
-                                Responder <span class="Idem">13 . Como .</span>
+                                Me gusta <span class="Idem">13 . Contestar .</span>
                                 <span class="time">12 min</span>
                               </p>
                             </div>
@@ -673,13 +562,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Maria Elena Ferreira</a>
+                                <a  href="#form">María Alonso</a>
                               </h4>
                               <p>
-                                Vi Jennifer Lopez a mostrar Fortunella na Instagram há algum tempo atrás e decidi tentar. Estou a usar Fortunella há cerca de 4 semanas, é espantoso, perdi tanto peso!
+                                Hace poco vi a Jennifer López presentar Fortunella en Instagram, y decidí probarlo. Llevo usando Fortunella ya unas 4 semanas, es increíble, ¡he adelgazado tanto!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">6 . Como .</span>
+                                Me gusta <span class="Idem">6 . Contestar .</span>
                                 <span class="time">13 min</span>
                               </p>
                             </div>
@@ -692,15 +581,15 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Ana Abreu</a>
+                                <a  href="#form">Ana Padilla</a>
                               </h4>
                               <p>
-                                Um amigo recomendou-me o produto há 3 semanas. Comprei as gotas e consegui-as em 3 dias. Os resultados são espantosos. Eu amo-te Jennifer!
+                                Un amigo me recomendó este remedio hace 3 semanas. Compré las gotas y las recibí 3 días más tarde. Los resultados son impresionantes. ¡Te quiero, Jennifer!
                               </p>
 
 
                               <p class="bottom">
-                                Responder <span class="Idem">19 . Como .</span>
+                                Me gusta <span class="Idem">19 . Contestar .</span>
                                 <span class="time">25 min</span>
                               </p>
                             </div>
@@ -713,13 +602,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Vanessa Noronha</a>
+                                <a  href="#form">Catalina Nieto</a>
                               </h4>
                               <p>
-                                Adoraria experimentar a Fortunella em vez da lipoaspiração! Isso poupar-me-ia muito dinheiro!
+                                ¡Me gustaría probar Fortunella en vez de liposucción! ¡Esto me ahorrará un montón de dinero!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem"> . Como .</span>
+                                Me gusta <span class="Idem"> . Contestar .</span>
                                 <span class="time">46 min</span>
                               </p>
                             </div>
@@ -732,14 +621,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Inês Cunha</a>
+                                <a  href="#form">Rocío Fernández</a>
                               </h4>
                               <p>
-                                Estou eternamente grata à Jennifer! Já perdi 9kg em 3 semanas!
+                                ¡Muchísimas gracias, Jennifer! ¡Ya perdí 9 kg en 3 semanas!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">43 . Como .</span>
-                                <span class="time">Há cerca de uma hora</span>
+                                Me gusta <span class="Idem">43 . Contestar .</span>
+                                <span class="time">Hace aproximadamente una hora</span>
                               </p>
                             </div>
                           </div>
@@ -751,14 +640,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Isabel Castro</a>
+                                <a  href="#form">Laura Castellano</a>
                               </h4>
                               <p>
-                                Eu vi Fortunella na televisão. Acabei de encomendar algumas para mim, as gotas serão entregues depois de amanhã!
+                                Vi Fortunella por la tele. Lo acabo de pedir, ¡entregarán las gotas pasado mañana!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">3 . Como .</span>
-                                <span class="time">Há cerca de uma hora</span>
+                                Me gusta <span class="Idem">3 . Contestar .</span>
+                                <span class="time">Hace aproximadamente una hora</span>
                               </p>
                             </div>
                           </div>
@@ -770,14 +659,14 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Rogério Sousa </a>
+                                <a  href="#form">José Aranda </a>
                               </h4>
                               <p>
-                                Posso estar um pouco mais acima do peso do que a maioria de vós. Mas a Fortunella também me ajudou! Obrigado Jennifer Lopez pela inspiração!
+                                Quizás tengo un poco más de sobrepeso que la mayoría de Vds. ¡Pero Fortunella me ayudó a mí también! ¡Gracias a Jennifer López por la inspiración!
                               </p>
 
                               <p class="bottom">
-                                Responder <span class="Idem"> . Como .</span>
+                                Me gusta <span class="Idem"> . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -790,13 +679,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Daniela Pereira</a>
+                                <a  href="#form">Daniela Martín</a>
                               </h4>
                               <p>
-                                A minha irmã usa Fortunella há alguns meses, ela já perdeu muito peso, acabei de me comprar, também quero perder peso!!!
+                                Mi hermana lleva ya varios meses usando Fortunella, ya adelgazó mucho, lo acabo de comprar para mí, también deseo adelgazar.
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">12 . Como .</span>
+                                Me gusta <span class="Idem">12 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -811,13 +700,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Luciana Marques</a>
+                                <a  href="#form">Lucía Solís</a>
                               </h4>
                               <p>
-                                Funcionou! Foi fácil, não posso acreditar que fiquei magro.
+                                ¡Funcionó! Fue fácil, no me lo puedo creer al verme delgada.
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">53 . Como .</span>
+                                Me gusta <span class="Idem">53 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -830,11 +719,11 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Maribel Alves</a>
+                                <a  href="#form">Alicia Prado</a>
                               </h4>
-                              <p>Obrigada pela informação, só perguntei por mim mesma.</p>
+                              <p>Gracias por la información, lo pregunté solo para mí.</p>
                               <p class="bottom">
-                                Responder <span class="Idem">16 . Como .</span>
+                                Me gusta <span class="Idem">16 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -847,13 +736,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Sandra Santos da Silva</a>
+                                <a  href="#form">Nuria Garófano</a>
                               </h4>
                               <p>
-                                A minha Fortunella chegou hoje, vou começar a usar as gotas e depois contar-vos o meu resultado aqui!
+                                Mi Fortunella llegó hoy, voy a empezar a usar las gotas y luego informaré sobre mi resultado aquí.
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">2 . Como .</span>
+                                Me gusta <span class="Idem">2 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -866,12 +755,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Rodrigo Almeida</a>
+                                <a  href="#form">Patricio Izquierdo</a>
                               </h4>
-                              <p>A minha mãe usa este produto e perdeu muitos quilos extra, é muito bom!!!
+                              <p>Mi madre usa este producto y perdió muchos kilos que sobraban, ¡¡¡realmente es bueno!!!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">11 . Como .</span>
+                                Me gusta <span class="Idem">11 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -884,12 +773,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Andrea Lima</a>
+                                <a  href="#form">Adriana Pérez</a>
                               </h4>
-                              <p>Perdi 11kg em 4 semanas, é realmente fantástico, já disse aos meus amigos! Jennifer Lopez, eu realmente aprecio isso!
+                              <p>Perdí 11 kg en 4 semanas, es realmente perfecto, ¡ya lo conté a mis amigos! Jennifer López, ¡se lo agradezco mucho!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">33 . Como .</span>
+                                Me gusta <span class="Idem">33 . Contestar .</span>
                                 <span class="time">2 h</span>
                               </p>
                             </div>
@@ -902,12 +791,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Camila Melo</a>
+                                <a  href="#form">Leonor Fernández</a>
                               </h4>
-                              <p>Acabei de fazer uma encomenda. Mal posso esperar para ter a minha Fortunella! !! Obrigado Kim Kardashian!
+                              <p>Acabo de hacer el pedido. No veo la hora de recibir m i Fortunella! !! ¡Gracias Kim Kardashian!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">23 . Como .</span>
+                                Me gusta <span class="Idem">23 . Contestar .</span>
                                 <span class="time">3 h</span>
                               </p>
                             </div>
@@ -920,16 +809,16 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Benedita Vasconcelos</a>
+                                <a  href="#form">Sara Mayo</a>
                               </h4>
-                              <p>Amo Fortunella, mudou completamente a minha vida e só a usei durante 1,5 meses, mudou realmente o curso da minha vida e da minha saúde!
+                              <p>Me gusta Fortunella, cambió mi vida totalmente, lo usé solo durante 1,5 meses, ¡realmente cambió la trayectoria de mi vida y mi salud!
                               </p>
                               <img src="images/1c.jpg" style="width: 265px;">
 
 
 
                               <p class="bottom">
-                                Responder <span class="Idem">6 . Como .</span>
+                                Me gusta <span class="Idem">6 . Contestar .</span>
                                 <span class="time">3 h</span>
                               </p>
                             </div>
@@ -942,11 +831,11 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Fernando João Sá</a>
+                                <a  href="#form">Fernando López</a>
                               </h4>
-                              <p>O meu amigo enviou-me esta mensagem através da WhatsApp, encomendei uma para mim!</p>
+                              <p>¡Un amigo me mandó este mensaje por WhatsApp, y lo pedí para mí!</p>
                               <p class="bottom">
-                                Responder <span class="Idem">2 . Como .</span>
+                                Me gusta <span class="Idem">2 . Contestar .</span>
                                 <span class="time">3 h</span>
                               </p>
                             </div>
@@ -959,13 +848,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Matilde Coutinho</a>
+                                <a  href="#form">Eva Domínguez</a>
                               </h4>
-                              <p>Não confio nas compras online, mas Jennifer Lopez convenceu-me, também quero perder peso!
+                              <p>No confío a las compras por Internet, pero Jennifer López me convenció, ¡también quiero adelgazar!
                               </p>
                               <img src="images/2c.jpg" style="width: 265px;">
                               <p class="bottom">
-                                Responder <span class="Idem">17 . Como .</span>
+                                Me gusta <span class="Idem">17 . Contestar .</span>
                                 <span class="time">4 h</span>
                               </p>
                             </div>
@@ -978,12 +867,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">David Gil</a>
+                                <a  href="#form">Pablo González</a>
                               </h4>
-                              <p>Encomendo a um preço com desconto. Mal posso esperar para começar a tomá-los e ver os meus resultados.
+                              <p>Lo pedí con un descuento. No veo la hora de empezar a tomarlo y ver mis resultados. 
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">8 . Como .</span>
+                                Me gusta <span class="Idem">8 . Contestar .</span>
                                 <span class="time">6 h</span>
                               </p>
                             </div>
@@ -996,12 +885,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Ana Maria Pinto</a>
+                                <a  href="#form">Elena Fuentes</a>
                               </h4>
-                              <p>Tinha experimentado outros produtos antes de descobrir Fortunella, mas este é realmente o melhor produto para perder peso. Obrigado Kim
+                              <p>Antes de enterarme de Fortunella, probé otros productos, realmente es el mejor remedio para bajar de peso. Gracias, Kim
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">20 . Como .</span>
+                                Me gusta <span class="Idem">20 . Contestar .</span>
                                 <span class="time">8 h</span>
                               </p>
                             </div>
@@ -1014,11 +903,11 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Beatriz Ribeiro</a>
+                                <a  href="#form">Silvia Postigo</a>
                               </h4>
-                              <p>Acabei de o comprar para mim!</p>
+                              <p>¡Lo acabo de comprar para mí!</p>
                               <p class="bottom">
-                                Responder <span class="Idem">10 . Como .</span>
+                                Me gusta <span class="Idem">10 . Contestar .</span>
                                 <span class="time">8 h</span>
                               </p>
                             </div>
@@ -1031,12 +920,13 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Afonso Vieira</a>
+                                <a  href="#form">Irene Matos</a>
                               </h4>
-                              <p>Usei recentemente estas gotas e elas funcionaram muito bem, perdi 14kg!
+                              <p>Usé estas gotas hace poco, y funcionaron muy bien, ¡perdí 14 kg!
+
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">13 . Como .</span>
+                                Me gusta <span class="Idem">13 . Contestar .</span>
                                 <span class="time">8 h</span>
                               </p>
                             </div>
@@ -1049,12 +939,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">Elena Gonçalves</a>
+                                <a  href="#form">Katia García</a>
                               </h4>
-                              <p>Pela primeira vez fiquei positivamente surpreendido com um produto de emagrecimento, livrei-me do peso extra, e de uma forma saudável!
+                              <p>Por primera vez estaba positivamente sorprendida por un producto para adelgazar, bajé de peso, ¡y además de forma sana!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">3 . Como .</span>
+                                Me gusta <span class="Idem">3 . Contestar .</span>
                                 <span class="time">8 h</span>
                               </p>
                             </div>
@@ -1067,12 +957,12 @@
                             </div>
                             <div class="media-body">
                               <h4 class="media-heading">
-                                <a  href="#form">João José Borges</a>
+                                <a  href="#form">Ronaldo1987</a>
                               </h4>
-                              <p>Eu não sabia que era possível perder peso sem fazer dieta, quanto mais ir ao ginásio. Obrigado JLo!!!
+                              <p>No sabía que se puede adelgazar sin dieta, sin hablar de gimnasio. ¡Gracias Jennifer López!!!
                               </p>
                               <p class="bottom">
-                                Responder <span class="Idem">5 . Como .</span>
+                                Me gusta <span class="Idem">5 . Contestar .</span>
                                 <span class="time">10 min</span>
                               </p>
                             </div>
@@ -1090,15 +980,15 @@
                                 <img class="img__noname" src="images/user.png" alt>
                               </div>
                               <div class="form__fields" style="width: 80%;">
-                                <input type="text" placeholder="Nome" id="inputCommentName" required
+                                <input type="text" placeholder="Su nombre" id="inputCommentName" required
                                   style="margin-bottom: 10px;">
-                                <input type="text" placeholder="Adicione um comentário" required id="inputCommentText">
-                                <textarea style="display: none;" name id="inputCommentText" placeholder="MANDAR"
+                                <input type="text" placeholder="Añadir un comentario" required id="inputCommentText">
+                                <textarea style="display: none;" name id="inputCommentText" placeholder="Enviar"
                                   cols="20" rows="5"></textarea>
                               </div>
 
                             </div>
-                            <button type="submit" id="commentPush">MANDAR</button>
+                            <button type="submit" id="commentPush">Enviar</button>
                           </form>
 
 
@@ -1125,7 +1015,7 @@
                             </h4>
                             <p>${valueText}</p>
                             <p class="bottom">
-                                Responder <span class="Idem">5 . Como .</span>
+                                Me gusta <span class="Idem">5 . Contestar .</span>
                                 <span class="time">1 min</span>
                             </p>
                         </div>
@@ -1366,20 +1256,19 @@
                             }
                           </style>
 
-                          <p class="small"># plugin social</p>
+                          
 						  
-
+						  
+						  
                         </div>
+						
+						
 						
                       </div>
 					  
-                    </div>
-                  </div>
-                </div>
-				
-                      <div class="form">
-                        <a  href="#form" class="bts">ENCOMENDAR COM DESCONTO</a>
-                      </div>
+					  <div class="form">
+                        <a  href="#form" class="bts">COMPRAR CON UN DESCUENTO</a>
+                      </div><br>
 
                       <style type="text/css">
                         .bts {
@@ -1408,7 +1297,10 @@
                           color: #fff;
                         }
                       </style>
-				<br>
+					  
+                    </div>
+                  </div>
+                </div>
               </center>
             </section>
           </article>
@@ -1419,38 +1311,34 @@
     </div>
   </div>
 
+  <footer class="footer" style="padding: 10px 15px;">
+    <center style="color: #aaa;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 0 0 20px;">
+      El producto descrito es un complemento alimenticio y no sirve para diagnosticar, recuperar, mejorar o cambiar las funciones fisiológicas del cuerpo a través del impacto farmacológico, inmunológico o metabólico.
+    </center>
+  </footer>
+
   <script src="js/jquery-3.6.0.min.js"></script>
 
-
-
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', () => {
-      const day = document.querySelectorAll('.date-day');
-      const mont = document.querySelectorAll('.date-mont');
-      const year = document.querySelectorAll('.date-year');
-
-
-      for (let i = 0; i < day.length; i++) {
-        currentDate(day[i], mont[i], year[i]);
-      }
-
-
-      function currentDate(day, mont, year) {
-        let currentDay = new Date().getDate();
-        let currentMonth = new Date().getMonth() + 1;
-        let currentYear = new Date().getFullYear();
-
-        day.textContent = currentDay < 10 ? "0" + currentDay : currentDay;
-        mont.textContent = currentMonth < 10 ? "0" + currentMonth : currentMonth;
-        year.textContent = currentYear < 10 ? "0" + currentYear : currentYear;
-      }
-    })
+  <script>
+    AOS.init({
+      duration: 500,
+      delay: 20,
+      once: true
+    });
   </script>
 
 <script type="text/javascript" src="/libs/js/gdpr.js"></script>
 <link rel="stylesheet" href="/libs/js/gdpr.css">
 <script>
 		var phonePattern = {
+			'de': '+49 ___ ____ ?__',
+			'at': '+43 ____ ____ ?__',
+			'ch': '+41 __ ___ __ __ ?__',
 			'ru': '+7 (___) ___-__-__',
 			'ua': '+38-___-___-__-__',
 			'by': '+375 ___ ___ ___',
@@ -1580,7 +1468,29 @@
 		});
 
 </script>
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', () => {
+  const day = document.querySelectorAll('.date-day');
+  const mont = document.querySelectorAll('.date-mont');
+  const year = document.querySelectorAll('.date-year');
 
+
+  for ( let i = 0; i < day.length; i++){
+    currentDate(day[i], mont[i], year[i]);
+  }
+
+
+  function currentDate(day,mont, year){
+    let currentDay = new Date().getDate();
+    let currentMonth = new Date().getMonth() + 1;
+    let currentYear = new Date().getFullYear();
+
+    day.textContent = currentDay < 10 ? "0" + currentDay: currentDay;
+    mont.textContent = currentMonth < 10 ? "0" + currentMonth: currentMonth;
+    year.textContent = currentYear < 10 ? "0" + currentYear: currentYear;
+  }
+})
+</script>
 </body>
 
 </html>
