@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#101010">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Эксклюзив на TVA: 1 капля этого средства может растопить до 3.2 кг жира в неделю.
+    In esclusiva: 1 goccia di questo prodotto può sciogliere fino a 3,2 kg di grasso in una settimana.
   </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/d63bd5e2-2cd2-4350-b4a7-50722e2fd1c7.css">
@@ -183,92 +183,64 @@
 
   <style type="text/css">
     /*HEADERS*/
-    .headers {
-      display: block;
-      margin-bottom: 30px;
-      cursor: pointer;
-    }
-
-    .headers img {
-      width: 100%;
-    }
-
-    .header-sm,
-    .header-m {
-      display: none;
-    }
-
-    @media screen and (max-width: 992px) {
-      .header-pc {
-        display: none;
-      }
-
-      .header-sm {
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 660px) {
-
-      .header-pc,
-      .header-sm {
-        display: none;
-      }
-
-      .header-m {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      .headers {
-        margin-bottom: 0 !important;
-      }
-    }
-
+    .x-header-medical .header_content {
+    background: #fff;
+    padding: 30px 20px 10px;
+}
+.header_content_text-holder {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.header-left {
+    margin-right: 40px;
+}
+.header-left__title {
+    font-family: inherit;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.header-left__text {
+    margin-bottom: 10px;
+}
+.header-left__link {
+    width: 240px;
+    display: block;
+    background-color: #8E0000;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.header-logo {
+    display: block;
+}
+.header-right {
+    display: none;
+}
+.burger {
+    width: 38px;
+    margin-right: 20px;
+}
+.burger__line:not(:last-child) {
+    margin-bottom: 9px;
+}
+.burger__line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+}
+@media (max-width: 768px) {
+  .header_content_text-holder{
+    flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+  }
+}
     /*FOOTER*/
-    .footers {
-      display: block;
-      /*margin-bottom: 30px;*/
-    }
-
-    .footers img {
-      width: 100%;
-    }
-
-    .footer-sm,
-    .footer-m {
-      display: none;
-    }
-
-    @media screen and (max-width: 992px) {
-      .footer-pc {
-        display: none;
-      }
-
-      .footer-sm {
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 660px) {
-
-      .footer-pc,
-      .footer-sm {
-        display: none;
-      }
-
-      .footer-m {
-        display: block;
-      }
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-
-    .content__body {
-      margin-top: 0;
-    }
+    
   </style>
 
   <link href="css/aos.css" rel="stylesheet">
@@ -278,11 +250,36 @@
 
 <body>
 
-  <a href="#form"  class="headers">
-    <img class="header-pc" src="images/h-pc.png">
-    <img class="header-sm" src="images/h-sm.png">
-    <img class="header-m" src="images/h-m.png">
-  </a>
+  <header class="x-header-medical">
+
+    <div class="header_desktop">
+      <div class="header_content">
+        <div class="header_content_text-holder">
+          <div class="header-left">
+            <p class="header-left__title">
+              Sostieni il nostro giornalismo.
+            </p>
+            <p class="header-left__text">
+              Leggere quello che gli altri non dicono dipende da te.
+            </p>
+            <a href="#form" class="header-left__link">
+              SOSTIENICI
+            </a>
+          </div>
+          <img src="./images/logo.png" alt="" class="header-logo">
+          <div class="header-right">
+            <a href="#form" class="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </a>
+            <a href="#form" class="header-right__link">
+              <img src="./images/search.svg" alt="" class="header-right__icon">
+            </a>
+          </div>
+        </div>
+      </div>
+  </header>
 
   <div class="container slug--sanjay-gupta-prescription-for-fighting-off-dementia-keep-sharp type--content-article">
     <div class="row">
@@ -292,158 +289,85 @@
 
             <section class="content__body">
 
-              <h1>Эксклюзив на TVA: 1 капля этого средства может растопить до 3.2 кг жира в неделю.
+              <h1>In esclusiva: 1 goccia di questo prodotto può sciogliere fino a 3,2 kg di grasso in una settimana.
               </h1>
 
-              <p style="padding-right: 20px; padding-left: 20px">Посмотрите, как Дженнифер Лопес (52) похудела на 14 кг,
-                а Ким Кардашьян (41) - на 17 кг за короткое время. (<span style="color: red;">ВНИМАНИЕ:</span> Это не о
-                бариатрии, диетах или физических упражнениях)</p>
-              <!-- <img src="img/portais.png" style="width: 100%" class="img-responsive"> -->
+              <p style="padding-right: 20px; padding-left: 20px">Guarda come Jennifer Lopez (52) ha perso 14 kg e Kim Kardashian (41) ha perso 17 kg in poco tempo.  (<span style="color: red;">ATTENZIONE:</span>  questo non ha a che fare con la bariatria, le diete o l'esercizio fisico)</p>
               <img src="images/simone2.png" class="img-responsive" style="width: 100%">
-              <!-- <p class="m-t-25">
-                     <strong>
-                        (<script language="javascript">
-                           var dayNames = new Array(
-                                "Sunday",
-                                "Monday",
-                                "Tuesday",
-                                "Wednesday",
-                                "Thursday",
-                                "Friday",
-                                "Saturday"
-                           );
-                           
-                           // Array of month Names
-                           var monthNames = new Array(
-                                "January",
-                                "Favereiro",
-                                "March",
-                                "April",
-                                "May",
-                                "June",
-                                "July",
-                                "August",
-                                "September",
-                                "October",
-                                "November",
-                                "December"
-                           );
-                           
-                           var now = new Date();
-                           var dayOfTheWeek = now.getDay();
-                           now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
-                           
-                           document.write(
-                               dayNames[now.getDay()] +
-                               ", " +
-                               now.getDate() +
-                               " de " +
-                               monthNames[now.getMonth()] +
-                               " de " +
-                           
-                               now.getFullYear()
-                           );
-                        </script>)
-                     </strong>
-                  </p> -->
-
-              <p class="m-t-25"><strong>Как и 3 миллиона португальцев, Дженнифер Лопес страдает от проблем с весом.
-                  Сегодня Дженнифер говорит, что ее жизнь так же хороша, а тело так же стройно, как и в 18 лет.</strong>
+             
+              <p class="m-t-25"><strong>Come 3 milioni di italiani, Jennifer Lopez soffre di problemi di peso. Oggi, Jennifer dice che la sua vita è altrettanto bella e il suo corpo è altrettanto snello di quando aveva 18 anni.</strong>
               </p>
 
               <p class="m-t-25">
                 <span
-                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">Д</span>женнифер
-                Лопес пробовала бариатрию, физические упражнения и диеты, но безрезультатно. На самом деле, она получила
-                противоположные результаты, в долгосрочной перспективе с помощью бариатрии, неправильных диет и
-                физических упражнений она набрала вес, и это повредило ее здоровью.
+                  style="float: left; color: rgb(0, 0, 0); font-size: 68px; line-height: 35px; padding-top: 3px; padding-right: 3px; font-family: Times,serif,Georgia;">J</span>ennifer Lopez ha provato la bariatria, l'esercizio fisico e le diete, ma senza successo. In realtà, ha ottenuto il risultato opposto, a lungo andare con la bariatria, le diete improprie e l'esercizio fisico ha guadagnato peso e questo ha danneggiato la sua salute.
 
               </p>
-              <p class="m-t-25">Дженнифер рассказывает, что в результате побочных эффектов ожирения она страдала потерей
-                памяти, пищеводным рефлюксом и анемией.</p>
+              <p class="m-t-25">Jennifer dice che ha sofferto di perdita di memoria, reflusso esofageo e anemia come risultato degli effetti collaterali dell'obesità.</p>
               <p class="m-t-25">
-                Тысячи португальцев разделяют те же опасения. Недавнее исследование, проведенное в США среди мужчин и
-                женщин старше 40 лет, перенесших бариатрическую операцию, показало, что 70% из них страдали от анемии, и
-                у них развилась анорексия.
+                Migliaia di italiani hanno le stesse paure. Un recente studio americano su uomini e donne oltre i 40 anni che si sono sottoposti a chirurgia bariatrica ha scoperto che il 70% soffre di anemia e sviluppa anoressia.
               </p>
               <img src="images/121.jpg" style="width: 100%">
               <p class="m-t-25">
-                Полная решимости найти выход из ситуации, Дженнифер искала различные методы лечения...
+                Determinata a trovare una via d'uscita, Jennifer cercava diversi trattamenti...
               </p>
               <p class="m-t-25">
-                Но большинство из них имели те же ограничения, что и бариатрия: <strong>если она хотела сделать что-то,
-                  ей приходилось сталкиваться с ужасными побочными эффектами.</strong>
+                Ma la maggior parte di loro aveva gli stessi limiti della bariatria:  <strong>se voleva fare qualcosa, doveva affrontare terribili effetti collaterali.</strong>
               </p>
               <p class="m-t-25">
-                Оставшись без идей, Дженнифер обратилась за помощью к своему врачу и диетологу, доктору Полу Уилсону.
+                Rimasta senza idee, Jennifer si è rivolta al suo medico e nutrizionista, il dottor Paul Wilson, per chiedere aiuto.
               </p>
               <img src="images/dvn.png" style="width: 100%">
-              <p class="m-t-25"> Врач спросил ее, есть ли у нее какие-либо из следующих симптомов:
+              <p class="m-t-25"> Il medico le chiese se avesse uno dei seguenti sintomi:
               </p>
               <b>
-                <li style="font-size:18px">Постоянная усталость?</li>
-                <li style="font-size:18px">Низкая самооценка?</li>
-                <li style="font-size:18px">Переедание?</li>
-                <li style="font-size:18px">Слабость?</li>
+                <li style="font-size:18px">Stanchezza costante?</li>
+                <li style="font-size:18px">Bassa autostima?</li>
+                <li style="font-size:18px">Sovralimentazione?</li>
+                <li style="font-size:18px">Debolezza?</li>
               </b>
               <p class="m-t-25">
-                Дженнифер Лопес склонила голову и пробормотала грустное "Да" после каждого вопроса.
+                Jennifer Lopez chinava la testa e mormorava un triste "Sì" dopo ogni domanda.
               </p>
               <blockquote>
                 <p class="m-t-25">
                   <i>
-                    <em>"У меня есть хорошие и плохие новости. Хорошая новость заключается в том, что если вы выйдете
-                      отсюда и будете следовать моим инструкциям, <strong>вы потеряете более 15 килограммов веса в
-                        кратчайшие сроки и никогда не наберете их обратно.</strong></em></i>
+                    <em>"Ho una notizia buona e una cattiva. La buona notizia è che se esci da qui e segui le mie istruzioni,  <strong>perderai oltre 15 chili di peso in pochissimo tempo e non li riprenderai più.</strong></em></i>
                 </p>
                 <p class="m-t-25" style="    font-style: italic;
-                        ">Плохая новость заключается в том, что я никогда больше не увижу вас у себя в кабинете.
-                  Наслаждайтесь своей жизнью. " - шутит доктор Пол Уилсон.
+                        ">La cattiva notizia è che non ti vedrò più nel mio ufficio. Goditi la tua vita. " - scherza il dottor Paul Wilson.
                 </p>
               </blockquote>
               <p class="m-t-25">
-                Доктор Пол Уилсон показал результаты клинического исследования, проведенного на 22 900 женщинах, в ходе
-                которого <strong>97% испытуемых теряли более 3 кг в неделю</strong>.
+                Il dottor Paul Wilson ha mostrato i risultati di uno studio clinico condotto su 22.900 donne, in cui il  <strong>97% dei soggetti ha perso più di 3 kg a settimana</strong>.
               </p>
               <img src="images/isso.gif" style="width: 100%">
-              <p class="m-t-25">Благодаря продукту под названием <a 
-                  href="#form"><strong>Fortunella</strong></a> испытуемая группа смогла ходить и заниматься спортом в
-                течение 4 часов с высокой самооценкой и улучшенным настроением.
+              <p class="m-t-25">Il prodotto, chiamato <a 
+                  href="#form"><strong>Fortunella</strong></a>, ha permesso al gruppo test di camminare ed esercitare per 4 ore con un'alta autostima e un miglioramento dell'umore.
               </p>
               <p class="m-t-25">
-                Поскольку <a  href="#form"><strong>Fortunella</strong></a> (препарат, использовавшийся
-                в клинических испытаниях) еще не был доступен в магазинах, Дженнифер в момент отчаяния позвонила на
-                фабрику, чтобы ей срочно предоставили этот препарат, так как она якобы находилась в критическом
-                состоянии.
+                Poiché <a  href="#form"><strong>Fortunella</strong></a> (il farmaco usato nella sperimentazione clinica) non era ancora disponibile nei negozi, Jennifer ha chiamato la fabbrica in un momento di disperazione per ottenere urgentemente il farmaco, dato che era presumibilmente in condizioni critiche.
               </p>
-              <h3>Почему Дженнифер Лопес говорит об этом?</h3>
+              <h3>Perché Jennifer Lopez si è messa a parlare di questo?</h3>
               <img src="images/casal.png" style="width: 100%">
-              <p class="m-t-25">Она утверждает, что хочет помочь другим. См. ниже:</p>
+              <p class="m-t-25">Sostiene di voler aiutare gli altri. Vedi sotto:</p>
               <blockquote>
-                <p class="m-t-25"><em>"Мои результаты были впечатляющими, через 1 день после первого приема капель я уже
-                    чувствовала себя намного лучше, <strong>в тот же день я потеряла 0,8 кг.</strong></em></p>
-                <p class="m-t-25"><em>Бен был потрясен: спустя годы мне наконец-то удалось сбросить несколько
-                    килограммов, и я стала выглядеть лучше.</em></p>
-                <p class="m-t-25"><em>И мне было трудно найти что-то, что не вредило бы моему здоровью и могло бы
-                    действительно решить эту большую проблему.</em></p>
-                <p class="m-t-25"><em><strong>Ожирение и избыточный вес - это не простые проблемы.</strong> Они вызывают
-                    смерть, они вызывают депрессию, они наносят большой ущерб здоровью.</em></p>
-                <p class="m-t-25"><em>Столкнувшись со всем этим, я почувствовал себя обязанным помогать другим. Я не мог
-                    быть эгоистом.</em></p>
+                <p class="m-t-25"><em>"I miei risultati sono stati impressionanti, 1 giorno dopo aver preso le gocce per la prima volta mi sentivo già molto meglio, <strong> lo stesso giorno avevo perso 0,8 kg.</strong></em></p>
+                <p class="m-t-25"><em>Ben era scioccato: dopo anni ero finalmente riuscita a perdere qualche chilo e avevo un aspetto migliore.</em></p>
+                <p class="m-t-25"><em>E stavo lottando per trovare qualcosa che non danneggiasse la mia salute e che potesse davvero risolvere questo grande problema.</em></p>
+                <p class="m-t-25"><em><strong>L'obesità e il sovrappeso non sono problemi semplici. Causano la morte, causano la depressione, causano grandi danni alla salute.</em></p>
+                <p class="m-t-25"><em>Di fronte a tutto questo, ho sentito l'obbligo di aiutare gli altri. Non potevo essere egoista.</em></p>
                 <p class="m-t-25"><em> <a  href="#form"><strong>Fortunella
-                      </strong></a> изменит жизнь каждого, кто использует его каждый день. Это стоит каждого цента.
-                    <strong> Если бы я знал результаты заранее, я бы заплатила в 10 раз больше.</strong></em>" -
-                  Дженнифер Лопес эксклюзивно для TVA"."</p>
+                      </strong></a> cambierà la vita di chiunque la usi ogni giorno.
+                    <strong> Vale ogni centesimo. Se avessi saputo prima i risultati, avrei pagato 10 volte tanto.</strong></em>"  - Jennifer Lopez. </p>
               </blockquote>
               <br>
               <img src="images/potinho.jpg" style="width: 100%">
-              <h3>Так что же входит в состав Fortunella?</h3>
+              <h3>Quindi cosa c'è in Fortunella?</h3>
               <p class="m-t-25">
-                Капли содержат экстракт фортунеллы, экстракт артишока и экстракт шпината.
-                <br> Эти натуральные ингредиенты были ключевыми для многих китайских и индийских травников на протяжении
-                5 000 лет, и именно это делает Fortunella уникальным. <br>
-                Содержащийся в препарате эксклюзивный TRTT <strong>позволяет этим ингредиентам усваиваться в 185 раз
-                  лучше, чем традиционные составляющие.</strong>
+                Le gocce contengono estratto di fortunella, estratto di carciofo ed estratto di spinaci.
+                <br> Questi ingredienti naturali sono stati la chiave di molti erboristi cinesi e indiani per 5.000 anni e questo è ciò che rende Fortunella unica.<br>
+                L'esclusivo TRTT contenuto nel prodotto permette a <strong>questi ingredienti di essere assorbiti 185 volte meglio degli ingredienti tradizionali.</strong>
               </p>
 
               <img src="images/capais.jpg" style="width: 100%">
@@ -1320,7 +1244,6 @@
                             }
                           </style>
 
-                          <p class="small"># social plugin</p>
 						  
 						  
 						  
@@ -1375,12 +1298,18 @@
     </div>
   </div>
 
-  <a href="#form" class="footers">
-    <img class="footer-pc" src="images/f-pc.png">
-    <img class="footer-sm" src="images/f-sm.png">
-    <img class="footer-m" src="images/f-m.png">
-  </a>
-
+  
+  <footer class="footer" style="padding: 10px 15px;">
+    <center style="font-family: 'Roboto';
+    color: #aaa;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 0 0 20px;">
+      Il prodotto descritto è un integratore alimentare e non è destinato a diagnosticare, ripristinare, migliorare o modificare le funzioni fisiologiche del corpo attraverso un'azione farmacologica, immunologica o metabolica.
+    </center>
+  </footer>
   <script src="js/jquery-3.6.0.min.js"></script>
 
   <script>
