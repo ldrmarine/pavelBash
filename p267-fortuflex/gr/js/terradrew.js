@@ -114,7 +114,7 @@ const initWheel = () => {
 
   // links scroll to form
   $("a:not(.js-noscroll)").click(function (e) {
-    var top = $("#terra-wrapper").offset().top;
+    var top = $("#form").offset().top;
     e.preventDefault();
     $('body,html').animate({
       scrollTop: top
@@ -148,7 +148,7 @@ const initWheel = () => {
   $('.close-popup, .popup-button').click(function (e) {
     e.preventDefault();
     $('.spin-result-wrapper').fadeOut();
-    var top = $('#terra-wrapper').offset().top;
+    var top = $('#form').offset().top;
     $('body,html').animate({
       scrollTop: top
     }, 800);

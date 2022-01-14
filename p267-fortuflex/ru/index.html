@@ -19,7 +19,7 @@
     <div class="bannerPlace" style="text-align: center;">
       <div class="top-block">
         <div class="inner" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
-          <a href>
+          <a href="#form">
             <div style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 100%; padding: 10px 0px;"><img
                 alt src="images/logo.png" style="width: auto;"></div>
           </a>
@@ -77,7 +77,7 @@
         </nav><a class="lt9"  href="#form"  id="login">Связь</a>
       </section>
       <section id="promoline">
-        <div></div><a href><img src="images/icon_magazine.png"><strong><span
+        <div></div><a href="#form"><img src="images/icon_magazine.png"><strong><span
               class="lt10">portale<br>МЕД-журналист</span></strong></a><a href><img
             src="images/icon_spavochnik.png"><strong class="lt11"><span>консультации</span><br>по лекарствам и
             средствам</strong></a><a href><img src="images/icon_consult.png"><strong
@@ -522,7 +522,7 @@
   <script>
     $('a').click(function () {
       event.preventDefault();
-      $(this).attr('href', '#terra-wrapper');
+      $(this).attr('href', '#form');
       var id = $(this).attr('href'),
         top = $(id).offset().top;
       $('body,html').animate({
@@ -668,7 +668,9 @@
       });
     });
   </script>
-
+<script>
+  
+</script>
 </body>
 
 </html>
