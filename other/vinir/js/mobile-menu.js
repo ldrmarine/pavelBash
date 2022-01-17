@@ -1,2 +1,0 @@
-function openNav(){document.body.style.overflowY="hidden";$("#mobile-menu-nav").animate({left:"+=380"},200,"linear",function(){});setTimeout(function(){$("body").addClass("overlay-bg");},100);}
-function closeNav(){$("#mobile-menu-nav").animate({left:"-=380"},200,"linear",function(){});document.body.style.overflowY="inherit";setTimeout(function(){$("body").removeClass("overlay-bg");},350);}
