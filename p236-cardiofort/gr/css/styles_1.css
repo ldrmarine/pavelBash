@@ -26,7 +26,6 @@
   width: 100%;
   background-color: #ffffff;
   margin: 25px 0;
-  padding: 0 0 100px;
   border-radius: 5px;
 }
 .template_index .container .container__header {
@@ -62,7 +61,7 @@
     display: none;
   }
   .template_index .container {
-    padding: 0 0 100px;
+    padding: 0 0 20px;
     margin: 0;
   }
   .template_index .container .container__wrapper .container__wrapper--main {

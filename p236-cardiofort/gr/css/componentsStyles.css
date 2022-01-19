@@ -8,8 +8,8 @@
     font-size: 12px;
     line-height: 15px;
     margin: 0 auto;
-    padding: 20px;
-    direction: ltr
+    direction: ltr;
+    padding-bottom: 20px 20px 0;
 }
 
 .x-bibliography-medical-sp .headline {
