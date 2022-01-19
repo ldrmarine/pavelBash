@@ -97,10 +97,10 @@ smaller than 900
 /************************************************************************************
 smaller than 800
 *************************************************************************************/
-@media screen and (max-width: 714px) {
+/* @media screen and (max-width: 714px) {
 .txtBox4, .txtBox6 {width: 77%;}
 
-}
+} */
 
 /************************************************************************************
 smaller than 700
@@ -178,11 +178,16 @@ footer a h1 img {
 .exclusive {font-size: 1.65rem;text-align: center;}
 .buttonWrp {font-size: 2.4rem;}
 .button {font-size: 1.6rem;}
-.txtBox3 {font-size: 1.6rem;}
-.txtBox4 {font-size: 1.1rem;}
+.txtBox3 {font-size: 1.6rem; float: none;margin-bottom: 10px;}
+.txtBox4 {font-size: 1.1rem; width: 100%;}
 footer #mainLogo {width: 100%;}
 .txtBox9 {margin: 0 0 0 2%;}
+.login{
+	margin: 15px 2% 0 auto;
+    display: block;
+    width: fit-content;
 
+}
 #mobilePromo {
 	display:block;
 	border:none;
