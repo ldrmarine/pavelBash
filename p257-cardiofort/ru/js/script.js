@@ -174,7 +174,7 @@ $(document).ready(function () {
 ///////////////////////////////////////////////////////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', () => {
-	moment.locale(document.getElementsByTagName("html")[0].getAttribute("lang"));
+	moment.locale(document.getElementsByTagName("html")[0].dataset.langMomentForDate);
 
 	document.querySelectorAll('.js-current-date').forEach(node => {
 		node.innerHTML = moment().format('DD.MM.YYYY');
