@@ -568,16 +568,6 @@
       color: #575746;
     }
 
-    header {
-      background-color: #07082a;
-      border-bottom: 2px solid #f9b22a;
-      background-image: url('images/header-bg.jpg');
-      width: 100%;
-      min-height: 175px;
-
-
-    }
-
     footer {
 
       background-image: url('images/header-bg.jpg');
@@ -649,39 +639,75 @@
   <link rel="stylesheet" href="form/form.css">
   <style type="text/css">
     /*HEADERS*/
-    .headers {
+    .x-header-medical .header_content {
+      background: #fff;
+      padding: 30px 20px 10px;
+    }
+
+    .header_content_text-holder {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #f9b22a;
+    }
+
+    .header-left {
+      margin-right: 40px;
+    }
+
+    .header-left__title {
+      font-family: inherit;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .header-left__text {
+      margin-bottom: 10px;
+    }
+
+    .header-left__link {
+      width: 240px;
       display: block;
-      margin-bottom: 30px
+      background-color: #8E0000;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      text-transform: uppercase;
     }
 
-    .headers img {
-      width: 100%;
+    .header-logo {
+      display: block;
     }
 
-    .header-sm,
-    .header-m {
+    .header-right {
       display: none;
     }
 
-    @media screen and (max-width: 992px) {
-      .header-pc {
-        display: none;
-      }
-
-      .header-sm {
-        display: block;
-      }
+    .burger {
+      width: 38px;
+      margin-right: 20px;
     }
 
-    @media screen and (max-width: 660px) {
+    .burger__line:not(:last-child) {
+      margin-bottom: 9px;
+    }
 
-      .header-pc,
-      .header-sm {
-        display: none;
-      }
+    .burger__line {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      display: block;
+    }
 
-      .header-m {
-        display: block;
+    @media (max-width: 768px) {
+      .header_content_text-holder {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -741,33 +767,25 @@
 </head>
 
 <body>
-  <header>
-    <div class="row d-flex align-items-center w100">
-      <div class="container">
-        <picture>
+  <header class="x-header-medical">
 
-          <img src="images/topo2.png" id="logo">
-        </picture>
-      </div>
-    </div>
-    <hr>
-    <div class="container">
-      <nav class="navbar navbar-expand navbar-dark color-white">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#form"><img src="images/g1.png"></a>
-          <div class id>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#form">Salute</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#form">Politica</a>
-              </li>
-            </ul>
+    <div class="header_desktop">
+      <div class="header_content">
+        <div class="header_content_text-holder">
+          <div class="header-left">
+            <p class="header-left__title">
+              Sostieni il nostro giornalismo.
+            </p>
+            <p class="header-left__text">
+              Leggere quello che gli altri non dicono dipende da te.
+            </p>
+            <a href="#form" class="header-left__link">
+              SOSTIENICI
+            </a>
           </div>
+          <img src="./images/logo.png" alt="" class="header-logo">
         </div>
-      </nav>
-    </div>
+      </div>
   </header>
   <main class="container">
     <div>
@@ -817,7 +835,8 @@
         </p>
         <p>
           <strong>
-            Silvia: Salve dottor Jin Quon. Molti esperti dicono che le malattie e i dolori articolari sono compagni obbligati di una persona quando raggiunge i 40 anni. È d'accordo con questa affermazione?
+            Silvia: Salve dottor Jin Quon. Molti esperti dicono che le malattie e i dolori articolari sono compagni
+            obbligati di una persona quando raggiunge i 40 anni. È d'accordo con questa affermazione?
           </strong>
         </p>
         <a href="#form">
@@ -831,7 +850,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Ciao, Silvia! Naturalmente, questo non è vero. Tutto dipende dal medico se conosce il trattamento giusto e se vuole curare il paziente o se lo sta solo ingannando.
+              </strong>: "Ciao, Silvia! Naturalmente, questo non è vero. Tutto dipende dal medico se conosce il
+              trattamento giusto e se vuole curare il paziente o se lo sta solo ingannando.
               </strong>
             </i>
           </p>
@@ -846,12 +866,13 @@
           </p>
           <p>
             <i>
-              Cioè, se si conosce il segreto e si porta un po' di scienza, i problemi possono essere risolti anche a casa, e molto rapidamente.
+              Cioè, se si conosce il segreto e si porta un po' di scienza, i problemi possono essere risolti anche a
+              casa, e molto rapidamente.
             </i>
           </p>
           <p>
             <i>
-              E migliaia di persone in Europa e negli Stati Uniti lo hanno già fatto, e si spera  <strong>
+              E migliaia di persone in Europa e negli Stati Uniti lo hanno già fatto, e si spera <strong>
                 che ora venga fatto anche in Italia
               </strong>."
             </i>
@@ -874,7 +895,8 @@
             <i>
               Le enciclopedie elencano 147 cause di <strong>
                 artrite e osteoartrite
-              </strong>, ma la vera causa è sempre una - le articolazioni, le vertebre e la cartilagine perdono la loro elasticità, causando così il dolore.....
+              </strong>, ma la vera causa è sempre una - le articolazioni, le vertebre e la cartilagine perdono la loro
+              elasticità, causando così il dolore.....
             </i>
           </p>
           <p>
@@ -884,7 +906,8 @@
           </p>
           <p>
             <i>
-              Il segreto principale è riparare le articolazioni nel modo giusto, cosa che ho scoperto e che funziona per tutti!"
+              Il segreto principale è riparare le articolazioni nel modo giusto, cosa che ho scoperto e che funziona per
+              tutti!"
             </i>
           </p>
         </blockquote>
@@ -908,14 +931,16 @@
               </strong>: "Questo è un <strong>
                 GRANDE FALSO!
               </strong> Ci sono <strong>
-                più di 144.000 persone in Europa e negli Stati Uniti che non sentono più dolore solo seguendo il mio metodo
+                più di 144.000 persone in Europa e negli Stati Uniti che non sentono più dolore solo seguendo il mio
+                metodo
               </strong>, e tutte hanno più di 45 anni."
             </i>
           </p>
         </blockquote>
         <p>
           <strong>
-            Silvia: E il vostro metodo è stato in grado di curare persone con malattie in stadi più avanzati, come persone in sedia a rotelle a causa di malattie articolari?
+            Silvia: E il vostro metodo è stato in grado di curare persone con malattie in stadi più avanzati, come
+            persone in sedia a rotelle a causa di malattie articolari?
           </strong>
         </p>
         <blockquote>
@@ -968,7 +993,8 @@
         </blockquote>
         <p>
           <strong>
-            Silvia: Quali sono i metodi solitamente raccomandati dai medici che raramente aiutano con il dolore? Perché continuano a raccomandarli?
+            Silvia: Quali sono i metodi solitamente raccomandati dai medici che raramente aiutano con il dolore? Perché
+            continuano a raccomandarli?
           </strong>
         </p>
         <blockquote>
@@ -976,7 +1002,7 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Di solito ai pazienti viene chiesto di eseguire movimenti complessi  <strong>
+              </strong>: "Di solito ai pazienti viene chiesto di eseguire movimenti complessi <strong>
                 da 96 esercizi ginnici
               </strong>.
             </i>
@@ -1006,7 +1032,7 @@
         <blockquote>
           <p>
             <i>
-              Poi vanno a farsi curare in cliniche private e usano farmaci costosi che sono 
+              Poi vanno a farsi curare in cliniche private e usano farmaci costosi che sono
               <strong>
                 molto dannosi per la salute
               </strong>.
@@ -1028,7 +1054,8 @@
             <i>
               Ma in Italia, continuano ad insistere, <strong>
                 ed è per questo che vi sto dando questa intervista,
-              </strong>, in modo che tutti possano vedere che c'è qualcosa che funziona davvero e aiuta con il dolore e le malattie articolari.
+              </strong>, in modo che tutti possano vedere che c'è qualcosa che funziona davvero e aiuta con il dolore e
+              le malattie articolari.
             </i>
           </p>
         </blockquote>
@@ -1040,7 +1067,8 @@
         </a>
         <p>
           <strong>
-            Silvia: Ho sentito parlare molto del massaggio con la pressione, si può alleviare il dolore premendo su una certa parte del corpo?
+            Silvia: Ho sentito parlare molto del massaggio con la pressione, si può alleviare il dolore premendo su una
+            certa parte del corpo?
           </strong>
         </p>
         <blockquote>
@@ -1048,7 +1076,7 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Può solo alleviare o ridurre il dolore per un breve periodo di tempo. 
+              </strong>: "Può solo alleviare o ridurre il dolore per un breve periodo di tempo.
               <strong>
                 Ma non è una terapia adeguata
               </strong>. Prima o poi il problema tornerà.
@@ -1078,7 +1106,8 @@
         </a>
         <p>
           <strong>
-            Silvia: Molto interessante, può raccontarci di più su questo metodo, qual è l'idea principale, la sua invenzione permette davvero alle persone di vivere senza dolori e malattie articolari?
+            Silvia: Molto interessante, può raccontarci di più su questo metodo, qual è l'idea principale, la sua
+            invenzione permette davvero alle persone di vivere senza dolori e malattie articolari?
           </strong>
         </p>
         <blockquote>
@@ -1086,7 +1115,9 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "La chirurgia, l'esercizio, le medicine pericolose e i trattamenti costosi per le malattie e i dolori articolari sono una tortura e uno spreco di denaro! Queste mie parole sono già state confermate da  <strong>
+              </strong>: "La chirurgia, l'esercizio, le medicine pericolose e i trattamenti costosi per le malattie e i
+              dolori articolari sono una tortura e uno spreco di denaro! Queste mie parole sono già state confermate da
+              <strong>
                 milioni di persone in tutto il mondo
               </strong>.
             </i>
@@ -1095,12 +1126,14 @@
             <i>
               Avendo rischiato tutto, <strong>
                 più di 144.000 persone in Europa e negli Stati Uniti sono soddisfatte
-              </strong> di essersi già sottoposte al trattamento terapeutico con  <a href="#form">Fortuflex</a> crema e si godono una vita senza dolore.
+              </strong> di essersi già sottoposte al trattamento terapeutico con <a href="#form">Fortuflex</a> crema e
+              si godono una vita senza dolore.
             </i>
           </p>
           <p>
             <i>
-              La nostra clinica è stata la prima ad avere accesso ad usare questa crema per i dolori articolari. Devo ammettere che quando ne ho sentito parlare, ho riso <strong>
+              La nostra clinica è stata la prima ad avere accesso ad usare questa crema per i dolori articolari. Devo
+              ammettere che quando ne ho sentito parlare, ho riso <strong>
                 perché non credevo nella sua efficacia
               </strong>.
             </i>
@@ -1109,7 +1142,8 @@
             <i>
               <strong>
                 Ma sono rimasto sorpreso quando abbiamo fatto le prove
-              </strong>. Abbiamo condotto un studio tra coloro che avevano <a href="#form"> usato la crema antidolorifica
+              </strong>. Abbiamo condotto un studio tra coloro che avevano <a href="#form"> usato la crema
+                antidolorifica
                 Fortuflex</a>.
             </i>
           </p>
@@ -1123,14 +1157,15 @@
         <blockquote>
           <p>
             <i>
-              Il test ha mostrato che  <strong>
+              Il test ha mostrato che <strong>
                 4.567 persone si sono liberate completamente
-              </strong> di tutte le manifestazioni di problemi articolari entro 15 giorni. È il 94% dei partecipanti. 
+              </strong> di tutte le manifestazioni di problemi articolari entro 15 giorni. È il 94% dei partecipanti.
             </i>
           </p>
           <p>
             <i>
-              Il 5,6% dei partecipanti ha sentito un miglioramento significativo e lo 0,4% non ha mostrato alcun miglioramento entro 15 giorni, ma dopo 20 giorni il <strong>
+              Il 5,6% dei partecipanti ha sentito un miglioramento significativo e lo 0,4% non ha mostrato alcun
+              miglioramento entro 15 giorni, ma dopo 20 giorni il <strong>
                 miglioramento ha cominciato ad apparire
               </strong>.
             </i>
@@ -1139,7 +1174,8 @@
             <i>
               Tutti i pazienti valutati hanno concordato all'unanimità che questo metodo <strong>
                 è 10 volte più facile della terapia tradizionale
-              </strong> raccomandata dagli specialisti, molto meglio della chirurgia o di una vita di assunzione di antidolorifici".
+              </strong> raccomandata dagli specialisti, molto meglio della chirurgia o di una vita di assunzione di
+              antidolorifici".
             </i>
           </p>
         </blockquote>
@@ -1159,7 +1195,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Esattamente, <a href="#form">Fortuflex</a>.L'abbiamo chiamato così subito dopo aver alleviato il dolore dei nostri pazienti in prova."
+              </strong>: "Esattamente, <a href="#form">Fortuflex</a>.L'abbiamo chiamato così subito dopo aver alleviato
+              il dolore dei nostri pazienti in prova."
             </i>
           </p>
         </blockquote>
@@ -1173,8 +1210,9 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Non c'è nessun miracolo qui, è scienza pura. <a href="#form">Fortuflex</a> funziona così bene perché non appena si inizia a usarlo, <strong>
-                ha immediatamente effetto sull'infiammazione delle articolazioni, alleviando il dolore in appena 1 ora 
+              </strong>: "Non c'è nessun miracolo qui, è scienza pura. <a href="#form">Fortuflex</a> funziona così bene
+              perché non appena si inizia a usarlo, <strong>
+                ha immediatamente effetto sull'infiammazione delle articolazioni, alleviando il dolore in appena 1 ora
               </strong>
               e prevenendo grandi picchi di dolore durante il giorno.
             </i>
@@ -1221,20 +1259,23 @@
           <p>
             <i>
               <strong>
-                Già dopo il primo utilizzo, <a href="#form">Fortuflex</a>  aiuta a ridurre il dolore, l'infiammazione e la rottura delle ossa 
+                Già dopo il primo utilizzo, <a href="#form">Fortuflex</a> aiuta a ridurre il dolore, l'infiammazione e
+                la rottura delle ossa
               </strong> causata dall'età o da altre cause.
             </i>
           </p>
           <p>
             <i>
-              <a href="#form">Fortuflex</a> fa anche pensare al cervello che le ossa hanno bisogno di più vitamine, minerali e cartilagine, <strong>
+              <a href="#form">Fortuflex</a> fa anche pensare al cervello che le ossa hanno bisogno di più vitamine,
+              minerali e cartilagine, <strong>
                 rendendole più forti e le articolazioni più mobili e resistenti
               </strong>.
             </i>
           </p>
           <p>
             <i>
-              <a href="#form">Fortuflex</a> è l'unica crema con tecnologia TRTT, quindi è diversa da tutti gli altri prodotti.
+              <a href="#form">Fortuflex</a> è l'unica crema con tecnologia TRTT, quindi è diversa da tutti gli altri
+              prodotti.
               </strong>"
             </i>
           </p>
@@ -1250,7 +1291,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Oggi <a href="#form">Fortuflex</a> è raccomandato dall'80% dei professionisti della reumatologia e in Europa 
+              </strong>: "Oggi <a href="#form">Fortuflex</a> è raccomandato dall'80% dei professionisti della
+              reumatologia e in Europa
               <strong>
                 per il sollievo dal dolore e il recupero rapido e facile delle articolazioni e delle ossa
               </strong>.
@@ -1258,9 +1300,10 @@
           </p>
           <p>
             <i>
-              Lo raccomandano ai loro pazienti 
+              Lo raccomandano ai loro pazienti
               <strong>
-                perché non ha effetti collaterali, la sua efficacia è stata scientificamente provata e confermata da più di 144.000 utenti,
+                perché non ha effetti collaterali, la sua efficacia è stata scientificamente provata e confermata da più
+                di 144.000 utenti,
               </strong>
               e soprattutto: anche i pensionati se lo possono permettere.
             </i>
@@ -1289,7 +1332,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Sì! Sentirai un immediato sollievo dal dolore subito dopo aver iniziato il processo di TRT che ho menzionato sopra, e <strong>
+              </strong>: "Sì! Sentirai un immediato sollievo dal dolore subito dopo aver iniziato il processo di TRT che
+              ho menzionato sopra, e <strong>
                 in TRE GIORNI il dolore sarà completamente sparito
               </strong> e le tue articolazioni e ossa saranno già nel processo di guarigione.
             </i>
@@ -1305,7 +1349,8 @@
             <i>
               Di solito quando camminano o fanno un'attività che prima causava loro dolore, notano che <strong>
                 il dolore è sparito senza alcuno sforzo
-              </strong> subito dopo aver usato <a href="#form">Fortuflex</a>! Tutti sono contenti e allo stesso tempo stupiti dei risultati!"
+              </strong> subito dopo aver usato <a href="#form">Fortuflex</a>! Tutti sono contenti e allo stesso tempo
+              stupiti dei risultati!"
             </i>
           </p>
         </blockquote>
@@ -1319,10 +1364,12 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Non è una scienza esatta, alcune persone rigenerano già le loro articolazioni e ossa e si liberano del dolore il primo giorno, 
+              </strong>: "Non è una scienza esatta, alcune persone rigenerano già le loro articolazioni e ossa e si
+              liberano del dolore il primo giorno,
               <strong>
                 altri si sentono già guariti dal dolore nei primi 3 giorni
-              </strong>... Ma l'80% delle persone che usano <a href="#form">Fortuflex</a> hanno iniziato a ottenere risultati reali dopo soli
+              </strong>... Ma l'80% delle persone che usano <a href="#form">Fortuflex</a> hanno iniziato a ottenere
+              risultati reali dopo soli
               <strong>
                 tre giorni."
               </strong>
@@ -1341,7 +1388,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Sì, certo. Abbiamo ricevuto il permesso di mostrare tutti i risultati, che vi mostreremo qui. Vogliamo che <a href="#form">Fortuflex</a>
+              </strong>: "Sì, certo. Abbiamo ricevuto il permesso di mostrare tutti i risultati, che vi mostreremo qui.
+              Vogliamo che <a href="#form">Fortuflex</a>
               <strong>
                 sia preso sul serio come crema antidolorifica
               </strong>.
@@ -1349,7 +1397,7 @@
           </p>
           <p>
             <i>
-              Per fare questo, abbiamo bisogno di mostrare risultati e test reali". Il primo test ha coinvolto  <strong>
+              Per fare questo, abbiamo bisogno di mostrare risultati e test reali". Il primo test ha coinvolto <strong>
                 5 000 volontari con gravi dolori articolari
               </strong>, artrite, osteoartrite e osteoporosi.
 
@@ -1364,21 +1412,21 @@
           </p>
           <p>
             <i>
-              Risultati dello studio  (<strong>
+              Risultati dello studio (<strong>
                 dopo un mese
               </strong>):
             </i>
           </p>
           <p>
             <i>
-              Completa assenza di dolore e recupero delle articolazioni dopo 8 giorni:  <strong>
+              Completa assenza di dolore e recupero delle articolazioni dopo 8 giorni: <strong>
                 18% dei pazienti
               </strong>.
             </i>
           </p>
           <p>
             <i>
-              Assenza completa di dolore e recupero delle articolazioni dopo 15 giorni:  <strong>
+              Assenza completa di dolore e recupero delle articolazioni dopo 15 giorni: <strong>
                 77% dei pazienti
               </strong>.
             </i>
@@ -1386,7 +1434,7 @@
           </p>
           <p>
             <i>
-              Nessun dolore dopo 8 giorni, ma nessun recupero articolare dopo 35 giorni:  <strong>
+              Nessun dolore dopo 8 giorni, ma nessun recupero articolare dopo 35 giorni: <strong>
                 4%
                 dei pazienti
               </strong>.
@@ -1406,7 +1454,7 @@
           </p>
           <p>
             <i>
-              Normalizzazione dei processi biologici nel corpo:  <strong>
+              Normalizzazione dei processi biologici nel corpo: <strong>
                 100% dei pazienti
               </strong>.
             </i>
@@ -1420,7 +1468,7 @@
           </p>
         </blockquote>
         <p class="tcenter"><strong>
-          Ecco i risultati di coloro che hanno usato  <a href="#form">Fortuflex</a>:
+            Ecco i risultati di coloro che hanno usato <a href="#form">Fortuflex</a>:
           </strong>
         </p>
         <a href="#form">
@@ -1430,7 +1478,7 @@
           </picture>
         </a>
         <p class="tcenter"><strong>
-          Risultati dopo 21 giorni di applicazione della crema  <a href="#form">Fortuflex</a>
+            Risultati dopo 21 giorni di applicazione della crema <a href="#form">Fortuflex</a>
           </strong>
         </p>
         <a href="#form">
@@ -1441,7 +1489,7 @@
         </a>
 
         <p class="tcenter"><strong>
-          Risultati dopo 22 giorni di applicazione della crema  <a href="#form">Fortuflex</a>
+            Risultati dopo 22 giorni di applicazione della crema <a href="#form">Fortuflex</a>
           </strong>
         </p>
         <a href="#form">
@@ -1450,7 +1498,7 @@
           </picture>
         </a>
         <p class="tcenter"><strong>
-          Risultati dopo 26 giorni di applicazione della crema  <a href="#form">Fortuflex</a>
+            Risultati dopo 26 giorni di applicazione della crema <a href="#form">Fortuflex</a>
           </strong>
         </p>
         <p>
@@ -1466,21 +1514,24 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Come potete vedere dai test e dai risultati di cui sopra, TUTTI i pazienti e gli <strong>utenti di  <a href="#form">Fortuflex</a> 
+              </strong>: "Come potete vedere dai test e dai risultati di cui sopra, TUTTI i pazienti e gli
+              <strong>utenti di <a href="#form">Fortuflex</a>
                 sono stati salvati dal dolore e hanno curato i loro problemi articolari
               </strong>.
             </i>
           </p>
           <p>
             <i>
-              Si possono quindi provare varie soluzioni per il trattamento delle articolazioni e del dolore. Alcuni di essi comportano un <strong>
+              Si possono quindi provare varie soluzioni per il trattamento delle articolazioni e del dolore. Alcuni di
+              essi comportano un <strong>
                 intervento chirurgico con effetti collaterali pericolosi
               </strong> che <a href="#form">Fortuflex </a> non contiene.
             </i>
           </p>
           <p>
             <i>
-              Altri comportano molte ore di procedure costose e disfunzionali, o anche anni di assunzione di farmaci con grande danno per la salute. 
+              Altri comportano molte ore di procedure costose e disfunzionali, o anche anni di assunzione di farmaci con
+              grande danno per la salute.
               <strong>
                 Con così tante opzioni, è normale essere scettici sui risultati.
               </strong>.
@@ -1512,7 +1563,8 @@
             <i>
               <strong>
                 - Jin Quon
-              </strong>: "Solo un consiglio per cominciare: la crema Fortuflex, che può essere usata per curare dolori e malattie come l'artrite e l'artrosi delle articolazioni,
+              </strong>: "Solo un consiglio per cominciare: la crema Fortuflex, che può essere usata per curare dolori e
+              malattie come l'artrite e l'artrosi delle articolazioni,
               <strong>
                 è uno dei prodotti più preziosi al mondo
               </strong>...
@@ -1520,26 +1572,30 @@
           </p>
           <p>
             <i>
-              <a href="#form">Fortuflex</a> contiene un gran numero di componenti naturali e nutrienti oltre a TRTT nella sua formula... È più  <strong>
+              <a href="#form">Fortuflex</a> contiene un gran numero di componenti naturali e nutrienti oltre a TRTT
+              nella sua formula... È più <strong>
                 ricco di calcio, collagene di tipo 2 e magnesio di qualsiasi altro prodotto al mondo
               </strong>.
             </i>
           </p>
           <p>
             <i>
-              È importante acquistare da un sito ufficiale, solo questo sito vi darà una garanzia del 100% di ottenere il Fortuflex originale. Voglio che i lettori siano felici e <strong>
+              È importante acquistare da un sito ufficiale, solo questo sito vi darà una garanzia del 100% di ottenere
+              il Fortuflex originale. Voglio che i lettori siano felici e <strong>
                 privi di dolori e malattie articolari
               </strong>.
             </i>
           </p>
           <p>
             <i>
-              Sicuramente ci riuscirete, abbiate fiducia. La parte migliore è la sensazione di gioia e di soddisfazione che sarete liberi dal dolore e in grado di fare tutto senza limitazioni!
+              Sicuramente ci riuscirete, abbiate fiducia. La parte migliore è la sensazione di gioia e di soddisfazione
+              che sarete liberi dal dolore e in grado di fare tutto senza limitazioni!
             </i>
           </p>
           <p>
             <i>
-              Spero sinceramente di poter aiutare molte persone e che i risultati qui vi motivino a raggiungere questo grande obiettivo! Credete in voi stessi e <strong>
+              Spero sinceramente di poter aiutare molte persone e che i risultati qui vi motivino a raggiungere questo
+              grande obiettivo! Credete in voi stessi e <strong>
                 riuscirete a trattare questa difficile malattia
               </strong>!"
             </i>
@@ -1574,7 +1630,7 @@
 
           <div class="form_wrap" id="objectScrollAttention">
             <form method="POST">
-              <label class="descount">Sconto di  -50%</label>
+              <label class="descount">Sconto di -50%</label>
 
               <div id="price">
                 <div class="price_new">
@@ -1617,7 +1673,9 @@
           <div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
             <h3>Informazioni sull' intervistato: Jin Quon</h3>
             <p>
-              Nato il 9 maggio 1969 (età 52) a Panyu District, Guangzhou, Cina. Si è trasferito a Hong Kong all'età di 15 anni, dove si è laureato all'Università cinese di Hong Kong Medical School. Si è specializzato in reumatologia al Gleneagles Hospital.
+              Nato il 9 maggio 1969 (età 52) a Panyu District, Guangzhou, Cina. Si è trasferito a Hong Kong all'età di
+              15 anni, dove si è laureato all'Università cinese di Hong Kong Medical School. Si è specializzato in
+              reumatologia al Gleneagles Hospital.
             </p>
           </div>
         </div>
@@ -1634,7 +1692,7 @@
   </main>
   <footer>
     <div class="container">
-      <img src="images/g1.png" class="logofooter">   Site Oficial Fantastic
+      <img src="images/g1.png" class="logofooter">   Site Oficial
     </div>
   </footer>
 
