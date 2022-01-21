@@ -646,7 +646,81 @@
     <link rel="stylesheet" href="./css/form.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="form/form.css">
-
+  <style type="text/css">
+    /*HEADERS*/
+    .headers {
+        display: block;
+        margin-bottom: 30px
+    }
+    .headers img{
+        width: 100%;
+    }
+    .header-sm,
+    .header-m {
+        display: none;
+    }
+    @media screen and (max-width: 992px) {
+        .header-pc {
+            display: none;
+        }
+        .header-sm {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 660px) {
+        .header-pc,
+        .header-sm {
+            display: none;
+        }
+        .header-m {
+            display: block;
+        }
+    }
+    
+    /*FOOTERS*/
+    .footers {
+        display: block;
+        margin-bottom: 30px
+    }
+    .footers img{
+        width: 100%;
+    }
+    .footer-sm,
+    .footer-m {
+        display: none;
+    }
+    @media screen and (max-width: 992px) {
+        .footer-pc {
+            display: none;
+        }
+        .footer-sm {
+            display: block;
+        }
+    }
+    @media screen and (max-width: 660px) {
+        .footer-pc,
+        .footer-sm {
+            display: none;
+        }
+        .footer-m {
+            display: block;
+        }
+    }
+    
+    
+    html, body {
+        overflow-x: hidden;
+    }  
+    
+    .soc img {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 15px;
+    }
+    /*p strong {
+        color: #2196f3
+    }*/
+    </style>
 </head>
 
 <body>
@@ -691,9 +765,11 @@
             </script>
           </span> - <strong>2 часа назад</strong></span>
       </div>
-      <h2 style="border-bottom: 1px solid #c3c3c3;"><strong>Здоровье:
+      <div style="border-bottom: 1px solid #c3c3c3;">
+        <h2 ><strong>Здоровье:
           в Китае обнаружен болеутоляющий крем, способный за 15 дней вылечить артрит, остеоартрит, остеопороз и боли в
           суставах, восстанавливая суставы и кости в процессе "TRTT".</strong></h2>
+      </div>
       <h4>См. следующую статью: Как китайский исследователь открыл формулу для осуществления этого процесса? Как
         обезболивающий крем может восстановить суставы и кости всего за 15 дней без хирургического вмешательства,
         болезненных процедур и применения дорогих и опасных лекарств? По словам исследователя, он "разрушает пораженные
@@ -705,7 +781,7 @@
           <img src="./images/open.jpg" class="fluid">
         </picture>
         <a href="#form" class="soc" >
-          <img src="images/soc.png" style="max-width: 360px;">
+          <img src="images/soc.png" >
       </a>
         <p><strong>Исследователь Jin Quon утверждает, что полностью избавил пожилую женщину от запущенного артрита,
             который причинял ей страдания более 10 лет.</strong></p>
