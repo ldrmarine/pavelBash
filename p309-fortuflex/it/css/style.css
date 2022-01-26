@@ -1,18 +1,3 @@
-@font-face {
-  font-family: Roboto;
-  src: local("../fonts/Roboto-Regular"), url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.eot), url(../fonts/Roboto-Regular.eot?iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.svg#Roboto) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local("../fonts/Roboto-Bold"), url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.ttf) format("truetype"), url(../fonts/Roboto-Bold.eot), url(../fonts/Roboto-Bold.eot?iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold.svg#Roboto) format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap
-}
 /* Generated on: Wed Jun 24 2020 21:21:48 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
@@ -27,9 +12,6 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
-body{
-  font-family: 'Roboto';
-}
 .heading {
   margin-top: 10px;
   margin-bottom: 0px;
@@ -45,7 +27,7 @@ body{
 
 .text-block-2 {
   border-left: 1px none #000;
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
 }
@@ -55,7 +37,7 @@ body{
   padding-left: 20px;
   border-left-style: solid;
   border-left-width: 3px;
-  font-family: "Roboto";
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   line-height: 30px;
 }
@@ -75,7 +57,7 @@ body{
 .text-block-3 {
   margin: 10px 15% 25px;
   padding-bottom: 0px;
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   color: #333;
   font-size: 18px;
   text-align: center;
@@ -84,7 +66,7 @@ body{
 .text-block-4 {
   margin-top: 10px;
   margin-bottom: 12px;
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
   text-align: left;
@@ -114,13 +96,13 @@ body{
 }
 
 .list-item {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
 }
 
 .list-item-2 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
 }
@@ -726,14 +708,14 @@ body{
 }
 
 .text-block-23 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
 }
 
 .text-block-24 {
   margin-top: 22px;
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
@@ -772,36 +754,36 @@ body{
 }
 
 .bold-text-56 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
   line-height: 25px;
 }
 
 .list-item-3 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-4 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-5 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-6 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-7 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-8 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .list-item-9 {
-  font-family: "Roboto";
+  font-family: 'PT Serif', serif;
 }
 
 .text-span {
