@@ -2,798 +2,833 @@
 <html style="scroll-behavior: smooth">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="initial-scale=1, maximum-scale=1, width=device-width" name="viewport">
-    <title>NOTÍCIAS ATUAIS</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="css/default.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/form.css">
-    <script src="js/scripts.js"></script>
-    <script>
-        function dtime_nums(d, like_eu) {
-            var now = new Date();
-            now.setDate(now.getDate() + d + 1);
+ <meta charset="utf-8">
+ <meta content="initial-scale=1, maximum-scale=1, width=device-width" name="viewport">
+ <title>ΤΡΕΧΟΥΣΑ ΝΕΑ</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link href="css/default.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="css/index.css" rel="stylesheet">
+ <script src="js/jquery.min.js"></script>
+ <link rel="stylesheet" href="css/form.css">
+ <script src="js/scripts.js"></script>
+ <script>
+  function dtime_nums(d, like_eu) {
+   var now = new Date();
+   now.setDate(now.getDate() + d + 1);
 
-            var dayNum = '';
-            if (now.getDate() < 10) {
-                dayNum = '0';
-            }
-            dayNum += now.getDate();
+   var dayNum = '';
+   if (now.getDate() < 10) {
+    dayNum = '0';
+   }
+   dayNum += now.getDate();
 
-            var monthNum = '';
-            if (now.getMonth() + 1 < 10) {
-                monthNum = '0';
-            }
-            monthNum += now.getMonth() + 1;
+   var monthNum = '';
+   if (now.getMonth() + 1 < 10) {
+    monthNum = '0';
+   }
+   monthNum += now.getMonth() + 1;
 
-            if (like_eu === true) {
-                document.write(dayNum + "." + monthNum + "." + now.getFullYear());
-            } else {
-                document.write(monthNum + "." + dayNum + "." + now.getFullYear());
-            }
+   if (like_eu === true) {
+    document.write(dayNum + "." + monthNum + "." + now.getFullYear());
+   } else {
+    document.write(monthNum + "." + dayNum + "." + now.getFullYear());
+   }
 
-        }
-    </script>
+  }
+ </script>
 </head>
 
 <body>
-    <script src="js/counter.js"></script>
-    <header class="header">
-        <div class="header_top">
-            <div class="center_wrapper clearfix">
-                <div class="header_top-left_block clearfix">
-                    <a class="header_top-logo" href="#order_form_place"></a>
-                    <a class="header_top-login lt0" href="#order_form_place">Iniciar sessão</a>
-                </div>
-                <div class="header_top-right_block">
-                    <div class="search-wrapper">
-
-                        <div action="#">
-
-                            <input class="search-input" placeholder="Suche" type="text">
-                            <a href="#order_form_place">
-                                <button class="search-button" type="submit"></button>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <button class="header_top_menu-mobile js-htmenu-mobile lt1" type="button">Menu</button>
-                <nav class="header_top_menu">
-                    <ul class="header_top_menu-list js-htmenu-list clearfix">
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt2" href="#order_form_place">Notícias</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt3" href="#order_form_place">Desporto</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt4" href="#order_form_place">Meteorologia</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt5" href="#order_form_place">Loja</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt6" href="#order_form_place">Terra</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link lt7" href="#order_form_place">Viagens</a>
-                        </li>
-                        <li class="header_top_menu-list_item">
-                            <a class="header_top_menu-list_link header_top_menu-list_link--last_link lt8" href="#order_form_place">Outros</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="header_middle">
-            <div class="center_wrapper clearfix">
-                <a class="category_name lt9" href="#order_form_place"><span class="category_name-invert">NOTÍCIAS</span> ATUAIS</a>
-                <button class="header_bottom_menu-mobile js-hbmenu-mobile lt10" type="button">Categorias</button>
-            </div>
-        </div>
-        <div class="header_bottom">
-            <div class="center_wrapper">
-                <nav class="header_bottom_menu">
-                    <ul class="header_bottom_menu-list js-hbmenu-list clearfix">
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link header_bottom_menu-list_link--active lt11" href="#order_form_place">Página principal</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt12" href="#order_form_place">Vídeo</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt13" href="#order_form_place">Mundo</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt14" href="#order_form_place">Portugal</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt15" href="#order_form_place">Economia</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt16" href="#order_form_place">Tecnologia</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt17" href="#order_form_place">Ciência</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt18" href="#order_form_place">Jornal</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt19" href="#order_form_place">Cultura e Desempenhos</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt20" href="#order_form_place">Saúde</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link lt21" href="#order_form_place">Notícias de TV do Mundo</a>
-                        </li>
-                        <li class="header_bottom_menu-list_item">
-                            <a class="header_bottom_menu-list_link header_bottom_menu-list_link--last_link lt22" href="#order_form_place">Outros</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div class="main_wrapper center_wrapper clearfix ">
-        <div class="content_wrapper ">
-            <div class="content">
-                <div class="content__inner content__inner_wide">
-                    <div class="breadcrumbs">
-                        <h2>
-                            <a class="lt23" href="#order_form_place">Notícias</a>
-                            <a class="lt24" href="#order_form_place">Sociedade</a>
-                        </h2>
-                        <a class="breadcrumbs__all-link lt25" href="#order_form_place">Todos os vídeos desta categoria</a>
-                        <!--<a class="mob" href="#order_form_place"> ≡</a>-->
-                    </div>
-                    <div class="article">
-                        <div class="article__date">
-                            <script>
-                                dtime_nums(-3, true)
-                            </script>
-                            <span class="article__time"> 13:35 </span>
-                        </div>
-                        <h3 class="article__title text-bold lt27">"Até à data, este é o método mais eficaz para tratar
-                            articulações e doenças de coluna. É a primeira do seu género!"</h3>
-                        <div class="article__img">
-                            <img alt src="images/main.jpg">
-                            <div class="article__photo-author" data-author-url></div>
-                        </div>
-                        <div class="article__text">
-                            <div class="js-mediator-article"></div>
-                            <div class="article__text-soc-tool lt28">
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Boa tarde, Professor! Bem-vindo! Pode por favor dizer-nos
-                                    se é verdade que a China tem um segredo para curar doenças articulares?</p>
-                                <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Olá! O problema
-                                    é particularmente grave para as doenças articulares em Portugal: uma pessoa em cada
-                                    quatro sofre de dores de costas, pescoço ou cotovelos, tem hérnias ou artrite
-                                    em diferentes estágios. Lamento saber disso porque sei como as doenças articulares
-                                    são terríveis e quais as consequências que geram no corpo humano. Nós vencemos essas
-                                    doenças na China há muito tempo, por isso fico
-                                    muito satisfeito por poder partilhar a experiência do nosso país convosco.</p>
-                                <p class="open-content"> Clique aqui para ver as fotos 18 +</p>
-                                <div class="three-images" style="display: none;">
-                                    <div class="sep-img"><img class="three-img" src="images/1.jpg">
-                                        <p> Gonartrose </p>
-                                    </div>
-                                    <div class="sep-img"><img class="three-img" src="images/2.jpg">
-                                        <p> Coxartrose </p>
-                                    </div>
-                                    <div class="sep-img"><img class="three-img" src="images/3.jpg">
-                                        <p>Gota</p>
-                                    </div>
-                                </div>
-                                <p><span class="text-bold"> Instituto de Investigação em Ortopedia e
-                                        Traumatologia:</span> Qual o segredo da saúde e longevidade Chinesa? Alguma
-                                    dieta especial?</p>
-                                <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Isso é um mito,
-                                    quase ninguém consegue comer apenas marisco, por isso é que o arroz é um prato
-                                    básico na nossa dieta. O nosso segredo é a nossa herança - a reconhecida medicina
-                                    Chinesa. C corpo humano é um instrumento frágil, nem imagina como pode ser bem
-                                    afinado!</p>
-                                <p><span class="text-bold">Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Em muitos países, as pessoas acreditam que uma fraca saúde
-                                    articular é um sinal natural de idade avançada?</p>
-                                <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Na China,
-                                    tornámos claro que as articulações podem ser recuperadas, que podem e devem ser
-                                    curadas. O principal problema desta doença é o desgaste. São sempre suscetíveis a
-                                    sobrecarga, por isso é que as cartilagens se vão tornando menos elásticas, mais
-                                    finas e sofrem desgaste. Daí decorrem rangidos, dores, tumores (hérnias) e
-                                    deformações ósseas (artrose). As cartilagens de muitas pessoas
-                                    atingem já 45-50% de desgaste por volta dos 60 anos de idade. Como se pode recuperar
-                                    algo que já não existe? Pode fazer uma cartilagem literalmente «crescer»? É
-                                    possível!</p>
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Como se pode fazer isso?</p>
-                                <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> O corpo humano
-                                    tem uma capacidade única de regeneração. Veja como um corte na sua pele cicatriza
-                                    facilmente. O mesmo se aplica a qualquer tecido do corpo, mas a velocidade
-                                    e atividade deste processo é um problema: enquanto alguns órgãos recuperam por si,
-                                    outros precisam de ajuda. Use o potencial oculto do seu corpo para se sentir
-                                    saudável como nunca!</p>
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Gostávamos de saber mais sobre isso.</p>
-                                <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Os Tibetanos já
-                                    conhecem a receita de restauro das articulações há mais de 2000 anos. É uma mistura
-                                    de ingredientes naturais que ativa a divisão e crescimento dos tecidos das
-                                    cartilagens. Primeiro, era usada como um extrato para saturar compressas aplicadas
-                                    nas zonas doloridas. Mas agora, graças a evidências científicas, uma receita
-                                    Tibetana está disponível por todo o mundo na forma de um
-                                    creme. Eu participei no desenvolvimento, por isso sei tudo sobre a sua fórmula e
-                                    efeito.</p>
-                                <p class="text-p-style"> Funciona de forma simples: a composição médica do creme é
-                                    absorvida pelos tecidos das cartilagens quase imediatamente. A dor é aliviada quase
-                                    imediatamente também, as articulações são restauradas em aproximadamente 1-2
-                                    meses. <span class="text-bold"> Ora pense nisso: agora poderá restaurar
-                                        completamente as suas articulações. É mesmo possível evitar a cirurgia!</span>
-                                </p>
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Pode por favor descrever o processo de recuperação?</p>
-                                <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Já foi dito que
-                                    as células responsáveis pela saúde e crescimento dos tecidos das cartilagens estão
-                                    contidas nas próprias cartilagens. Os ingredientes contidos no creme não
-                                    só aliviam o inchaço, a dor e a inflamação, mas também influenciam as próprias
-                                    células e ativam a fissão celular. Por outras palavras, este creme ativa um
-                                    mecanismo de suspensão e garante uma ação rápida. Os componentes
-                                    do creme ativam a circulação sanguínea nos tecidos vizinhos, provocando a produção
-                                    de óleo nas articulações. Assim, a mobilidade das articulações é aumentada e os
-                                    tecidos das cartilagens crescem mais rapidamente. Quanto
-                                    a tumores malignos (hérnias), os mesmos são gradualmente suavizados sob a influência
-                                    do creme e são excretados no sangue e depois por via intestinal.</p>
-                                <center>
-                                    <a href="#order_form_place"><img alt class="prd" src="images/product.png"></a>
-                                </center>
-                                <p><span class="text-bold"> Instituto de Investigação em Ortopedia e
-                                        Traumatologia:</span> Quais são as indicações de utilização?</p>
-                                <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> É indicado no
-                                    tratamento de doenças como artrite, artrose, osteocondrose, ciática, hérnia discal,
-                                    deslocação de discos vertebrais. Adicionalmente, poderá ser usado para curar
-                                    dor, dormência nos membros, rutura e perda de elasticidade muscular, inchaço, danos
-                                    e lesões. Na China, usamos este creme sobretudo como tratamento de prevenção porque
-                                    essas doenças não ocorrem. Este creme é como qualquer
-                                    outro tratamento caseiro para nós. Muitas pessoas ainda o fazem em casa, mas por
-                                    vezes não conseguem encontrar os ingredientes certos ou a dosagem, mas, claro,
-                                    quando se trata do nosso creme esses problemas já não se
-                                    colocam.
-                                </p>
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Onde se pode comprar este creme?</p>
-                                <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Infelizmente,
-                                    não conseguimos entrar no mercado farmacêutico Português. Fomos simplesmente
-                                    recusados, por isso o creme <a href="#order_form_place">Fortuflex</a> não é vendido em lojas
-                                    online, apenas pode
-                                    comprá-los no <a href="#order_form_place">através do formulário de encomenda oficial</a> com um desconto de 50%. Faça uma
-                                    encomenda, e recebe-a diretamente em sua casa, sem pagamento prévio, só paga no ato da entrega.
-                                    Não encontrámos este problema em nenhum outro país
-                                    do mundo, na China pode-se encontrar este creme em qualquer farmácia. Mas percebo em
-                                    que se baseia a restrição: se toda a gente ficar saudável, como é que as
-                                    farmacêuticas vão lucrar?</p>
-                                <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
-                                        Traumatologia:</span> Gostaríamos de agradecer ao professor por esta entrevista
-                                    tão interessante.&nbsp;</p>
-                                <p><img alt src="images/product.png" style="display: block; max-width: 350px; margin: 0 auto;"></p>
-                                <p style="display:inline;">Até <strong>
-                                        <script>dtime_nums(-1, true)</script>
-                                    </strong> (inclusive) Juntamente com a Universidade de Medicina Chinesa de Pequim, o
-                                    nosso Instituto de Investigação proporciona uma oferta especial para todos os.
-                                    <b></b>
-                                </p>
-                                <div class="tow" style="display: inline;"><b>Portugueses</b></div><b></b>: Chama-se
-                                "Articulações saudáveis!", no âmbito do qual poderá encomendar o verdadeiro creme <a href="#order_form_place">Fortuflex</a> com um desconto de 50% no site oficial! Antes que a oferta
-                                expire, terá de <strong><a href="#order_form_place">deixar através do formulário de encomenda oficial </a>.</strong>
-                                <p></p>
-                                <p> Se já há muito tempo tenta livrar-se das dores articulares sem sucesso, se já
-                                    experimentou vários tratamentos, sem nenhum resultado, <a href="#order_form_place">clique aqui e
-                                        deixe um pedido agora mesmo</a>.</p>
-                                <div class="myFormFieldForRequest" id="order_form">
-                                    <form method="post" id="order_form_place" name="order_form_place" geo="pt" action="api.php"
-	onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
-                                        <center>
-                                            <img src="images/med.png" style="max-width: 100px;">
-                                            <h2 class="lt81">FORMULÁRIO DE PEDIDO OFICIAL</h2>
-                                            <span class="lt82" style="color: blue; font-size: 14px;">№29982 de 30.000
-                                                da
-                                                <script type="text/javascript">
-                                                    var d = new Date(new Date().getTime() - 24 * 60 * 60 * 000);
-                                                    var day = d.getDate();
-                                                    var month = d.getMonth() + 1;
-                                                    var year = d.getFullYear();
-                                                    document.write(day + "." + month + "." + year);
-                                                </script>
-                                            </span>
-                                        </center>
-                                        <div>
-                                            <span class="lt81" style="font-size: 16px;">receber
-                                                "Fortuflex" a um preço reduzido com 50% de desconto, por apenas
-												<br>
-                                                <span class="new_price_val" style="color: red; font-size: 16px;">
-												39</span>&nbsp;<span class="new_price_cur" style="color: red; font-size: 16px;">EUR</span>
-												<del style="color:black">78 EUR</del>
-												</span>
-                                        </div>
-                                        <div class="toscroll" style="margin: 15px 10px -5px 10px; border: 2px solid #0299ff; padding: 10px;">
-                                            <span><b class="lt82">Para receber "Fortuflex" indique o Nome
-                                                    e
-                                                    seu contato nos campos abaixo e
-                                                    clique
-                                                    Botão "DEIXAR PEDIDO"</b></span>
-                                        </div>
-                                        <div class="order_form_pole">
-                                            <label class="lt85">Nome:</label>
-                                            <input name="name" placeholder="Nome" required type="text">
-                                        </div>
-                                        <div class="order_form_pole">
-                                            <label class="lt86">Número do telemóvel:
-											<br>(introduza o seu número de telemóvel activo)
-											</label>
-                                            <div class="form_phone">
-                                                <input class="only_number" name="phone" placeholder="Número do telemóvel" 
-												required type="tel">
-                                            </div>
-                                        </div>
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-                                        <div style="margin-bottom: 20px;">
-                                            <button class="js_submit button__text lt87" name="submit" type="submit">
-											DEIXAR PEDIDO</button>
-                                        </div>
-                                        <span class="additional lt89">
-                                            Seus dados serão enviados diretamente para o banco de dados.
-                                            Mais ninguém não tem acesso a eles.
-
-                                        </span>
-                                    </form>
-                                </div>
-                                <div id="ttt"></div>
-                                <div>
-                                    <p class="vk-header">356 comentários</p>
-                                    <div class="vk-inner-wrapper">
-                                        <div class="vk-photo-box" id="vk-photo-box"></div>
-                                        <div class="vk-textarea-box"><textarea class="vk-area" placeholder="A sua mensagem"></textarea>
-                                            <div style="padding-top: 6px;">
-                                                <div class="vk-btn-part"><span class="vk-display">Partilhar com
-                                                        amigos</span>
-                                                    <a href="#order_form_place">
-                                                        <div class="checkbox_on"></div>
-                                                    </a><a class="vk-send-btn" href="#order_form_place">Enviar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="k-comments">
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-1.png"></div>
-                                        <div>
-                                            <p class="user-name">Amélia Silva</p>
-                                            <p> Sempre sofri de dores nos joelhos e pensava que nunca me poderia livrar
-                                                delas. É um milagre! Já estou a usar há três semanas, depois de ter lido
-                                                o vosso artigo! As dores nas costas e pernas também desapareceram!
-                                                As maiores felicidades para o vosso portal!</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-3, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-2.png"></div>
-                                        <div>
-                                            <p class="user-name">Alice Matos </p>
-                                            <p> Muito obrigada, o creme funcionou muito depressa! Encomendei-o com 50%
-                                                de desconto <a href="#order_form_place">através do formulário de encomenda oficial</a> do fabricante! Não adiem
-                                                o tratamento das articulações, Mais vale começar a curar as doenças
-                                                cedo do que descobrir no futuro que já não se conseguirão mexer...</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-3, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-7.png"></div>
-                                        <div>
-                                            <p class="user-name">Sara Junqueiro</p>
-                                            <p> Concordo! Este é um tratamento muito eficaz para os problemas de
-                                                articulações! Curei a minha osteoartrite dos joelhos com a sua ajuda.
-                                            </p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-3, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-4.png"></div>
-                                        <div>
-                                            <p class="user-name">Alexandre Mendes</p>
-                                            <p> Ouvi falar deste creme num programa de TV sobre saúde e decidi
-                                                encomendar para experimentar. A questão é que o efeito obtido com os
-                                                tratamentos comuns não persiste tanto tempo – Sempre me disseram que era
-                                                muito
-                                                difícil curar a osteocondrose. Agora vou falar-vos dos resultados. <a href="#order_form_place">Fortuflex</a> foi entregue com rapidez. Senti um alívio
-                                                tremendo nos primeiros 10 dias, por isso não podia deixar de falar nisso
-                                                aqui. Muito
-                                                obrigado por me permitirem viver uma vida plena!</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-2, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-8.png"></div>
-                                        <div>
-                                            <p class="user-name">António David</p>
-                                            <p> Li as primeiras opiniões, por isso é que decidi encomendar este creme.
-                                                Vou contar-vos os resultados depois de receber a minha encomenda.</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-2, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box comm-answer">
-                                        <div class="comm-photo-part"><img src="images/vk-9.png"></div>
-                                        <div>
-                                            <p class="user-name">Rosa Faria</p>
-                                            <p> Estou tão feliz por ter tido a sorte de o encontrar! Para resumir uma
-                                                longa história, também li as opiniões e encomendei <a href="#order_form_place">Fortuflex</a>. Tudo porque o meu marido estava
-                                                desesperado. Ele tomava comprimidos e fazia
-                                                massagens, mas tinha problemas graves de estômago por isso tivemos de
-                                                tomar uma decisão. Então decidimos usar <a href="#order_form_place">Fortuflex</a> e
-                                                voilá! O meu marido já não tem problemas, voltou a participar nas
-                                                atividades de família,
-                                                é alegre e ativo de novo!</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-2, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-10.png"></div>
-                                        <div>
-                                            <p class="user-name">Artur Nunes</p>
-                                            <p> Obrigado por um tratamento tão eficaz. Toda a gente que sofre de dores
-                                                nas articulações devia conhecê-lo. E o preço da oferta especial é mesmo
-                                                acessível!</p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-1, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <div class="k-comm-box">
-                                        <div class="comm-photo-part"><img src="images/vk-11.png"></div>
-                                        <div>
-                                            <p class="user-name">Fernanda Barros</p>
-                                            <p><a href="#order_form_place">Fortuflex</a> funciona mesmo. O resultado excedeu todas as
-                                                minhas expetativas! A artrite que tinha nos dedos ficou curada em 10
-                                                dias! Também encomendei várias embalagens para os meus amigos para
-                                                aproveitar a oferta
-                                                especial de 50% DE DESCONTO. </p>
-                                            <p><span class="mesg-date">
-                                                    <script>dtime_nums(-1, true)</script>
-                                                </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um comentário</span></a></p>
-                                        </div>
-                                    </div>
-                                    <a href="#order_form_place" style="text-decoration: none;">
-                                        <p class="vk-show-more">Mostrar mais...</p>
-                                    </a><br><br>
-                                    <a href="#order_form_place">
-                                        <p class="big-href">Inscreva-se com o formulário de encomenda oficial</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alc-news-wrapper-tablet-135"></div>
-                </div>
-            </div>
-            <div class="share_block">
-                <p class="share_block-heading lt29">Partilhar esta história</p>
-                <ul class="share_block-list">
-                    <li class="share_block-list_item">
-                        <a class="share_block-list_link share_block-list_link--email" href="#order_form_place"></a>
-                    </li>
-                    <li class="share_block-list_item">
-                        <a class="share_block-list_link share_block-list_link--facebook" href="#order_form_place"></a>
-                    </li>
-                    <li class="share_block-list_item">
-                        <a class="share_block-list_link share_block-list_link--twitter" href="#order_form_place"></a>
-                    </li>
-                    <li class="share_block-list_item">
-                        <a class="share_block-list_link share_block-list_link--pinterest" href="#order_form_place"></a>
-                    </li>
-                    <li class="share_block-list_item">
-                        <a class="share_block-list_link share_block-list_link--linkedin" href="#order_form_place"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <aside class="sidebar">
-            <div class="alc-list alc-list_inner">
-                <div class="alc alc_2" data-id="14">
-                    <a href="#order_form_place">
-                        <img src="images/aside-pic1.jpg">
-                        <span class="label lt30">O Professor Liao é um médico de medicina Chinesa e Tibetana, professor
-                            na Universidade de Medicina Chinesa de Pequim, ortopedista premiado, autor de vários livros
-                            sobre recuperação de articulações e realização do potencial da reserva interna do corpo
-                            humano.</span>
-                    </a>
-                </div>
-                <div id="fix-pos" style="height: 1px;"></div>
-            </div>
-        </aside>
+ <script src="js/counter.js"></script>
+ <header class="header">
+  <div class="header_top">
+   <div class="center_wrapper clearfix">
+    <div class="header_top-left_block clearfix">
+     <a class="header_top-logo" href="#order_form_place"></a>
+     <a class="header_top-login lt0" href="#order_form_place">Είσοδος</a>
     </div>
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="center_wrapper">
-                <p class="footer_top-heading lt31">SIC</p>
-                <nav class="footer_top_menu">
-                    <ul class="footer_top_menu-list clearfix">
-                        <li class="footer_top_menu-list_item">
-                            <a class="footer_top_menu-list_link footer_top_menu-list_link--mobile lt32" href="#order_form_place">No
-                                seu telemóvel</a>
-                        </li>
-                        <li class="footer_top_menu-list_item">
-                            <a class="footer_top_menu-list_link footer_top_menu-list_link--pc lt33" href="#order_form_place">Na sua
-                                TV ligada à Internet</a>
-                        </li>
-                        <li class="footer_top_menu-list_item">
-                            <a class="footer_top_menu-list_link footer_top_menu-list_link--news lt34" href="#order_form_place">Receba notificações sobre as últimas notícias </a>
-                        </li>
-                        <li class="footer_top_menu-list_item">
-                            <a class="footer_top_menu-list_link footer_top_menu-list_link--letter lt35" href="#order_form_place">Contacte a SIC</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="center_wrapper">
-                <p class="footer_bottom-heading lt36">Ver a SIC</p>
-                <nav class="footer_bottom_menu">
-                    <ul class="footer_bottom_menu-list clearfix">
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt37" href="#order_form_place">Notícias</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt38" href="#order_form_place">Desporto</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt39" href="#order_form_place">Meteorologia</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt40" href="#order_form_place">Loja</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt41" href="#order_form_place">Terra</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt42" href="#order_form_place">Viagens</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt43" href="#order_form_place">Capital</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt44" href="#order_form_place">Cultura</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt45" href="#order_form_place">Auto</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt46" href="#order_form_place">Futuro</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt47" href="#order_form_place">TV</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt48" href="#order_form_place">Rádio</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt49" href="#order_form_place">SIC Mulher</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt50" href="#order_form_place">SIC K</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt51" href="#order_form_place">Gastronomia </a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt52" href="#order_form_place">iWonder</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt53" href="#order_form_place">Principais notícias</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt54" href="#order_form_place">Música</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt55" href="#order_form_place">SIC Radical</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt56" href="#order_form_place">Mudar para TV digital</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt57" href="#order_form_place"> Masterchef </a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt58" href="#order_form_place">Natureza</a>
-                        </li>
-                        <li class="footer_bottom_menu-list_item">
-                            <a class="footer_bottom_menu-list_link lt59" href="#order_form_place">Local</a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="footer_bottom-links">
-                    <a class="footer_bottom-links_link lt60" href="#order_form_place">Termos e condições</a>
-                    <a class="footer_bottom-links_link lt61" href="#order_form_place">A SIC</a>
-                    <a class="footer_bottom-links_link lt62" href="#order_form_place">Política de privacidade</a>
-                    <a class="footer_bottom-links_link lt63" href="#order_form_place">Cookies</a>
-                    <a class="footer_bottom-links_link lt64" href="#order_form_place">Serviço de apoio</a>
-                    <a class="footer_bottom-links_link lt65" href="#order_form_place">Guia para pais</a>
-                    <a class="footer_bottom-links_link lt66" href="#order_form_place">Contacte a SIC</a>
-                    <a class="footer_bottom-links_link lt67" href="#order_form_place">Anúncio</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <div class="breaking_popup js-breaking_popup">
-        <div class="breaking_popup-header">
-            <div class="center_wrapper breaking_popup-inner_wrapper">
-                <p class="breaking_popup-header_text lt68">ÚLTIMAS NOTÍCIAS</p>
-                <button class="breaking_popup-close js-breaking_popup-close"></button>
-            </div>
-        </div>
-        <div class="center_wrapper">
-            <p class="breaking_popup-text">
-                <a class="breaking_popup-link lt69" href="#order_form_place">Encomende já</a>
-            </p>
-        </div>
+    <div class="header_top-right_block">
+     <div class="search-wrapper">
+
+      <div action="#">
+
+       <input class="search-input" placeholder="Αναζήτηση" type="text">
+       <a href="#order_form_place">
+        <button class="search-button" type="submit"></button>
+       </a>
+      </div>
+
+     </div>
     </div>
-    <script>
-        $(".three-images").hide();
-        $(".open-content").on("click", function () {
-            $(".three-images").toggle(1000);
-        });
-    </script>
+    <button class="header_top_menu-mobile js-htmenu-mobile lt1" type="button">Menu</button>
+    <nav class="header_top_menu">
+     <ul class="header_top_menu-list js-htmenu-list clearfix">
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt2" href="#order_form_place">Νέα</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt3" href="#order_form_place">Αθλητισμός</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt4" href="#order_form_place">Καιρός</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt5" href="#order_form_place">Κατάστημα</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt6" href="#order_form_place">Γη</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt7" href="#order_form_place">Ταξίδι</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link header_top_menu-list_link--last_link lt8" href="#order_form_place">Άλλα</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="header_middle">
+   <div class="center_wrapper clearfix">
+    <a class="category_name lt9" href="#order_form_place"><span class="category_name-invert">ΤΡΕΧΟΥΣΑ</span> ΝΕΑ</a>
+    <button class="header_bottom_menu-mobile js-hbmenu-mobile lt10" type="button">Categorias</button>
+   </div>
+  </div>
+  <div class="header_bottom">
+   <div class="center_wrapper">
+    <nav class="header_bottom_menu">
+     <ul class="header_bottom_menu-list js-hbmenu-list clearfix">
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--active lt11" href="#order_form_place">Αρχική
+        σελίδα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt12" href="#order_form_place">Βίντεο</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt13" href="#order_form_place">Κόσμος</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt14" href="#order_form_place">Ελλάδα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt15" href="#order_form_place">Οικονομία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt16" href="#order_form_place">Τεχνολογία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt17" href="#order_form_place">Επιστήμη</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt18" href="#order_form_place">Σήμερα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt19" href="#order_form_place">Πολιτισμός και εκδηλώσεις</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt20" href="#order_form_place">Υγεία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt21" href="#order_form_place">Παγκόσμια Νέα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--last_link lt22"
+        href="#order_form_place">Άλλα</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </header>
+ <div class="main_wrapper center_wrapper clearfix ">
+  <div class="content_wrapper ">
+   <div class="content">
+    <div class="content__inner content__inner_wide">
+     <div class="breadcrumbs">
+      <h2>
+       <a class="lt23" href="#order_form_place">Νέα</a>
+       <a class="lt24" href="#order_form_place">Κοινωνία</a>
+      </h2>
+      <a class="breadcrumbs__all-link lt25" href="#order_form_place">Όλα τα βίντεο αυτής της κατηγορίας </a>
+      <!--<a class="mob" href="#order_form_place"> ≡</a>-->
+     </div>
+     <div class="article">
+      <div class="article__date">
+       <script>
+        dtime_nums(-3, true)
+       </script>
+       <span class="article__time"> 13:35 </span>
+      </div>
+      <h3 class="article__title text-bold lt27">"Σήμερα είναι η πιο αποτελεσματική μέθοδος της θεραπείας των παθήσεων
+       των αρθρώσεων και της σπονδυλικής στήλης. Μοναδικό προϊόν!"</h3>
+      <div class="article__img">
+       <img alt src="images/main.jpg">
+       <div class="article__photo-author" data-author-url></div>
+      </div>
+      <div class="article__text">
+       <div class="js-mediator-article"></div>
+       <div class="article__text-soc-tool lt28">
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Καλησπέρα, κύριε καθηγητά! Καλώς ΗΡΘΑΤΕ! Πείτε μου, παρακαλώ, είναι αλήθεια ότι στην Κίνα υπάρχει ένα μυστικό για τη θεραπεία των παθήσεων των αρθρώσεων;</p>
+        <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Olá! O problema
+         é particularmente grave para as doenças articulares em Portugal: uma pessoa em cada
+         quatro sofre de dores de costas, pescoço ou cotovelos, tem hérnias ou artrite
+         em diferentes estágios. Lamento saber disso porque sei como as doenças articulares
+         são terríveis e quais as consequências que geram no corpo humano. Nós vencemos essas
+         doenças na China há muito tempo, por isso fico
+         muito satisfeito por poder partilhar a experiência do nosso país convosco.</p>
+        <p class="open-content"> Clique aqui para ver as fotos 18 +</p>
+        <div class="three-images" style="display: none;">
+         <div class="sep-img"><img class="three-img" src="images/1.jpg">
+          <p> Gonartrose </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/2.jpg">
+          <p> Coxartrose </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/3.jpg">
+          <p>Gota</p>
+         </div>
+        </div>
+        <p><span class="text-bold"> Instituto de Investigação em Ortopedia e
+          Traumatologia:</span> Qual o segredo da saúde e longevidade Chinesa? Alguma
+         dieta especial?</p>
+        <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Isso é um mito,
+         quase ninguém consegue comer apenas marisco, por isso é que o arroz é um prato
+         básico na nossa dieta. O nosso segredo é a nossa herança - a reconhecida medicina
+         Chinesa. C corpo humano é um instrumento frágil, nem imagina como pode ser bem
+         afinado!</p>
+        <p><span class="text-bold">Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Em muitos países, as pessoas acreditam que uma fraca saúde
+         articular é um sinal natural de idade avançada?</p>
+        <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Na China,
+         tornámos claro que as articulações podem ser recuperadas, que podem e devem ser
+         curadas. O principal problema desta doença é o desgaste. São sempre suscetíveis a
+         sobrecarga, por isso é que as cartilagens se vão tornando menos elásticas, mais
+         finas e sofrem desgaste. Daí decorrem rangidos, dores, tumores (hérnias) e
+         deformações ósseas (artrose). As cartilagens de muitas pessoas
+         atingem já 45-50% de desgaste por volta dos 60 anos de idade. Como se pode recuperar
+         algo que já não existe? Pode fazer uma cartilagem literalmente «crescer»? É
+         possível!</p>
+        <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Como se pode fazer isso?</p>
+        <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> O corpo humano
+         tem uma capacidade única de regeneração. Veja como um corte na sua pele cicatriza
+         facilmente. O mesmo se aplica a qualquer tecido do corpo, mas a velocidade
+         e atividade deste processo é um problema: enquanto alguns órgãos recuperam por si,
+         outros precisam de ajuda. Use o potencial oculto do seu corpo para se sentir
+         saudável como nunca!</p>
+        <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Gostávamos de saber mais sobre isso.</p>
+        <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Os Tibetanos já
+         conhecem a receita de restauro das articulações há mais de 2000 anos. É uma mistura
+         de ingredientes naturais que ativa a divisão e crescimento dos tecidos das
+         cartilagens. Primeiro, era usada como um extrato para saturar compressas aplicadas
+         nas zonas doloridas. Mas agora, graças a evidências científicas, uma receita
+         Tibetana está disponível por todo o mundo na forma de um
+         creme. Eu participei no desenvolvimento, por isso sei tudo sobre a sua fórmula e
+         efeito.</p>
+        <p class="text-p-style"> Funciona de forma simples: a composição médica do creme é
+         absorvida pelos tecidos das cartilagens quase imediatamente. A dor é aliviada quase
+         imediatamente também, as articulações são restauradas em aproximadamente 1-2
+         meses. <span class="text-bold"> Ora pense nisso: agora poderá restaurar
+          completamente as suas articulações. É mesmo possível evitar a cirurgia!</span>
+        </p>
+        <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Pode por favor descrever o processo de recuperação?</p>
+        <p class="before-paragr"><span class="text-bold">Professor Liao:</span> Já foi dito que
+         as células responsáveis pela saúde e crescimento dos tecidos das cartilagens estão
+         contidas nas próprias cartilagens. Os ingredientes contidos no creme não
+         só aliviam o inchaço, a dor e a inflamação, mas também influenciam as próprias
+         células e ativam a fissão celular. Por outras palavras, este creme ativa um
+         mecanismo de suspensão e garante uma ação rápida. Os componentes
+         do creme ativam a circulação sanguínea nos tecidos vizinhos, provocando a produção
+         de óleo nas articulações. Assim, a mobilidade das articulações é aumentada e os
+         tecidos das cartilagens crescem mais rapidamente. Quanto
+         a tumores malignos (hérnias), os mesmos são gradualmente suavizados sob a influência
+         do creme e são excretados no sangue e depois por via intestinal.</p>
+        <center>
+         <a href="#order_form_place"><img alt class="prd" src="images/product.png"></a>
+        </center>
+        <p><span class="text-bold"> Instituto de Investigação em Ortopedia e
+          Traumatologia:</span> Quais são as indicações de utilização?</p>
+        <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> É indicado no
+         tratamento de doenças como artrite, artrose, osteocondrose, ciática, hérnia discal,
+         deslocação de discos vertebrais. Adicionalmente, poderá ser usado para curar
+         dor, dormência nos membros, rutura e perda de elasticidade muscular, inchaço, danos
+         e lesões. Na China, usamos este creme sobretudo como tratamento de prevenção porque
+         essas doenças não ocorrem. Este creme é como qualquer
+         outro tratamento caseiro para nós. Muitas pessoas ainda o fazem em casa, mas por
+         vezes não conseguem encontrar os ingredientes certos ou a dosagem, mas, claro,
+         quando se trata do nosso creme esses problemas já não se
+         colocam.
+        </p>
+        <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Onde se pode comprar este creme?</p>
+        <p class="before-paragr"><span class="text-bold"> Professor Liao:</span> Infelizmente,
+         não conseguimos entrar no mercado farmacêutico Português. Fomos simplesmente
+         recusados, por isso o creme <a href="#order_form_place">Fortuflex</a> não é vendido em lojas
+         online, apenas pode
+         comprá-los no <a href="#order_form_place">através do formulário de encomenda oficial</a> com um desconto de
+         50%. Faça uma
+         encomenda, e recebe-a diretamente em sua casa, sem pagamento prévio, só paga no ato da entrega.
+         Não encontrámos este problema em nenhum outro país
+         do mundo, na China pode-se encontrar este creme em qualquer farmácia. Mas percebo em
+         que se baseia a restrição: se toda a gente ficar saudável, como é que as
+         farmacêuticas vão lucrar?</p>
+        <p><span class="text-bold"> Instituto de Investigação de Ortopedia e
+          Traumatologia:</span> Gostaríamos de agradecer ao professor por esta entrevista
+         tão interessante.&nbsp;</p>
+        <p><img alt src="images/product.png" style="display: block; max-width: 350px; margin: 0 auto;"></p>
+        <p style="display:inline;">Até <strong>
+          <script>
+           dtime_nums(-1, true)
+          </script>
+         </strong> (inclusive) Juntamente com a Universidade de Medicina Chinesa de Pequim, o
+         nosso Instituto de Investigação proporciona uma oferta especial para todos os.
+         <b></b>
+        </p>
+        <div class="tow" style="display: inline;"><b>Portugueses</b></div><b></b>: Chama-se
+        "Articulações saudáveis!", no âmbito do qual poderá encomendar o verdadeiro creme <a
+         href="#order_form_place">Fortuflex</a> com um desconto de 50% no site oficial! Antes que a oferta
+        expire, terá de <strong><a href="#order_form_place">deixar através do formulário de encomenda oficial
+         </a>.</strong>
+        <p></p>
+        <p> Se já há muito tempo tenta livrar-se das dores articulares sem sucesso, se já
+         experimentou vários tratamentos, sem nenhum resultado, <a href="#order_form_place">clique aqui e
+          deixe um pedido agora mesmo</a>.</p>
+        <div class="myFormFieldForRequest" id="order_form">
+         <form method="post" id="order_form_place" name="order_form_place" geo="pt" action="api.php"
+          onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+          <center>
+           <img src="images/med.png" style="max-width: 100px;">
+           <h2 class="lt81">FORMULÁRIO DE PEDIDO OFICIAL</h2>
+           <span class="lt82" style="color: blue; font-size: 14px;">№29982 de 30.000
+            da
+            <script type="text/javascript">
+             var d = new Date(new Date().getTime() - 24 * 60 * 60 * 000);
+             var day = d.getDate();
+             var month = d.getMonth() + 1;
+             var year = d.getFullYear();
+             document.write(day + "." + month + "." + year);
+            </script>
+           </span>
+          </center>
+          <div>
+           <span class="lt81" style="font-size: 16px;">receber
+            "Fortuflex" a um preço reduzido com 50% de desconto, por apenas
+            <br>
+            <span class="new_price_val" style="color: red; font-size: 16px;">
+             39</span>&nbsp;<span class="new_price_cur" style="color: red; font-size: 16px;">EUR</span>
+            <del style="color:black">78 EUR</del>
+           </span>
+          </div>
+          <div class="toscroll" style="margin: 15px 10px -5px 10px; border: 2px solid #0299ff; padding: 10px;">
+           <span><b class="lt82">Para receber "Fortuflex" indique o Nome
+             e
+             seu contato nos campos abaixo e
+             clique
+             Botão "DEIXAR PEDIDO"</b></span>
+          </div>
+          <div class="order_form_pole">
+           <label class="lt85">Nome:</label>
+           <input name="name" placeholder="Nome" required type="text">
+          </div>
+          <div class="order_form_pole">
+           <label class="lt86">Número do telemóvel:
+            <br>(introduza o seu número de telemóvel activo)
+           </label>
+           <div class="form_phone">
+            <input class="only_number" name="phone" placeholder="Número do telemóvel" required type="tel">
+           </div>
+          </div>
+          <input name="subid" type="hidden" value="{subid}">
+          <input name="px" type="hidden" value="{px}">
+          <input name="bayer" type="hidden" value="{bayer}">
+          <div style="margin-bottom: 20px;">
+           <button class="js_submit button__text lt87" name="submit" type="submit">
+            DEIXAR PEDIDO</button>
+          </div>
+          <span class="additional lt89">
+           Seus dados serão enviados diretamente para o banco de dados.
+           Mais ninguém não tem acesso a eles.
 
-<script type="text/javascript" src="/libs/js/gdpr.js"></script>
-<link rel="stylesheet" href="/libs/js/gdpr.css">
-<script>
-		var phonePattern = {
-			'ru': '+7 (___) ___-__-__',
-			'ua': '+38-___-___-__-__',
-			'by': '+375 ___ ___ ___',
-			'kz': '+7 ___ ___ ____',
-			'kg': '+___ ___ __ __ __',
-			'md': '0 ___ _____',
-			'az': '+___-__-___-__-__',
-			'ge': '+995 ___ __ __ __',
-			'es': '+34 ___ __ __ __',
-			'pe': '+51 ___ ___ _?_',
-			'cl': '+56 _ ____ ____',
-			'ar': '+54 __ ____ ____',
-			'co': '+57 _______??_',
-			'mx': '+52 __ ____ ____',
-			'it': '+39-___-___-____',
-			'esp': '+34 ___ __ __ __',
-			'pt': '+351 ___ ___ ___',
-			'br': '+55 __ ___?_ ____',
-			'prt': '+351 ___ ___ ___',
-			'id': '+62 ___ ___ ___',
-			'gr': '+30 ___ _______',
-			'cy': '+357 __ ______',
-			'ro': '+40 ___ ___ __? _',
-			'bg': '+359 ___ __ __? _',
-			'cz': '+420 ___ ___ ___',
-			'sk': '+421 ___ ___ ___',
-			'si': '+386 _ ___ __ __',
-			'pl': '+48 ___ ___ ___',
-			'al': '+355 __ ___ ___?_',
-			'rs': '+381 __ _____?_',
-			'ph': '+63 _ ____ __?_',
-			'hu': '+36 _ ___ ____',
-			'hr': '+385 _ ____ __?_',
-			'ba': '+387 __ ______',
-			/* --- */
-		}
+          </span>
+         </form>
+        </div>
+        <div id="ttt"></div>
+        <div>
+         <p class="vk-header">356 comentários</p>
+         <div class="vk-inner-wrapper">
+          <div class="vk-photo-box" id="vk-photo-box"></div>
+          <div class="vk-textarea-box"><textarea class="vk-area" placeholder="A sua mensagem"></textarea>
+           <div style="padding-top: 6px;">
+            <div class="vk-btn-part"><span class="vk-display">Partilhar com
+              amigos</span>
+             <a href="#order_form_place">
+              <div class="checkbox_on"></div>
+             </a><a class="vk-send-btn" href="#order_form_place">Enviar</a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="k-comments">
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-1.png"></div>
+          <div>
+           <p class="user-name">Amélia Silva</p>
+           <p> Sempre sofri de dores nos joelhos e pensava que nunca me poderia livrar
+            delas. É um milagre! Já estou a usar há três semanas, depois de ter lido
+            o vosso artigo! As dores nas costas e pernas também desapareceram!
+            As maiores felicidades para o vosso portal!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-2.png"></div>
+          <div>
+           <p class="user-name">Alice Matos </p>
+           <p> Muito obrigada, o creme funcionou muito depressa! Encomendei-o com 50%
+            de desconto <a href="#order_form_place">através do formulário de encomenda oficial</a> do fabricante! Não
+            adiem
+            o tratamento das articulações, Mais vale começar a curar as doenças
+            cedo do que descobrir no futuro que já não se conseguirão mexer...</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-7.png"></div>
+          <div>
+           <p class="user-name">Sara Junqueiro</p>
+           <p> Concordo! Este é um tratamento muito eficaz para os problemas de
+            articulações! Curei a minha osteoartrite dos joelhos com a sua ajuda.
+           </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-4.png"></div>
+          <div>
+           <p class="user-name">Alexandre Mendes</p>
+           <p> Ouvi falar deste creme num programa de TV sobre saúde e decidi
+            encomendar para experimentar. A questão é que o efeito obtido com os
+            tratamentos comuns não persiste tanto tempo – Sempre me disseram que era
+            muito
+            difícil curar a osteocondrose. Agora vou falar-vos dos resultados. <a href="#order_form_place">Fortuflex</a>
+            foi entregue com rapidez. Senti um alívio
+            tremendo nos primeiros 10 dias, por isso não podia deixar de falar nisso
+            aqui. Muito
+            obrigado por me permitirem viver uma vida plena!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-8.png"></div>
+          <div>
+           <p class="user-name">António David</p>
+           <p> Li as primeiras opiniões, por isso é que decidi encomendar este creme.
+            Vou contar-vos os resultados depois de receber a minha encomenda.</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box comm-answer">
+          <div class="comm-photo-part"><img src="images/vk-9.png"></div>
+          <div>
+           <p class="user-name">Rosa Faria</p>
+           <p> Estou tão feliz por ter tido a sorte de o encontrar! Para resumir uma
+            longa história, também li as opiniões e encomendei <a href="#order_form_place">Fortuflex</a>. Tudo porque o
+            meu marido estava
+            desesperado. Ele tomava comprimidos e fazia
+            massagens, mas tinha problemas graves de estômago por isso tivemos de
+            tomar uma decisão. Então decidimos usar <a href="#order_form_place">Fortuflex</a> e
+            voilá! O meu marido já não tem problemas, voltou a participar nas
+            atividades de família,
+            é alegre e ativo de novo!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-10.png"></div>
+          <div>
+           <p class="user-name">Artur Nunes</p>
+           <p> Obrigado por um tratamento tão eficaz. Toda a gente que sofre de dores
+            nas articulações devia conhecê-lo. E o preço da oferta especial é mesmo
+            acessível!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-11.png"></div>
+          <div>
+           <p class="user-name">Fernanda Barros</p>
+           <p><a href="#order_form_place">Fortuflex</a> funciona mesmo. O resultado excedeu todas as
+            minhas expetativas! A artrite que tinha nos dedos ficou curada em 10
+            dias! Também encomendei várias embalagens para os meus amigos para
+            aproveitar a oferta
+            especial de 50% DE DESCONTO. </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Deixar um
+              comentário</span></a></p>
+          </div>
+         </div>
+         <a href="#order_form_place" style="text-decoration: none;">
+          <p class="vk-show-more">Mostrar mais...</p>
+         </a><br><br>
+         <a href="#order_form_place">
+          <p class="big-href">Inscreva-se com o formulário de encomenda oficial</p>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="alc-news-wrapper-tablet-135"></div>
+    </div>
+   </div>
+   <div class="share_block">
+    <p class="share_block-heading lt29">Partilhar esta história</p>
+    <ul class="share_block-list">
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--email" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--facebook" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--twitter" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--pinterest" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--linkedin" href="#order_form_place"></a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <aside class="sidebar">
+   <div class="alc-list alc-list_inner">
+    <div class="alc alc_2" data-id="14">
+     <a href="#order_form_place">
+      <img src="images/aside-pic1.jpg">
+      <span class="label lt30">O Professor Liao é um médico de medicina Chinesa e Tibetana, professor
+       na Universidade de Medicina Chinesa de Pequim, ortopedista premiado, autor de vários livros
+       sobre recuperação de articulações e realização do potencial da reserva interna do corpo
+       humano.</span>
+     </a>
+    </div>
+    <div id="fix-pos" style="height: 1px;"></div>
+   </div>
+  </aside>
+ </div>
+ <footer class="footer">
+  <div class="footer_top">
+   <div class="center_wrapper">
+    <p class="footer_top-heading lt31">SIC</p>
+    <nav class="footer_top_menu">
+     <ul class="footer_top_menu-list clearfix">
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--mobile lt32" href="#order_form_place">No
+        seu telemóvel</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--pc lt33" href="#order_form_place">Na sua
+        TV ligada à Internet</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--news lt34" href="#order_form_place">Receba
+        notificações sobre as últimas notícias </a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--letter lt35" href="#order_form_place">Contacte a
+        SIC</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="footer_bottom">
+   <div class="center_wrapper">
+    <p class="footer_bottom-heading lt36">Ver a SIC</p>
+    <nav class="footer_bottom_menu">
+     <ul class="footer_bottom_menu-list clearfix">
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt37" href="#order_form_place">Notícias</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt38" href="#order_form_place">Desporto</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt39" href="#order_form_place">Meteorologia</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt40" href="#order_form_place">Loja</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt41" href="#order_form_place">Terra</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt42" href="#order_form_place">Viagens</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt43" href="#order_form_place">Capital</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt44" href="#order_form_place">Cultura</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt45" href="#order_form_place">Auto</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt46" href="#order_form_place">Futuro</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt47" href="#order_form_place">TV</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt48" href="#order_form_place">Rádio</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt49" href="#order_form_place">SIC Mulher</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt50" href="#order_form_place">SIC K</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt51" href="#order_form_place">Gastronomia </a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt52" href="#order_form_place">iWonder</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt53" href="#order_form_place">Principais notícias</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt54" href="#order_form_place">Música</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt55" href="#order_form_place">SIC Radical</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt56" href="#order_form_place">Mudar para TV digital</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt57" href="#order_form_place"> Masterchef </a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt58" href="#order_form_place">Natureza</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt59" href="#order_form_place">Local</a>
+      </li>
+     </ul>
+    </nav>
+    <p class="footer_bottom-links">
+     <a class="footer_bottom-links_link lt60" href="#order_form_place">Termos e condições</a>
+     <a class="footer_bottom-links_link lt61" href="#order_form_place">A SIC</a>
+     <a class="footer_bottom-links_link lt62" href="#order_form_place">Política de privacidade</a>
+     <a class="footer_bottom-links_link lt63" href="#order_form_place">Cookies</a>
+     <a class="footer_bottom-links_link lt64" href="#order_form_place">Serviço de apoio</a>
+     <a class="footer_bottom-links_link lt65" href="#order_form_place">Guia para pais</a>
+     <a class="footer_bottom-links_link lt66" href="#order_form_place">Contacte a SIC</a>
+     <a class="footer_bottom-links_link lt67" href="#order_form_place">Anúncio</a>
+    </p>
+   </div>
+  </div>
+ </footer>
+ <div class="breaking_popup js-breaking_popup">
+  <div class="breaking_popup-header">
+   <div class="center_wrapper breaking_popup-inner_wrapper">
+    <p class="breaking_popup-header_text lt68">ÚLTIMAS NOTÍCIAS</p>
+    <button class="breaking_popup-close js-breaking_popup-close"></button>
+   </div>
+  </div>
+  <div class="center_wrapper">
+   <p class="breaking_popup-text">
+    <a class="breaking_popup-link lt69" href="#order_form_place">Encomende já</a>
+   </p>
+  </div>
+ </div>
+ <script>
+  $(".three-images").hide();
+  $(".open-content").on("click", function () {
+   $(".three-images").toggle(1000);
+  });
+ </script>
 
-		const inputs = document.querySelectorAll('form input[name="phone"]')
+ <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+ <link rel="stylesheet" href="/libs/js/gdpr.css">
+ <script>
+  var phonePattern = {
+   'ru': '+7 (___) ___-__-__',
+   'ua': '+38-___-___-__-__',
+   'by': '+375 ___ ___ ___',
+   'kz': '+7 ___ ___ ____',
+   'kg': '+___ ___ __ __ __',
+   'md': '0 ___ _____',
+   'az': '+___-__-___-__-__',
+   'ge': '+995 ___ __ __ __',
+   'es': '+34 ___ __ __ __',
+   'pe': '+51 ___ ___ _?_',
+   'cl': '+56 _ ____ ____',
+   'ar': '+54 __ ____ ____',
+   'co': '+57 _______??_',
+   'mx': '+52 __ ____ ____',
+   'it': '+39-___-___-____',
+   'esp': '+34 ___ __ __ __',
+   'pt': '+351 ___ ___ ___',
+   'br': '+55 __ ___?_ ____',
+   'prt': '+351 ___ ___ ___',
+   'id': '+62 ___ ___ ___',
+   'gr': '+30 ___ _______',
+   'cy': '+357 __ ______',
+   'ro': '+40 ___ ___ __? _',
+   'bg': '+359 ___ __ __? _',
+   'cz': '+420 ___ ___ ___',
+   'sk': '+421 ___ ___ ___',
+   'si': '+386 _ ___ __ __',
+   'pl': '+48 ___ ___ ___',
+   'al': '+355 __ ___ ___?_',
+   'rs': '+381 __ _____?_',
+   'ph': '+63 _ ____ __?_',
+   'hu': '+36 _ ___ ____',
+   'hr': '+385 _ ____ __?_',
+   'ba': '+387 __ ______',
+   /* --- */
+  }
+
+  const inputs = document.querySelectorAll('form input[name="phone"]')
 
 
-		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
-		function validate_form(form, alert_text = "Please enter valid phone number") {
-			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
-				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
-			if (input_ln >= pattern_ln) return true;
-			else { alert(alert_text); return false; }
-		}
+  //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+  function validate_form(form, alert_text = "Please enter valid phone number") {
+   var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+    pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+   if (input_ln >= pattern_ln) return true;
+   else {
+    alert(alert_text);
+    return false;
+   }
+  }
 
-		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
-		document.addEventListener("DOMContentLoaded", function () {
+  //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+  document.addEventListener("DOMContentLoaded", function () {
 
-			var isTimeoutSeted = false;
-			var inputInterval;
+   var isTimeoutSeted = false;
+   var inputInterval;
 
-			function createInterval(input) {
-				if (!isTimeoutSeted) {
-					isTimeoutSeted = true;
+   function createInterval(input) {
+    if (!isTimeoutSeted) {
+     isTimeoutSeted = true;
 
-					inputInterval = setInterval(() => {
-						input.selectionStart = input.value.length
-						input.setSelectionRange(input.value.length, input.value.length);
-					}, 15)
-				}
-			}
+     inputInterval = setInterval(() => {
+      input.selectionStart = input.value.length
+      input.setSelectionRange(input.value.length, input.value.length);
+     }, 15)
+    }
+   }
 
-			function deleteInterval() {
-				clearInterval(inputInterval)
-				isTimeoutSeted = false;
-			}
+   function deleteInterval() {
+    clearInterval(inputInterval)
+    isTimeoutSeted = false;
+   }
 
-			function setSelectionStart(input) {
-				input.selectionStart = input.value.length
-			}
+   function setSelectionStart(input) {
+    input.selectionStart = input.value.length
+   }
 
-			function mask(event) {
-				var input = event.currentTarget;
-				var geo = input.form.getAttribute('geo');
-				var matrix = phonePattern[geo];
-				var i = 0;
-				var def = matrix.replace(/\D/g, "");
-				var val = input.value.replace(/\D/g, "");
+   function mask(event) {
+    var input = event.currentTarget;
+    var geo = input.form.getAttribute('geo');
+    var matrix = phonePattern[geo];
+    var i = 0;
+    var def = matrix.replace(/\D/g, "");
+    var val = input.value.replace(/\D/g, "");
 
-				if (!event.type == "blur") {
-					setSelectionStart(input)
-				}
+    if (!event.type == "blur") {
+     setSelectionStart(input)
+    }
 
-				// Ставим интервал для инпута
-				createInterval(input)
+    // Ставим интервал для инпута
+    createInterval(input)
 
-				if (event.type == "blur") {
-					// Сбрасываем интервал для инпута
-					deleteInterval()
-					if (input.value.length == 2) {
-						input.value = ""
-					}
-				}
+    if (event.type == "blur") {
+     // Сбрасываем интервал для инпута
+     deleteInterval()
+     if (input.value.length == 2) {
+      input.value = ""
+     }
+    }
 
-				if (def.length >= val.length) {
-					val = def
-				};
+    if (def.length >= val.length) {
+     val = def
+    };
 
-				input.value = matrix.replace(/./g, function (a) {
-					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-				});
+    input.value = matrix.replace(/./g, function (a) {
+     return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
 
 
-			};
+   };
 
-			inputs.forEach(input => {
-				input.addEventListener("input", mask, false);
-				input.addEventListener("blur", mask, false);
-				input.addEventListener("focus", mask, false);
-			})
-		});
+   inputs.forEach(input => {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("focus", mask, false);
+   })
+  });
 
-		$(document).ready(function () {
-			// Load GDPR
-			$(document).gdprCookieLaw({
-				moreLinkHref: '/privacypolicy',
-				theme: 'theme-1',
-				position: 'bottom-right',
-				width: '760px',
-				margin: '15px',
-				animation: 'fade-slide',
-				btnAcceptText: 'Ok'
-			});
-		});
-
-</script>
+  $(document).ready(function () {
+   // Load GDPR
+   $(document).gdprCookieLaw({
+    moreLinkHref: '/privacypolicy',
+    theme: 'theme-1',
+    position: 'bottom-right',
+    width: '760px',
+    margin: '15px',
+    animation: 'fade-slide',
+    btnAcceptText: 'Ok'
+   });
+  });
+ </script>
 </body>
 
 </html>
