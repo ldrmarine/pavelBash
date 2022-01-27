@@ -1,0 +1,166 @@
+.bold {
+    font-weight: 700;
+}
+
+.myText a {
+    color: #000000 !important;
+}
+
+.myImg {
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+
+.red {
+    color: red;
+}
+
+.prod {
+    display: block;
+}
+
+
+#order_form {
+    margin: 0 auto
+}
+
+
+
+#order_form label {
+    padding: 5px 0;
+    font-weight: 700;
+    display: block;
+    font-size: 16px
+}
+
+#order_form input,
+#order_form select {
+    font-size: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 2px solid #e9d7dc;
+    min-height: 65px;
+    max-height: 65px;
+    max-width: 300px;
+    width: 86%
+}
+
+.order_form_pole {
+    margin-top: 30px
+}
+
+#order_form button,
+.obutton {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, .45);
+    border-radius: 5px;
+    background-color: #0299ff;
+    background-position: 1.35em .94em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    transition: all .15s ease-in-out;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px
+}
+
+#order_form span {
+    font-size: 12px;
+    color: #000
+}
+
+
+#order_form_place h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+@media only screen and (max-width:600px) {
+    #order_form {
+        padding: 22px
+    }
+}
+
+@media (max-width: 540px) {
+
+    #order_form input,
+    #order_form select {
+        width: 100%;
+    }
+}
+
+#order_form {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 40px;
+    max-width: 500px;
+    background-image: url(../images/formbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+#order_form_place,
+.order_form_pole label {
+    text-align: center
+}
+
+#order_form div {
+    background: 0 0 !important
+}
+
+
+.comments {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.comments__item:last-child {
+    border-bottom: 1px solid #000000;
+}
+
+.myLink {
+    padding: 0 !important;
+}
+
+.comments__item p {
+    margin-top: 10px;
+}
+
+.comments__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.comments__item {
+    padding: 15px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+.comments__item p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 540px) {
+
+    #order_form input,
+    #order_form select {
+        font-size: 14px;
+    }
+    #order_form{
+        padding: 20px;
+    }
+}
