@@ -495,3 +495,8 @@ body{
           width: 100%;
           float: left;
       }
+@media (max-width: 390px) {
+    .branco.linha{
+        font-size: 15px;
+    }
+}
