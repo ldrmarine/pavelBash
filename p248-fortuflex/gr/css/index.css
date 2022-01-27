@@ -1,4 +1,20 @@
 @font-face {
+    font-family: "Roboto";
+    src: local("../fonts/Roboto-Regular"), url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.eot), url(../fonts/Roboto-Regular.eot?iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.svg#Roboto) format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("../fonts/Roboto-Bold"), url(../fonts/Roboto-Bold.woff2) format("woff2"), url(../fonts/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold.ttf) format("truetype"), url(../fonts/Roboto-Bold.eot), url(../fonts/Roboto-Bold.eot?iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold.svg#Roboto) format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
@@ -148,7 +164,7 @@
     width: 0;
     color: #fff;
     padding: 0 3px;
-    font: 12px/17px Roboto, sans-serif;
+    font: 12px/17px "Roboto", sans-serif;
     font-weight: 300;
     display: block
 }
@@ -184,7 +200,7 @@
     padding-top: 16px;
     padding-bottom: 16px;
     font-weight: 300;
-    font: 14px/22px "Open Sans"
+    font: 14px/22px "Roboto"
 }
 
 .breadcrumbs h2 a {
@@ -203,7 +219,7 @@
 }
 
 .breadcrumbs h2 a:last-child {
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-weight: 600
 }
 
@@ -239,7 +255,7 @@
 }
 
 .article__date {
-    font: 14px/18px Arimo, sans-serif;
+    font: 14px/18px "Roboto", sans-serif;
     color: #555
 }
 
@@ -249,7 +265,7 @@
 }
 
 .article__title {
-    font: 32px/36px "Open Sans", sans-serif;
+    font: 32px/36px "Roboto", sans-serif;
     padding: 4px 0 24px
 }
 
@@ -270,7 +286,7 @@
 }
 
 .article__text {
-    font: 16px/24px "Open Sans", sans-serif;
+    font: 16px/24px "Roboto", sans-serif;
     color: #333;
     padding-left: 70px;
     padding-top: 24px
@@ -282,7 +298,7 @@
 }
 
 .ttle {
-    font-family: Open sans;
+    font-family: "Roboto";
     color: #2d4e70;
     font-weight: 800;
     font-size: 29px;
@@ -304,7 +320,7 @@
     position: absolute;
     color: #fff;
     font-size: 13px;
-    font-family: Open Sans;
+    font-family: "Roboto";
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
@@ -354,7 +370,7 @@
 }
 
 .prd {
-    max-width: 300px!important
+    max-width: 300px !important
 }
 
 .rel>span {
@@ -382,7 +398,7 @@
 }
 
 .label {
-    font-family: Open Sans;
+    font-family: "Roboto";
     font-size: 16px;
     line-height: 19px;
     color: #fff;
@@ -424,7 +440,7 @@
 .article__text p {
     padding: 0 0 30px;
     text-align: justify;
-    font-family: Open Sans
+    font-family: Roboto
 }
 
 .article__text a {
@@ -435,6 +451,7 @@
 @media not all,
 not all,
 only screen and (min-resolution:120dpi) {
+
     .breadcrumbs .breadcrumbs__all-link::after,
     .search__form .search__submit {
         background-size: 318.5px 2015px
@@ -457,13 +474,13 @@ only screen and (min-resolution:120dpi) {
 }
 
 .text-bold {
-    font-weight: 600!important;
-    font-family: "Open Sans"
+    font-weight: 600 !important;
+    font-family: "Roboto"
 }
 
 p.big-href {
     font-size: 24px;
-    text-align: center!important;
+    text-align: center !important;
     font-weight: 700;
     line-height: 28px;
     margin: 0
@@ -473,7 +490,7 @@ p.big-href {
     font-size: 13px;
     color: #2a5885;
     font-weight: 700;
-    margin-top: 0!important
+    margin-top: 0 !important
 }
 
 .k-comm-box {
@@ -537,13 +554,13 @@ p.big-href {
     height: 80px;
     outline: medium none;
     border-color: #d3d3d3;
-    font-family: monospace;
+    font-family: "Roboto";
     font-size: 13px
 }
 
 a p.vk-show-more {
     background: #e5ebf1 none repeat scroll 0 0;
-    text-align: center!important;
+    text-align: center !important;
     padding: 14px 0;
     text-decoration: none;
     font-size: 14px;
@@ -599,10 +616,10 @@ p.vk-header {
 }
 
 a.vk-send-btn {
-    color: #fff!important;
+    color: #fff !important;
     background: #5e81a8 none repeat scroll 0 0;
     padding: 6px 14px;
-    text-decoration: none!important;
+    text-decoration: none !important;
     border-radius: 3px;
     font-size: 12px;
     margin-left: 10px
@@ -621,9 +638,11 @@ a.vk-send-btn {
         width: auto;
         padding: 0
     }
+
     .article__text {
         padding-left: 5px
     }
+
     .header_bottom_menu-list_link--active:before,
     .header_bottom_menu-list_link:focus:before,
     .header_bottom_menu-list_link:hover:before {
@@ -636,6 +655,7 @@ a.vk-send-btn {
         width: 52px;
         margin-right: 10px
     }
+
     .vk-display {
         display: none
     }
@@ -699,7 +719,7 @@ a.vk-send-btn {
     background: -o-linear-gradient(-45deg, rgba(60, 114, 181, 1) 0, rgba(123, 159, 204, 1) 100%);
     background: -ms-linear-gradient(-45deg, rgba(60, 114, 181, 1) 0, rgba(123, 159, 204, 1) 100%);
     background: linear-gradient(135deg, rgba(60, 114, 181, 1) 0, rgba(123, 159, 204, 1) 100%);
-    font-family: Roboto!important;
+    font-family: Roboto !important;
     position: relative;
     left: 50%;
     top: 50px;
@@ -726,7 +746,7 @@ a.vk-send-btn {
 
 .popup_cont h2 {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto";
     font-weight: 700;
     padding-top: 23px;
     display: block;
@@ -759,7 +779,7 @@ a.vk-send-btn {
     color: #fff;
     padding: 0 10px;
     text-transform: uppercase;
-    text-decoration: none!important;
+    text-decoration: none !important;
     line-height: 60px;
     max-width: 402px;
     width: 100%;
@@ -771,12 +791,12 @@ a.vk-send-btn {
     font-weight: 900;
     border-radius: 10px;
     transition: .6s ease;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: "Roboto"
 }
 
 .popup_cont .ib_cont>span {
     width: calc(100% - 160px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto";
     line-height: 1.5;
     text-align: left;
     color: #fff;
@@ -790,6 +810,7 @@ a.vk-send-btn {
     .ttle {
         font-size: 19px
     }
+
     .article,
     .breadcrumbs,
     .ttle {
@@ -797,6 +818,7 @@ a.vk-send-btn {
         padding-right: 15px;
         box-sizing: border-box
     }
+
     .breadcrumbs {
         height: 66px;
         padding-top: 0;
@@ -806,33 +828,41 @@ a.vk-send-btn {
         justify-content: center;
         align-items: center
     }
+
     .breadcrumbs>.mob {
-        display: inline-block!important;
+        display: inline-block !important;
         font-size: 40px;
         font-weight: 700
     }
+
     .breadcrumbs .breadcrumbs__all-link {
         padding-right: 0
     }
+
     .lbl {
         display: none
     }
+
     .ttle+a {
         width: 480px;
         overflow: hidden
     }
+
     .ttle+a img {
         height: 149px;
-        width: 938px!important;
-        max-width: 938px!important
+        width: 938px !important;
+        max-width: 938px !important
     }
+
     .rel {
         margin-left: -15px;
         width: calc(100% + 30px)
     }
+
     .article__text {
         padding-left: 55px
     }
+
     .article__text img {
         width: 100%
     }
@@ -851,50 +881,63 @@ a.vk-send-btn {
         right: 15px;
         top: 0
     }
+
     .popup_cont {
         top: 0
     }
+
     .popup_cont .ib_cont>img {
-        width: 112px!important
+        width: 112px !important
     }
+
     .popup_cont h2 {
         font-size: 20px;
         padding-top: 0
     }
+
     .btn {
         font-size: 17px;
         box-sizing: border-box
     }
+
     .popup_cont .ib_cont>span {
         padding-left: 0;
         font-size: 14px
     }
+
     .popup_cont .ib_cont>* {
         display: block;
-        width: 100%!important;
+        width: 100% !important;
         margin: 0 auto
     }
+
     .k-comm-box div:last-child {
         padding-left: 14px
     }
+
     .mesg-date {
         padding-right: 6px
     }
+
     .rel img {
         display: none
     }
+
     .rel>span {
         position: static;
         padding-left: 15px;
         padding-right: 15px;
         display: block
     }
+
     .article p.big-href {
-        text-align: center!important
+        text-align: center !important
     }
+
     .rel {
         margin-bottom: -20px
     }
+
     .rel>span b {
         font-size: 24px;
         line-height: 30px;
@@ -902,28 +945,35 @@ a.vk-send-btn {
         display: block;
         margin-bottom: 15px
     }
+
     .rel>span span {
         font-size: 16px;
         line-height: 24px
     }
+
     .ttle+a img {
-        width: 619px!important;
+        width: 619px !important;
         height: auto
     }
+
     .ttle+a {
         width: 320px;
         margin-left: auto;
         margin-right: auto
     }
+
     .article__title {
-        font: 21px/27px "Open Sans", sans-serif
+        font: 21px/27px "Roboto", sans-serif
     }
+
     .article__text {
         padding-left: 48px
     }
+
     .article__text p {
-        text-align: left!important
+        text-align: left !important
     }
+
     .comm-answer {
         padding-left: 0
     }
@@ -933,28 +983,35 @@ a.vk-send-btn {
     .before-paragr::before {
         display: none
     }
+
     .article__text {
         padding-left: 0;
         padding-top: 0
     }
+
     .article,
     .breadcrumbs,
     .ttle {
         padding-left: 0;
         padding-right: 0
     }
+
     .article__text p {
         padding-bottom: 0
     }
+
     .share_block-list_link {
         width: 49px
     }
+
     .vk-photo-box {
         width: 23px
     }
+
     p.vk-header {
         padding: 10px 15px
     }
+
     .article__title {
         padding-bottom: 0
     }
