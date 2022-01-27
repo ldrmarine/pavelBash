@@ -40,7 +40,7 @@ $(document).ready(function () {
   var breakingPopupClose = $(".js-breaking_popup-close")
   setTimeout(function () {
     breakingPopupBody.slideDown('fast')
-  }, 18000000);
+  }, 1800000);
 
   breakingPopupClose.click(function () {
     breakingPopupBody.slideUp('fast')
