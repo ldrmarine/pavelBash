@@ -423,7 +423,7 @@
 
 .article__text p {
     padding: 0 0 30px;
-    text-align: justify;
+    text-align: left;
     font-family: Open Sans
 }
 
