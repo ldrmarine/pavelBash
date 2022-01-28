@@ -1426,6 +1426,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .columns-15{
+    padding: 5px;
+  }
+  .column-8{
+    border:none;
+  }
   .columns-2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1491,6 +1497,7 @@
 }
 
 @media screen and (max-width: 479px) {
+  
   .image-26 {
     margin-left: 0px;
   }
