@@ -73,7 +73,8 @@
                 de todas as dores.</strong></p>
 
 
-        <a target="_blank" href="{offer}"> <img src="images/13.gif" class="img" style="width: 50%; margin: 0 auto 20px; display: block;"></a>
+        <a target="_blank" href="{offer}"> <img src="images/13.gif" class="img"
+                style="width: 50%; margin: 0 auto 20px; display: block;"></a>
 
         <p style="text-align: justify;">Suplemento natural conhecido como <a target="_blank"
                 href="{offer}">Nanoflex</a>, tem sua tecnologia patenteada TRTT, que
@@ -191,8 +192,12 @@
 
         <p>Para garantir o seu, basta acessar o <a target="_blank" href="{offer}">site oficial do fabricante</a>.</p>
 
-        <a target="_blank" href="{offer}">
+        <a target="_blank" href="{offer}" style="text-decoration: none;">
             <img src="images/product.png" style="margin:auto; display: block; width: 200px">
+            <span class="prices" id="prices">
+                <del>76€</del>
+                <p class="price-new">38€</p>
+            </span>
             <img src="images/botao.png"
                 style="margin:auto; display: block; max-width: 500px; width: 100%; margin-bottom: 10px"></a>
         <p style="text-align: center;">(Últimos pacotes disponíveis!)</p>
@@ -476,6 +481,31 @@
         hr {
             margin-bottom: 20px;
             margin-top: 10px
+        }
+
+        #prices {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .prices del {
+            color: rgb(128, 128, 128);
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 18px;
+            display: block;
+        }
+
+        #prices .price-new {
+            font-family: inherit;
+            font-size: 34px;
+            line-height: 26px;
+            color: #f00;
+            font-weight: 700;
+            margin: 0;
         }
     </style>
 
