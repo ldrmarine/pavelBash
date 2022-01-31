@@ -1,0 +1,232 @@
+#comments_component {
+    margin: 11px 18px;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    /*opacity: 0;*/
+    display: none;
+}
+#comments_component .item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+}
+#comments_component .component_ava {
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 10px 0 0;
+}
+#comments_component .component_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0 5px 0;
+}
+#comments_component .component_info_inner {
+    background-color: #ebedf0;
+    border-radius: 18px;
+    display: inline-block;
+    line-height: 16px;
+    margin-top: 0;
+    min-width: 0;
+    overflow: hidden;
+    padding: 6px 12px 7px 12px;
+}
+#comments_component .component_name {
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 3px 3px;
+
+    text-decoration: none;
+}
+#comments_component .component_licked {
+    position: relative;
+    bottom: 3px;
+    left: 0;
+    display: flex;
+}
+
+.component_body {
+    width: 100%;
+}
+
+.component_voir {
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 7px 0 0 12px;
+}
+.component_reposy {
+    color: #929292;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 6px 0 0 12px;
+    /*word-spacing: 8px;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.component_reposy b {
+    word-spacing: 0!important;
+    color: #d0d0d0;
+}
+.component_img {
+    /*display: flex;*/
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 7px 0 6px 0;
+    height: auto;
+}
+.component_img img  {
+    width: 100%;
+    display: flex;
+    height: auto;
+    transition: all 3s ease-in;
+}
+.component_licked {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0 #dadde1;
+    color: #909192;
+    font-size: 11px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    margin-left: -10px;
+    padding-right: 4px;
+    transform: translateY(-6px);
+    z-index: 5;
+}
+#comments_component a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #232323;
+}
+.icons {
+    white-space: nowrap;
+    display: flex;
+    margin: 0;
+}
+.icons .fb_licked {
+    background-image: url('../images/icon-set.png');
+    background-size: 103px 328px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
+.l {
+    background-position: -51px -266px;
+    z-index: 4;
+}
+.u {
+    background-position: 0 -283px;
+    margin-left: -6px;
+    z-index: 3;
+}
+.s {
+    background-position: -68px -266px;
+    margin-left: -6px;
+}
+/*.component_name,
+.component_reposy {
+    cursor: pointer;
+}*/
+
+/*.component_name:hover,.component_text a:hover,.component_reposy nav:hover{text-decoration: underline!important;}*/
+.component_reposy nav {
+    display: inline;margin: 0 0 0 16px;
+}
+
+.user_request .component_ava_small {margin-left: 46px!important;}
+
+/*#comments_component .item:nth-child(3) .component_img img {
+    min-width: 132%;
+}*/
+
+/*Request*/
+#comments_component .component_ava_small {
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 10px 0 0;
+}
+
+.component_reposy_small {
+    word-spacing: 0;
+    display: flex;
+    font-size: 12px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.component_reposy_small > .name {
+    font-weight: 600;
+    margin-right: 9px;
+}
+
+.component_reposy_small > .repond {
+    font-weight: 100;
+    margin-right: 5px;
+}
+
+.component_reposy_small b.count {
+    font-weight: 100;
+    color: #b9b9b9;
+}
+
+u {
+    cursor: pointer;
+}
+
+#comments_component .component_info_inner {
+  margin-right: auto;
+  /*width: 100%;*/
+}
+
+@media screen and (max-width: 400px) {
+  #comments_component {
+    margin: 10px 0;
+  }
+  .comments {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .component_reposy nav {
+      display: inline;
+      margin: 0 0 0 13px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .component_reposy_small {
+    flex-direction: column
+  }
+  .component_reposy_small {
+    display: none;
+  }
+  #comments_component .component_info {
+    flex-direction: column;
+  }
+  .user_request {
+    display: none;
+  }
+}
