@@ -47,7 +47,7 @@ form {
 
 .form_wrap label{
     display: block;
-    margin-top: 13px;
+    margin: 13px 0 10px;
 }
 
 .descount,
@@ -100,7 +100,8 @@ input {
     border: 1px solid #3578e563;
     height: 31px;
     padding-left: 10px;
-    width: 238px;
+    width: 100%;
+box-sizing: border-box;
     margin: 0 auto;
 }
 

@@ -72,12 +72,21 @@
     /*word-spacing: 8px;*/
     display: flex;
     flex-wrap: wrap;
+    gap: 10px
 }
 
 .component_reposy b {
     word-spacing: 0!important;
     color: #d0d0d0;
+    font-size: 12px;
+    line-height: 15px;
 }
+.component_reposy a{
+    color: #929292 !important;
+    font-size: 12px;
+    line-height: 15px;
+}
+.component_reposy
 .component_img {
     /*display: flex;*/
     width: 100%;

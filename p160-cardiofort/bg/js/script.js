@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var now = moment();
 
   dateNodes.forEach(node => {
-    node.innerHTML = publish.format('LLL');
+    node.innerHTML = publish.format("DD.MM.YYYY");
   });
 
   dateNotimeNodes.forEach(node => {

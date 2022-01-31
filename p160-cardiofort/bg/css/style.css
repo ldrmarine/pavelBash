@@ -1,3 +1,10 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
 body {
     font-family: sans-serif;
     /*font-size: 15px;*/
@@ -620,4 +627,13 @@ footer > .app_messenger {
     font-weight: 600;
     font-style: oblique;
     margin: 10px auto 0;
+}
+@media (max-width:420px) {
+    h2{
+        float: none !important;
+        width: 100% !important;
+        margin-left: 5px !important ;
+        font-size: 18px !important;
+    }
+
 }
