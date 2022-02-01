@@ -509,15 +509,11 @@ p:empty {
 
 .mobile-bar__lh-logo__link {
   display: inline-block;
-  width: 125px;
+  width: fit-content;
   margin: 0px 40px 5px 0px;
 }
 
-@media (min-width: 415px) {
-  .mobile-bar__lh-logo__link {
-    width: 144px;
-  }
-}
+
 
 @media (min-width: 768px) {}
 
