@@ -89,13 +89,14 @@ input {
 }
 
 button.btnn {
-    height: 59px;
     background: #3580ed;
     margin: 10px 0;
     border: 1px solid #3580ed;
     color: white;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
+    padding: 15px 5px;
+    text-align: center;
 }
 
 .sus {
