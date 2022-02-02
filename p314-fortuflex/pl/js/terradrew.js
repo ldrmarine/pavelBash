@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const timer = document.querySelector('.timer');
 
-  const timerSecond = document.querySelector('.timer-second');
+  const timers = document.querySelector('.timers');
 
   function timerInit(wrapper) {
     const hourseCount = wrapper.querySelector('.timer-hours');
@@ -30,42 +30,42 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   timerInit(timer);
-  // timerInit(timerSecond);
-})
-window.addEventListener('DOMContentLoaded', () => {
-  const timers = document.querySelector('.timers');
-
-  const timerSecond = document.querySelector('.timers-seconds');
-
-  function timerInit(wrapper) {
-    const hourseCount = wrapper.querySelector('.timers-hours');
-    const minutesCounts = wrapper.querySelector('.timers-minutes');
-    const secondsCounts = wrapper.querySelector('.timers-seconds');
-
-    let time =(Number(minutesCounts.dataset.timerMinutes * 60) + Number(secondsCounts.dataset.timerSeconds))  ;
-
-
-    let intervalTimer = setInterval(() => {
-      let minutes = Math.floor(time / 60);
-      let seconds = Math.floor(time % 60);
-
-      minutesCounts.textContent = minutes < 10 ? `0${minutes}` : minutes;
-      secondsCounts.textContent = seconds < 10 ? `0${seconds}` : seconds;
-      time--;
-
-      if (time < 0) {
-        console.log(time);
-        console.log('end')
-        clearInterval(intervalTimer);
-      }
-
-    }, 1000)
-    
-  }
-
   timerInit(timers);
-  // timerInit(timerSecond);
 })
+// window.addEventListener('DOMContentLoaded', () => {
+//   const timers = document.querySelector('.timers');
+
+//   const timerSecond = document.querySelector('.timers-seconds');
+
+//   function timerInit(wrapper) {
+//     const hourseCount = wrapper.querySelector('.timers-hours');
+//     const minutesCounts = wrapper.querySelector('.timers-minutes');
+//     const secondsCounts = wrapper.querySelector('.timers-seconds');
+
+//     let time =(Number(minutesCounts.dataset.timerMinutes * 60) + Number(secondsCounts.dataset.timerSeconds))  ;
+
+
+//     let intervalTimer = setInterval(() => {
+//       let minutes = Math.floor(time / 60);
+//       let seconds = Math.floor(time % 60);
+
+//       minutesCounts.textContent = minutes < 10 ? `0${minutes}` : minutes;
+//       secondsCounts.textContent = seconds < 10 ? `0${seconds}` : seconds;
+//       time--;
+
+//       if (time < 0) {
+//         console.log(time);
+//         console.log('end')
+//         clearInterval(intervalTimer);
+//       }
+
+//     }, 1000)
+    
+//   }
+
+//   timerInit(timers);
+//   // timerInit(timerSecond);
+// })
 
 
 
@@ -180,7 +180,10 @@ const initWheel = () => {
     }
   }
   // init check wheel
-  checkWheel()
+  if(order_wrapper){
+    checkWheel()
+  }
+  
 
 
   // links scroll to form
