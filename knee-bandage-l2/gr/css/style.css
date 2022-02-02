@@ -501,7 +501,7 @@ h3 {
 .b4 {
 	background: url(../images/b4-bg.png) no-repeat center, #fff;
 	background-size: 100% 100%;
-	padding: 15px 10px;
+	padding: 40px 10px;
 	padding-top: 0px;
 }
 
@@ -620,8 +620,8 @@ h3 {
 }
 
 .b7 h1 {
-	font-size: 35px;
-	line-height: 40px;
+	font-size: 30px;
+	line-height: 35px;
 	text-shadow: 0px 0px 10px #7A7A7A;
 }
 
