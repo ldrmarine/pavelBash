@@ -499,8 +499,8 @@ h3 {
 }
 
 .b4 {
-	background: url(../images/b4-bg.png) no-repeat top, #fff;
-	background-size: 360px;
+	background: url(../images/b4-bg.png) no-repeat center, #fff;
+	background-size: 100% 100%;
 	padding: 15px 10px;
 	padding-top: 0px;
 }
@@ -1106,17 +1106,17 @@ footer p {
 }
 
 footer p:nth-child(1) {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-family: "Gilroy Regular" !important;
 }
 
 footer p:nth-child(2) {
 	font-weight: bold;
 	font-family: "Gilroy Bold" !important;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 18px;
+	line-height: 29px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 footer p:nth-child(3), .domain-copyright {
@@ -1193,15 +1193,16 @@ ul li {
 }
 
 .hours::before {
-	content: "hours";
+	content: "ώρες";
 }
 
 .minutes::before {
-	content: "minutes";
+	content: "λεπτά";
 }
 
 .seconds::before {
-	content: "seconds";
+	content: "δευτερόλεπτα";
+	transform: translateX(-25%);
 }
 
 .scroll {
