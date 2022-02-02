@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ar">
+   <head>
+
+<script src="js/jquery.min.js"></script>
+
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'يرجى تصحيح الأخطاء التالية'; 
+
+        orderValidator.errorNameField = 'الاسم'; 
+        orderValidator.errorNameMess = 'أدخل أسمك'; 
+        
+        orderValidator.errorPhoneField = 'رقم التليفون'; 
+        orderValidator.errorPhoneMess = 'أدخل رقم الهاتف الصحيح'; 
+        
+        orderValidator.errorAddress = 'أدخل العنوان الصحيح'; 
+        orderValidator.errorRequired = 'يتطلب حقلا'; 
+        orderValidator.errorMaxLength = 'حرف {1} بحد أقصى صالح'; 
+        orderValidator.errorMinLength = 'الحد الأدنى لعدد حروف {1}'; 
+        orderValidator.errorEmailField = 'البريد الإلكتروني';
+        orderValidator.errorEmail = 'تم تحديد بريد إلكتروني غير صالح';
+        }
+    </script>
+    
+<script>
+
+
+window.app = {
+    timestamp: parseInt((new Date()).getTime() / 1000),
+    jq: jQuery,
+    formAction: window.location.href,
+    leadToken: '61fa67fbcba1c5.42644875',
+    offers: {"23736":{"id":23736,"country":{"code":"QA","name":"\u041a\u0430\u0442\u0430\u0440"},"price":"199","price2":"398","currency":{"code":"QAR","name":"QAR"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"24049":{"id":24049,"country":{"code":"SA","name":"\u0421\u0430\u0443\u0434\u043e\u0432\u0441\u043a\u0430\u044f \u0410\u0440\u0430\u0432\u0438\u044f"},"price":"199","price2":"399","currency":{"code":"SAR","name":"SAR"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},"24067":{"id":24067,"country":{"code":"KW","name":"\u041a\u0443\u0432\u0435\u0439\u0442"},"price":"15","price2":"30","currency":{"code":"KWD","name":"KWD"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""}},
+    currentOffer: {"id":23736,"country":{"code":"QA","name":"\u041a\u0430\u0442\u0430\u0440"},"price":"199","price2":"398","currency":{"code":"QAR","name":"QAR"},"discount":"","delivery_price":"","link":"","product_sku":"","prepaid_info_html":""},
+    allowedCountries: ["QA","SA","KW"],
+    _setOfferId: false,
+    streamHid: '',
+    showcaseUrl: '',
+    
+    setOffer: function (offerId) {
+        if (offerId == this._setOfferId) {
+            return ;
+        }
+        this._setOfferId = offerId;
+        if (offerId) {
+            var offer = app.offers[offerId];
+            var previousOffer = app.currentOffer;
+            app.currentOffer = offer;
+            var event = this.jq.Event("offerchange");
+            event.previousOffer = previousOffer;
+            event.currentOffer = app.currentOffer;
+            this.jq(document).trigger(event);
+            this.updatePage(offer);
+        } else {
+            $('input[name=country]').val('');
+        }
+    },
+    
+    updatePage: function(offer) {
+        $('x-newprice').html(offer.price);
+        $('x-oldprice').html(offer.price2);
+        $('x-currency').html(offer.currency.name);
+        $('input[name=offer], select[name=offer]').val(offer.id);
+        $('input[name=country]').val(offer.country.code);
+    },
+
+    blockForm: function() {
+        // Блокируем кнопки при отправке формы
+        $('input[type=submit]', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        $('button', $(this)).prop( 'disabled', true ).attr( 'disabled', true );
+        app.incompleteOrder.lock = true;
+        clearTimeout(app.incompleteOrder.timer);
+    },
+
+    unblockForm: function() {
+        $('input[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        $('button[type=submit]', $(this)).prop( 'disabled', false ).attr( 'disabled', false );
+        app.incompleteOrder.lock = false;
+        clearTimeout(app.incompleteOrder.timer);
+    }
+
+};
+
+
+</script><script src="js/form.validate.js"></script>
+<script src="js/interPhoneCodes.js"></script>
+<script src="js/showcase.js"></script>
+<script src="js/form.incomplete.js"></script>
+<script src="js/main2.js"></script>
+
+
+
+
+       <script src=" https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/timespent.js"></script>
+      <script src="js/function.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=360, user-scalable=no">
+      <title>Knee Knights</title>
+      <link rel="icon" href="images/favicon.png">
+      <link rel="stylesheet" href="css/navi.css">
+      <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+      <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css">
+           
+
+		
+   </head>
+   <body>
+
+      <div class="header">
+         <div class="cont">
+            <div class="btn-burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div class="header-content">
+               <nav class="nav">
+                  <ul>
+                     <li>
+                        <a href="#video">فيديو</a>
+                     </li>
+                     <li>
+                        <a href="#symptoms">الأعراض</a>
+                     </li>
+                     <li>
+                        <a href="#features">المميزات</a>
+                     </li>
+                     <li>
+                        <a href="#arthrit">أسباب المرض</a>
+                     </li>
+                     <li>
+                        <a href="#about">وصف المنتج</a>
+                     </li>
+                     <li>
+                        <a href="#reviews">المراجعات</a>
+                     </li>
+                     <li>
+                        <a href="#delivery">الشحن والدفع</a>
+                     </li>
+                     <li>
+                        <a href="#bottom_form">
+                        زر الشراء
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="wrapper">
+         <section class="b1">
+            <h1>
+               دع آلام الركبة تذهب مع الماضي
+            </h1>
+            <div class="b1_prices">
+                  <div class="price_old">
+                     سعر قياسي
+                     <span><x-oldprice>398</x-oldprice><small>  <x-currency>QAR</x-currency></small></span>
+                  </div>
+                  <div class="price_new">
+                     سعر الخصم
+                     <span><x-newprice>199</x-newprice><small>  <x-currency>QAR</x-currency></small></span>
+                  </div>
+               </div>
+         </section>
+         <section class="b3" id="video">
+            <a href="#bottom_form" class="btn scroll">زر الشراء</a>
+            <h1>
+               شاهد الفيديو
+            </h1>
+            <div class="video_block">
+               <div class="video_inner">
+                <video width="100%" height="100%" controls poster="1.png">
+  <source src="media/video.mp4" type="video/mp4">
+</video>
+                  <!-- <div id="videoPlayer"></div> -->
+               </div>
+            </div>  
+         </section>
+         <section class="b2">
+            <div class="img">
+               <img src="images/b3-img1.png" alt>
+            </div>
+         </section>
+         <section class="b6" id="symptoms">
+            <h1>
+               ستحتاج إلى Knee Knight في الحالات التالية:
+            </h1>
+            <ul class="b6_list">
+               <li>
+                  <img src="images/not-check.png">
+                  تعاني من آلام في الركبة نتيجة لإلتهاب المفاصل؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  تعرضت للإصابة (التواء, خلع, كسر)؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  تشعر بتوتر مؤقت أو دائم في عضلات الساق؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  تشكو من تورم في الساقين وخدر في الأصابع؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  مفاصلك حساسة جداً تجاه تقلبات الطقس؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  تمارس رياضات محفوفة بالمخاطر والإصابات؛
+               </li>
+               <li>
+                  <img src="images/not-check.png">
+                  تعيش أنماط حياتية تتمسم بالخمول وقلة الحركة.
+               </li>
+            </ul>
+         </section>
+         <section class="b4" id="features">
+            <h1>
+               Knee Knight قادر على:
+            </h1>
+            <div class="b4-blocks">
+               <div class="b4-block ltr">
+                  <div class="img">
+                     <img src="images/b4_img1.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        القضاء على الألم في الركبتين؛
+                     </p>
+                  </div>
+               </div>
+               <div class="b4-block rtl">
+                  <div class="img">
+                     <img src="images/b4_img2.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        حماية الركبة من التهالك والتعرض للإصابات؛
+                     </p>
+                  </div>
+               </div>
+               <div class="b4-block ltr">
+                  <div class="img">
+                     <img src="images/b4_img3.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        تخفيف الجهد اليومي الواقع على الركبتين, والذي يمثل 75% من مجمل الجهد الذي يتحمله جسم الإنسان؛
+                     </p>
+                  </div>
+               </div>
+               <div class="b4-block rtl">
+                  <div class="img">
+                     <img src="images/b4_img4.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        تحفيز إستعادة أنسجة المفصل العظمية لعافيتها ومتانتها؛
+                     </p>
+                  </div>
+               </div>
+               <div class="b4-block ltr">
+                  <div class="img">
+                     <img src="images/b4_img5.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        العمل 24 ساعة طوال الأسبوع بفضل الإرتداء المريح تحت الملابس؛
+                     </p>
+                  </div>
+               </div>
+               <div class="b4-block rtl">
+                  <div class="img">
+                     <img src="images/b4_img6.png">
+                     <img class="check-img" src="images/check.png">
+                  </div>
+                  <div class="text">
+                     <p>
+                        تخفيف معضلة الدوالي الظاهرة في الجزء الخلفي من الركبة.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="b5">
+            <div class="attention">
+               <p>
+                  تكمن فعالية المشد Knee Knight في التأثير الأيوني الدافئ لشرائح التورمالين على مفاصل الركبة والأنسجة الرقيقة.
+               </p>
+            </div>
+         </section>
+         <section class="b7">
+            <h1>
+               لا تسمح بأن تكون خطوتك التالية هي الأخيرة
+            </h1>
+            <a href="#bottom_form" class="btn scroll">زر الشراء</a>
+         </section>
+         <section class="b11" id="arthrit">
+            <h1>
+               ما السبب الحقيقي للداء المفصلي والتهاب المفاصل؟
+            </h1>
+            <div class="b11-pic">
+               <p>
+                  التهاب المفاصل
+               </p>
+               <p>
+                  التهاب المفاصل
+               </p>
+            </div>
+            <p>
+               يعتقد الكثيرون ممن يعانون من التهاب المفاصل والداء المفصلي بأن هذه المشاكل الصحية ناجمة عن التغيرات الطقسية, لكن في الحقيقة الأمر ليس كذلك. الأطباء الألمان على يقين تام بأن ما يطرأ على الحالة الصحية نتيجة للتقلبات الجوية ما هي إلا مجرد أعراض, وليست المسببات لأمراض المفاصل. وقد برهنوا أن الأسباب الرئيسية لإلتهاب المفاصل وتآكل الركبة هي:
+            </p>
+            <p>
+               عامل السن – غالباً ما تظهر أعراض المرض لدى الفئة العمرية 30-40؛
+            </p>
+            <p>
+               أنماط الحياة قليلة الحركة – يؤدي ركود الدم في مفصل الركبة إلى تآكله وهلاكه؛
+            </p>
+            <p>
+               الإصابات – التعافي غير الصحيح للأنسجة والمفاصل يعتبر من الأسباب المؤدية لتفاقم المرض؛
+            </p>
+         </section>
+         <section class="b12">
+            <h1>
+               KNEE KNIGHT مصمم لحماية ركبتك!
+            </h1>
+            <div class="single-img">
+               <img src="images/b12_img1.png" alt>
+            </div>
+            <h3>
+               أثناء المشي يبدأ المشد Knee Knight بالتسخين, مما يحسن بشكل فعال من أداء الدورة الدموية في مفصل الركبة, وبدوره تسترخي الأوردة وتتفتح مجاريها. نتيجة لذلك يختفي الإلتهاب والشعور بالألم الناجم عن المفاصل المعتلة.
+            </h3>
+         </section>
+         <section class="b13" id="about">
+            <h1>
+               مشد الركبة KNEE KNIGHT ذو التسخين الذاتي مخصص للإرتداء اليومي
+            </h1>
+            <h3>
+               مشد الركبة Knee Knight لا يعيق الحركة, وهو غير مرئي تحت الملابس. المادة النسيجية المرنة والناعمة تسمح بإرتداء المشد بشكل منتظم, مما يزيد من فترة تعرض الركبة للتأثير الإيجابي.
+            </h3>
+            <div class="single-img">
+               <img src="images/b13_img1.png" alt>
+            </div>
+            <h3>
+               معلومات متعلقة بهذا المنتج:
+            </h3>
+            <div class="consist-block">
+               <p>
+                  النوع: مشد دعامة للركبة من التورمالين ذاتي التسخين.
+               </p>
+               <p>
+                  العدد: قطعة واحدة.
+               </p>
+               <p>
+                  اللون: أسود
+               </p>
+               <p>
+                  المقاس: مقاس شامل! يضبط بسهولة بواسطة لاصق الفيلكرو.
+               </p>
+               <p>
+                  الوظيفة: تخفيف الألم, تحسين الدورة الدموية, تنشيط عملية التبادل الغذائي, رفع مستوى المناعة وحماية الركبة.
+               </p>
+               <p>
+                  المادة الخام: قماش مقاوم للماء نوع SBR + التورمالين, النسخة المطورة: 32 مغناطيس.
+               </p>
+            </div>
+         </section>
+         <section class="b8" id="reviews">
+            <h1>
+               آراء مستخدمي Knee Knight؟
+            </h1>
+            <div class="reviews">
+               <div class="reviews_item">
+                  <img src="images/rev1.png">
+                  <div class="p10">
+                     <div class="name">
+                        جمال داوود
+                     </div>
+                     <img src="fonts/stars.svg" class="rating">
+                     <div class="review_header">
+                         مشد الركبة Knee Knight أنقذ ساقي!
+                     </div>
+                     <div class="review_text">
+                       إرتديته حسب تعليمات الطبيب لمدة 6-8 ساعات في اليوم, وبعد 10 أيام شعرت بنتائجه الأولية. حيث كان الإحساس اللطيف بالدفء والمنتشر إلى الساقين ملحوظاً بعد نصف ساعة على لبس الجوارب Knee Knight. مع هذا المشد تقلص حجم التورم في الركبة بشكل ملحوظ, وإختفى الألم تقريباً أثناء المشي. أعجيني في المشد Knee Knight أن مقاسه لم يتمدد نتيجة لكثرة الإستخدام, حتى بعد مرور أشهر على إرتدائه مازال يثبت على الساقين بشكل محكم.
+                     </div>
+                  </div>
+               </div>
+               <div class="reviews_item">
+                  <img src="images/rev2.png">
+                  <div class="p10">
+                     <div class="name">
+                        مالك سعيد
+                     </div>
+                     <img src="fonts/stars.svg" class="rating">
+                     <div class="review_header">
+                         إنقسمت حياتي إلى فترة ما قبل وبعد ...
+                     </div>
+                     <div class="review_text">
+                       أبلغ من العمر 56 عاماً, ولم يكن تشخيص التهاب المفاصل أمرً مفاجئاً بالنسبة لي. منذ زمن طويل وأنا أنهض من السرير بصعوبة بالغة لكنني لم أستسلم. إشتريت المشد Knee Knight منذ ثلاثة أشهر وإنقسمت حياتي معه إلى فترة ما قبل وبعد. الآن أصبحت حركتي وقدرتي على التنقل أسهل بكثير, والألم لم يعد يؤرقني منذ فترة طويلة, أنا سعيد جداً بشرائي لهذا المشد. لم تمنحني أي كريمات أو كمادات مثل هذا الإسترخاء والتأثير الفعال. برأي, إنه أفضل إستثمار في صحتي!
+
+                     </div>
+                  </div>
+               </div>
+               <div class="reviews_item">
+                  <img src="images/rev3.png">
+                  <div class="p10">
+                     <div class="name">
+                        بلال حسين
+                     </div>
+                     <img src="fonts/stars.svg" class="rating">
+                     <div class="review_header">
+                         أنا راضٍ عن شرائي لهذا المنتج!
+                     </div>
+                     <div class="review_text">
+                       أجبرني نمط حياتي قليل الحركة على شراء المشد Knee Knight, ولم أندم أبداً على ذلك! وزني الزائد و 9 ساعات من وضعية الركب المثنية كل يوم جعلتني مضطر للذهاب إلى الطبيب المختص. وفقاً لتوصياته, كنت أرتدي المشد Knee Knight يومياً لأكثر من شهرين. مشد الركبة ناعم ومريح وغير مرئي تحت الملابس, والأهم من ذلك أنه فعال بشكل لا يوصف. الآن أصبح ثني الركبة وصعود الدرج أسهل بكثير ونسيت معه تورم الساقين. بلا شك أنصحكم بـ Knee Knight!
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="b9" id="delivery">
+            <h1>
+               الشحن والدفع
+            </h1>
+            <div class="delivery">
+               <div class="delivery_item">
+                  <img src="images/delivery1.png">
+                  <div class="delivery_header">
+                     التوصيل
+                  </div>
+                  <div class="delivery_text">
+                     التوصيل مجانا فى خلال 5 أيام عمل
+                  </div>
+               </div>
+               <div class="delivery_item">
+                  <img src="images/delivery2.png">
+                  <div class="delivery_header">
+                     الدفع
+                  </div>
+                  <div class="delivery_text">
+                     لا نتعامل بالدفع المسبق. الدفع يتم عند إستلام السلعة
+                  </div>
+               </div>
+               <div class="delivery_item">
+                  <img src="images/delivery3.png">
+                  <div class="delivery_header">
+                     دعم العملاء
+                  </div>
+                  <div class="delivery_text">
+                     جميع منتجاتنا إجتازت الإختبارات اللازمة ومعتمدة رسمياً! لخدمة عملائنا لدينا خط إتصال ساخن على مدار الـ 24 ساعة.
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="b10">
+            <h1>
+               اطلب الآن
+            </h1>
+            <div class="mini_form">
+               <div class="form-img">
+               <img src="images/form-img.png">
+               <div class="discount">
+                  <p>
+                     -50%
+                  </p>
+               </div>
+            </div>
+               <div class="b1_prices mini_form_prices">
+                  <div class="price_old">
+                     سعر قياسي
+                     <span><x-oldprice>398</x-oldprice><small>  <x-currency>QAR</x-currency></small></span>
+                  </div>
+                  <div class="price_new">
+                     سعر الخصم
+                     <span><x-newprice>199</x-newprice><small>  <x-currency>QAR</x-currency></small></span>
+                  </div>
+               </div>
+               <h1 class="timer_header">
+                  الخصم ينتهي في:
+               </h1>
+               <div class="timer" id="countdown">
+                  <span class="hours">00</span>
+                  <span class="minutes">00</span>
+                  <span class="seconds">00</span>
+               </div>
+               <form action method="post" id="bottom_form">
+			       <input name="csrf_token" type="hidden" value="2c013ddf4cfbcc8e84af4dbde0ede68d:1643800572">
+    <select name="offer" class="form-control country_chang" style="display: none;">
+        <option data-country-code="QA" selected="selected" value="23736">
+            Катар        </option>
+    </select>
+
+                      <input type="text" name="name" placeholder="الاسم الاول" required>
+                  <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+                  <textarea name="address" rows="3" placeholder="المدينة, المنطقة, العمارة ورقم الوحدة السكنية." style="resize: none;" required></textarea>
+                  <div class="radios">
+                     <div class="form_radio_btn">
+                        <input id="radio-1" type="radio" name="comments" value="Call in Arabic" checked>
+                        <label for="radio-1">العربية</label>
+                     </div>
+                     <div class="form_radio_btn">
+                        <input id="radio-2" type="radio" name="comments" value="Call in English">
+                        <label for="radio-2">English</label>
+                     </div>
+                     <div class="form_radio_btn">
+                        <input id="radio-3" type="radio" name="comments" value="Call in Hindi">
+                        <label for="radio-3">HINDI</label>
+                     </div>
+                  </div>
+                  <!-- HIDDENS -->
+
+
+                  <!-- HIDDENS -->
+                  <button class="btn" type="submit">
+                  زر الشراء
+                  </button>
+                  <div class="checkbox">
+                     <input type="checkbox" id="checkbox" checked>
+                     <label for="checkbox"><span>أوافق على شروط معالجة البيانات الشخصية وشروط الاستخدام</span></label>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <footer>
+         <p>OOO "OSTROV PRODAZH" OGRN: 1197746695530 VAT: 7708365555</p>
+<p>129090, Moscow, pereulok Zhivarev, house 8, stroenie 3, flat 16 email: ostrov.prodazh@mail.com Skype: ostrov.prodazh@mail.com</p> 
+
+
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href onclick="window.open('/policy_en.php'); return false;">Privacy Policy</a>
+          |
+        <a class="nav-link" href onclick="window.open('/terms_en.php'); return false;">Terms & Conditions</a>
+      </p>
+      
+    
+         </footer>
+      </div>
+      <!-- <script src="js/youtube.js"></script> -->
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/timer.js"></script>
+
+
+      <script>
+         $(".reviews").owlCarousel({
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            navigationText: false
+         });
+      </script>
+      <style>
+         .loader { width: 100px; margin: 0 auto; }
+         .loader img { width: 100%; max-width: 100%; }
+      </style>
+
+
+   </body>
+</html>
