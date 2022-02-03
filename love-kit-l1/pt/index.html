@@ -226,7 +226,15 @@
       });
     });
   </script>
-
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", ()=>{
+    const video = document.querySelector('.video');
+    video.play();
+    video.addEventListener('touch', ()=>{
+      video.play();
+    })
+  })
+</script>
 </body>
 
 </html>
