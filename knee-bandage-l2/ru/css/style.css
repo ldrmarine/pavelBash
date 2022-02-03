@@ -682,8 +682,8 @@ h3 {
 }
 
 .b7 h1 {
-	font-size: 35px;
-	line-height: 40px;
+	font-size: 30px;
+	line-height: 35px;
 	text-shadow: 0px 0px 10px #7A7A7A;
 }
 
@@ -859,7 +859,7 @@ grid-area: bottomLeft;
 }
 
 .p10 {
-	padding: 0 10px;
+	padding: 20px 10px;
 }
 
 .name {
@@ -1219,29 +1219,12 @@ footer p {
 	direction: ltr !important;
 	font-family: "Gilroy Regular" !important;
 	color: #212121;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 5px;
 }
 
-footer p:nth-child(1) {
-	margin-bottom: 15px;
-	font-family: "Gilroy Regular" !important;
-}
 
-footer p:nth-child(2) {
-	font-weight: bold;
-	font-family: "Gilroy Bold" !important;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-footer p:nth-child(3), .domain-copyright {
-	font-family: "Gilroy Regular" !important;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 14px;
-	text-align: center;
-}
 
 footer a {
 	font-family: "Gilroy Regular" !important;
@@ -1310,15 +1293,15 @@ ul li {
 }
 
 .hours::before {
-	content: "hours";
+	content: "Часы";
 }
 
 .minutes::before {
-	content: "minutes";
+	content: "Минуты";
 }
 
 .seconds::before {
-	content: "seconds";
+	content: "Секунды";
 }
 
 .scroll {
