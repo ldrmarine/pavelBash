@@ -34,7 +34,7 @@ button,input{outline: none;}
 .left{float: left;}
 .right{float: right;}
 .center{text-align: center;}
-.clearfix:after{content: '';display: block;clear: both;}
+/* .clearfix:after{content: '';display: block;clear: both;} */
 
 /*Site settings*/
 h1,h2,h3,h4,h5,h6{font-weight: 500;}
@@ -91,7 +91,7 @@ body{
 }
 .main-wrap{
     position: relative;
-    width: 480px;
+    max-width: 480px;
     margin: 0px auto;
 }
 .section{
@@ -152,10 +152,31 @@ h2>span:before,h2>span:after{
 }
 .block-1{
     padding: 0px;
-    padding-top: 580px;
-    background: url(../images/top.jpeg) top center no-repeat;
+}
+.hero{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.hero__title{
+    grid-area: 1/1;
+    width: 100%;
+    text-align: center;
+    padding: 25px 5px 15px;
+    text-transform: uppercase;
+    color: #7e0037;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.1em;
+    z-index: 2;
+}
+.hero__img{
+grid-area: 1/1;
+z-index: 1;
 }
 .block-1 .container-1{
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 40px;
 }
 .block-1 .container-1>div{
