@@ -228,9 +228,11 @@ z-index: 1;
 }
 .block-1 .timer{
     width: 80%;
-    height: 200px;
     margin: 0 auto;
     padding-bottom: 15px;
+}
+.new-text{
+    margin: 0 0 20px;
 }
 .block-1 .timer>p{
     padding: 20px 0;
