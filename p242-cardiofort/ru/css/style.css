@@ -2315,10 +2315,15 @@ strong {
   padding-bottom: 40px;
   background-image: url(../images/5ed3e292512a1610ac0df036_5e6183092be00954d97aa491_5e4ff5e2b1f6ea56127bfbcf_ram.jpg);
   background-position: 50% 0%;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   text-align: center;
+  
+}
+.wv_order-form{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .logo-form {
   display: block;
@@ -2668,7 +2673,7 @@ strong {
   .order-form__wrp {
     background-image: url(../images/5ed3e292512a1610ac0df036_5e6183092be00954d97aa491_5e4ff5e2b1f6ea56127bfbcf_ram.jpg);
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 100% 100%;
   }
   .opld-price-copy {
     font-size: 35px;
@@ -2835,6 +2840,10 @@ strong {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .wv_order-form{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 #w-node-d82ead4bfc39-0d0df017 {
   -ms-grid-column-align: center;
@@ -2880,6 +2889,32 @@ strong {
     grid-row-end: 5;
     -ms-grid-row: 4;
     grid-row-start: 4;
+  }
+  .news-quote{
+    font-size: 27px;
+  }
+  .bold-text-5{
+    font-size: 27px;
+  }
+  .bold-text-6{
+    font-size: 27px;
+  }
+  .red-place{
+    padding: 10px;
+  }
+  .page__container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .paragraph{
+    font-size: 20px;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .field{
+    font-size: 15px;
+    letter-spacing: -0.5px;
   }
 }
 
