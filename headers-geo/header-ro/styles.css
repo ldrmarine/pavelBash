@@ -6,6 +6,7 @@
 .x-header-medical {
   font-family: 'Roboto';
   padding: 10px 20px 5px;
+  width: 100%;
 }
 
 .x-header-medical .header_content {
