@@ -4,55 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>¡Gracias! Su pedido ha sido aceptado.</title>
+    <title>Complimenti! Il tuo ordine è stato accettato!</title>
     <link rel="stylesheet" href="ths.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-<img height="1" width="1" src="https://www.facebook.com/tr?id=<?php echo ($data["px"])?>&ev=Lead&noscript=1"/>
+
 
   <body>
     <div class="left">
       <div class="header">
         <div class="title">
           <span class="main-title">
-		  ¡Gracias!
+		  Complimenti!
 		  </span><br />
-          Su pedido ha <br>sido aceptado.
+          Il tuo ordine è stato <br>accettato!
         </div>
         <span>
-		Pronto el operador se pondrá en contacto con usted para confirmar la orden.
+		Prossimamente l'operatore la contatterà per confermare l'ordine.
         </span>
       </div>
 
       <div class="form">
-        <p>Por favor, compruebe la exactitud de los datos introducidos.</p>
+        <p>Pregiamo di verificare che le informazioni inserite siano corrette.</p>
         <div class="form-wrap">
           <div class="wrap-input">
             <div class="input">
-              <label for="name">Nombre</label>
+              <label for="name">Nome</label>
               <div><?php echo ($data["name"])?></div>
             </div>
             <div class="input">
-              <label for="name">Teléfono</label>
+              <label for="name">Telefono</label>
               <div><?php echo ($data["phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
-            Editar datos
+            Modificare i dati
           </button>
 
           <form
             class="hidden-form" id="form" method="post"
-             geo="es" action="api.php" 
-	onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');"
+             geo="it" action="api.php" 
+	onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');"
 			>
 			
-            <input type="text" name="name" required="" placeholder="Nombre" />
+            <input type="text" name="name" required="" placeholder="Nome" />
 
-            <input type="tel" name="phone" required="" placeholder="Teléfono" />
+            <input type="tel" name="phone" required="" placeholder="Telefono" />
 
-            <button type="submit">Editar datos</button>
+            <button type="submit">Modificare i dati</button>
 
             <input name="subid" type="hidden" value="{subid}" />
             <input name="px" type="hidden" value="{px}" />
