@@ -12,11 +12,14 @@
 }
 
 .timer {
-    display: inline-block;
+    display: block;
     margin-bottom: 5px;
     background: url(../images/timerIcon2.png) no-repeat;
     padding-left: 14px;
     color: red;
+    width: fit-content;
+    margin: 0 auto;
+    background-position: 0 50%;
 }
 
 @media (min-width: 600px) and (max-width: 739px) {

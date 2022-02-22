@@ -641,27 +641,23 @@ a .content::after {
     }
 }
 
-.header__logo a {
-    background: #f00;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-    line-height: 64px;
-    padding: 24px 9px;
-}
+
 
 .header__logo {
-    width: 185px;
+    width: 110px;
     height: 100%;
     position: relative;
     float: left;
+    background-color: #fff;
+    padding: 3px;
 }
 
 @media (max-width: 530px) {
     .header__logo a {
         line-height: 50px;
-        padding: 15px 9px;
+    }
+    .header__logo{
+        width: 80px;
     }
 }
 
@@ -2993,3 +2989,9 @@ td {
 .photo+span {
     display: none;
 }
+.timer-box .timer-count,.timer-box  .timer-delimeter {
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 24px;
+    padding: 0;
+  }
