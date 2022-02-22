@@ -1,0 +1,25 @@
+<svg id="Group_1395" data-name="Group 1395" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+  <circle id="Ellipse_304" data-name="Ellipse 304" cx="42" cy="42" r="42" fill="#f0f1f5"/>
+  <rect id="Rectangle_1051" data-name="Rectangle 1051" width="38" height="60" rx="5" transform="translate(23 12)" fill="#fff" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+  <rect id="Rectangle_1052" data-name="Rectangle 1052" width="30" height="42" rx="1" transform="translate(27 16)" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="Path_329" data-name="Path 329" d="M48,43l-8.571,8.571L36,48.143" fill="none" stroke="#14181e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <circle id="Ellipse_305" data-name="Ellipse 305" cx="2.5" cy="2.5" r="2.5" transform="translate(39.5 62)" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+  <g id="Group_1397" data-name="Group 1397">
+    <g id="Group_1395-2" data-name="Group 1395">
+      <path id="Path_330" data-name="Path 330" d="M38,22v3.338a2.042,2.042,0,0,0,2.028,2.041h0A1.981,1.981,0,0,0,42,25.407V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_331" data-name="Path 331" d="M42,22v3.326a2.03,2.03,0,0,0,2.034,2.035h0A1.975,1.975,0,0,0,46,25.4V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_332" data-name="Path 332" d="M46,22v2.911a1.776,1.776,0,0,0,1.78,1.78h0a1.728,1.728,0,0,0,1.72-1.72V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_333" data-name="Path 333" d="M31.5,22v2.5a1.535,1.535,0,0,0,1.526,1.526h0A1.48,1.48,0,0,0,34.5,24.553V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_334" data-name="Path 334" d="M34.5,22v2.921a1.788,1.788,0,0,0,1.774,1.786h0A1.733,1.733,0,0,0,38,24.981V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_335" data-name="Path 335" d="M49.5,22v2.5a1.535,1.535,0,0,0,1.526,1.526h0A1.48,1.48,0,0,0,52.5,24.553V22Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="Group_1396" data-name="Group 1396">
+      <path id="Path_336" data-name="Path 336" d="M45.5,36V33.089a1.776,1.776,0,0,1,1.78-1.78h0A1.728,1.728,0,0,1,49,33.029V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_337" data-name="Path 337" d="M32,36V33.5a1.535,1.535,0,0,1,1.526-1.526h0A1.48,1.48,0,0,1,35,33.447V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_338" data-name="Path 338" d="M35,36V33.079a1.788,1.788,0,0,1,1.774-1.786h0A1.733,1.733,0,0,1,38.5,33.019V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_339" data-name="Path 339" d="M38.5,36V33.079a1.788,1.788,0,0,1,1.774-1.786h0A1.733,1.733,0,0,1,42,33.019V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_340" data-name="Path 340" d="M42,36V33.079a1.788,1.788,0,0,1,1.774-1.786h0A1.733,1.733,0,0,1,45.5,33.019V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_341" data-name="Path 341" d="M49,36V33.5a1.535,1.535,0,0,1,1.526-1.526h0A1.48,1.48,0,0,1,52,33.447V36Z" fill="none" stroke="#14181e" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
