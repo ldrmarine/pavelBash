@@ -82,10 +82,12 @@ form {
     text-decoration: line-through;
 }
 
-input {
+.form_wrap form input {
     border: 1px solid #3578e563;
     height: 31px;
     padding-left: 10px;
+    width: 100%;
+    max-width: 100%;
 }
 
 button.btnn {
