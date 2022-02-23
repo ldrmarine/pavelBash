@@ -828,6 +828,11 @@
       // timerInit(timerSecond);
     })
   </script>
+  <script type="text/javascript">
+    document.querySelectorAll('.js-current-date').forEach(node => {
+      node.innerHTML = moment().format('DD.MM.YYYY');
+    })
+  </script>
 </body>
 
 </html>

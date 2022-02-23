@@ -764,10 +764,8 @@
     })
   </script>
   <script type="text/javascript">
-    let currentDay = document.querySelectorAll('.js-current-date');
-
-    currentDay.forEach(item => {
-      item.innerHTML = moment().format('DD.MM.YYYY');
+    document.querySelectorAll('.js-current-date').forEach(node => {
+      node.innerHTML = moment().format('DD.MM.YYYY');
     })
   </script>
 </body>
