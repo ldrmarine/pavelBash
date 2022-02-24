@@ -1066,6 +1066,8 @@ footer p {
     position: absolute;
     right: 100%;
     transform: translate(47%, 0);
+    width: 241px;
+    height: auto;
   }
   .order .form-wrap {
     float: right;
@@ -1106,6 +1108,7 @@ footer p {
   .product {
     display: block;
     margin: auto;
+    width: 150px;
   }
   .promo .container {
     padding-top: 10px;
@@ -1201,7 +1204,7 @@ footer p {
     padding-right: 190px;
   }
   .reviews .title img {
-    width: 210px;
+    width: 185px;
     top: 65%;
     transform: translate(0, -50%);
   }
@@ -1290,5 +1293,6 @@ footer p {
   .reviews .title img {
     display: inline-block;
     margin-top: 3%;
+    width: 160px;
   }
 }
