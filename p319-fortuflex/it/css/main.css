@@ -408,9 +408,6 @@ body{
         display: none
     }
 
-    .x-header-medical .header_desktop {
-        display: none
-    }
 
     .x-header-medical .header_mobile {
         display: -webkit-box;
