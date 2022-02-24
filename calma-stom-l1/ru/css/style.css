@@ -806,6 +806,7 @@ h3 {
 .reviews .title img {
   right: 0;
   top: 5px;
+  width: 220px;
 }
 .reviews blockquote {
   background-color: white;
