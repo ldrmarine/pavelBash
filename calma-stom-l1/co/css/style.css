@@ -320,7 +320,7 @@ h3 {
   max-width: 195px;
   margin: auto;
   color: #fda128;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   border: 4px #fdb21e;
   border-top-style: solid;
@@ -572,13 +572,13 @@ h3 {
   font-size: 5.5rem;
 }
 .digitHolder:first-child:before {
-  content: 'час';
+  content: 'horas';
 }
 .digitHolder:nth-child(2):before {
-  content: 'мин';
+  content: 'minutos';
 }
 .digitHolder:nth-child(3):before {
-  content: 'сек';
+  content: 'segundos';
 }
 .digit {
   font-family: "Roboto-Black", sans-serif;
