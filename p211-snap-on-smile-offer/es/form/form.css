@@ -88,7 +88,7 @@ input {
     padding-left: 10px;
 }
 
-button.btnn {
+a.btnn {
     height: 59px;
     background: #3580ed;
     margin: 10px 0;
@@ -96,6 +96,10 @@ button.btnn {
     color: white;
     font-weight: bold;
     letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .sus {
