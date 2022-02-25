@@ -1,0 +1,81 @@
+/* my_presets *//* michael-k90 *//* endzeit_____ */
+.m1-form input.field:focus::-webkit-input-placeholder {opacity:0;}
+.m1-form input.field:focus::-moz-placeholder          {opacity:0;}
+.m1-form input.field:focus:-moz-placeholder           {opacity:0;}
+.m1-form input.field:focus:-ms-input-placeholder      {opacity:0;}
+.m1-form input.field::-webkit-input-placeholder {color: #222; opacity: 1;}
+.m1-form input.field:-moz-placeholder {color: #222; opacity: 1;}
+.m1-form input.field::-moz-placeholder {color: #222; opacity: 1;}
+.m1-form input.field:-ms-input-placeholder {color: #222; opacity: 1;}
+.hidden{display: none;}
+.left{float: left;}
+.right{float: right;}
+.center{text-align: center;}
+.just {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+.clearfix:after, .best_week ul li:after {content: '';display: block;clear: both;}
+.clear{clear: both;height: 0px;}
+.ulfix {font-size: 0;}
+a {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+textarea:focus, input:focus{
+outline: none;
+}
+/* END my_presets */
+
+h1,h2,h3,h4,h5,h6{font-family: 'Roboto', Arial, Helvetica, sans-serif; font-weight: 700; line-height: 1.2em;}
+b,strong{font-weight: 700;}
+body{
+    width: 100%;
+    min-width: 320px;
+    padding: 0px;
+    margin: 0px auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000;
+    background: #f0f0f0;
+}
+.wrapper {
+    max-width: 1190px;
+    overflow-x: hidden;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background: white;
+}
+.content {
+       padding: 0 360px 0 0;
+}
+.sidebar {
+    float: left;
+    width: 330px;
+    margin-left: -330px;
+    padding: 20px 0 0;
+}
+
+.nopad {
+    padding: 0;
+}
+
+@media screen and (max-width: 1210px) {
+
+    
+}
+@media screen and (max-width: 659px) {
+   
+    
+}
