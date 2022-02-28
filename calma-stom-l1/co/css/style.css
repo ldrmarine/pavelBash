@@ -806,7 +806,9 @@ h3 {
 .reviews .title img {
   right: 0;
   top: 5px;
-  width: 220px;
+  width: 160px;
+  /* filter: drop-shadow(0 0 0.75rem crimson); */
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.5))
 }
 .reviews blockquote {
   background-color: white;
@@ -1067,8 +1069,9 @@ footer p {
     position: absolute;
     right: 100%;
     transform: translate(47%, 0);
-    width: 241px;
+    width: 187px;
     height: auto;
+    filter: drop-shadow(1px 1px 10px rgba(0,0,0, .5));
   }
   .order .form-wrap {
     float: right;
@@ -1110,6 +1113,7 @@ footer p {
     display: block;
     margin: auto;
     width: 150px;
+    filter: drop-shadow(1px 1px 10px rgba(0,0,0, .5));
   }
   .promo .container {
     padding-top: 10px;
@@ -1205,7 +1209,7 @@ footer p {
     padding-right: 190px;
   }
   .reviews .title img {
-    width: 185px;
+    width: 160px;
     top: 65%;
     transform: translate(0, -50%);
   }
