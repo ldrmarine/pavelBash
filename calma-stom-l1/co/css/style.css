@@ -838,6 +838,8 @@ h3 {
 }
 .reviews blockquote cite img {
   margin-right: 5px;
+  width: 90px;
+border-radius: 50%;
 }
 /*=================== Attention ===================*/
 .attention {
