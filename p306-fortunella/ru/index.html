@@ -756,8 +756,7 @@
                   <img alt class="b-prod" style="max-width: 220px;margin: 0 auto;display: block;" src="images/pote.png">
 
                   <div id="form"></div>
-                  <form class="toscroll" id="order_form" method="POST" geo="pt" action="api.php"
-                    onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+                  <form class="toscroll" id="order_form" method="POST"">
 
                     <input name="subid" type="hidden" value="{subid}">
                     <input name="px" type="hidden" value="{px}">
@@ -766,8 +765,8 @@
                     <div id="order_form_place" style="display:block;">
                       <center>
                         <img src="images/med.png" style="max-width:100px;">
-                        <h2> официальный бланк заказа </h2>
-                        <span style="color:blue;font-size:14px;"> Номер 29.982 из 30.000 <span>
+                        <h2> Официальная форма заказа </h2>
+                        <span style="color:blue;font-size:14px;"> № 29.982 из 30.000 <span>
                           </span></span>
                       </center>
                       <div>
@@ -786,7 +785,7 @@
                       <div class="order_form_pole">
                         <!--<label> Número de teléfono: </label>-->
                         <div class="form_phone">
-                          <input class="only_number" name="phone" placeholder="Телефон (активный мобильный телефон)" required
+                          <input class="only_number" name="phone" placeholder="Телефон (активный мобильный)" required
                             type="tel">
                         </div>
                       </div>
@@ -795,7 +794,9 @@
                       <div style="margin-bottom:20px;">
                         <button class="js_submit button__text" type="submit"> ЗАКАЗАТЬ СО СКИДКОЙ </button>
                       </div>
-                      <span class="additional"> * Ваши данные отправляются напрямую производителю. Никто, кроме производителя, не может получить к ним доступ. </span>
+                      <span class="additional"> * Ваши данные отправляются напрямую производителю. 
+					  <br>
+					  Никто, кроме производителя, не может получить к ним доступ. </span>
                     </div>
                   </form>
 
@@ -1960,7 +1961,7 @@
         tick();
       }
 
-      countdown(59);
+      countdown(15);
     });
   </script>
   <link rel="stylesheet" href="css/ouibounce.css">
