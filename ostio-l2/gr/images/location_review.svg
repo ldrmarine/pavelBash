@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 59">
+  <defs>
+    <style>
+      .a {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <title>location_review</title>
+  <path class="a" d="M44.5,15a15,15,0,1,0-16,14.95V58a1,1,0,0,0,2,0V29.95A15,15,0,0,0,44.5,15Zm-20,0a4,4,0,1,1,4-4A4,4,0,0,1,24.5,15Z" transform="translate(-14.5)"/>
+</svg>
