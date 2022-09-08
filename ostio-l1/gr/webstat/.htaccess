@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "/www/ostio-gr.promo-2018.ru/webstat"
-AuthUserFile /var/www/promo-2018.ru/data/etc/42852668.passwd
-DirectoryIndex index.html
-<Limit GET POST>
-	require valid-user
-</Limit>
