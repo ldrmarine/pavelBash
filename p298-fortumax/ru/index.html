@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+  const day = document.querySelectorAll('.date-day');
+  const mont = document.querySelectorAll('.date-mont');
+  const year = document.querySelectorAll('.date-year');
+
+
+  for ( let i = 0; i < day.length; i++){
+    currentDate(day[i], mont[i], year[i]);
+  }
+
+
+  function currentDate(day,mont, year){
+    let currentDay = new Date().getDate();
+    let currentMonth = new Date().getMonth() + 1;
+    let currentYear = new Date().getFullYear();
+
+    day.textContent = currentDay < 10 ? "0" + currentDay: currentDay;
+    mont.textContent = currentMonth < 10 ? "0" + currentMonth: currentMonth;
+    year.textContent = currentYear < 10 ? "0" + currentYear: currentYear;
+  }
+})
+    </script>
+    <title>Daily Online</title>
+</head>
+
+<body>
+<nav class="navbar navbar-dark mb-1">
+    <a target="_blank" class="navbar-brand" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">Daily Online</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a target="_blank" class="nav-link" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a target="_blank" class="nav-link" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">Здоровье</a>
+            </li>
+            <li class="nav-item">
+                <a target="_blank" class="nav-link" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">Новости</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</nav>
+<nav class="container" aria-label="breadcrumb">
+    <ol class="breadcrumb p-1 border-bottom">
+        <li class="breadcrumb-item">Главная</li>
+        <li class="breadcrumb-item">Здоровье</li>
+        <li class="breadcrumb-item red">Фитнес и питание</li>
+    </ol>
+</nav>
+<div class="main">
+    <div class="container">
+
+        <div class="row headline">
+            <div class="col">
+                <h1><span class="red text-underline">Новый "легальный стероид" увеличивает рост мышц на 287% </span> - лучшие тренеры и спортсмены раскрывают общественности самую безопасную альтернативу стероидам!</h1>
+            </div>
+        </div>
+
+        <div class="row featured-image mb-3">
+            <div class="col">
+                <img src="images/img4.jpg" width="800" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row content mb-3">
+            <div class="col">
+                <p>(Новости Daily Online) - С начала прошлого года наши читатели сходят с ума по новому <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">'легальному стероиду'</a>, который пронесся по стране, помогая мужчинам из всех слоев общества быстро и безопасно преобразить свое тело. Этот продукт оказался настолько успешным, что многие тренеры и профессиональные спортсмены теперь хотят, чтобы его запретили.</p>
+                <p>Они обвиняют его в том, что он заставляет людей слишком быстро набирать мышечную массу и должен регулироваться, несмотря на то, что клинически доказано, что он безопасен и не имеет ни одного из опасных побочных эффектов, присущих настоящим стероидам.</p>
+            </div>
+        </div>
+
+        <div class="row carousel mb-3">
+            <div class="col">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="images/beforeafter1b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="images/beforeafter2b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/beforeafter3b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/beforeafter4b.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a target="_blank" class="carousel-control-prev" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">До</span>
+                    </a>
+                    <a target="_blank" class="carousel-control-next" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">После</span>
+                    </a>
+                </div>
+                <p style="font-size:12px;text-align:center;">
+                    Мужчины по всей стране используют эту альтернативу стероидам, чтобы набрать более 1 кг мышц за один месяц!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>С тех пор как о продукции недавно рассказали по телевидению, мы ежедневно получаем 1000 писем от наших читателей, которые умоляют нас дать им больше информации и спрашивают, как они могут получить в свои руки эту новую добавку для наращивания мышц. Удивительно, но многие мужчины, которые ежедневно борются со своим телом, еще не слышали об этом мощном средстве.</p>
+                <p class="quote">Тренеры называют эту новую добавку "природной альтернативой стероидам", которая позволяет наращивать мышцы и повышать сексуальное влечение.</p>
+                <p>В конфиденциальных интервью HR365 голливудские кинозвезды приписывают этому препарату заслугу в том, что он помог им нарастить мышцы и набрать мышечную массу при подготовке к роли в кино. Десятки других знаменитостей преобразили свое тело с помощью этой спорного препарата. Даже профессиональные спортсмены приняли участие в акции по наращиванию мышц и использовали тот же продукт для кардинальной физической трансформации.</p>
+                <p>Продукт, о котором мы говорим, называется <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>. Возможно, вы видели его в новостях, по телевизору или в Интернете как безопасный и мощный "секретный хитроумный инструмент", который используют модели, знаменитости и обычные люди по всей Испании. Основной ингредиент - цитрат цинка, который является редким соединением, используемым организмом для быстрого наращивания мышц. Цитрат цинка превращается в оксид азота (NO), который вызывает вазодилатацию кровеносных сосудов. Другими словами, он резко увеличивает количество питательных веществ, которые могут быть направлены к вашим мышцам. Высокое содержание цитрата цинка и другие свойства Fortumax, способствующие наращиванию мышечной массы, делают его мощным средством для преобразования вашего тела.</p>
+                <img src="images/vasodilation.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Редкая смесь цитрата цинка превращается в оксид азота (NO), который расширяет кровеносные сосуды и увеличивает количество питательных веществ, поступающих в мышцы.</p>
+                <p><a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a> настолько эффективен, что вы поймете, почему он заслуживает Специального отчета. Но, возможно, самым важным является то, что 
+                    FortuMax можно приобрести БЕЗ рецепта врача.</p>
+                <img src="images/doctors.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Клинически доказано, что ингредиенты, входящие в состав 
+                    <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>
+                    способствуют наращиванию мышц без диет и физических упражнений.</p>
+                <p>По словам врачей, проводивших клиническое исследование, этот комплекс действует более чем одним способом: "Первый способ - он попадает внутрь и заставляет кровеносные сосуды в мышцах расширяться и увеличиваться...</p>
+                <p>Второй способ, самый важный, - он повышает естественный уровень тестостерона и увеличивает способность к наращиванию сухой мышечной массы. Таким образом, теперь в кровотоке увеличивается количество тестостерона, что помогает вам наращивать мышцы с большей скоростью. Вы получаете синергетический эффект, одновременно увеличивая производство новых мышц. Но это абсолютно естественно и безопасно"</p>
+                <img src="images/9weeks.jpg" width="800" class="img-fluid" alt>
+                <p class="text-center" style="font-size:12px;">Один блогер из Лидса преобразил свое тело всего за 9 недель, используя <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>.</p>
+                <p>Если вы сейчас настроены скептически, вы не одиноки. За последние 18 лет мы в HR365 видели много многообещающих продуктов, которые появлялись и исчезали. Когда мы впервые узнали об "очередном" продукте для наращивания мышечной массы, наш информационный радар сразу же сработал. Даже пролистав горы исследований... у меня было обоснованное мнение. Но у меня все еще не было личных доказательств того, что  <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>  стоит потраченного времени. Поэтому, с благословения моего редактора, я решил сам испытать этот продукт. Что может быть лучше для выяснения истины, чем провести собственное исследование?</p>
+                <p>Мы знаем, что мысль о том, чтобы стать стройным и нарастить мышцы, часто кажется нам невыполнимой задачей. Мы проанализировали множество программ по наращиванию мышечной массы, и кажется, что все они слишком требовательны или работают не так, как заявлено. Причина неудачи большинства программ заключается в том, что они накладывают нереальные ограничения на вашу повседневную жизнь.</p>
+                <div class="row mt-5 mb-3">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="images/Aaron_Clark2.jpg" class="img-fluid">
+                        <p style="font-size:12px;">"Это просто потрясающе. Я не могу поверить, как быстро я увидел результаты. Реальные результаты! Я буквально увидел результаты после первого дня. Я не могу выразить вам свою благодарность! "</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p>Несмотря на наши сомнения по поводу  <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>,
+                            бесчисленные истории успеха, которые стекались в наш офис, показали, что обычные мужчины по всему миру смогли добиться невероятных изменений в своем теле без радикальных перемен. Эти люди увидели результаты без необходимости существенно менять свой образ жизни или привычки питания.</p>
+                    </div>
+                </div>
+                <p>В этом специальном отчете я рассказываю, как именно я тестировал продукт, и показываю вам удивительные результаты, которых я достиг. Сегодня я раскрываю секрет того, что мы, сотрудники HR365, называем "возможно, самым эффективным продуктом для трансформации мужского телосложения, который когда-либо видел мир". Я покажу вам, как вы тоже можете быстро и безопасно получить более стройное, мускулистое тело, не прибегая к запрещенным препаратам и не платя 1000 евро за добавки.</p>
+                <div class="clinically-proven">
+                    <h3> Клинически доказанные преимущества <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" class="text-underline">FortuMax</a>
+                       :</h3>
+                    <ul>
+                        <li>Повышение естественного уровня тестостерона на 140%</li>
+                        <li>Увеличение притока крови к мышечной ткани</li>
+                        <li>Увеличение синтеза белка</li>
+                        <li>Избавление от раздутого "пухлого" вида</li>
+                    </ul>
+                </div>
+                <p>Я пошел дальше, посетил сайт  Fortumax и заказал месячный курс капель.</p>
+                <p>Моя посылка была доставлена в течение 3 дней.</p>
+                <p>я должен был придерживаться режима приема добавок в течение 4 недель и документировать свой прогресс по ходу дела.</p>
+                <div class="row mx-1 results">
+                    <div class="col">
+                        <p class="text-center my-auto">Результаты потрясли всех в HR365 (включая меня самого)...</p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Первая неделя:</h6>
+                        <img src="images/week11.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>После 1 недели приема новой программы я был удивлен тем, насколько быстрым и значительным был эффект. Мой уровень энергии повысился, и я уже не чувствовал себя таким голодным, как обычно. Это приятный побочный эффект Месячный курс капель и его способности подавлять аппетит. Честно говоря, я чувствовал себя фантастически, и, что самое приятное, мне не пришлось ничего менять в своем распорядке дня.</p>
+                        <p>На седьмой день я встал на весы (это новые цифровые весы, измеряющие мышечный состав) и не мог поверить своим глазам - я набрал 1,3 кг мышечной массы. Но все же я не был полностью убежден. Говорят, что в начале некоторых мышечных программ вы теряете много воды и набираете много мышечной массы. Я хотел посмотреть, наберу ли я еще столько же мышц в ближайшие недели. Но все шло как по маслу! 
+                        </p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Вторая неделя:</h6>
+                        <img src="images/week2.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>После двух недель приема добавки у меня появилось больше энергии, и я спал крепче, чем когда-либо. Я не просыпался посреди ночи и не ворочался, потому что мое тело смогло расслабиться (думаю, это результат детоксикационных свойств добавки). Мне также удалось сбросить вес, который составил невероятные 6 кг всего за 2 недели. Я также почувствовал, что у меня появился пресс на 6 кубиков, что очень понравилось моей девушке. Да, черт возьми! </p>
+                        <p>В этот момент я начал больше верить в то, что эти продукты для мышц - не просто уловка.</p>
+                    </div>
+                </div>
+                <div class="row mx-1 py-3 week">
+                    <div class="col">
+                        <h6>Третья неделя:</h6>
+                        <img src="images/week3.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>Через 3 недели все мои сомнения и скептицизм исчезли! Я набрал почти 2 кг чистой мышечной массы и значительно подтянулся. Все "любовные ручки" по бокам моего живота полностью исчезли. Мой живот стал настолько рельефным, что у меня наконец-то появились 6 кубиков! Этот продукт просто потрясающий. Мышечный прирост НЕВЕРОЯТНЫЙ.</p>
+                        <p>У меня по-прежнему было много энергии. Обычно примерно на третьей неделе других диет вы начинаете выдыхаться. Но с  <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a> мой уровень энергии не упал. Наоборот, они оставались стабильными в течение всего дня! Я даже заметил, что мой желудок лучше переваривает пищу, нет вздутия или неприятных газов после еды.</p>
+                    </div>
+                </div>
+                <div class="row mx-1 mb-5 py-3 week">
+                    <div class="col">
+                        <h6>Четвертая неделя::</h6>
+                        <img src="images/week4.jpg" class="img-fluid float-left pr-3 pb-3">
+                        <p>После четвертой недели я был полностью потрясен своими результатами. После начала приема <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a> я набрал невероятные 4 кг мышечной массы! Теперь все в HR365 хотят попробовать эту диету. Я был готов и уверен в себе к соревнованиям по фитнесу. Я определенно собираюсь продолжать принимать <a target="_blank" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>, потому что он дает стабильные, потрясающие результаты и содержит так много других соединений, способствующих наращиванию мышечной массы, которые помогают мышечной памяти и поддержанию массы".</p>
+                        <h2 style="text-align:center;font-weight:bold;clear:both;float:left;margin-top:10px;">
+                            "Я не могу быть более счастлив результатами. Я набрал 4 кг мышечной массы за 4 недели. Без специальной диеты, без интенсивных упражнений!"</h2>
+                    </div>
+                </div>
+                <img src="images/ba4.jpg" width="800" class="img-fluid mb-3" alt>
+                <p>Если вы все еще сомневаетесь в удивительных преимуществах
+                    <a target="_blank" class="text-underline" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>, для наращивания мышц, вам нужно попробовать его самому. Из моего собственного теста, который я провел, вы можете убедиться, что результаты реальны. Я набрал 4  кг сухой мышечной массы всего за 4 недели. Без специальной диеты или физических упражнений. Кроме того, у меня изменилось тело, и питание, я никогда не чувствовал и не испытывал тяги к еде в течение дня. Команда HR365 поначалу сомневалась, но мы быстро передумала! Проведя собственные исследования, мы рады видеть, что мужчины по всему миру находят успех в применении этого революционного нового продукта для наращивания мышц.</p>
+                <p class="red bold">ВАЖНО: *В ходе клинических испытаний было доказано, что для достижения подобных результатов необходимо принимать Fortumax ежедневно.</p>
+                <p><a target="_blank" class="text-underline" href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=">FortuMax</a>
+                    хочет, чтобы у всех наших читателей была возможность попробовать этот новый препарат для наращивания мышц. Они предлагают ограниченную по времени акцию! Но действовать нужно быстро, срок действия акции истекает <span class="bold">
+                        <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                        </span>.
+                        После получения флакона, сообщите нам о своих впечатлениях в разделе комментариев внизу этой статьи!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-4">
+    <div>
+        <style type="text/css">
+    #trial img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 768px) {
+#trial h2 {
+    font-size: 22px;
+}
+}
+#trial h2 {
+    background: #000;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+#trial .grid {
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+#trial .grid > a:first-child {
+    display: inline-block;
+    padding-right: 15px;
+    width: 49%;
+    vertical-align: middle;
+    text-align: right;
+}
+}
+#trial .grid > a:first-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+#trial .grid > a:first-child img {
+    width: 100%;
+}
+}
+#trial .grid > a:first-child img {
+    width: 70%;
+    height: inherit;
+}
+#trial h3 {
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: none;
+}
+
+#trial p {
+    margin: 0 0 20px 0;
+    line-height: 26px;
+    font-size: 17px;
+}
+
+#trial a {
+    color: #ef3829;
+    }
+
+.btn {
+    width: 100%;
+    max-width: 300px;
+    line-height: 40px;
+    background-color: #57af08;
+    border-radius: 8px;
+    color: #fff!important;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: solid;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-name: hover;
+    animation-name: hover;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.btn:hover {
+    background-color: #e16e50;
+}
+#trial img {
+    width: 100%;
+    height: auto;
+}
+.safes {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+</style>
+            
+
+<div id="trial" class="nShow" style="display: block;">
+            <div style="text-align:center">
+                <img alt src="images/bb7e13c722ef1e3e0336b198d6efd794.png" width="300" height="111" style="max-width:980px;">
+            </div>
+            <h2>
+                Обновление: Ограниченное по времени предложение для наших читателей! Срок действия акции истекает
+                <span class="date"> <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span> </span>
+            </h2>
+            <div class="grid">
+                <a href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" target="_blank">
+                    <img alt id="img_1" src="images/prod.png" class="step1_image productImg" style="display: block ;max-width:160px; width: auto;margin: 0 auto">
+                </a>
+                <br>
+                <div>
+                    <h3>FortuMax</h3>
+                    <p>Заказать  <a href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" target="_blank">
+                        <span class="productName">FortuMax</span>  </a> со скидкой -50%</p>
+                    <center>
+                        <div class="btn-container">
+                            <a href="{offer}&sub1=&sub2=&sub3=&click_id={subid}&sub4=" target="_blank" class="btn">ЗАКАЗАТЬ</a>
+                        </div>
+                    </center>
+                    <br>
+                    <p><b>Срок действия предложения истекает: </b>
+                        <span class="date">
+                            <span class="date-day"></span>.<span class="date-mont"></span>.<span class="date-year"></span>
+                        </span></p>
+                    
+                    <img alt src="images/trust.png" class="safes">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="SectionTitle" style="font-size:18px;color:red;border-bottom:2px solid #000;font-weight:bold;margin-bottom:15px;">Комментарии
+    </div>
+    <ul class="commentlist mx-3">
+        <li>
+            <img src="images/1.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Oliver</cite>
+                <p>Мы с друзьями все ждали, когда же появится препарат для набора мышечной массы Fortumax. По крайней мере 5 из нас принимали эту добавку, и все мы набрали серьезную мышечную массу. Этот продукт действительно невероятен и изменил все наши жизни. Удачи всем, кто воспользуется этой замечательной возможностью. </p>
+            </div>
+            <ul>
+                <li><img src="images/2.jpg" data-pin-nopin="true">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>Джек</cite>
+                        <p>Звучит действительно здорово. Спасибо, что поделились своим опытом, теперь я чувствую, что должен попробовать!</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/3.jpg" data-pin-nopin="true">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Майкл</cite>
+                <p>Брайан, я видел этот продукт в телепередачах. Однако я не знал, как его заказать, и наткнулся на ваш сайт, где вы нашли ЭКСКЛЮЗИВНЫЕ СКИДОЧНЫЕ поставки, что очень здорово, потому что я не хочу платить за то, о чем я не знал, что оно работает. В настоящее время я принимаю этот продукт уже второй месяц и должен сказать, что он работает, и мои результаты невероятны. Большое спасибо за то, что опубликовали эту статью и провели тест. Спасибо за информацию!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/4.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Ноа</cite>
+                <p>Я уже 2 месяца откладываю приведение себя в форму, и сегодня настал день, когда я собираюсь действовать и начать. Я заказал курс на месяц и собираюсь прямо сейчас заняться 30-минутными упражнениями! Спасибо HR365 за мотивацию, которая заставила меня начать! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/6.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Рич</cite>
+                <p> Нам с женой нужно вернуться в форму, и я очень хочу набрать массу.  Уже заказал и мы оба собираемся попробовать, спасибо. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/5.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Найджел</cite>
+                <p>Привет, Брайан, я видел репортаж по телевизору и понял, что Fortumax
+                    РАБОТАЕТ ЕЩЕ ЛУЧШЕ ДЛЯ МУЖЧИН, которые хотят стать стройными!!! Я определенно собираюсь попробовать пробные предложения, пока они не истекли! Спасибо, что поделились советами. Я в восторге!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/7.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Larry</cite>
+                <p> В эти дни идет большой ажиотаж вокруг Fortumax. Я вижу Fortumax повсюду... Они раздавали эксклюзивные образцы продукта в местных магазинах. Я собираюсь протестировать добавку Fortumax. Спасибо за скидки, брат! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/8.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Александр</cite>
+                <p>У моего брата были проблемы с телом с самого детства, и доктор сказал моим родителям, что им действительно нужно заставить его тренироваться. Я очень надеюсь, что это ответ. Спасибо HR365</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/9.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Джордан</cite>
+                <p>Насколько хорошо это средство работает для парней? Я бы хотел выглядеть лучше без рубашки! Я уже заказал этот продукт </p>
+            </div>
+            <ul>
+                <li>
+                    <img src="images/3.jpg">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>Артур</cite>
+                        <p>Братан, я серьезно, я уже 2 месяца использую продукт и результаты действительно потрясающие. Я даже не так много работал над своей диетой, но я получил серьезный тонус. Рекомендую попробовать.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/9.jpg">
+                    <div class="comment-text">
+                        <div class="comment-date">
+                        </div>
+                        <cite>Джордан</cite>
+                        <p>Спасибо! Думаю, я попробую, с этим предложением мне нечего терять.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/10.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Себастьян</cite>
+                <p>Я очень рад, что вы провели исследование, потому что большинство продуктов - фикция и обман. Я заказал именно ту марку, которую вы рекомендовали в этой статье, и я не могу дождаться, чтобы попробовать.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text"><cite>Стивен</cite>
+                <p> Я тоже повсюду вижу Fortumax. Я даже слышал, как мой лучший друг несколько дней назад говорил об этой добавке для мышц, так как один из его друзей набрал 5 кг мышц за первые 15 дней! Я определенно должен попробовать это, спасибо, чувак!</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/11.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Альфи</cite>
+                <p>Потрясен! Наконец-то диета, на которую я смотрю с оптимизмом. Я заказал капли и буду отчитываться! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/12.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Max</cite>
+                <p> Эта вещь удивительна! Мой лучший друг Джеймс принимал Fortumax
+                    и потерял невероятное количество веса... я не мог поверить в это и пришлось сделать некоторые исследования самому, и так я нашел эту статью в новостях. Я не могу поверить, что они предлагают такие скидки! Я знаю, что Джеймс потратил что-то около 100 евро и был в восторге. Представьте, как он будет рад, если это будет стоить меньше в  3 раза. Это нереально, спасибо большое! </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Дэвид</cite>
+                <p>я уже занимаюсь спортом, так что, думаю, небольшая помощь не повредит, это отличная возможность попробовать.</p>
+            </div>
+        </li>
+        <li>
+            <img src="images/13.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Брэндон</cite>
+                <p> Мой друг принимал  Fortumax
+                    и порекомендовал мне его 3 недели назад. Я заказал и получил в течение 3 дней. Результаты были невероятными, и я не могу дождаться, чтобы увидеть, что принесут 3 и 4 недели. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/14.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Льюис</cite>
+                <p> Закал сейчас Fortumax
+                    со скидкой. О результатах отпишусь. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/1x.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Сэм</cite>
+                <p> поддерживаю Fortumax. Я попробовал эту диету несколько месяцев назад и не могу сказать о ней ничего хорошего. Это сочетание помогло мне набрать 2 кг мышц и полностью изменило мою жизнь. (Я всегда был тощим). Я очень рекомендую эту диету ЛЮБОМУ, кто хочет быстро набрать серьезную мышечную массу. </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/15.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Алекс</cite>
+                <p> Я заказал курс несколько недель назад, и обслуживание клиентов в этой компании отличное. Я буду продолжать покупать у них... и да, Fortumax
+                    работает как чудо! :)
+                </p>
+            </div>
+        </li>
+        <li>
+            <img src="images/16.jpg">
+            <div class="comment-text">
+                <div class="comment-date">
+                </div>
+                <cite>Добавлено Alex</cite>
+                <p> Спасибо Брайану и HR365 за репортаж об этом продукте для набора мышечной массы. Я видел рекламу везде, но у меня не хватало смелости попробовать его до сих пор. Спасибо.</p>
+            </div>
+        </li>
+    </ul>
+    <h4 style="font-size:18px;color:red;border-bottom:2px solid #000;font-weight:bold;margin-bottom:15px;">Оставьте свой комментарий<br></h4>
+    <form>
+        <p>
+            <label class="commentlabel">Имя:</label>
+            <input class="dataInput" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:30px;" type="text">
+        </p>
+        <p>
+            <label class="commentlabel">Email:</label>
+            <input class="dataInput" type="text" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:30px;">
+        </p>
+        <label class="commentlabel">Комментарий:</label>
+        <textarea class="commentBox" style="margin-left:10px;clear:both;float:left;margin:10px 0px; width:100%;height:120px;"></textarea>
+        <div class="btn" style="background:red;color:#ffffff;padding:5px 10px;clear:both;float:left;font-weight:Bold;margin:10px 0px;">
+            Отправить
+        </div>
+        <p>&nbsp;</p>
+    </form>
+    <div class="divisionBar"></div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col py-5">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

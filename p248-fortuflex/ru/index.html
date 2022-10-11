@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth">
+
+<head>
+ <meta charset="utf-8">
+ <meta content="initial-scale=1, maximum-scale=1, width=device-width" name="viewport">
+ <title>ТЕКУЩИЕ НОВОСТИ</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link href="css/default.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="css/index.css" rel="stylesheet">
+ <script src="js/jquery.min.js"></script>
+ <link rel="stylesheet" href="css/form.css">
+ <script src="js/scripts.js"></script>
+ <script>
+  function dtime_nums(d, like_eu) {
+   var now = new Date();
+   now.setDate(now.getDate() + d + 1);
+
+   var dayNum = '';
+   if (now.getDate() < 10) {
+    dayNum = '0';
+   }
+   dayNum += now.getDate();
+
+   var monthNum = '';
+   if (now.getMonth() + 1 < 10) {
+    monthNum = '0';
+   }
+   monthNum += now.getMonth() + 1;
+
+   if (like_eu === true) {
+    document.write(dayNum + "." + monthNum + "." + now.getFullYear());
+   } else {
+    document.write(monthNum + "." + dayNum + "." + now.getFullYear());
+   }
+
+  }
+ </script>
+</head>
+
+<body>
+ <script src="js/counter.js"></script>
+ <header class="header">
+  <div class="header_top">
+   <div class="center_wrapper clearfix">
+    <div class="header_top-left_block clearfix">
+     <a class="header_top-logo" href="#order_form_place"></a>
+     <a class="header_top-login lt0" href="#order_form_place">Войти</a>
+    </div>
+    <div class="header_top-right_block">
+     <div class="search-wrapper">
+
+      <div action="#">
+
+       <input class="Поиск" placeholder="Suche" type="text">
+       <a href="#order_form_place">
+        <button class="search-button" type="submit"></button>
+       </a>
+      </div>
+
+     </div>
+    </div>
+    <button class="header_top_menu-mobile js-htmenu-mobile lt1" type="button">Меню</button>
+    <nav class="header_top_menu">
+     <ul class="header_top_menu-list js-htmenu-list clearfix">
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt2" href="#order_form_place">Новости</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt3" href="#order_form_place">Спорт</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt4" href="#order_form_place">Погода</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt5" href="#order_form_place">Магазин</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt6" href="#order_form_place">Земля</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt7" href="#order_form_place">Путешествие</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link header_top_menu-list_link--last_link lt8" href="#order_form_place">Другое</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="header_middle">
+   <div class="center_wrapper clearfix">
+    <a class="category_name lt9" href="#order_form_place"><span class="category_name-invert">ТЕКУЩИЕ</span> НОВОСТИ</a>
+    <button class="header_bottom_menu-mobile js-hbmenu-mobile lt10" type="button">Категории</button>
+   </div>
+  </div>
+  <div class="header_bottom">
+   <div class="center_wrapper">
+    <nav class="header_bottom_menu">
+     <ul class="header_bottom_menu-list js-hbmenu-list clearfix">
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--active lt11" href="#order_form_place">Домашняя страница</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt12" href="#order_form_place">Видео</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt13" href="#order_form_place">Мир</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt14" href="#order_form_place">Португалия</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt15" href="#order_form_place">Экономика</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt16" href="#order_form_place">Технология</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt17" href="#order_form_place">Наука</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt18" href="#order_form_place">Сегодня</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt19" href="#order_form_place">Культура и мероприятия</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt20" href="#order_form_place">Здоровье</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt21" href="#order_form_place">Мировые новости</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--last_link lt22"
+        href="#order_form_place">Другое</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </header>
+ <div class="main_wrapper center_wrapper clearfix ">
+  <div class="content_wrapper ">
+   <div class="content">
+    <div class="content__inner content__inner_wide">
+     <div class="breadcrumbs">
+      <h2>
+       <a class="lt23" href="#order_form_place">Новости</a>
+       <a class="lt24" href="#order_form_place">Общество</a>
+      </h2>
+      <a class="breadcrumbs__all-link lt25" href="#order_form_place">Все видео в этой категории</a>
+      <!--<a class="mob" href="#order_form_place"> ≡</a>-->
+     </div>
+     <div class="article">
+      <div class="article__date">
+       <script>
+        dtime_nums(-3, true)
+       </script>
+       <span class="article__time"> 13:35 </span>
+      </div>
+      <h3 class="article__title text-bold lt27">"На сегодняшний день это самый эффективный метод лечения заболеваний суставов и позвоночника. Уникальный препарат!"</h3>
+      <div class="article__img">
+       <img alt src="images/main.jpg">
+       <div class="article__photo-author" data-author-url></div>
+      </div>
+      <div class="article__text">
+       <div class="js-mediator-article"></div>
+       <div class="article__text-soc-tool lt28">
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии: </span> Добрый день, профессор! Добро пожаловать! Скажите, пожалуйста, правда ли, что в Китае есть секрет лечения болезней суставов?</p>
+        <p class="before-paragr"><span class="text-bold"> Профессор Ляо:</span> Здравствуйте! В Португалии проблема заболеваний суставов стоит особенно остро: каждый четвертый человек страдает от болей в спине, шее или локтях, имеет грыжу или артрит в разных стадиях. Мне очень жаль это слышать, потому что я знаю, насколько страшны болезни суставов и какие последствия они создают в организме человека. Мы давно победили эти болезни в Китае, поэтому я очень рад возможности поделиться с вами опытом нашей страны.</p>
+        <p class="open-content"> Нажмите здесь, чтобы посмотреть фотографии 18 +</p>
+        <div class="three-images" style="display: none;">
+         <div class="sep-img"><img class="three-img" src="images/1.jpg">
+          <p> Гонартроз </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/2.jpg">
+          <p> Коксартроз  </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/3.jpg">
+          <p>Подагра</p>
+         </div>
+        </div>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии: В чем секрет китайского здоровья и долголетия? Какая-нибудь специальная диета?</p>
+        <p class="before-paragr"><span class="text-bold">Профессор Ляо:</span> Это миф, почти никто не может питаться только морепродуктами, поэтому рис является основным продуктом в нашем рационе. Наш секрет — это наше наследие - знаменитая китайская медицина. Человеческое тело - хрупкий инструмент, вы не поверите, насколько тонко он может быть настроен!</p>
+        <p><span class="text-bold">Научно-исследовательский институт ортопедии и травматологии: </span> Во многих странах люди считают, что плохое здоровье суставов - естественный спутник старости?</p>
+        <p class="before-paragr"><span class="text-bold"> Профессор Ляо:</span> В Китае нам давно ясно, что суставы можно восстановить, что их можно и нужно лечить. Основная проблема при этом заболевании - износ. Суставы всегда подвержены перегрузкам, поэтому хрящ становится менее эластичным, истончается и изнашивается. Это приводит к скрипу, боли, опухолям (грыжам) и деформации костей (артрозу). Хрящ многих людей к 60 годам уже изношен на 45-50%. Как можно восстановить то, чего больше нет? Можно ли буквально заставить хрящ "расти"? Да, это возможно!</p>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии:</span> Как это можно сделать?</p>
+        <p class="before-paragr"><span class="text-bold"> Профессор Ляо:</span> Человеческое тело обладает уникальной способностью к регенерации. Посмотрите, как легко заживает порез на вашей коже. То же самое относится к любой ткани в организме, но скорость и активность этого процесса могут отличаться: в то время как одни органы восстанавливаются самостоятельно, другим требуется помощь. Используйте скрытый потенциал своего тела, чтобы чувствовать себя как никогда здоровым!</p>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии: </span> Не могли бы вы рассказать подробнее?</p>
+        <p class="before-paragr"><span class="text-bold">Профессор Ляо:</span> Тибетцы знают рецепт восстановления суставов уже более 2000 лет. Это смесь натуральных ингредиентов, которая активизирует деление и рост хрящевых тканей. Впервые его использовали в виде экстракта для пропитывания компрессов, прикладываемых к больным местам. Но теперь, благодаря научным данным, тибетский рецепт доступен во всем мире в виде крема. Я принимал участие в разработке, поэтому знаю все о его формуле и действии.</p>
+        <p class="text-p-style"> Действует он просто: лечебный состав крема впитывается в хрящевые ткани почти мгновенно. Боль снимается практически сразу, суставы восстанавливаются примерно за 1-2 месяца.  <span class="text-bold"> Только подумайте об этом: теперь вы можете полностью восстановить свои суставы. Можно даже избежать хирургического вмешательства!</span>
+        </p>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии: </span> Не могли бы Вы описать процесс восстановления?</p>
+        <p class="before-paragr"><span class="text-bold">Профессор Ляо:</span> Мы уже говорили, что клетки, отвечающие за здоровье и рост хрящевой ткани, содержатся в самом хряще. Содержащиеся в креме ингредиенты не только снимают отек, боль и воспаление, но и воздействуют на сами клетки и активизируют их деление. Другими словами, этот крем активирует механизм суспензии и обеспечивает быстрое действие. Компоненты крема активизируют кровообращение в окружающих тканях, заставляя суставы вырабатывать синовиальную жидкость. Таким образом, увеличивается подвижность суставов и быстрее растут хрящевые ткани. Что касается злокачественных опухолей (грыж), то они постепенно размягчаются под воздействием крема и выводятся в кровь, а затем через кишечник.</p>
+        <center>
+         <a href="#order_form_place"><img alt class="prd" src="images/product.png"></a>
+        </center>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии:</span> каковы показания к применению?</p>
+        <p class="before-paragr"><span class="text-bold"> Профессор Ляо:</span> Этот препарат показан при лечении таких заболеваний, как артрит, артроз, остеохондроз, радикулит, грыжа диска, смещение позвоночного диска. Кроме того, его можно использовать для лечения боли, онемения конечностей, разрыва и потери эластичности мышц, отеков, повреждений и травм. В Китае мы используем этот крем в основном в качестве профилактического средства, поскольку эти заболевания у нас не встречаются. Этот крем для нас - обычное домашнее средство. Многие люди по-прежнему готовят его дома, но иногда не могут найти нужные ингредиенты. Конечно, с нашим кремом у вас не будет таких проблем.
+        </p>
+        <p><span class="text-bold"> Научно-исследовательский институт ортопедии и травматологии: </span> Где можно купить этот крем?</p>
+        <p class="before-paragr"><span class="text-bold"> Профессор Ляо:</span> К сожалению, мы не смогли выйти на португальский фармацевтический рынок. Нам просто отказали, поэтому крем <a href="#order_form_place">Fortuflex</a> не продается в интернет-магазинах, его можно  <a href="#order_form_place">купить только заполнив официальный бланк заказа</a> со скидкой 50%. Разместите заказ, и заказ доставят вам домой, без предоплаты, вы платите только при доставке. Мы не сталкивались с этой проблемой ни в одной другой стране мира, в Китае вы можете найти этот крем в любой аптеке. Но я понимаю, на чем основано это ограничение: если все будут здоровы, как фармацевтические компании будут получать прибыль?</p>
+        <p><span class="text-bold">Институт ортопедических и травматологических исследований: </span> Благодарим вас за это столь интересное интервью. </p>
+        <p><img alt src="images/product.png" style="display: block; max-width: 350px; margin: 0 auto;"></p>
+        <p style="display:inline;">До <strong>
+          <script>
+           dtime_nums(-1, true)
+          </script>
+         </strong> (включительно) Совместно с Пекинским университетом китайской медицины наш научно-исследовательский институт предоставляет специальное предложение для всех
+         <b></b>
+        </p>
+        <div class="tow" style="display: inline;"><b>португальцев</b></div><b></b> под названием "Здоровые суставы"! В рамках этого предложения вы можете заказать оригинальный крем <a
+         href="#order_form_place">Fortuflex</a> со скидкой 50%! Нужно просто оставить заявку через официальный бланк заказа  <strong><a href="#order_form_place">до истечения срока действия предложения
+         </a>.</strong>
+        <p></p>
+        <p> Если вы давно и безуспешно пытаетесь избавиться от боли в суставах, пробовали различные методы лечения, не добившись никаких результатов, <a href="#order_form_place">нажмите здесь и оставьте заявку прямо сейчас</a>.</p>
+        <div class="myFormFieldForRequest" id="order_form">
+         <form method="post" id="order_form_place" name="order_form_place" geo="pt" action="api.php"
+          onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+          <center>
+           <img src="images/med.png" style="max-width: 100px;">
+           <h2 class="lt81">ОФИЦИАЛЬНЫЙ БЛАНК ЗАКАЗА</h2>
+           <span class="lt82" style="color: blue; font-size: 14px;">№29982 из 30.000
+            от
+            <script type="text/javascript">
+             var d = new Date(new Date().getTime() - 24 * 60 * 60 * 000);
+             var day = d.getDate();
+             var month = d.getMonth() + 1;
+             var year = d.getFullYear();
+             document.write(day + "." + month + "." + year);
+            </script>
+           </span>
+          </center>
+          <div>
+           <span class="lt81" style="font-size: 16px;">получить
+            "Fortuflex" по сниженной цене с 50% скидкой, всего за
+            <br>
+            <span class="new_price_val" style="color: red; font-size: 16px;">
+             39</span>&nbsp;<span class="new_price_cur" style="color: red; font-size: 16px;">EUR</span>
+            <del style="color:black">78 EUR</del>
+           </span>
+          </div>
+          <div class="toscroll" style="margin: 15px 10px -5px 10px; border: 2px solid #0299ff; padding: 10px;">
+           <span><b class="lt82">Чтобы получить  "Fortuflex",  укажите Имя и Ваши контактные данные ниже и нажмите кнопку "СДЕЛАТЬ ЗАКАЗ".</b></span>
+          </div>
+          <div class="order_form_pole">
+           <label class="lt85">Имя:</label>
+           <input name="name" placeholder="Имя" required type="text">
+          </div>
+          <div class="order_form_pole">
+           <label class="lt86">Номер мобильного телефона:
+            <br>(введите номер вашего действующего мобильного телефона)
+           </label>
+           <div class="form_phone">
+            <input class="only_number" name="phone" placeholder="Номер мобильного телефона" required type="tel">
+           </div>
+          </div>
+          <input name="subid" type="hidden" value="{subid}">
+          <input name="px" type="hidden" value="{px}">
+          <input name="bayer" type="hidden" value="{bayer}">
+          <div style="margin-bottom: 20px;">
+           <button class="js_submit button__text lt87" name="submit" type="submit">
+            СДЕЛАТЬ ЗАКАЗ</button>
+          </div>
+          <span class="additional lt89">
+            Ваши данные будут отправлены непосредственно в базу данных. Никто другой не имеет к ним доступа.
+
+          </span>
+         </form>
+        </div>
+        <div id="ttt"></div>
+        <div>
+         <p class="vk-header">356 комментариев</p>
+         <div class="vk-inner-wrapper">
+          <div class="vk-photo-box" id="vk-photo-box"></div>
+          <div class="vk-textarea-box"><textarea class="vk-area" placeholder="Ваше сообщение"></textarea>
+           <div style="padding-top: 6px;">
+            <div class="vk-btn-part"><span class="vk-display">Поделиться с друзьями</span>
+             <a href="#order_form_place">
+              <div class="checkbox_on"></div>
+             </a><a class="vk-send-btn" href="#order_form_place">Отправить</a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="k-comments">
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-1.png"></div>
+          <div>
+           <p class="user-name">Амелия Сильва</p>
+           <p> Я всегда страдала от боли в коленях и думала, что никогда не смогу от нее избавиться. Это чудо! Я пользуюсь этим кремом уже три недели после прочтения вашей статьи! Боль в спине и ногах также исчезла! Благодарю вас!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text"> Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-2.png"></div>
+          <div>
+           <p class="user-name">Алиса Матос </p>
+           <p> Спасибо большое, крем подействовал очень быстро! Я заказал его с 50% скидкой  <a href="#order_form_place">через официальную форму заказа </a>  производителя! Не откладывайте лечение суставов, лучше начать лечить болезни на ранней стадии, чем в будущем обнаружить, что вы больше не можете двигаться...</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-7.png"></div>
+          <div>
+           <p class="user-name">Сара Жункейро</p>
+           <p> Я согласна! Это очень эффективное средство для лечения проблем с суставами! С его помощью я вылечила остеоартрит коленей.
+           </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-4.png"></div>
+          <div>
+           <p class="user-name">Александр Мендес</p>
+           <p> Я услышал об этом креме в программе о здоровье и решил заказать его, попробовать. Дело в том, что эффект от обычных методов лечения длится не так долго - мне всегда говорили, что вылечить остеохондроз очень сложно. Теперь о результатах.  <a href="#order_form_place">Fortuflex</a>
+            доставили быстро. Я почувствовал огромное облегчение в первые 10 дней, поэтому решил рассказать об этом здесь. Огромное спасибо за то, что позволяете мне жить полной жизнью!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-8.png"></div>
+          <div>
+           <p class="user-name">Антонио Давид</p>
+           <p> Прочитал первые отзывы, поэтому решил заказать себе <a href="#order_form_place">Fortuflex</a>. Расскажу вам о результатах после того, как получу заказ.</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box comm-answer">
+          <div class="comm-photo-part"><img src="images/vk-9.png"></div>
+          <div>
+           <p class="user-name">Роза Фариа</p>
+           <p> Я так рада, что мне посчастливилось найти этот крем! Я тоже прочитала отзывы и заказала  <a href="#order_form_place">Fortuflex</a>. Муж уже был в отчаянии. Он принимал таблетки и делал массаж, но у него были серьезные проблемы с желудком, и мы уже не знали, что делать. Поэтому решили попробовать <a href="#order_form_place">Fortuflex</a> и вуаля! У мужа больше нет проблем, мы всей семьей все делаем вместе, он снова бодр и активен!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-10.png"></div>
+          <div>
+           <p class="user-name">Артур Нунес</p>
+           <p> Спасибо за такое эффективное лечение. Каждый, кто страдает от боли в суставах, должен знать о нем. А цена специального предложения действительно доступна!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-11.png"></div>
+          <div>
+           <p class="user-name">Фернанда Баррос</p>
+           <p><a href="#order_form_place">Fortuflex</a> действительно работает. Результат превзошел все мои ожидания! Артрит в пальцах прошел за 10 дней! Заказал и для друзей, чтобы воспользоваться скидкой. </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Оставить комментарий</span></a></p>
+          </div>
+         </div>
+         <a href="#order_form_place" style="text-decoration: none;">
+          <p class="vk-show-more">Показать больше...</p>
+         </a><br><br>
+         <a href="#order_form_place">
+          <p class="big-href">Участвуйте в специальной акции, заполнив официальный бланк заказа.</p>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="alc-news-wrapper-tablet-135"></div>
+    </div>
+   </div>
+   <div class="share_block">
+    <p class="share_block-heading lt29">Поделиться этой историей</p>
+    <ul class="share_block-list">
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--email" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--facebook" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--twitter" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--pinterest" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--linkedin" href="#order_form_place"></a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <aside class="sidebar">
+   <div class="alc-list alc-list_inner">
+    <div class="alc alc_2" data-id="14">
+     <a href="#order_form_place">
+      <img src="images/aside-pic1.jpg">
+      <span class="label lt30">Профессор Ляо - доктор китайской и тибетской медицины, профессор Пекинского университета китайской медицины, отмеченный наградами хирург-ортопед, автор нескольких книг по восстановлению суставов и реализации потенциала внутренних резервов человеческого организма.</span>
+     </a>
+    </div>
+    <div id="fix-pos" style="height: 1px;"></div>
+   </div>
+  </aside>
+ </div>
+ <footer class="footer">
+  <div class="footer_top">
+   <div class="center_wrapper">
+    <!-- <p class="footer_top-heading lt31">SIC</p> -->
+    <nav class="footer_top_menu">
+     <ul class="footer_top_menu-list clearfix">
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--mobile lt32" href="#order_form_place">В вашем смартфоне</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--pc lt33" href="#order_form_place">В интернет-телевидении</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--news lt34" href="#order_form_place">Получайте уведомления о последних новостях </a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--letter lt35" href="#order_form_place">Связаться с нами</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="footer_bottom">
+   <div class="center_wrapper">
+    <p class="footer_bottom-heading lt36">Смотреть</p>
+    <nav class="footer_bottom_menu">
+     <ul class="footer_bottom_menu-list clearfix">
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt37" href="#order_form_place">Новости</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt38" href="#order_form_place">Спорт</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt39" href="#order_form_place">Погода</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt40" href="#order_form_place">Магазин</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt41" href="#order_form_place">Земля</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt42" href="#order_form_place">Путешествие</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt43" href="#order_form_place">Капитал</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt44" href="#order_form_place">Культура</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt45" href="#order_form_place">Автомобиль</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt46" href="#order_form_place">Будущее</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt47" href="#order_form_place">TV</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt48" href="#order_form_place">Радио</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt49" href="#order_form_place">Для женщин</a>
+      </li>
+      <!-- <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt50" href="#order_form_place">SIC K</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt51" href="#order_form_place">Гастрономия </a> -->
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt52" href="#order_form_place">Гастрономия</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt53" href="#order_form_place">Главные новости</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt54" href="#order_form_place">Музыка</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt55" href="#order_form_place">Радикал</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt56" href="#order_form_place">Переход на цифровое телевидение</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt57" href="#order_form_place"> Мастершеф </a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt58" href="#order_form_place">Природа</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt59" href="#order_form_place">Местные новости</a>
+      </li>
+     </ul>
+    </nav>
+    <p class="footer_bottom-links">
+     <a class="footer_bottom-links_link lt60" href="#order_form_place">Условия и положения</a>
+     <!-- <a class="footer_bottom-links_link lt61" href="#order_form_place">A SIC</a> -->
+     <a class="footer_bottom-links_link lt62" href="#order_form_place"> Политика конфиденциальности</a>
+     <a class="footer_bottom-links_link lt63" href="#order_form_place">Cookies</a>
+     <a class="footer_bottom-links_link lt64" href="#order_form_place">Служба поддержки</a>
+     <a class="footer_bottom-links_link lt65" href="#order_form_place">Руководство для родителей </a>
+     <a class="footer_bottom-links_link lt66" href="#order_form_place">Связаться с нами</a>
+     <a class="footer_bottom-links_link lt67" href="#order_form_place">Реклама</a>
+    </p>
+   </div>
+  </div>
+ </footer>
+ <div class="breaking_popup js-breaking_popup">
+  <div class="breaking_popup-header">
+   <div class="center_wrapper breaking_popup-inner_wrapper">
+    <p class="breaking_popup-header_text lt68">ТЕКУЩИЕ НОВОСТИ</p>
+    <button class="breaking_popup-close js-breaking_popup-close"></button>
+   </div>
+  </div>
+  <div class="center_wrapper">
+   <p class="breaking_popup-text">
+    <a class="breaking_popup-link lt69" href="#order_form_place">СДЕЛАТЬ ЗАКАЗ</a>
+   </p>
+  </div>
+ </div>
+ <script>
+  $(".three-images").hide();
+  $(".open-content").on("click", function () {
+   $(".three-images").toggle(1000);
+  });
+ </script>
+
+ <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+ <link rel="stylesheet" href="/libs/js/gdpr.css">
+ <script>
+  var phonePattern = {
+   'ru': '+7 (___) ___-__-__',
+   'ua': '+38-___-___-__-__',
+   'by': '+375 ___ ___ ___',
+   'kz': '+7 ___ ___ ____',
+   'kg': '+___ ___ __ __ __',
+   'md': '0 ___ _____',
+   'az': '+___-__-___-__-__',
+   'ge': '+995 ___ __ __ __',
+   'es': '+34 ___ __ __ __',
+   'pe': '+51 ___ ___ _?_',
+   'cl': '+56 _ ____ ____',
+   'ar': '+54 __ ____ ____',
+   'co': '+57 _______??_',
+   'mx': '+52 __ ____ ____',
+   'it': '+39-___-___-____',
+   'esp': '+34 ___ __ __ __',
+   'pt': '+351 ___ ___ ___',
+   'br': '+55 __ ___?_ ____',
+   'prt': '+351 ___ ___ ___',
+   'id': '+62 ___ ___ ___',
+   'gr': '+30 ___ _______',
+   'cy': '+357 __ ______',
+   'ro': '+40 ___ ___ __? _',
+   'bg': '+359 ___ __ __? _',
+   'cz': '+420 ___ ___ ___',
+   'sk': '+421 ___ ___ ___',
+   'si': '+386 _ ___ __ __',
+   'pl': '+48 ___ ___ ___',
+   'al': '+355 __ ___ ___?_',
+   'rs': '+381 __ _____?_',
+   'ph': '+63 _ ____ __?_',
+   'hu': '+36 _ ___ ____',
+   'hr': '+385 _ ____ __?_',
+   'ba': '+387 __ ______',
+   /* --- */
+  }
+
+  const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+  //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+  function validate_form(form, alert_text = "Please enter valid phone number") {
+   var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+    pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+   if (input_ln >= pattern_ln) return true;
+   else {
+    alert(alert_text);
+    return false;
+   }
+  }
+
+  //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+  document.addEventListener("DOMContentLoaded", function () {
+
+   var isTimeoutSeted = false;
+   var inputInterval;
+
+   function createInterval(input) {
+    if (!isTimeoutSeted) {
+     isTimeoutSeted = true;
+
+     inputInterval = setInterval(() => {
+      input.selectionStart = input.value.length
+      input.setSelectionRange(input.value.length, input.value.length);
+     }, 15)
+    }
+   }
+
+   function deleteInterval() {
+    clearInterval(inputInterval)
+    isTimeoutSeted = false;
+   }
+
+   function setSelectionStart(input) {
+    input.selectionStart = input.value.length
+   }
+
+   function mask(event) {
+    var input = event.currentTarget;
+    var geo = input.form.getAttribute('geo');
+    var matrix = phonePattern[geo];
+    var i = 0;
+    var def = matrix.replace(/\D/g, "");
+    var val = input.value.replace(/\D/g, "");
+
+    if (!event.type == "blur") {
+     setSelectionStart(input)
+    }
+
+    // Ставим интервал для инпута
+    createInterval(input)
+
+    if (event.type == "blur") {
+     // Сбрасываем интервал для инпута
+     deleteInterval()
+     if (input.value.length == 2) {
+      input.value = ""
+     }
+    }
+
+    if (def.length >= val.length) {
+     val = def
+    };
+
+    input.value = matrix.replace(/./g, function (a) {
+     return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+
+
+   };
+
+   inputs.forEach(input => {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("focus", mask, false);
+   })
+  });
+
+  $(document).ready(function () {
+   // Load GDPR
+   $(document).gdprCookieLaw({
+    moreLinkHref: '/privacypolicy',
+    theme: 'theme-1',
+    position: 'bottom-right',
+    width: '760px',
+    margin: '15px',
+    animation: 'fade-slide',
+    btnAcceptText: 'Ok'
+   });
+  });
+ </script>
+</body>
+
+</html>

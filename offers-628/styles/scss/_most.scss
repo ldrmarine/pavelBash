@@ -1,0 +1,91 @@
+html {
+  overflow-x: hidden;
+
+  font-size: 16px;
+
+
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  font-size: 18px;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+.box_btn {
+  width: 100%;
+  @include flex(row, flex-start, center);
+}
+.btn {
+  text-align: center;
+  background: #2e95d8;
+  box-shadow: 0px 4px 20px rgba(52, 107, 161, 0.8);
+  border-radius: 10px;
+  color: #fff;
+
+  padding: 26px 50px;
+
+  margin: 42px auto;
+  
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.4s ease all;
+  border-radius: 4px;
+  font-size: 24px;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include media-phone {
+    font-size: 15px;
+    margin: 20px auto;
+  }
+  @include media-phone-med {
+    font-size: 13px;
+    padding: 15px 30px;
+  }
+}
+
+.title_big {
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.4;
+  b {
+    font-weight: 800;
+    color: #346ba1;
+  }
+  @include media-phone {
+    font-size: 32px;
+  }
+  @include media-phone-med {
+    font-size: 27px;
+  }
+}
+.title {
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 69px;
+  color: #000000;
+  text-align: center;
+  @include media-phone {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  @include media-phone-med {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}

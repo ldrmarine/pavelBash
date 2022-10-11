@@ -1,0 +1,84 @@
+.timer{
+    width: 425px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.timer .title{
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.timer .block {
+    float: left;
+}
+.timer .block .rect {
+    /*width: 60px;*/
+    /*height: 40px;*/
+    margin: auto auto 10px;
+    /*padding: 5px 5px;*/
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    border-radius: 6px;
+}
+.timer .block .rect span {
+    display: inline-block;
+    width: 45px;
+    height: 52px;
+    border-radius: 6px;
+    background-color: #f79c1a;
+}
+.timer .block .rect .span:first-child {
+    margin-right: 10px;
+}
+
+.timer .block .label {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.timer .points {
+    float: left;
+    width: 58px;
+    height: 40px;
+    text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+@media screen and (max-width: 989px) {
+
+
+
+}
+
+@media screen and (max-width: 639px) {
+    .timer {
+        width: 260px;
+    }
+    .timer .block .rect {
+        font-size: 25px;
+    }
+    .timer .block .rect span {
+        width: 30px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .timer .points {
+        width: 30px;
+        font-size: 25px;
+    }
+
+
+}

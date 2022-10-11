@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Форма</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <style>
+    html {
+      font-size: 20.833333vw;
+      overflow-x: hidden;
+      background: #e5e5e5;
+    }
+
+    @media (min-width: 481px) {
+      html {
+        font-size: 100px;
+      }
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      max-width: 480px;
+      overflow-x: hidden;
+      -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 20px;
+      margin: auto;
+    }
+
+    .main {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 0.16rem;
+      padding: 0.25rem 0.27rem;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 0.20rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      font-size: 0.13rem;
+      margin-top: 0.09rem;
+      color: #6a6a6a;
+      margin-bottom: 0.2rem;
+    }
+
+    .box_input {
+      margin-bottom: 0.2rem;
+    }
+
+    .title-input {
+      font-weight: 300;
+      font-size: 0.13rem;
+      color: #000000;
+    }
+
+    .title-input b {
+      color: #ff0000;
+    }
+
+    .title-subtitle {
+      color: #6a6a6a;
+      font-weight: 300;
+      font-size: 0.10rem;
+    }
+
+    input {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: none;
+      border: 0.01rem solid #dcdcdc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 0.16rem;
+      font-weight: 300;
+      padding-left: 0.19rem;
+      height: 0.40rem;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input:-ms-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input::-ms-input-placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    input::placeholder {
+      color: #b5b5b5;
+      font-size: 0.13rem;
+    }
+
+    .btn {
+      background: #548fc7;
+      border-radius: 5px;
+      width: 1.7rem;
+      height: 0.40rem;
+      border: none;
+      font-weight: 500;
+      font-size: 0.16rem;
+      color: #ffffff;
+    }
+
+    .sweet-title {
+      font-size: 0.2rem;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .feedback__text {
+      font-weight: 300;
+    }
+
+    .feedback__text--accent {
+      font-weight: 400;
+    }
+    .feedback-messengers{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .feedback-messengers__link{
+      width: 80px;
+      height: 80px;
+      display: block;
+      box-sizing: border-box;
+    }
+    .feedback-messengers__link>img{
+      width: 100%;
+      height: auto;
+      
+    }
+  </style>
+
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(83376475, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/83376475" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1464622827230154');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1464622827230154&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+  <div class="main ">
+    <h1 class="title">23 000 СУМ в неделю за Ваш аккаунт Facebook.</h1>
+    <p class="subtitle">Выберете удобный для Вас мессенджер, чтобы оставить заявку на сотрудничество с Digital Monks.</p>
+    <div class="feedback">
+      <p class="feedback__text">
+        <span class="feedback__text--accent">Внимание</span>:Мы всегда поддерживаем связь со своими арендодателями и оказываем поддержку по вопросам передачи и контроля аккаунтов.
+        Связаться с нашей поддержкой можно через любой мессенджер.
+      </p>
+      <div class="feedback-messengers">
+        <a href="https://www.messenger.com/t/" class="feedback-messengers__link">
+          <img src="img/facebook-messenger.svg" alt="">
+        </a>
+        <a href="https://wa.me/79382965240" class="feedback-messengers__link">
+          <img src="img/whatsapp.svg" alt="">
+        </a>
+        <a href="viber://chat?number=%2B79382965240" class="feedback-messengers__link">
+          <img src="img/viber.svg" alt="">
+        </a>
+        <a href="https://telegram.me/latam_arenda" class="feedback-messengers__link">
+          <img src="img/telegram.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sweet-text-hidden ">
+    <div class="sweet-title">спасибо за отправку,мы свяжемся с вами в ближайшее время</div>
+
+  </div>
+
+</body>
+
+</html>

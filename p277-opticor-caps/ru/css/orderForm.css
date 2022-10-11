@@ -1,0 +1,182 @@
+
+#order_form {
+    background: white;
+    padding: 15px;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    background-image: url(../images/formbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 35px;
+}
+
+.timer {
+    display: block;
+    margin-bottom: 5px;
+    background: url(../images/timerIcon2.png) no-repeat;
+    padding-left: 14px;
+    color: red;
+    width: fit-content;
+    margin: 0 auto;
+    background-position: 0 50%;
+}
+
+@media (min-width: 600px) and (max-width: 739px) {
+    #order_form {
+        padding: 20px !important;
+        /*margin: 0px -12px !important;*/
+        /*padding-bottom: 116px !important;*/
+        /*margin-bottom: -170px !important;*/
+    }
+}
+
+@media (min-width: 460px) and (max-width: 599px) {
+    #order_form {
+        padding: 20px !important;
+       /* margin: 0px -26px !important;*/
+       /* padding-bottom: 160px !important;*/
+        /*margin-bottom: -190px !important;*/
+    }
+}
+
+/*#order_form div {
+    background:none;
+}*/
+
+#order_form h2 {
+    margin: 15px 0 0 0;
+    padding: 0px;
+    line-height: 32px;
+    border: none;
+}
+
+#order_form label {
+    width: 230px;
+    display: block;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#order_form .order_form_pole {
+    padding: 10px;
+    /*display: inline-block;*/
+    
+}
+
+#order_form input {
+    display: block;
+    margin: 0 auto;
+    font-size: 21px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 2px solid #e9d7dc;
+    max-width: 280px;
+    width: 100%;
+}
+
+#order_form span {
+    font-size: inherit;
+}
+
+#order_form button,
+.obutton {
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    border-radius: 5px;
+    background-color: #0299ff;
+    background-position: 1.35em .94em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    transition: all .15s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#order_form button:hover,
+.obutton:hover {
+    background-color: #017ACC;
+}
+
+#order_form button:active {
+    position: relative;
+    top: 1px;
+}
+
+.order_info h2 {
+    border: none !important;
+    color: red !important;
+}
+
+.left_count {
+    background: red;
+    padding: 23px;
+    margin: 12px 0px;
+    width: 178px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    font-size: 32px !important;
+    border-radius: 5px;
+}
+
+.left_count .prod_left_val {
+    font-size: 52px !important;
+}
+
+@media screen and (max-width: 480px) {
+    #order_form input {
+    }
+
+    #order_form label {
+        font-size: 14px;
+    }
+
+    #order_form button {
+        font-size: 16px;
+    }
+
+    #order_form {
+        /*padding: 10px;
+        padding-bottom: 180px;
+        margin-bottom: -200px;*/
+    }
+
+    #order_form .order_form_pole {
+        padding: 0px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    #order_form input {
+        width: 80%;
+    }
+
+    #order_form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #order_form input {
+        font-size: 17px;
+    }
+
+    #order_form button {
+        
+    }
+}
+
+.price {
+    color: red;
+    font-weight: 700;
+}

@@ -1,0 +1,14 @@
+/* Code tidied up by ScrapBook */
+@media not all, (min-resolution: 2dppx) {
+}
+@media print {
+}
+@keyframes spinner {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+@-moz-document url-prefix("") {
+  .fotorama__active { box-shadow: 0px 0px 0px transparent; }
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 1.5), not all {
+}

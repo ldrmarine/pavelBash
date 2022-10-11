@@ -1,0 +1,623 @@
+body {
+    font-family: sans-serif;
+    /*font-size: 15px;*/
+    background: #ebedf0;
+    margin-bottom: 15px!important;
+    font-size: 17px!important;
+    /*margin-top: 27px!important;*/
+    line-height: 23px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 , h3{
+    font-style: oblique;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #576b95;
+    font-weight: 700;
+}
+
+p {
+    color: #707070;
+}
+
+#global_wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ebedf0;
+}
+
+header {
+    background: #3b5998;
+    color: azure;
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 56px;
+    background: url(../images/o9-JQ_ml0oW.png);
+    background-size: cover;
+    background-position: 0 -720px;
+    left: -20px;
+    top: -2px;
+    transform: scale(0.36);
+}
+
+#global_bg {
+    width: 100%;
+    position: relative;
+}
+
+#global_bg_img {
+    width: 100%;
+}
+
+#global_bg_img img {
+    width: 100%;
+}
+
+#person_page {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 7px;
+}
+
+.avatar_img_left {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 60px;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+
+.avatar_img_left img {
+    width: 100%;
+}
+
+.erson_page_inner_left_item {
+    display: flex;
+    align-items: center;
+}
+
+.erson_page_inner_left_item_info {
+    display: flex;
+    flex-direction: column;
+}
+.info_doctor, .erson_page_inner_right_img_liked {
+    font-size: 15px;
+    color: gray;
+}
+
+.erson_page_inner_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.erson_page_inner_right_img {
+    width: 19px;
+}
+
+.erson_page_inner_right_img img {
+    width: 100%;
+}
+
+.erson_page_inner_right_img_liked p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.sms {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    /*position: relative;*/
+    /*left: -1px;*/
+}
+
+.name_doctor {font-size: 17px!important;}
+
+.sms-el_mesage {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    background: #3578e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sms-el_mesage img {
+    margin-right: 10px;
+}
+
+.sms-el_mesage2 {
+    width: calc(16.67% - 7px);
+    background: #ebedf0;
+}
+.sms-el_points {
+    width: calc(16.67% - 7px);
+    background: #ebedf0;
+}
+
+.sms-el_mesage,
+.sms-el_mesage2,
+.sms-el_points {
+    margin: 6px 7px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.sms-el_mesage img ,
+.sms-el_mesage2 img ,
+.sms-el_points  img {
+    width: 100%;
+}
+.sms_inner_img {
+    width: 17px;
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+}
+
+.sms-el_mesage .sms_inner_img {
+    margin: 0 !important;
+}
+
+.liked23 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 6px 13px;
+    background: white;
+
+}
+.liked23_icon_inner {
+    width: 20px;
+    margin-right: 5px;
+}
+.liked23_icon_inner img { width: 100% }
+.liked23_info p {margin: 0;color: gray}
+
+
+#state {
+    background: white;
+    padding: 0 13px 22px;
+}
+
+.state_doctor {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.state_doctor_avatar {
+    width: 44px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.state_doctor_avatar img {
+    width: 100%;
+}
+
+.state_doctor_name_info {
+    font-size: 14px;
+    color: gray;
+}
+
+#state_close {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px;
+    color: gray;
+}
+
+#doctor_liked_heart {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding-left: 16px;
+    border-bottom: 1px solid #e4e4e4;
+    height: 38px;
+}
+#doctor_liked_heart div {width: 20px;margin-left: -8px; }
+#doctor_liked_heart img {width: 100%;}
+
+.doctor_liked_numbers {
+    font-size: 10px;
+    font-weight: 600;
+}
+.doctor_liked_numbers h1 {
+    position: relative;
+    left: 11px;
+}
+
+#drop_down {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    bottom: -67px;
+    box-shadow: 0px -8px 20px 0px #00000014;
+    transition: all 1s cubic-bezier(0, 1.08, 1, 1);
+}
+
+.state_text img {
+    width: 100%;
+}
+
+.comments {
+    background: white;
+    padding: 20px;
+}
+
+.popular {
+    font-size: 17px;
+    position: relative;
+    top: -2px;
+}
+/*@media screen and (max-width: 310px) {*/
+/*    #global_bg::before {*/
+/*        font-size: 17px !important;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 250px) {*/
+/*    #global_bg::before {*/
+/*        font-size: 17px !important;*/
+/*        bottom: -135px !important;*/
+/*    }*/
+/*}*/
+
+/** { border: 1px solid }*/
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif
+}
+
+#app_root,body {
+    /*background: #dadde1;*/
+}
+
+#app_root {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background: #3b5998;
+    color: #fff;
+    padding: 11px 0 12px 0;
+    position: relative;
+}
+
+header i {
+    position: absolute;
+    top: 23%;
+    left: 10px;
+}
+
+.fb_main {
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#app_bg {
+    width: 100%;
+}
+
+#app_display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 11px;
+}
+
+.app_display_left {
+    display: flex;
+    align-items: center;
+}
+
+.app_display_left img {
+    width: 13px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+#state, #form, #fb_post_end {
+    padding: 10px 10px 11px;
+}
+
+#app_display_right {
+    margin-right: 20px;
+}
+
+#app_display_right img{
+    width: 26px;
+    margin-left: 3px;
+}
+
+#fb_post_end {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.app_first {
+    font-size: 12px;
+    color: #909192;
+}
+
+.app_first_post {
+    font-size: 12px;
+    color: #909192;
+}
+
+.app_messenger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9px 13px;
+}
+
+.app_messenger .messenger {
+    align-items: center;
+    background-color: #3578e5;
+    border: 1px solid #3578e5;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    font-weight: 500;
+    height: 34px;
+    justify-content: center;
+    line-height: 16px;
+    width: 130%;
+}
+
+.app_messenger .three_dots {
+    align-items: center;
+    background-color: #ebedf0;
+    border: 1px solid #ebedf0;
+    border-radius: 4px;
+    color: #444950;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    line-height: 16px;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.app_messenger .messenger img,
+.app_messenger .three_dots img {
+    height: 16px;
+    width: 16px;
+}
+
+.app_ava {
+    border-color: rgba(0,0,0,0.149020);
+    border-top-color: rgba(0, 0, 0, 0.15);
+    border-right-color: rgba(0, 0, 0, 0.15);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-left-color: rgba(0, 0, 0, 0.15);
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 32px;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.app_ava_post {
+    border-color: rgba(0,0,0,0.149020);
+    border-top-color: rgba(0, 0, 0, 0.15);
+    border-right-color: rgba(0, 0, 0, 0.15);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-left-color: rgba(0, 0, 0, 0.15);
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 32px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#app_status_page {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 10px;
+}
+
+#app_status_page img{
+    width: 17px;
+    margin-right: 7px;
+}
+
+#fb_post_status {
+    padding: 8px 7px;
+}
+
+.status_num {
+    font-weight: 600;
+    margin: 1px 0 0 5px;
+}
+
+#shares {
+    padding: 8px 7px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.bottom_icon {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    flex-wrap: nowrap;
+}
+
+.icons_spray {
+    background: url('../images/icon-set.png') no-repeat;
+    background-size: 103px 328px;
+    display: inline-block;
+}
+
+.select_globus {
+    width: 10px;
+    height: 11px;
+    background-position: -61px -315px;
+    transform: scale(0.8);
+    position: relative;
+    top: 1px;
+}
+
+.select_good {
+    background-position: -21px -211px;
+    left: -6px;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.select_comment {
+    background-position: 0 -211px;
+    left: -6px;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.select_rep {
+    background-position: -42px -211px;
+    left: -6px;
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.dots_small_center {
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+}
+
+.icons_top {
+    background: url('../images/icon-set.png') no-repeat;
+    background-size: 31px 1315px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.icons_top_back {
+    background-position: 0 -220px;
+
+}
+
+.fb_preloader {
+    width: 10%;
+    margin: 0 auto 57px;
+}
+
+.fb_preloader img {
+    width: 100%;
+}
+
+.pointerEvents {
+    pointer-events: none;
+}
+
+footer {
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    max-width: inherit;
+    bottom: 0;
+    z-index: 1000000000;
+    border-top: 1px solid #cecece;
+    display: none;
+}
+
+footer > .app_messenger {
+    background: #ffffff;
+    padding: 9px 9px 11px !important;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 1;
+}
+
+.footer-enter-active, .footer-enter, .footer-leave-to {
+    transition: all .5s ease-in-out;
+}
+
+.footer-enter, .footer-leave-to  {
+    transform: translateY(60px);
+}
+
+.timer-element span + span {
+
+}
+
+.stock_warning {
+    padding: 8px 26px;
+    border: 1px dashed crimson;
+    font-weight: 600;
+    font-style: oblique;
+    margin: 10px auto 0;
+}

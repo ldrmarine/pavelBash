@@ -1,0 +1,1149 @@
+<html lang="en">
+
+<head>
+    <link rel="prefetch" href="./assets/header-bg.jpg">
+    <link rel="prefetch" href="./assets/topo2.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Fantastico</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style type="text/css">
+    :root {
+        --bs-blue: #0d6efd;
+        --bs-indigo: #6610f2;
+        --bs-purple: #6f42c1;
+        --bs-pink: #d63384;
+        --bs-red: #dc3545;
+        --bs-orange: #fd7e14;
+        --bs-yellow: #ffc107;
+        --bs-green: #198754;
+        --bs-teal: #20c997;
+        --bs-cyan: #0dcaf0;
+        --bs-white: #fff;
+        --bs-gray: #6c757d;
+        --bs-gray-dark: #343a40;
+        --bs-primary: #0d6efd;
+        --bs-secondary: #6c757d;
+        --bs-success: #198754;
+        --bs-info: #0dcaf0;
+        --bs-warning: #ffc107;
+        --bs-danger: #dc3545;
+        --bs-light: #f8f9fa;
+        --bs-dark: #212529;
+        --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+        :root {
+            scroll-behavior: smooth
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+        margin: 1rem 0;
+        color: inherit;
+        background-color: currentColor;
+        border: 0;
+        opacity: .25
+    }
+
+    hr:not([size]) {
+        height: 1px
+    }
+
+    h2,
+    h3,
+    h4 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2
+    }
+
+    h2 {
+        font-size: calc(1.325rem + .9vw)
+    }
+
+    @media (min-width:1200px) {
+        h2 {
+            font-size: 2rem
+        }
+    }
+
+    h3 {
+        font-size: calc(1.3rem + .6vw)
+    }
+
+    @media (min-width:1200px) {
+        h3 {
+            font-size: 1.75rem
+        }
+    }
+
+    h4 {
+        font-size: calc(1.275rem + .3vw)
+    }
+
+    @media (min-width:1200px) {
+        h4 {
+            font-size: 1.5rem
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    ul {
+        padding-left: 2rem
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    blockquote {
+        margin: 0 0 1rem
+    }
+
+    strong {
+        font-weight: bolder
+    }
+
+    a {
+        color: #0d6efd;
+        text-decoration: underline
+    }
+
+    a:hover {
+        color: #0a58ca
+    }
+
+    img {
+        vertical-align: middle
+    }
+
+    button:focus:not(:focus-visible) {
+        outline: 0
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer
+    }
+
+    ::-moz-focus-inner {
+        padding: 0;
+        border-style: none
+    }
+
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-fields-wrapper,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-minute,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-year-field {
+        padding: 0
+    }
+
+    ::-webkit-inner-spin-button {
+        height: auto
+    }
+
+    ::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+    ::-webkit-color-swatch-wrapper {
+        padding: 0
+    }
+
+    ::file-selector-button {
+        font: inherit
+    }
+
+    ::-webkit-file-upload-button {
+        font: inherit;
+        -webkit-appearance: button
+    }
+
+    iframe {
+        border: 0
+    }
+
+    .container,
+    .container-fluid {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    @media (min-width:576px) {
+        .container {
+            max-width: 540px
+        }
+    }
+
+    @media (min-width:768px) {
+        .container {
+            max-width: 720px
+        }
+    }
+
+    @media (min-width:992px) {
+        .container {
+            max-width: 960px
+        }
+    }
+
+    @media (min-width:1200px) {
+        .container {
+            max-width: 1140px
+        }
+    }
+
+    @media (min-width:1400px) {
+        .container {
+            max-width: 1320px
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x)/ -2);
+        margin-left: calc(var(--bs-gutter-x)/ -2)
+    }
+
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+        margin-top: var(--bs-gutter-y)
+    }
+
+    .col-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .col-8 {
+        flex: 0 0 auto;
+        width: 66.6666666667%
+    }
+
+    @media (min-width:576px) {
+        .col-sm-4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%
+        }
+
+        .col-sm-8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%
+        }
+
+        .col-sm-12 {
+            flex: 0 0 auto;
+            width: 100%
+        }
+    }
+
+    @media (min-width:768px) {
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%
+        }
+
+        .col-md-8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%
+        }
+    }
+
+    @media (min-width:992px) {
+        .col-lg-2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%
+        }
+
+        .col-lg-8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%
+        }
+
+        .col-lg-10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%
+        }
+    }
+
+    .form-control[type=file]:not(:disabled):not([readonly]) {
+        cursor: pointer
+    }
+
+    .form-control::file-selector-button {
+        padding: .375rem .75rem;
+        margin: -.375rem -.75rem;
+        -webkit-margin-end: .75rem;
+        margin-inline-end: .75rem;
+        color: #212529;
+        background-color: #e9ecef;
+        pointer-events: none;
+        border-color: inherit;
+        border-style: solid;
+        border-width: 0;
+        border-inline-end-width: 1px;
+        border-radius: 0;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+        .form-control::file-selector-button {
+            transition: none
+        }
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+        background-color: #dde0e3
+    }
+
+    .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+        background-color: #dde0e3
+    }
+
+    .form-control-sm::file-selector-button {
+        padding: .25rem .5rem;
+        margin: -.25rem -.5rem;
+        -webkit-margin-end: .5rem;
+        margin-inline-end: .5rem
+    }
+
+    .form-control-lg::file-selector-button {
+        padding: .5rem 1rem;
+        margin: -.5rem -1rem;
+        -webkit-margin-end: 1rem;
+        margin-inline-end: 1rem
+    }
+
+    .form-control-color:not(:disabled):not([readonly]) {
+        cursor: pointer
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown) {
+        padding-top: 1.625rem;
+        padding-bottom: .625rem
+    }
+
+    .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+        opacity: .65;
+        transform: scale(.85) translateY(-.5rem) translateX(.15rem)
+    }
+
+    .nav-link {
+        display: block;
+        padding: .5rem 1rem;
+        color: #0d6efd;
+        text-decoration: none;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+        .nav-link {
+            transition: none
+        }
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #0a58ca
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: .5rem;
+        padding-bottom: .5rem
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .navbar-brand {
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .navbar-expand {
+        flex-wrap: nowrap;
+        justify-content: flex-start
+    }
+
+    .navbar-expand .navbar-nav {
+        flex-direction: row
+    }
+
+    .navbar-expand .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #fff
+    }
+
+    .navbar-dark .navbar-brand:focus,
+    .navbar-dark .navbar-brand:hover {
+        color: #fff
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, .55)
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: rgba(255, 255, 255, .75)
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #fff
+    }
+
+    .visually-hidden-focusable:not(:focus):not(:focus-within) {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important
+    }
+
+    .d-flex {
+        display: flex !important
+    }
+
+    .align-items-center {
+        align-items: center !important
+    }
+
+
+    .logofooter {
+        display: inline;
+        width: 20px;
+        margin-top: -2px
+    }
+
+    blockquote {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 5px solid #eee;
+        padding: 15px
+    }
+
+    h4 {
+        margin-top: 15px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        color: #929292;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-family: 'Open Sans';
+        line-height: 1.3;
+    }
+
+    .updated {
+        float: right;
+        font-size: 15px;
+    }
+
+    hr {
+        color: white;
+        margin: 0
+    }
+
+    .w100 {
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        height: 20px;
+        border-right: dotted 1px;
+        padding-right: 10px;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-top: 25px;
+        margin-bottom: 10px
+    }
+
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    p {
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        color: #2b2929;
+        line-height: 26px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-family: 'PT Serif', serif;
+        color: #575746;
+    }
+
+    header {
+        background-color: #07082a;
+        border-bottom: 2px solid #f9b22a;
+        background-image: url('images/header-bg.jpg');
+        width: 100%;
+        min-height: 175px;
+
+
+    }
+
+    footer {
+
+        background-image: url('images/header-bg.jpg');
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        font-size: 16px
+    }
+
+    #logo {
+        max-width: 100%;
+        max-height: 150px;
+        margin: auto;
+        display: block;
+    }
+
+    .materia {
+        background-color: #f9b22a;
+        color: white;
+        margin-top: 30px;
+        line-height: 40px;
+        font-size: 20px;
+        font-family: "Open Sans";
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .ftr {
+        border-top: 1px solid #eee;
+        margin-top: 40px
+    }
+
+    .avatar {
+        width: 100%;
+        border-radius: 75px;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .p10px {
+        padding: 10px;
+    }
+
+    .fluid {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%
+    }
+
+    .tcenter {
+        text-align: center
+    }
+
+    p a {
+        font-weight: 600;
+    }
+    </style>
+    <link href="css/css2.css" rel="stylesheet">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="form/form.css">
+	
+</head>
+
+<body>
+    <header>
+        <div class="row d-flex align-items-center w100">
+            <div class="container">
+                <picture>
+
+                    <img src="images/topo2.png" id="logo">
+                </picture>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-dark color-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#form"><img src="images/g1.png"></a>
+                    <div class id>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#form">Salute</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#form">Politica</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div>
+            <div class="materia">
+                <span>MATERIALI</span><span class="updated"><span id="dadata">                                        
+				<script language="javascript" type="text/javascript">
+                                            var d = new Date();
+                                            var month=new Array("01","02","03","04","05","06",
+                                            "07","08","09","10","11","12");
+                                            document.write(d.getDate()+"."+ month[d.getMonth()]
+                                            +"." + d.getFullYear() );
+                                        </script></span> - <strong>2 ore fa</strong></span>
+            </div>
+            <h2><strong>In esclusiva su Fantastico <h2><span style="font-weight: bolder;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">una crema contro il dolore sviluppata in Cina che può curare l'artrite, l'artrosi, l'osteoporosi e i dolori articolari in 15 giorni semplicemente riparando le articolazioni e le ossa in un processo 'TRTT'.</font></font></span></h2></strong></h2>
+            <h4>Vedi prossimo articolo: Come ha fatto un ricercatore cinese a scoprire la formula per realizzare questo procedimento? Come può una crema antidolorifica ripristinare le articolazioni e le ossa in soli 15 giorni senza chirurgia, procedure dolorose o l'uso di farmaci costosi e pericolosi? Secondo il ricercatore: " distruggendo le ossa e le articolazioni colpite e creandone nuove dalla vecchia cartilagine".</h4>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                    <picture>
+                        <img src="v.jpg" class="fluid">
+                    </picture>
+                <p><strong>Il ricercatore Jin Quon sostiene di aver guarito completamente una donna anziana dall'artrite ignorata più di 10 anni.</strong></p>
+                <p>Nell'intervista di oggi, vi racconterà come è possibile sbarazzarsi del dolore e curare tutte le malattie delle articolazioni senza chirurgia, procedure dolorose o farmaci costosi e pericolosi.Segui le istruzioni qui sotto e conosci la nuova crema contro il dolore. </p>
+                <p><strong>Patrizia: Salve, dottor Jin Quon. Molti esperti dicono che le malattie e i dolori articolari sono compagni inevitabili quando si compiono 40 anni. Lei è d'accordo con questo?</strong></p>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/1.jpg" class="fluid">
+                    </picture>
+                </a>
+                <blockquote>
+                    <p><i><strong>- Jin Quon </strong>: "Ciao, Patrizia! Naturalmente non è vero. Dipenderà dal medico se conosce il trattamento giusto e se vuole curare il paziente o solo imbrogliarlo.</i></p>
+                    <p><i>Infatti, <strong>le articolazioni possono essere ripristinate a qualsiasi età.</strong></i></p>
+                    <p><i>Cioè, se conosciamo il segreto e portiamo un po' di scienza, i problemi possono essere risolti anche a casa, e molto rapidamente.</i></p>
+                    <p><i>Migliaia di persone l'hanno già fatto in Asia, negli Stati Uniti e anche in Europa, <strong>e spero che anche Italia lo stia già facendo.</strong>"</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/2.gif" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Qual'è il segreto?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Il segreto è capire perché si soffre.</i></p>
+                    <p><i>Le enciclopedie elencano 147 cause  <strong>di artrite e osteoartrite</strong>, ma la vera causa è sempre la stessa: le articolazioni, le vertebre e la cartilagine perdono la loro elasticità, da cui il dolore.</i></p>
+                    <p><i>Si consumano a causa della scorretta cura del corpo, dell'eccesso di peso e, naturalmente, dell'età.</i></p>
+                    <p><i>Il segreto principale<strong> <i style="font-weight: 400;"><span style="font-weight: bolder;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">è rimediare correttamente le articolazioni</font></font></span></i></strong>, come ho scoperto io, ed è efficace per tutti! "</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/3.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Sì, ma dopo i 40 anni è quasi impossibile ricostruire le articolazioni e le ossa, vero?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Questo è un <strong>GRANDE FALSO!</strong> Ci  <strong>sono più di 144.000 persone in Europa e negli Stati Uniti che nel seguire il mio metodo</strong>, non hanno problemi, e hanno tutti più di 45 anni".</i></p>
+                </blockquote>
+                <p><strong>Patrizia: C'è riuscito con il suo metodo a curare persone in fase avanzata, per esempio persone su una sedia a rotelle a causa di problemi alle articolazioni?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Sì, abbiamo avuto 3 casi , <strong>e abbiamo avuto successo in tutti 3</strong>.</i></p>
+                    <p><i> All'inizio non credevano molto nel mio metodo, <strongma dopo che hanno ricominciato a camminare, erano molto felici </strong> e mi ringraziavano molto, <strong>ma io in fondo stavo solo facendo il mio lavoro di medico</strong>.</i></p>
+                    <p><i>Ma la maggior parte delle persone che vengono da me sono persone normali sopra i 40 anni <strong>che si lamentano di malattie legate all'età.</strong>.</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/4.jpg" class="fluid">
+                    </picture>
+                </a>
+                <blockquote>
+                    <p><i>Tutti hanno un problema molto simile: le articolazioni e le ossa fanno male.    <strong>Soffrono, sopportano il dolore, persino camminare è difficile</strong>. Tutti si lamentano: "Perché io? Perché fa così male?".</i></p>
+                    <p><i>E io dico:<i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"Piangere e lamentarsi</font></font></i> <strong> non curerà il dolore</strong> e la tua malattia<strong>, segui esattamente quello che ti dico e guarirai!"</strong></i></p>
+                </blockquote>
+                <p><strong>Patrizia: Quali metodi consigliano di solito i medici? E perché raramente aiutano?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>:  "Di solito chiedono ai pazienti di fare dei movimenti complessi di <strong>96 esercizi fisici.</strong>.</i></p>
+                    <p><i><strong>È un metodo estremamente inefficiente, ma è anche molto difficile e dispendioso in termini di tempo</strong>.La gente soffre, è difficile e in più non tutti hanno il tempo per andare in palestra.</i></p>
+                    <p><i><strong>Questo tipo di trattamento certamente non aiuta</strong>. Spesso si ricorre alla chirurgia, che viene quasi sempre eseguita in fretta e furia,  <strong> e che inoltre non risolve il problema</strong>.</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/5.jpg" class="fluid">
+                    </picture>
+                </a>
+                <blockquote>
+                    <p><i>Poi ricorrono a procedure costose, a cliniche private, prendono medicine costose che sono molto <strong>dannose per la salute</strong>.</i></p>
+                    <p><i><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recentemente ho parlato con più di 2.000 medici in Europa e negli Stati Uniti, </font></font></i> <strong>presentando questa nuova crema</strong>, e ora la maggior parte dei medici non raccomanda più metodi inefficaci.</i></p>
+                    <p><i>Ma in Italia insistono <strong>nel dire che è un falso</strong>, e così sto dando questa intervista affinché tutti possano vedere che c'è qualcosa che funziona davvero e aiuta contro il dolore e le malattie articolari.</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/6.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Sento parlare molto del massaggio a pressione. È possibile alleviare il dolore applicando una pressione su una certa parte del corpo?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>:  "Può solo alleviare o ridurre il dolore per un breve periodo di tempo.  <strong>Ma non è una terapia completa</strong>. Prima o poi il problema tornerà.</i></p>
+                    <p><i>E, come sapete, i buoni specialisti mancano sempre. I veri esperti si contano sulle dita di una mano.  <strong>E quasi tutti vivono in paesi asiatici</strong> avendo pazienti in tutto il mondo.</i></p>
+                    <p><i>Ma non disperatevi. Ho sempre saputo che doveva esserci  <strong>un metodo più moderno e più semplice, e l'ho trovato</strong>."</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/7.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Molto interessante! Potrebbe dirci di più su questo metodo? Qual è l'idea principale dietro? La sua invenzione permette davvero alle persone di vivere senza dolori e malattie articolari?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "La chirurgia, gli esercizi, le medicine pericolose e i trattamenti costosi per le malattie e i dolori articolari sono uno spreco di denaro! Le mie parole sono già state confermate da <strong>milioni di persone in tutto il mondo</strong>.</i></p>
+                    <p><i>Dopo rischiosi metodi non funzionali, <strong>più di 144.000 persone in Europa e negli Stati Uniti sono rimaste </strong> soddisfatte in quanto si sono già trattate con <a href="#form">Nanoflex</a> e godono del loro corpo senza dolore.</i></p>
+                    <p><i>La nostra clinica è stata la prima ad avere accesso ad usare  crema <a href="#form">Nanoflex</a>.  Devo ammettere che quando ne ho sentito parlare, mi sono messo a ridere perché non credevo nella sua efficacia.</i></p>
+                    <p><i><strong>Ma sono rimasto scioccato quando abbiamo fatto i test</strong>. Abbiamo fatto un sondaggio tra coloro che avevano usato la<a href="#form">crema Nanoflex</a>.</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/8.jpg" class="fluid">
+                    </picture>
+                </a>
+                <blockquote>
+                    <p><i>Esso ha mostrato<strong> <i style="font-weight: 400;"><span style="font-weight: bolder;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">che 4.567 persone si sono liberate</font></font></span></i></strong> di tutti i tipi di problemi articolari in 15 giorni. <strong>Si tratta del 94% dei partecipanti</strong>.</i></p>
+                    <p><i>Il 5,6% dei partecipanti hanno sentito un miglioramento significativo, e solo lo 0,4% dei casi non ha mostrato alcun miglioramento entro 15 giorni, ma il giorno 20 <strong>il miglioramento ha cominciato ad apparire</strong>.</i></p>
+                    <p><i>Tutti i pazienti testati hanno concordato all'unanimità che questo metodo è <strong>10 volte più conveniente della terapia</strong> tradizionale raccomandata dagli esperti, e molto meglio della chirurgia o degli antidolorifici."</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/9.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Quindi la crema si chiama <a href="#form">Nanoflex</a>?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>:  "Giusto, <a href="#form">Nanoflex</a>. L'abbiamo chiamato così subito dopo che ha messo fine alle   <strong>sofferenze</strong>  dei nostri pazienti".</i></p>
+                </blockquote>
+                <p><strong>Patrizia: Come incide  <a href="#form">Nanoflex</a>  sulle persone?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Qui non c'è nessun miracolo, è scienza pura. <a href="#form">Nanoflex</a>  funziona così bene perché non appena si inizia l'applicazione,inizia immediatamente a agire sulle articolazioni e la loro infiammazione, alleviando i forti attacchi di dolore entro 1 ora.</i></p>
+                    <p><i><a href="#form">Nanoflex</a> distrugge quindi la vecchia cartilagine danneggiata e crea nuova cartilagine sana</strong>,  innescando il processo TRTT.</i></p>
+                    <p><i>La TRTT è un processo che rimuove la cartilagine morta e distrugge la cartilagine già colpita dalla malattia articolare, impedendone la diffusione.</i></p>
+                    <p><i>Dopo la rimozione, inizia il processo di riparazione, <strong>in cui una nuova cartilagine</strong> viene inserita al posto della vecchia cartilagine danneggiata.</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/10.gif" class="fluid">
+                    </picture>
+                </a>
+                <blockquote>
+                    <p><i><strong> Jin continua:</strong> Una volta che il corpo rileva gli effetti della TRTT, comincia ad <strong> aiutare e a fornire </strong> ancora più calcio e cartilagine alle ossa e alle articolazioni.</i></p>
+                    <p><i><strong>Già dopo il primo utilizzo, <a href="#form">Nanoflex</a>aiuta a ridurre il dolore, l'infiammazione e il danno</strong> osseo causato dall'età o da altre cause.</i></p>
+                    <p><i><a href="#form">Nanoflex</a> inganna anche il cervello nel dare l'impressione che le ossa hanno bisogno di più vitamine, minerali e cartilagine, rendendo le ossa più forti e le articolazioni più mobili e resistentiè l'unica crema con tecnologia TRTT, quindi è diversa da tutti gli altri trattamenti"..</i></p>
+                    <p><i><a href="#form">Nanoflex</a> <i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">è l'unica crema con tecnologia TRTT, quindi è diversa da tutti gli altri trattamenti.</font></font></i> <strong>diferente a todos los demás tratamientos.</strong>"</i></p>
+                </blockquote>
+
+                <p><strong>Patrizia: Può usarla chiunque?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Oggi l'80% dei professionisti della reumatologia negli Stati Uniti e in Europa raccomandano <a href="#form">Nanoflex</a> <i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">come antidolorifico </font></font></i><strong>e per il recupero facile e veloce sia delle articolazioni che delle ossa</strong>.</i></p>
+                    <p><i><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Questo è esattamente ciò che raccomandano ai loro pazienti,</font></font></i> <strong>poiché la crema non ha effetti collaterali, la sua efficacia è stata scientificamente provata da più di 144.000 pazienti</strong>, e soprattutto: è alla portata di tutti.</i></p>
+                    <p><i>Quindi, <strong>praticamente chiunque può utilizzare Nanoflex</strong>."</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/12.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Secondo le istruzioni è sufficiente usarlo due volte al giorno?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Sì! Sentirete un sollievo immediato dal dolore poco dopo l'inizio del processo TRTT che ho spiegato sopra, e in  <strong>TRE GIORNI il dolore scomparirà completamente </strong>e le articolazioni e le ossa saranno già nel processo di recuperos.</i></p>
+                    <p><i>Tutti coloro che usano questa crema si sentono molto bene, <strong>la sensazione di dolore scompare e la vita diviene più facile e indolore</strong>.</i></p>
+                    <p><i>Di solito quando si cammina o si fa qualsiasi attività per cui prima sentivano dolore,<strong> notano che il dolore è scomparso senza alcuno sforzo</strong>  semplicemente applicando <a href="#form">Nanoflex</a>. Tutti sono contenti e allo stesso tempo stupiti dei risultati!"</i></p>
+                </blockquote>
+                <p><strong>Patrizia: Quindi i risultati saranno visibili tra tre giorni?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Questa non è una scienza esatta, alcune persone si liberano del dolore già dal primo giorno, <strong>altre si liberano del dolore nei primi 3 giorni</strong>... Ma l'80% delle persone che hanno usato   <a href="#form">Nanoflex</a>, 
+					<strong> hanno già iniziato a ottenere risultati reali dopo tre giorni "</strong>.</i></p>
+                </blockquote>
+
+                <p><strong>Patrizia: <span style="font-weight: bolder;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Puede compartir con nosotros los resultados de estas personas?</font></font></span></strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Sì, certo. Abbiamo chiesto il permesso per tutti i risultati che vi mostreremo qui. Vogliamo che <a href="#form">Nanoflex</a> 
+					<strong>sia preso sul serio</strong>.</i></p>
+                    <p><i>Per questo abbiamo bisogno di mostrare risultati e test reali. Il primo test ha coinvolto<strong> 5000 volontari con forti dolori articolari</strong>, <i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">artrite, osteoartrite e osteoporosi.</font></font></i></i></p>
+                    <p><i>Il farmaco è stato applicato due volte al giorno durante la terapia, <strong>e nessuno dei pazienti ha cambiato il suo normale ritmo di vita</strong>.</i></p>
+                    <p><i>Risultati dei test (<strong>dopo un mese</strong>):</i></p>
+                    <p><i><strong> Il 18% dei pazienti</strong> hanno completamente eliminato il dolore e hanno recuperato le loro articolazioni in 8 giorni.</i></p>
+                    <p><i><strong>- Il 77% dei pazienti</strong> hanno completamente eliminato il dolore e hanno recuperato le loro articolazioni in 15 giorni..</i></p>
+                    <p><i>Eliminó el dolor en 8 días, pero restauró las articulaciones sólo en 35 días <strong>- 4% de los pacientes</strong>.</i></p>
+                    <p><i><strong>Solo l'1% dei pazienti</strong> si sono liberati solo del dolore..</i></p>
+                    <p><i>L'artrite, l'osteoporosi e l'osteoporosi sono state sconfitte dal  <strong>98% dei pazienti</strong>.</i></p>
+                    <p><i>Processi biologici normalizzati nel corpo <strong>- 100% dei pazienti</strong>.</i></p>
+                    <p><i>Nessun effetto collaterale e nessuna dipendenza <strong>100% dei pazienti</strong>."</i></p>
+                </blockquote>
+                <p class="tcenter"><strong>Ecco i risultati di coloro che hanno usato <a href="#form">Nanoflex</a>:</strong></p>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/14.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p class="tcenter"><strong>Risultato dopo 21 giorni di utilizzo di  <a href="#form">Nanoflex</a></strong></p>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/15.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p class="tcenter"><strong>Risultato dopo 20 giorni di utilizzo di <a href="#form">Nanoflex</a></strong></p>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/16.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p class="tcenter"><strong>Risultato dopo 22 giorni di utilizzo di <a href="#form">Nanoflex</a></strong></p>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/17.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p class="tcenter"><strong>Risultato dopo 26 giorni di utilizzo di  <a href="#form">Nanoflex</a></strong></p>
+                <p> </p>
+                <p><strong>Patrizia: <a href="#form">Nanoflex</a> è sempre efficace?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Come si può vedere dai test e dai risultati riportati sopra, TUTTI i pazienti e coloro che hanno usato <a href="#form">Nanoflex</a> <strong> sono stati in grado di sbarazzarsi del dolore e di curare le loro malattie articolari</strong>.</i></p>
+                    <p><i>Quindi, si possono provare diverse soluzioni contro il dolore. Alcuni di questi includono la chirurgia con effetti collaterali pericolosi, che non è il, <a href="#form">caso di Nanoflex </a>.</i></p>
+                    <p><i>In altri casi, si devono passare ore in trattamenti costosi e disfunzionali e anche prendere farmaci per anni, il che è molto dannoso per la salute. Con così tante opzioni disponibili, <strong>è normale essere scettici sui risultati</strong>.</i></p>
+                    <p><i>Quindi, invece di promettere qualcosa, <strong>vi invito a usare </strong> 
+					<a href="#form">Nanoflex per 30 giorni!</a> Vi garantisco che avrete un buon risultato come tutti quelli che l'hanno usato!".</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/18.jpg" class="fluid">
+                    </picture>
+                </a>
+                <p><strong>Patrizia: Desidera lasciare un messaggio ai nostri lettori?</strong></p>
+                <blockquote>
+                    <p><i><strong>- Jin Quon</strong>: "Per cominciare, voglio solo dare qualche consiglio. Questo è un prodotto con il quale si può curare il dolore alle articolazioni e le malattie come l'artrite e l'osteoartrite. <strong>È uno dei prodotti più preziosi al mondo</strong>.</i></p>
+                    <p><i><a href="#form">La formula Nanoflex</a> comprende TRTT, un gran numero di elementi e nutrienti naturali... è il più ricco di <strong>calcio, magnesio e collagene di tipo 2 di qualsiasi altro prodotto al mondo</strong>.</i></p>
+                    <p><i>È importante comprare dal sito ufficiale. Solo su questo sito web sarete sicuri al 100% di ricevere <a href="#form">Nanoflex originale</a>.Potete anche ordinarlo qui. Voglio che i lettori siano felici e liberi da dolori e malattie!</i></p>
+                    <p><i>Di sicuro riuscirete, basta avere fede! La parte migliore<strong>è la sensazione di gioia e soddisfazione</strong> di vivere senza dolore e di poter fare qualsiasi cosa senza limitazioni!</i></p>
+                    <p><i>Spero sinceramente di poter aiutare molte persone e che i risultati mostrati qui servano come motivazione per raggiungere in questo grande obiettivo! Credete in voi stessi e riuscirete a sconfiggere questo grande male!".</i></p>
+                </blockquote>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/19.jpg" class="fluid">
+                    </picture>
+                </a>
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/20.png" class="fluid">
+                    </picture>
+                </a>
+                <p class="tcenter">(Si può ricevere a casa entro 1-3 giorni!)</p>
+                <p class="tcenter">Volete liberarvi del dolore?</p>
+				
+        <!--Form-->
+        <div id="form">
+
+            <div id="form_image">
+                <div class="form_image_wrap_image">
+                    <img src="form/prod.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="form_wrap" id="objectScrollAttention">
+                <form method="POST" geo="it" action="api.php" 
+	onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
+                        <label class="descount">Sconto -50%</label>
+
+                        <div id="price">
+                            <div class="price_new">
+                                39 € 
+                            </div>
+                            <div class="price_old">
+                                78 €
+							</div>
+                        </div>
+
+                        <label class="inp_name">Nome</label>
+                        <input name="name" placeholder="" required="" type="text">
+
+                        <label class="inp_phone">Telefono<br>
+						(inserite il suo numero di cellulare attivo)</label>
+                        <input name="phone" placeholder="" required="" type="tel">
+
+<input name="subid" type="hidden" value="{subid}">
+<input name="px" type="hidden" value="{px}">
+<input name="bayer" type="hidden" value="{bayer}">
+<br>
+                        <button type="submit" class="btnn">ORDINA</button>
+
+                </form>
+            </div>
+
+        </div><br>
+        <!--Form END-->
+				
+
+                <div class="row ftr">
+                    <div class="col-4 col-lg-2 col-md-4 col-sm-4">
+                        <a href="#form">
+                            <picture>
+
+                                <img src="images/dr.jpg" class="avatar">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-8 col-lg-10 col-md-8 col-sm-8 p10px">
+                        <h3>Informazioni sull'interlocutore:  Jin Quon</h3>
+                        <p>Nato il 9 maggio 1969 nel distretto di Panyu, Canton, Cina. Si è trasferito a Hong Kong all'età di 15 anni, dove si è laureato in medicina all'Università di Hong Kong. È specializzato come reumatologo al Gleneagles Hospital.</p>
+                    </div>
+                </div>
+				
+                <a href="#form">
+                    <picture>
+
+                        <img src="images/21.png" class="fluid">
+                    </picture>
+                </a>
+				
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <img src="images/g1.png" class="logofooter">   Site Oficial Fantastico
+        </div>
+    </footer>
+
+<script type="text/javascript" src="/libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="/libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ____',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+
+</body>
+
+</html>

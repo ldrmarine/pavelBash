@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 23" width="19" height="23">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-295 -765L80 -765L80 7127L-295 7127Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Titan Force" clip-path="url(#cp1)">
+		<g id="1">
+			<g id="кнопка">
+				<path id="triangle" class="shp0" d="M17.29 11.5L1.7 21.69L1.7 1.31L17.29 11.5Z" />
+			</g>
+		</g>
+	</g>
+</svg>

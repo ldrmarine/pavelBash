@@ -1,0 +1,159 @@
+.header_desktop{
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.x-header-medical {
+  border-bottom: 2px solid #b8b8b8;
+  margin: 0 auto 10px;
+  font-family: 'Roboto';
+}
+.x-header-medical .header_content {
+  background: #fff;
+  padding: 30px 20px 10px;
+}
+.header_content_text-holder {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header-left {
+  margin-right: 40px;
+}
+.header-left__title {
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.header-left__text {
+  margin-bottom: 10px;
+}
+.header-left__link {
+  width: 240px;
+  display: block;
+  background-color: #8E0000;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.header-logo {
+  display: block;
+}
+.x-header-medical .header_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.x-header-medical .header_menu ul li a {
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.x-header-medical .header_menu ul li a p {
+  padding: 10px 20px;
+}
+.link-to-form {
+  display: none;
+}
+.header-right {
+  display: none;
+}
+.x-header-medical .header_mobile {
+  display: none;
+}
+.burger {
+  width: 38px;
+  margin-right: 20px;
+}
+.burger__line:not(:last-child) {
+  margin-bottom: 9px;
+}
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .header-left {
+    display: none;
+}
+.x-header-medical .header_mobile {
+  display: block;
+}
+.header-right {
+  display: flex;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+  .x-header-medical .header_mobile .header_mobile-publication {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .x-header-medical .header_mobile .header_mobile-publication span {
+    font-weight: 400;
+  }
+
+  .x-header-medical .header_menu {
+    display: none;
+  }
+
+  .link-to-form {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 20px;
+    background-color: #0083B2;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #fff;
+    text-shadow: 0px -1px 1px #64799e;
+    padding: 12px 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-center {
+    display: none;
+  }
+  .x-header-medical .header_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+  .x-h1-medical-sp {
+    font-size: 30px;
+  }
+}

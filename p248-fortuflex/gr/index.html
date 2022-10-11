@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth">
+
+<head>
+ <meta charset="utf-8">
+ <meta content="initial-scale=1, maximum-scale=1, width=device-width" name="viewport">
+ <title>ΤΡΕΧΟΝΤΑ ΝΕΑ</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link href="css/default.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <link href="css/index.css" rel="stylesheet">
+ <script src="js/jquery.min.js"></script>
+ <link rel="stylesheet" href="css/form.css">
+ <script src="js/scripts.js"></script>
+ <script>
+  function dtime_nums(d, like_eu) {
+   var now = new Date();
+   now.setDate(now.getDate() + d + 1);
+
+   var dayNum = '';
+   if (now.getDate() < 10) {
+    dayNum = '0';
+   }
+   dayNum += now.getDate();
+
+   var monthNum = '';
+   if (now.getMonth() + 1 < 10) {
+    monthNum = '0';
+   }
+   monthNum += now.getMonth() + 1;
+
+   if (like_eu === true) {
+    document.write(dayNum + "." + monthNum + "." + now.getFullYear());
+   } else {
+    document.write(monthNum + "." + dayNum + "." + now.getFullYear());
+   }
+
+  }
+ </script>
+</head>
+
+<body>
+ <script src="js/counter.js"></script>
+ <header class="header">
+  <div class="header_top">
+   <div class="center_wrapper clearfix">
+    <div class="header_top-left_block clearfix">
+     <a class="header_top-logo" href="#order_form_place"></a>
+     <a class="header_top-login lt0" href="#order_form_place">Είσοδος</a>
+    </div>
+    <div class="header_top-right_block">
+     <div class="search-wrapper">
+
+      <div action="#">
+
+       <input class="search-input" placeholder="Αναζήτηση" type="text">
+       <a href="#order_form_place">
+        <button class="search-button" type="submit"></button>
+       </a>
+      </div>
+
+     </div>
+    </div>
+    <button class="header_top_menu-mobile js-htmenu-mobile lt1" type="button">Μενού </button>
+    <nav class="header_top_menu">
+     <ul class="header_top_menu-list js-htmenu-list clearfix">
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt2" href="#order_form_place">Νέα</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt3" href="#order_form_place">Αθλητισμός</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt4" href="#order_form_place">Καιρός</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt5" href="#order_form_place">Κατάστημα</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt6" href="#order_form_place">Γη</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link lt7" href="#order_form_place">Ταξίδι</a>
+      </li>
+      <li class="header_top_menu-list_item">
+       <a class="header_top_menu-list_link header_top_menu-list_link--last_link lt8" href="#order_form_place">Άλλα</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="header_middle">
+   <div class="center_wrapper clearfix">
+    <a class="category_name lt9" href="#order_form_place"><span class="category_name-invert">ΤΡΕΧΟΝΤΑ</span> ΝΕΑ</a>
+    <button class="header_bottom_menu-mobile js-hbmenu-mobile lt10" type="button">Κατηγορίες </button>
+   </div>
+  </div>
+  <div class="header_bottom">
+   <div class="center_wrapper">
+    <nav class="header_bottom_menu">
+     <ul class="header_bottom_menu-list js-hbmenu-list clearfix">
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--active lt11" href="#order_form_place">Αρχική
+        σελίδα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt12" href="#order_form_place">Βίντεο</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt13" href="#order_form_place">Κόσμος</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt14" href="#order_form_place">Ελλάδα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt15" href="#order_form_place">Οικονομία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt16" href="#order_form_place">Τεχνολογία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt17" href="#order_form_place">Επιστήμη</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt18" href="#order_form_place">Σήμερα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt19" href="#order_form_place">Πολιτισμός και εκδηλώσεις</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt20" href="#order_form_place">Υγεία</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link lt21" href="#order_form_place">Παγκόσμια Νέα</a>
+      </li>
+      <li class="header_bottom_menu-list_item">
+       <a class="header_bottom_menu-list_link header_bottom_menu-list_link--last_link lt22"
+        href="#order_form_place">Άλλα</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </header>
+ <div class="main_wrapper center_wrapper clearfix ">
+  <div class="content_wrapper ">
+   <div class="content">
+    <div class="content__inner content__inner_wide">
+     <div class="breadcrumbs">
+      <h2>
+       <a class="lt23" href="#order_form_place">Νέα</a>
+       <a class="lt24" href="#order_form_place">Κοινωνία</a>
+      </h2>
+      <a class="breadcrumbs__all-link lt25" href="#order_form_place">Όλα τα βίντεο αυτής της κατηγορίας </a>
+      <!--<a class="mob" href="#order_form_place"> ≡</a>-->
+     </div>
+     <div class="article">
+      <div class="article__date">
+       <script>
+        dtime_nums(-3, true)
+       </script>
+       <span class="article__time"> 13:35 </span>
+      </div>
+      <h3 class="article__title text-bold lt27">"Σήμερα είναι η πιο αποτελεσματική μέθοδος της θεραπείας των παθήσεων
+       των αρθρώσεων και της σπονδυλικής στήλης. Μοναδικό προϊόν!"</h3>
+      <div class="article__img">
+       <img alt src="images/main.jpg">
+       <div class="article__photo-author" data-author-url></div>
+      </div>
+      <div class="article__text">
+       <div class="js-mediator-article"></div>
+       <div class="article__text-soc-tool lt28">
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Καλησπέρα, κύριε καθηγητά! Καλώς ΗΡΘΑΤΕ! Πείτε μου, παρακαλώ, είναι αλήθεια ότι στην Κίνα υπάρχει ένα μυστικό για τη θεραπεία των παθήσεων των αρθρώσεων;</p>
+        <p class="before-paragr"><span class="text-bold"> Καθηγητής Liao:</span> Γεια σας! Στην Ελλάδα, το πρόβλημα των παθήσεων των αρθρώσεων είναι ιδιαίτερα οξύ: κάθε τέταρτο άτομο υποφέρει από τους πόνους στην πλάτη, τον αυχένα ή τους αγκώνες, έχει κήλη ή αρθρίτιδα σε διάφορα στάδια. Λυπάμαι πολύ που το ακούω, γιατί ξέρω πόσο τρομερές είναι οι ασθένειες των αρθρώσεων  και τι συνέπειες δημιουργούν στον ανθρώπινο οργανισμό. Νικήσαμε αυτές τις ασθένειες στην Κίνα πριν από πολύ καιρό, οπότε χαίρομαι πολύ, που μπορώ να μοιραστώ μαζί σας την εμπειρία της χώρας μας. </p>
+        <p class="open-content"> Κάντε κλικ εδώ για να δείτε τις φωτογραφίες 18+</p>
+        <div class="three-images" style="display: none;">
+         <div class="sep-img"><img class="three-img" src="images/1.jpg">
+          <p> γονάρθρωση  </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/2.jpg">
+          <p> κοξάρθρωση </p>
+         </div>
+         <div class="sep-img"><img class="three-img" src="images/3.jpg">
+          <p>ποδάγρα</p>
+         </div>
+        </div>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Ποιο είναι το μυστικό της κινεζικής υγείας και της μακροζωίας; Κάποια ειδική δίαιτα;</p>
+        <p class="before-paragr"><span class="text-bold">Καθηγητής Liao:</span> Είναι μύθος, σχεδόν κανείς δεν μπορεί να τρώει μόνο θαλασσινά, οπότε το ρύζι είναι το βασικό στοιχείο στη διατροφή μας. Το μυστικό μας είναι η κληρονομιά μας - η περίφημη κινεζική ιατρική. Το ανθρώπινο σώμα είναι ένα εύθραυστο όργανο, δεν θα πιστεύετε πόσο καλά συντονισμένο μπορεί να είναι!</p>
+        <p><span class="text-bold">Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: Σε πολλές χώρες, οι άνθρωποι πιστεύουν, ότι η κακή υγεία των αρθρώσεων είναι η φυσική συνοδός της τρίτης ηλικίας;</p>
+        <p class="before-paragr"><span class="text-bold"> Καθηγητής Liao:</span> Στην Κίνα, εδώ και πολύ καιρό είναι σαφές σε εμάς, ότι οι αρθρώσεις μπορούν να αποκατασταθούν και οι ασθένειες των αρθρώσεων πρέπει να αντιμετωπίζονται. Το κύριο πρόβλημα με αυτή την ασθένεια είναι η φθορά. Οι αρθρώσεις υπόκεινται πάντα σε υπερφόρτωση, έτσι ο χόνδρος γίνεται λιγότερο ελαστικός, λεπτότερος και φθείρεται. Αυτό οδηγεί σε τρίξιμο, πόνο, οίδημα (κήλη) και οστική παραμόρφωση (αρθροπάθεια).Ο χόνδρος πολλών ανθρώπων, μέχρι την ηλικία των 60 ετών, έχει ήδη φθαρεί κατά 45-50%. Πώς μπορείτε να επαναφέρετε αυτό που δεν υπάρχει πια; Γίνεται να κάνεις τον χόνδρο να «μεγαλώσει»; Ναι είναι δυνατόν!</p>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Πώς μπορεί να γίνει αυτό;</p>
+        <p class="before-paragr"><span class="text-bold"> Καθηγητής Liao:</span> Το ανθρώπινο σώμα έχει μια μοναδική ικανότητα να αναγεννάται. Δείτε πόσο εύκολα επουλώνεται το κόψιμο στο δέρμα σας. Το ίδιο ισχύει για οποιονδήποτε ιστό στο σώμα, αλλά η ταχύτητα και η δραστηριότητα αυτής της διαδικασίας, μπορεί να διαφέρουν: ενώ ορισμένα όργανα αναρρώνουν μόνα τους, άλλα χρειάζονται βοήθεια. Χρησιμοποιήστε τις κρυμμένες δυνατότητες του σώματός σας για να νιώσετε πιο υγιείς από ποτέ!</p>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Θα μπορούσατε να μας πείτε περισσότερα;</p>
+        <p class="before-paragr"><span class="text-bold">Καθηγητής Liao:</span> Οι Θιβετιανοί γνωρίζουν τη συνταγή για την αποκατάσταση των αρθρώσεων, περισσότερο από 2.000 χρόνια. Είναι ένα μείγμα φυσικών συστατικών, που ενεργοποιεί τη διαίρεση και την ανάπτυξη των ιστών του χόνδρου. Χρησιμοποιήθηκε για πρώτη φορά ως εκχύλισμα για τις κομπρέσες, που εφαρμόζονταν σε σημεία με το πόνο. Τώρα όμως, χάρη σε επιστημονικά στοιχεία, η Θιβετιανή συνταγή είναι διαθέσιμη σε όλο τον κόσμο σε μορφή κρέμας. Πήρα μέρος στην ανάπτυξη, οπότε γνωρίζω τα πάντα για τη φόρμουλα και τη δράση της.</p>
+        <p class="text-p-style"> Λειτουργεί απλά: η θεραπευτική σύνθεση της κρέμας απορροφάται στον ιστό του χόνδρου σχεδόν αμέσως. Ο πόνος αφαιρείται σχεδόν αμέσως, οι αρθρώσεις αποκαθίστανται σε περίπου 1-2 μήνες. <span class="text-bold"> Απλώς σκεφτείτε το: τώρα μπορείτε να αποκαταστήσετε πλήρως τις αρθρώσεις σας. Μπορείτε ακόμη και να αποφύγετε τη χειρουργική επέμβαση!</span>
+        </p>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας:</span> Θα μπορούσατε να περιγράψετε τη διαδικασία της ανάρρωσης;</p>
+        <p class="before-paragr"><span class="text-bold">Καθηγητής Liao:</span> Έχουμε ήδη πει, ότι τα κύτταρα που είναι υπεύθυνα για την υγεία και την ανάπτυξη του ιστού του χόνδρου, περιέχονται στον ίδιο τον χόνδρο. Τα συστατικά που περιέχει η κρέμα, όχι μόνο ανακουφίζουν από το πρήξιμο, τον πόνο και τη φλεγμονή, αλλά επηρεάζουν και τα ίδια τα κύτταρα και ενεργοποιούν τη διαίρεση τους. Με άλλα λόγια, αυτή η κρέμα ενεργοποιεί τον μηχανισμό της ανάρτησης και παρέχει γρήγορη δράση. Τα συστατικά της κρέμας ενεργοποιούν την κυκλοφορία του αίματος στους περιβάλλοντες ιστούς, αναγκάζοντας τις αρθρώσεις να παράγουν αρθρικό υγρό. Έτσι, η κινητικότητα των αρθρώσεων αυξάνεται και ο ιστός του χόνδρου αναπτύσσεται ταχύτερα. Όσον αφορά τους κακοήθεις όγκους (κήλες), σταδιακά μαλακώνουν υπό την επίδραση της κρέμας και απεκκρίνονται στο αίμα και στη συνέχεια μέσω των εντέρων.</p>
+        <center>
+         <a href="#order_form_place"><img alt class="prd" src="images/product.png"></a>
+        </center>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span>  ποιες είναι οι ενδείξεις της χρήσης;</p>
+        <p class="before-paragr"><span class="text-bold"> Καθηγητής Liao:</span> Αυτό το προϊόν ενδείκνυται για τη θεραπεία ασθενειών, όπως η αρθρίτιδα, η αρθροπάθεια, η οστεοχόνδρωση, η ισχιαλγία, η δισκοκήλη, η μετατόπιση του δίσκου της σπονδυλικής στήλης. Επιπλέον, μπορεί να χρησιμοποιηθεί για τη θεραπεία του πόνου, του μουδιάσματος των άκρων, τη ρήξη και την απώλεια της ελαστικότητας των μυών, το πρήξιμο, τη βλάβη και τον τραυματισμό. Στην Κίνα χρησιμοποιούμε αυτή την κρέμα κυρίως ως προληπτικό προϊόν, αφού αυτές οι ασθένειες δεν εμφανίζονται στη χώρα μας. Αυτή η κρέμα είναι μια κοινή σπιτική θεραπεία για εμάς. Πολλοί άνθρωποι εξακολουθούν να τη φτιάχνουν στο σπίτι, αλλά μερικές φορές δεν βρίσκουν τα σωστά συστατικά. Φυσικά, με την κρέμα μας δεν θα έχετε τέτοια προβλήματα.
+        </p>
+        <p><span class="text-bold"> Ερευνητικό Ινστιτούτο Ορθοπαιδικής και Τραυματολογίας: </span> Πού μπορώ να αγοράσω αυτήν την κρέμα;</p>
+        <p class="before-paragr"><span class="text-bold"> Καθηγητής Liao:</span>Δυστυχώς, δεν μπορέσαμε να εισέλθουμε στην ελληνική φαρμακευτική αγορά. Απλώς μας αρνήθηκαν, επομένως η κρέμα  <a href="#order_form_place">Fortuflex</a> δεν πωλείται στα ηλεκτρονικά καταστήματα, μπορείτε να την αγοράσετε μόνο συμπληρώνοντας την επίσημη φόρμα της παραγγελίας με έκπτωση 50%. Κάντε την παραγγελία και θα παραδοθεί στο σπίτι σας, χωρίς προκαταβολή, πληρώνετε μόνο κατά την παράδοση. Δεν έχουμε αντιμετωπίσει αυτό το πρόβλημα σε καμία άλλη χώρα στον κόσμο, στην Κίνα μπορείτε να βρείτε αυτή την κρέμα σε οποιοδήποτε φαρμακείο. Καταλαβαίνω όμως τον λόγο αυτού του περιορισμού: εάν όλοι είναι υγιείς, πώς θα έχουν κέρδος οι φαρμακευτικές εταιρείες;</p>
+        <p><span class="text-bold"> Ινστιτούτο Ορθοπαιδικής και Τραυματικής Έρευνας: </span> Σας ευχαριστούμε για αυτήν την πολύ ενδιαφέρουσα συνέντευξη.&nbsp;</p>
+        <p><img alt src="images/product.png" style="display: block; max-width: 350px; margin: 0 auto;"></p>
+        <p style="display:inline;">Έως τις<strong> 
+          <script>
+           dtime_nums(-1, true)
+          </script>
+         </strong> (συμπεριλαμβανομένου) μαζί με το Πανεπιστήμιο Κινεζικής Ιατρικής του Πεκίνου, το ερευνητικό μας Ινστιτούτο, παρέχει μια ειδική προσφορά για όλους τους
+         <b></b>
+        </p>
+        <div class="tow" style="display: inline;"><b>Έλληνες</b></div><b></b>, που ονομάζεται "Υγιείς Αρθρώσεις"! Στο πλαίσιο αυτής της προσφοράς, μπορείτε να παραγγείλετε την αυθεντική κρέμα  <a
+         href="#order_form_place">Fortuflex</a> με έκπτωση 50%! <strong><a href="#order_form_place">Απλά πρέπει να υποβάλετε ένα αίτημα, μέσω της επίσημης φόρμας παραγγελίας</a></strong>, πριν λήξει η προσφορά.
+        <p></p>
+        <p> Εάν έχετε προσπαθήσει πολύ και ανεπιτυχώς να απαλλαγείτε από τον πόνο στις αρθρώσεις, δοκιμάσατε διάφορες μεθόδους θεραπείας, χωρίς να επιτύχετε κανένα αποτέλεσμα, <a href="#order_form_place">κάντε κλικ εδώ και αφήστε ένα αίτημα αμέσως τώρα</a>.</p>
+        <div class="myFormFieldForRequest" id="order_form">
+         <form method="post" id="order_form_place" name="order_form_place" geo="pt" action="api.php"
+          onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+          <center>
+           <img src="images/med.png" style="max-width: 100px;">
+           <h2 class="lt81">ΕΠΙΣΗΜΗ ΦΟΡΜΑ ΠΑΡΑΓΓΕΛΙΑΣ</h2>
+           <span class="lt82" style="color: blue; font-size: 14px;">№29982 από 30.000
+            στις
+            <script type="text/javascript">
+             var d = new Date(new Date().getTime() - 24 * 60 * 60 * 000);
+             var day = d.getDate();
+             var month = d.getMonth() + 1;
+             var year = d.getFullYear();
+             document.write(day + "." + month + "." + year);
+            </script>
+           </span>
+          </center>
+          <div>
+           <span class="lt81" style="font-size: 16px;">αποκτήστε την κρέμα "Fortuflex" σε μειωμένη τιμή με έκπτωση 50%, μόνο 
+            <br>
+            <span class="new_price_val" style="color: red; font-size: 16px;">
+             34.99</span>&nbsp;<span class="new_price_cur" style="color: red; font-size: 16px;">EUR</span>
+            <del style="color:black">69.98</del>
+           </span>
+          </div>
+          <div class="toscroll" style="margin: 15px 10px -5px 10px; border: 2px solid #0299ff; padding: 10px;">
+           <span><b class="lt82">Για να λάβετε την κρέμα "Fortuflex", εισάγετε το Όνομα και τα Στοιχεία επικοινωνίας μαζί σας,  παρακάτω και κάντε κλικ στο κουμπί "ΠΑΡΑΓΓΕΛΙΑ".</b></span>
+          </div>
+          <div class="order_form_pole">
+           <label class="lt85">Όνομα:</label>
+           <input name="name" placeholder="Όνομα" required type="text">
+          </div>
+          <div class="order_form_pole">
+           <label class="lt86">Αριθμός κινητού:
+            <br>(εισάγετε τον έγκυρο αριθμό του κινητού σας τηλεφώνου)
+           </label>
+           <div class="form_phone">
+            <input class="only_number" name="phone" placeholder="Αριθμός κινητού" required type="tel">
+           </div>
+          </div>
+          <input name="subid" type="hidden" value="{subid}">
+          <input name="px" type="hidden" value="{px}">
+          <input name="bayer" type="hidden" value="{bayer}">
+          <div style="margin-bottom: 20px;">
+           <button class="js_submit button__text lt87" name="submit" type="submit">ΚΑΝΤΕ ΠΑΡΑΓΓΕΛΙΑ</button>
+          </div>
+          <span class="additional lt89">
+           Τα δεδομένα σας θα σταλούν απευθείας στη βάση δεδομένων. Κανείς άλλος δεν έχει πρόσβαση σε αυτά.
+
+          </span>
+         </form>
+        </div>
+        <div id="ttt"></div>
+        <div>
+         <p class="vk-header">356 σχόλια</p>
+         <div class="vk-inner-wrapper">
+          <div class="vk-photo-box" id="vk-photo-box"></div>
+          <div class="vk-textarea-box"><textarea class="vk-area" placeholder="Γράψτε μήνυμα "></textarea>
+           <div style="padding-top: 6px;">
+            <div class="vk-btn-part"><span class="vk-display">Μοιραστείτε με φίλους </span>
+             <a href="#order_form_place">
+              <div class="checkbox_on"></div>
+             </a><a class="vk-send-btn" href="#order_form_place">Αποστολή</a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="k-comments">
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-1.png"></div>
+          <div>
+           <p class="user-name">Αμαλία</p>
+           <p> Πάντα υπέφερα από το πόνο στο γόνατο και πίστευα, ότι δεν θα μπορούσα ποτέ να τον ξεφορτωθώ. Είναι θαύμα! Χρησιμοποιώ αυτήν την κρέμα εδώ και τρεις εβδομάδες, αφού διάβασα το άρθρο σας! Ο πόνος στην πλάτη και στα πόδια έχει φύγει! Σας ευχαριστώ!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-2.png"></div>
+          <div>
+           <p class="user-name">Αλίκη</p>
+           <p> Ευχαριστώ πολύ, η κρέμα λειτούργησε πολύ γρήγορα! Τη παρήγγειλα με έκπτωση 50% μέσω  <a href="#order_form_place">της επίσημης φόρμας παραγγελίας του κατασκευαστή!</a>  Μην αναβάλλετε τη θεραπεία των αρθρώσεών σας, είναι καλύτερα να θεραπεύσετε νωρίς τις ασθένειες, παρά να διαπιστώσετε στο μέλλον ότι δεν μπορείτε πλέον να κινηθείτε...</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-7.png"></div>
+          <div>
+           <p class="user-name">Σοφία</p>
+           <p> Συμφωνώ! Αυτή είναι μια πολύ αποτελεσματική θεραπεία των προβλημάτων στις αρθρώσεις! Με τη βοήθειά της, θεράπευσα την οστεοαρθρίτιδα των γονάτων.
+
+           </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-3, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-4.png"></div>
+          <div>
+           <p class="user-name">Αλέξανδρος </p>
+           <p> Άκουσα για αυτήν την κρέμα σε ένα πρόγραμμα υγείας και αποφάσισα να την παραγγείλω, δοκιμάστε την. Το γεγονός είναι, ότι η επίδραση των συμβατικών μεθόδων της θεραπείας δεν διαρκεί τόσο πολύ - πάντα μου έλεγαν ότι είναι πολύ δύσκολο να θεραπευθεί η οστεοχόνδρωση. Τώρα για τα αποτελέσματα. Η κρέμα <a href="#order_form_place">Fortuflex</a> παραδόθηκε γρήγορα. Ένιωσα τεράστια ανακούφιση τις πρώτες 10 μέρες, οπότε αποφάσισα να το μοιραστώ εδώ. Σας ευχαριστώ πολύ, που μου δώσατε την ευκαιρία να ζήσω τη ζωή στο έπακρο!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-8.png"></div>
+          <div>
+           <p class="user-name">Αντώνης</p>
+           <p> Διάβασα τις πρώτες κριτικές, οπότε αποφάσισα να παραγγείλω την κρέμα Fortuflex για μένα. Θα σας πω για τα αποτελέσματα, αφού λάβω την παραγγελία.</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box comm-answer">
+          <div class="comm-photo-part"><img src="images/vk-9.png"></div>
+          <div>
+           <p class="user-name">Ρούλα</p>
+           <p> Είμαι τόσο χαρούμενη, που είχα την τύχη να βρω αυτή την κρέμα! Διάβασα επίσης τις κριτικές και παρήγγειλα την κρέμα  <a href="#order_form_place">Fortuflex</a>. Ο σύζυγός μου ήταν ήδη απελπισμένος. Έπαιρνε χάπια και έκανε μασάζ, αλλά είχε σοβαρά στομαχικά προβλήματα και δεν ξέραμε πια τι να κάνουμε. Ως εκ τούτου, αποφασίσαμε να δοκιμάσουμε την κρέμα <a href="#order_form_place">Fortuflex</a> και λειτούργησε! Ο άντρας μου δεν έχει άλλα προβλήματα, τα κάνουμε όλα μαζί σαν οικογένεια, είναι και πάλι ευδιάθετος και δραστήριος!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-2, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-10.png"></div>
+          <div>
+           <p class="user-name">Νίκος</p>
+           <p> Σας ευχαριστώ για μια τόσο αποτελεσματική θεραπεία. Όλοι όσοι υποφέρουν από τον πόνο στις αρθρώσεις, πρέπει να δοκιμάσουν αυτή την κρέμα. Και η τιμή της ειδικής προσφοράς είναι πραγματικά προσιτή!</p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <div class="k-comm-box">
+          <div class="comm-photo-part"><img src="images/vk-11.png"></div>
+          <div>
+           <p class="user-name">Φωτεινή</p>λειτουργεί πραγματικά. Το αποτέλεσμα ξεπέρασε την κάθε προσδοκία μου! Η αρθρίτιδα στα δάχτυλα, έφυγε σε 10 μέρες! Παρήγγειλα και για τους φίλους μου, για να επωφεληθούν από την έκπτωση. </p>
+           <p><span class="mesg-date">
+             <script>
+              dtime_nums(-1, true)
+             </script>
+            </span> <a href="#order_form_place" style="text-decoration:none"><span class="comment-text">Αφήστε ένα σχόλιο</span></a></p>
+          </div>
+         </div>
+         <a href="#order_form_place" style="text-decoration: none;">
+          <p class="vk-show-more">Δείτε περισσότερα...</p>
+         </a><br><br>
+         <a href="#order_form_place">
+          <p class="big-href">Λάβετε μέρος σε μια ειδική προσφορά, συμπληρώνοντας την επίσημη φόρμα της παραγγελίας.</p>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="alc-news-wrapper-tablet-135"></div>
+    </div>
+   </div>
+   <div class="share_block">
+    <p class="share_block-heading lt29">Μοιραστείτε αυτήν την ιστορία</p>
+    <ul class="share_block-list">
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--email" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--facebook" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--twitter" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--pinterest" href="#order_form_place"></a>
+     </li>
+     <li class="share_block-list_item">
+      <a class="share_block-list_link share_block-list_link--linkedin" href="#order_form_place"></a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <aside class="sidebar">
+   <div class="alc-list alc-list_inner">
+    <div class="alc alc_2" data-id="14">
+     <a href="#order_form_place">
+      <img src="images/aside-pic1.jpg">
+      <span class="label lt30">Ο καθηγητής Liao είναι Διδάκτωρ Κινεζικής και Θιβετιανής Ιατρικής, καθηγητής στο Πανεπιστήμιο Κινεζικής Ιατρικής του Πεκίνου, βραβευμένος ορθοπεδικός χειρουργός και συγγραφέας πολλών βιβλίων για την αποκατάσταση των αρθρώσεων και την υλοποίηση των δυνατοτήτων των εσωτερικών αποθεμάτων του ανθρώπινου σώματος.
+      </span>
+     </a>
+    </div>
+    <div id="fix-pos" style="height: 1px;"></div>
+   </div>
+  </aside>
+ </div>
+ <footer class="footer">
+  <div class="footer_top">
+   <div class="center_wrapper">
+    <!-- <p class="footer_top-heading lt31">SIC</p> -->
+    <nav class="footer_top_menu">
+     <ul class="footer_top_menu-list clearfix">
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--mobile lt32" href="#order_form_place">Στο smartphone σας</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--pc lt33" href="#order_form_place">Στη διαδικτυακή τηλεόραση</a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--news lt34" href="#order_form_place">Ενημερωθείτε για τα τελευταία νέα </a>
+      </li>
+      <li class="footer_top_menu-list_item">
+       <a class="footer_top_menu-list_link footer_top_menu-list_link--letter lt35" href="#order_form_place">Για να επικοινωνήσετε μαζί μας</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+  <div class="footer_bottom">
+   <div class="center_wrapper">
+    <p class="footer_bottom-heading lt36">Δείτε</p>
+    <nav class="footer_bottom_menu">
+     <ul class="footer_bottom_menu-list clearfix">
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt37" href="#order_form_place">Νέα</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt38" href="#order_form_place">Αθλητισμός</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt39" href="#order_form_place">Καιρός</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt40" href="#order_form_place">Κατάστημα</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt41" href="#order_form_place">Γη</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt42" href="#order_form_place">Ταξίδι</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt43" href="#order_form_place">Κεφάλαιο</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt44" href="#order_form_place">Πολιτισμός</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt45" href="#order_form_place">Αυτοκίνητο</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt46" href="#order_form_place">Μελλοντικός</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt47" href="#order_form_place">Τηλεόραση</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt48" href="#order_form_place">Ραδιόφωνο</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt49" href="#order_form_place">Για τις γυναίκες</a>
+      </li>
+      <!-- <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt50" href="#order_form_place">SIC K</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt51" href="#order_form_place">Γαστρονομία </a>
+      </li> -->
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt52" href="#order_form_place">Γαστρονομία</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt53" href="#order_form_place">Κορυφαία νέα</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt54" href="#order_form_place">Μουσική</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt55" href="#order_form_place">Radical</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt56" href="#order_form_place">Μετάβαση στην ψηφιακή τηλεόραση</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt57" href="#order_form_place"> Masterchef </a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt58" href="#order_form_place">Φύση</a>
+      </li>
+      <li class="footer_bottom_menu-list_item">
+       <a class="footer_bottom_menu-list_link lt59" href="#order_form_place">Τοπικά νέα</a>
+      </li>
+     </ul>
+    </nav>
+    <p class="footer_bottom-links">
+     <!-- <a class="footer_bottom-links_link lt60" href="#order_form_place"></a>Όροι και Προϋποθέσεις</a> -->
+     <a class="footer_bottom-links_link lt61" href="#order_form_place">Όροι και Προϋποθέσεις</a>
+     <a class="footer_bottom-links_link lt62" href="#order_form_place">Πολιτική Απορρήτου</a>
+     <a class="footer_bottom-links_link lt63" href="#order_form_place">Cookies</a>
+     <a class="footer_bottom-links_link lt64" href="#order_form_place">Υπηρεσία Υποστήριξης</a>
+     <a class="footer_bottom-links_link lt65" href="#order_form_place">Οδηγός Γονέων</a>
+     <a class="footer_bottom-links_link lt66" href="#order_form_place">Για να επικοινωνήσετε μαζί μας</a>
+     <a class="footer_bottom-links_link lt67" href="#order_form_place">Διαφήμιση</a>
+    </p>
+   </div>
+  </div>
+ </footer>
+ <div class="breaking_popup js-breaking_popup">
+  <div class="breaking_popup-header">
+   <div class="center_wrapper breaking_popup-inner_wrapper">
+    <p class="breaking_popup-header_text lt68">ΤΡΕΧΟΝΤΑ ΝΕΑ</p>
+    <button class="breaking_popup-close js-breaking_popup-close"></button>
+   </div>
+  </div>
+  <div class="center_wrapper">
+   <p class="breaking_popup-text">
+    <a class="breaking_popup-link lt69" href="#order_form_place">ΚΑΝΤΕ ΠΑΡΑΓΓΕΛΙΑ</a>
+   </p>
+  </div>
+ </div>
+ <script>
+  $(".three-images").hide();
+  $(".open-content").on("click", function () {
+   $(".three-images").toggle(1000);
+  });
+ </script>
+
+ <script type="text/javascript" src="/libs/js/gdpr.js"></script>
+ <link rel="stylesheet" href="/libs/js/gdpr.css">
+ <script>
+  var phonePattern = {
+   'ru': '+7 (___) ___-__-__',
+   'ua': '+38-___-___-__-__',
+   'by': '+375 ___ ___ ___',
+   'kz': '+7 ___ ___ ____',
+   'kg': '+___ ___ __ __ __',
+   'md': '0 ___ _____',
+   'az': '+___-__-___-__-__',
+   'ge': '+995 ___ __ __ __',
+   'es': '+34 ___ __ __ __',
+   'pe': '+51 ___ ___ _?_',
+   'cl': '+56 _ ____ ____',
+   'ar': '+54 __ ____ ____',
+   'co': '+57 _______??_',
+   'mx': '+52 __ ____ ____',
+   'it': '+39-___-___-____',
+   'esp': '+34 ___ __ __ __',
+   'pt': '+351 ___ ___ ___',
+   'br': '+55 __ ___?_ ____',
+   'prt': '+351 ___ ___ ___',
+   'id': '+62 ___ ___ ___',
+   'gr': '+30 ___ _______',
+   'cy': '+357 __ ______',
+   'ro': '+40 ___ ___ __? _',
+   'bg': '+359 ___ __ __? _',
+   'cz': '+420 ___ ___ ___',
+   'sk': '+421 ___ ___ ___',
+   'si': '+386 _ ___ __ __',
+   'pl': '+48 ___ ___ ___',
+   'al': '+355 __ ___ ___?_',
+   'rs': '+381 __ _____?_',
+   'ph': '+63 _ ____ __?_',
+   'hu': '+36 _ ___ ____',
+   'hr': '+385 _ ____ __?_',
+   'ba': '+387 __ ______',
+   /* --- */
+  }
+
+  const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+  //функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+  function validate_form(form, alert_text = "Please enter valid phone number") {
+   var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+    pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+   if (input_ln >= pattern_ln) return true;
+   else {
+    alert(alert_text);
+    return false;
+   }
+  }
+
+  //сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+  document.addEventListener("DOMContentLoaded", function () {
+
+   var isTimeoutSeted = false;
+   var inputInterval;
+
+   function createInterval(input) {
+    if (!isTimeoutSeted) {
+     isTimeoutSeted = true;
+
+     inputInterval = setInterval(() => {
+      input.selectionStart = input.value.length
+      input.setSelectionRange(input.value.length, input.value.length);
+     }, 15)
+    }
+   }
+
+   function deleteInterval() {
+    clearInterval(inputInterval)
+    isTimeoutSeted = false;
+   }
+
+   function setSelectionStart(input) {
+    input.selectionStart = input.value.length
+   }
+
+   function mask(event) {
+    var input = event.currentTarget;
+    var geo = input.form.getAttribute('geo');
+    var matrix = phonePattern[geo];
+    var i = 0;
+    var def = matrix.replace(/\D/g, "");
+    var val = input.value.replace(/\D/g, "");
+
+    if (!event.type == "blur") {
+     setSelectionStart(input)
+    }
+
+    // Ставим интервал для инпута
+    createInterval(input)
+
+    if (event.type == "blur") {
+     // Сбрасываем интервал для инпута
+     deleteInterval()
+     if (input.value.length == 2) {
+      input.value = ""
+     }
+    }
+
+    if (def.length >= val.length) {
+     val = def
+    };
+
+    input.value = matrix.replace(/./g, function (a) {
+     return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+
+
+   };
+
+   inputs.forEach(input => {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("focus", mask, false);
+   })
+  });
+
+  $(document).ready(function () {
+   // Load GDPR
+   $(document).gdprCookieLaw({
+    moreLinkHref: '/privacypolicy',
+    theme: 'theme-1',
+    position: 'bottom-right',
+    width: '760px',
+    margin: '15px',
+    animation: 'fade-slide',
+    btnAcceptText: 'Ok'
+   });
+  });
+ </script>
+</body>
+
+</html>
